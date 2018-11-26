@@ -1,0 +1,1 @@
+select categName,folderAlias,icon from category order by sortorder asc;

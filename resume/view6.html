@@ -1,0 +1,52 @@
+<style>
+    .topMenu div a,.topMenu div span {
+        /*left: 20%;*/
+        margin: 5px;
+        padding: 10px;
+        /*min-height: 30px;*/
+    }
+</style>
+<div ng-app="myAjs" class="bg-gray">
+    <div  ng-controller="templatesController">
+        <header class="topMenu">
+            <div>
+                <span class="btn btn-warning" ng-click="getTemplates('Home','leftTemplate');" type="button">Home</span>
+                <span class="btn btn-warning" ng-click="getTemplates('Education','educationTemplate');" type="button">Educations</span>
+                <span class="btn btn-warning" ng-click="getTemplates('Experience','experienceTemplate');" type="button">Experience</span>
+                <span class="btn btn-warning" ng-click="getTemplates('Skills','footerIKnow');" type="button">Skills</span>
+                <span class="btn btn-warning" ng-click="getTemplates('I Know','footerLinks');" type="button">Samples</span>
+            </div>
+        </header>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="idLabel" class="bs nav-tabs-custom h1">{{viewLabel}}</div>
+                    <div ng-controller="ITSummary" class="bs nav-tabs-custom" style="min-height: 700px">
+                        <div id="itSummaryScope" ng-include="" ng-view="" src="strTemplateUrl"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <run-time-templates url="templates/boxTemplates.html"></run-time-templates>
+                    <run-time-templates url="templates/footerIKnow.html"></run-time-templates>
+                    <run-time-templates url="templates/ichart.html"></run-time-templates>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <run-time-templates url="templates/timeline.html"></run-time-templates>
+                </div>
+            </div>
+        </div>
+
+        <!--<run-time-templates url="templates/pageDiv.html" ng-controller="ITSummary"></run-time-templates>-->
+    </div>
+
+</div>
+</div>
+

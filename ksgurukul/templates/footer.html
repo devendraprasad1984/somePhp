@@ -1,0 +1,7 @@
+<script>
+    $("#footerID").load("services/ServiceDetails.php?getDataFile=footer&getType=yes&toload=",function (res) {
+        addColorsAndStoreHtml(res)
+    })
+</script>
+
+<div id="footerID"></div>

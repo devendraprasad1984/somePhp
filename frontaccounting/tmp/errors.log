@@ -1,0 +1,44 @@
+[31-Jul-2018 16:21:55 UTC] 0::config.php:65: filemtime(): stat failed for ./CHANGELOG.txt
+[31-Jul-2018 16:21:55 UTC] 0::session.inc:401: include_once(./tmp/faillog.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:21:55 UTC] 0::session.inc:401: include_once(): Failed opening './tmp/faillog.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:21:55 UTC] 0::current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:21:55 UTC] 0::current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:21:55 UTC] 0::session.inc:449: include_once(./company/0/installed_extensions.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:21:55 UTC] 0::session.inc:449: include_once(): Failed opening './company/0/installed_extensions.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:21:56 UTC] 0::config.php:65: filemtime(): stat failed for ./CHANGELOG.txt
+[31-Jul-2018 16:21:56 UTC] 0::session.inc:401: include_once(./tmp/faillog.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:21:56 UTC] 0::session.inc:401: include_once(): Failed opening './tmp/faillog.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:21:56 UTC] 0::current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:21:56 UTC] 0::current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:21:56 UTC] 0::session.inc:449: include_once(./company/0/installed_extensions.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:21:56 UTC] 0::session.inc:449: include_once(): Failed opening './company/0/installed_extensions.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:25:31 UTC] 0::config.php:65: filemtime(): stat failed for ./CHANGELOG.txt
+[31-Jul-2018 16:25:31 UTC] 0::session.inc:401: include_once(./tmp/faillog.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:25:31 UTC] 0::session.inc:401: include_once(): Failed opening './tmp/faillog.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:25:31 UTC] 0::current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:25:31 UTC] 0::current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:25:31 UTC] 0::session.inc:449: include_once(./company/0/installed_extensions.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:25:31 UTC] 0::session.inc:449: include_once(): Failed opening './company/0/installed_extensions.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:25:47 UTC] 0::config.php:65: filemtime(): stat failed for ./CHANGELOG.txt
+[31-Jul-2018 16:25:47 UTC] 0::session.inc:401: include_once(./tmp/faillog.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:25:47 UTC] 0::session.inc:401: include_once(): Failed opening './tmp/faillog.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:25:47 UTC] 0::current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:25:47 UTC] 0::session.inc:449: include_once(./company/0/installed_extensions.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:25:47 UTC] 0::session.inc:449: include_once(): Failed opening './company/0/installed_extensions.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:25:47 UTC] 0:dpresume:current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:25:47 UTC] 0:dpresume:config.php:65: filemtime(): stat failed for ./CHANGELOG.txt
+[31-Jul-2018 16:25:47 UTC] 0:dpresume:current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:25:47 UTC] 0:dpresume:session.inc:449: include_once(./company/0/installed_extensions.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:25:47 UTC] 0:dpresume:session.inc:449: include_once(): Failed opening './company/0/installed_extensions.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:25:56 UTC] 0:dpresume:config.php:65: filemtime(): stat failed for ./CHANGELOG.txt
+[31-Jul-2018 16:25:56 UTC] 0:dpresume:current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:25:56 UTC] 0:dpresume:session.inc:449: include_once(./company/0/installed_extensions.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:25:56 UTC] 0:dpresume:session.inc:449: include_once(): Failed opening './company/0/installed_extensions.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:25:57 UTC] 0:dpresume:config.php:65: filemtime(): stat failed for ./CHANGELOG.txt
+[31-Jul-2018 16:25:57 UTC] 0:dpresume:current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:25:57 UTC] 0:dpresume:session.inc:449: include_once(./company/0/installed_extensions.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:25:57 UTC] 0:dpresume:session.inc:449: include_once(): Failed opening './company/0/installed_extensions.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')
+[31-Jul-2018 16:25:59 UTC] 0:dpresume:config.php:65: filemtime(): stat failed for ./CHANGELOG.txt
+[31-Jul-2018 16:25:59 UTC] 0:dpresume:current_user.inc:607: Invalid argument supplied for foreach()
+[31-Jul-2018 16:25:59 UTC] 0:dpresume:session.inc:449: include_once(./company/0/installed_extensions.php): failed to open stream: No such file or directory
+[31-Jul-2018 16:25:59 UTC] 0:dpresume:session.inc:449: include_once(): Failed opening './company/0/installed_extensions.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php')

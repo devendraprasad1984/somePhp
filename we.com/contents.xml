@@ -1,0 +1,121 @@
+<root>
+<content id="cb">
+    <![CDATA[
+    <p class="subheading">About Us</p>
+    <div>
+    </div>
+
+    <p class="subheading">Management Team</p>
+    <div>
+        <table>
+        <tr>
+        <td class='serviceData'><span class="heading">Devendra Prasad</span><br/>
+            Software engineer by profession, has a +7yrs wide experience in IT.
+            Over these many years I have developed many windows and web applications and services
+            and provided end to end customer support.
+        </td>
+        </tr>
+        </table>
+    </div>
+]]>
+</content>
+
+<content id="ct">
+    <![CDATA[
+    <table>
+    <tr>
+    <td>
+    <p class="subheading">Contact Us</p>
+    Block 4 House 322 Khichri Pur<br/>
+    Nr Kalyan Puri Bus Stand<br/>
+    New Delhi - 10091<br/>
+    <img src='img/ph.png' style='width:20px; height: 20px;'>+91 9582797772<br/>
+    <img src='img/mail.png' style='width:20px; height: 20px;'>sonicageindia@gmail.com<br/>
+    <img src='img/mail.png' style='width:20px; height: 20px;'>devendraprasad1984@gmail.com<br/>
+    <img src='img/wb.png' style='width:20px; height: 20px;'><a href='http://sonicageindia.co.in'>http://sonicageindia.co.in</a><br/>
+    </br><a target="_target" href="https://maps.google.com/maps?q=Khichripur, Kalyan Puri,New Delhi, Delhi, India&hl=en&ll=28.62284,77.315726&t=m&z=14">Locate Me...</a>
+    </td>
+   <td>
+        <p class="subheading">e-Mail Notifier</p>
+        <table width="50%">
+        <form name="frmEmail" id="frmEmail">
+        <tr><td class='label'>Name</td><td><input type=text name="tname" id="tname" /></td></tr>
+        <tr><td class='label'>Email</td><td><input type=text name="temail" id="temail" /></td></tr>
+        <tr><td class='label'>Mobile</td><td><input type=text name="tmob" id="tmob" /></td></tr>
+        <tr><td class='label'>Subject</td><td><input type=text name="tsub" id="tsub" /></td></tr>
+        <tr><td class='label'>Query</td><td><textarea id="tmsg" name="tmsg" rows="20" style="height:150px;"></textarea><td></tr>
+        <tr><td colspan=2 class="ca click" onclick="getContactEmailQueryURI('#frmEmail');">Send<td></tr>
+        </form>
+        </table>
+        <div id="mail_1"></div>
+   </td>
+   </tr>
+   </table>
+   ]]>
+</content>
+
+
+
+<content id="pwed">
+    <![CDATA[
+    <input type='button' value='Start' style='width: 60px' onclick='getICaption();'/>
+    <input type='button' value='Done' style='width: 60px'/>
+    <div id='planWed'>
+    <div id='wp' style='display: none;' class='divBox'">
+        <span id='wp_span'></span>
+    </div>
+    <div id='wc' style='display: none;' class='divBox'>
+        <span id='wc_span'></span>
+    </div>
+    <div id='hs' style='display: none;' class='divBox'>
+        <span id='hs_span'></span>
+    </div>
+    <div id='bh' style='display: none;' class='divBox'>
+        <span id='bh_span'></span>
+    </div>
+    <div id='tr' style='display: none;' class='divBox'>
+        <span id='tr_span'></span>
+    </div>
+    <div id='tn' style='display: none;' class='divBox'>
+        <span id='tn_span'></span>
+    </div>
+    <div id='ca' style='display: none;' class='divBox'>
+        <span id='ca_span'></span>
+    </div>
+    <div id='pg' style='display: none;' class='divBox'>
+        <span id='pg_span'></span>
+    </div>
+    <div id='hm' style='display: none;' class='divBox'>
+        <span id='hm_span'></span>
+    </div>
+    <div id='dr' style='display: none;' class='divBox'>
+        <span id='dr_span'></span>
+    </div>
+    <div id='lng' style='display: none;' class='divBox'>
+        <span id='lng_span'></span>
+    </div>
+    <div id='sh' style='display: none;' class='divBox'>
+        <span id='sh_span'></span>
+    </div>
+    <div id='jw' style='display: none;' class='divBox'>
+        <span id='jw_span'></span>
+    </div>
+    <div id='fd' style='display: none;' class='divBox'>
+        <span id='fd_span'></span>
+    </div>
+    <div id='pp' style='display: none;' class='divBox'>
+        <span id='pp_span'></span>
+    </div>
+    <div id='gt' style='display: none;' class='divBox'>
+        <span id='gt_span'></span>
+    </div>
+    <div id='msc' style='display: none;' class='divBox'>
+        <span id='msc_span'></span>
+    </div>
+    <div id='le' style='display: none;' class='divBox'>
+        <span id='le_span'></span>
+    </div>
+</div>
+]]>
+</content>
+</root>

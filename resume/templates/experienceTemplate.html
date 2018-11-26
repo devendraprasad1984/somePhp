@@ -1,0 +1,16 @@
+<div ng-app="myAjs" class="bs nav-tabs-custom" style="height: 600px;overflow: auto; position: relative">
+    <div ng-controller="experienceController">
+        <div ng-repeat="xObj in experienceData | filter: { bg: ('badge-info badge text-left') }"  style='padding-top: 3em;'>
+            <div style='float:left;font-weight: bolder; font-size: 20pt;'>{{xObj.company}}</div>
+            <div>
+                <div style='width:100%;font-size:12pt;font-weight:bolder' class="badge badge-info">{{xObj.name}}
+                    <div style='float:right;'>
+                        <span class='badge badge-light'>{{xObj.role}}</span>
+                    </div>
+                </div>
+                <div>{{xObj.desc}}</div>
+                <span class='badge badge-info' style='float:right;'>{{xObj.tech}}</span>
+            </div>
+        </div>
+    </div>
+</div>

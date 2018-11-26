@@ -1,0 +1,433 @@
+html {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 8pt;
+    font-family: helvetica;
+    background-color: white;
+    overflow: auto;
+}
+
+pre {
+    text-align: left;
+    overflow: auto;
+    position: absolute;
+    table-layout: fixed;
+    width: auto;
+    white-space: pre-wrap;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.gb {
+    font-weight: bolder;
+    font-size: 40pt;
+    color: steelblue;
+}
+
+p.text {
+    margin: 1px 0;
+    text-indent: inherit;
+    text-align: justify;
+}
+
+.img {
+    height: auto;
+    width: 100%;
+    /*max-heigh: 100%;*/
+}
+
+table#topmenu {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+table#sideBar1{
+    /*width: 2em;*/
+    font-family: inherit;
+    font-size: inherit;
+}
+
+table#topmenu tr td a {
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    height: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+}
+
+table#topmenu tr td#current a {
+    background-color: white;
+    color: inherit;
+    font-weight: bolder;
+    border-top: 4px solid steelblue ;
+}
+
+table#sideBar1 tr td
+{
+    background-color:  white;
+    cursor: pointer;
+    color: steelblue;
+}
+
+table#sideBar1 tr td#current
+{
+    background-color: white;
+    color: inherit;
+    border-top: 2px solid steelblue ;
+    border-bottom: 2px solid steelblue ;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+}
+
+.ra {
+    text-align: right;
+    float: right;
+}
+
+.la {
+    text-align: left;
+    float: left;
+}
+
+.ca {
+    text-align: center;
+}
+
+.ja {
+    text-align: justify;
+}
+
+.ma {
+    vertical-align: middle;
+}
+.ta {
+    vertical-align: top;
+}
+.ba {
+    vertical-align: bottom;
+}
+.bg{
+    background-color: steelblue ;
+    color: black;
+    font-size: 8pt;
+}
+.bg1{
+    background-color: steelblue ;
+    color: black;
+}
+
+.pt {
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 20pt;
+    font-weight: bold;
+    color: inherit;
+}
+
+.subheading {
+    font-size: 16pt;
+    font-weight: bold;
+    color: steelblue;
+    background-color: white;
+}
+.baseHead {
+    font-size: 20pt;
+    font-weight: bold;
+    color: steelblue;
+}
+.colorText {
+    color: steelblue ;
+}
+.error {
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+.msg{
+    font-size: 10pt;
+    font-weight: bold;
+    color: steelblue;
+}
+.subheading1 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+    background-color: steelblue ;
+    width: 100%;
+}
+.subheading2 {
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    background-color: steelblue ;
+    width: 100%;
+}
+.subheading3 {
+    font-size: 8pt;
+    font-weight: bold;
+    color: white;
+    background-color: steelblue ;
+    width: 100%;
+}
+
+div{
+    width: 100%;
+    display: block;
+}
+
+table {
+    width: 100%;
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+td.label {
+    background: gray;
+    width:120px;
+    color: white;
+    font-weight: bold;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.plainText {
+    margin: 10px auto;
+    white-space: pre-wrap;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Height of the footer */
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px; /* Height of the footer */
+}
+
+.date {
+    color: inherit;
+    font-weight: bolder;
+}
+
+a {
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 10pt;
+    border:  1px solid steelblue;
+    margin: 4px;
+}
+
+div.myLeftBox,td.mybox{
+    overflow: none;
+    position: relative;
+}
+
+td.centerBox{
+    overflow: auto;
+    position: relative;
+    height: 60em;
+}
+
+td.myTopImageBox {
+    height: 25em;
+    width: auto;
+    /*border: 2px solid steelblue;*/
+}
+
+
+td.mainContainer {
+    height: 12em;
+    width: 20%;
+    border: 3px solid steelblue ;
+    position: relative;
+}
+td.mainContainer:hover{
+    border: 3px solid green;
+}
+.subheading3:hover{
+    background-color: green;
+}
+td.planWedContainer {
+    border: 2px solid steelblue ;
+    position: relative;
+    width:20%;
+    font-size: 8pt;
+    font-weight: bold;
+}
+td.planWedContainer:hover {
+    border: 2px solid green;
+}
+
+
+
+img.mainImageBox {
+    height: 12em;
+    width: 98%;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+span.iconHeading, .click {
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    vertical-align: middle;
+    height: 1em;
+    text-wrap: none;
+    white-space: pre-line;
+    font-size: 10pt;
+    vertical-align: top;
+}
+
+td.click {
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    vertical-align: middle;
+    height: 1em;
+    text-wrap: none;
+    white-space: pre-line;
+    font-size: inherit;
+    vertical-align: top;
+}
+
+div.myFixBox {
+    position: relative;
+    overflow: auto;
+    margin: 5px;
+    white-space: pre-wrap;
+}
+
+img.icon {
+    height: 20px;
+    width: 20px;
+    vertical-align: top;
+}
+
+.mydivsmall {
+    height: 12em;
+    width: auto;
+    border: 2px solid steelblue ;
+    border-radius: 10px;
+}
+
+.pagebox {
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px; /* margin is -0.5 * dimension */
+    margin-top: -200px; 
+    z-index: 2;
+    padding: 2px; background-color: white;
+    box-shadow: 0px 0px 8px steelblue ;
+    overflow: scroll;
+}
+
+input,textarea,select,button {
+    width: 100%;
+    border: 1px solid steelblue;
+    text-indent: 5px;
+}
+input:focus,textarea:focus,select:focus,button:focus {
+    border: 1px solid steelblue;
+}
+
+td.serviceData{
+    vertical-align: top;
+    position: absolute;
+    overflow-y: auto;
+    word-wrap: break-word;
+    display: inline;
+    max-width: 90%;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.ln{
+    width: 100%;
+    border: 2px solid steelblue ;
+}
+
+.divBox{
+    margin: 4px;
+    border: 3px solid steelblue ;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+
+.lines{
+    border-right: 2px solid steelblue ;
+    border-top: 2px solid steelblue ;
+    border-bottom: 2px solid steelblue ;
+}
+
+
+.planWedCell{
+    background-color: lightgray;
+}
+
+/*simple tab style using radio buttons*/
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+ 
+input[type=radio] + label {
+    font-weight: bold;
+    font-size: 10pt;
+    display:inline-block;
+    margin: 0px;
+    padding: 2px 5px;
+    background-color: white;
+    color: steelblue;
+    cursor: pointer;
+}
+
+input[type=radio]:checked + label { 
+    background-color: steelblue;
+    color: white;
+}
+
+.progressBar{
+    position: fixed;
+    width: auto;
+    left: 40%; top: 20px;
+    background-color: steelblue;
+    color: white;
+    font-size: 10pt;
+    font-weight: bolder;
+}
+.searchBox{
+    width:300px;
+    background: url('img/search.png') no-repeat 4px 4px;
+}

@@ -1,0 +1,67 @@
+  <page>
+      <body>
+          <header>
+              <![CDATA[
+              
+              <div class='ta va la' style='height:4em;'><span  style='float: left;' onClick="goto('index.php');" class="gb ta la">we.com</span></div>
+              <br/><div class='ta va ra'>
+              <a id="profileLink" class="hide click" href=# onclick="setTopPanel(); clickProfileLink(); showPanel('servicePanel');">Profile</a>
+              <a class='click' onclick="setTopPanel(); clickRegisterLink(); showPanel('servicePanel');">Register</a>
+              <a class='click' onclick="setTopPanel(); $('#servicePanel').load('ServiceDetails.php?xmlLoad=cb'); showPanel('servicePanel');">AboutUs</a>
+              <a class='click' onclick="setTopPanel(); $('#servicePanel').load('ServiceDetails.php?xmlLoad=ct'); showPanel('servicePanel');">Contact</a>
+              <a id='tdLogin' class='click' onclick="setTopPanel(); $('#servicePanel').load('ServiceDetails.php?getLogin=1'); showPanel('servicePanel');">Login</a>
+              <a id='tdLogout' class='hide click' onclick="$('#servicePanel').load('ServiceDetails.php?getLogout=1');">Logout</a>
+            </div>
+            <br/><div class='ba ra'><p><span id="loginName" class='baseHead'>Welcome, Guest</span> <span id="companyId" style='display: none;'></span> <span class="hide" id="hitCounter"></span></p></div>
+            <br/><div class="progressBar" id="divstatus">Please Wait...</div>
+            
+            <input type="radio" id="plan1" name="planners" value="Famous" checked=""><label for="plan1"  onclick="planWed(1);">Famous Vendors</label>
+            <input type="radio" id="plan2" name="planners" value="Effective" checked=""><label for="plan2" onclick="planWed(2);">Favourite Vendors</label>
+            <input type="radio" id="plan3" name="planners" value="None" checked="true"<label for="plan3"></label>
+            
+            <div class='ln'></div>
+            <br/><div class="ra ta"><input type="text" id="tSearch" onKeydown="getSearch(event);" class='searchBox' placeholder='Search Your Helpers...'/></div>
+              ]]>
+          </header>
+
+          <left>
+              <![CDATA[
+              <div class='myLeftBox'><div id="services" style="display:block;"></div></div>
+              ]]>
+      </left>
+      
+          <center>
+              <![CDATA[
+                  <div id="mainContentPanel"></div>
+                  <div id="servicePanel" class='pageBox' style="display: none;"></div>
+              ]]>
+          </center>
+
+      <right>
+          <![CDATA[
+              <table width=100% style='margin: 2px'>
+              <tr><td class='colorText la'>....<td></tr>
+              </table
+          ]]>
+      </right>
+
+      <footer>
+          <![CDATA[
+          <table>
+              <tr>
+                <td class="la">
+                            ...
+                    </td>
+                <td class="ra">
+                             <a target="_blank" href="http://www.facebook.com">facebook</a>
+                             | <a target="_blank" href="http://www.linkedin.in">linked in</a>
+                    </td>
+              </tr>
+              <!--<tr><td colspan=2>
+                <div class="fb-comments" data-href="http://sonicageindia.co.in/WeddingHouse" data-numposts="5" data-colorscheme="light"></div>
+              </td></tr>-->
+           </table>
+          ]]>
+      </footer>
+      </body>
+  </page>

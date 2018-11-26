@@ -1,0 +1,12 @@
+<div>
+    <div id="courseID"></div>
+    <section style="margin-top: 3em;">
+        <div id="myCourseData"></div>
+    </section>
+</div>
+
+<script>
+    $("#courseID").load("services/ServiceDetails.php?getDataFile=courses&getType=option&toload=myCourseData",function (res) {
+        addColorsAndStoreHtml(res)
+    })
+</script>

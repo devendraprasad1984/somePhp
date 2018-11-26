@@ -1,0 +1,384 @@
+html{
+    margin:20px;
+}
+body{
+    color: #286090;
+}
+.current-left-menu
+{
+    font-weight: bold;
+    font-size: 8pt;
+    color: #fff;
+    background: #286090;
+}
+
+
+table{
+    width: 100%;
+}
+
+.wid20{
+    width:15%;
+}
+.wid80{
+    width:70%;
+}
+
+td{
+    vertical-align: top;
+    padding: 2px;
+}
+
+#mainContainer, #mainContent{
+    min-height: 40em;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.size2{
+    font-size: 8px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+.size3{
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.size6px{
+    font-size: 6px;
+    font-weight: bold;
+    margin: 2px;
+}
+.size8px{
+    font-size: 8px;
+    font-weight: bold;
+    margin: 2px;
+}
+.size10px{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+
+.size6pt{
+    font-size: 6pt;
+    font-weight: bold;
+    margin: 2px;
+}
+.size8pt{
+    font-size: 8pt;
+    font-weight: bold;
+    margin: 2px;
+}
+.size10pt{
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 2px;
+}
+.size12pt{
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.size15pt{
+    font-size: 15pt;
+    margin: 2px;
+    font-weight: bold;
+}
+.size18pt{
+    font-size: 18pt;
+    margin: 2px;
+    font-weight: bold;
+}
+.size20pt{
+    font-size: 20pt;
+    margin: 2px;
+    font-weight: bold;
+}
+
+#leftMenu{
+    overflow: hidden;
+    position: relative;
+}
+#rightMenu{
+    overflow: hidden;
+    position: relative;
+}
+
+.float {
+    vertical-align: top; 
+    position: absolute;
+}
+.sink {
+    position: absolute;
+    vertical-align: bottom; 
+    bottom: 0;
+}
+
+.divClick{
+    cursor: pointer;
+}
+a.tooltip:hover span
+{
+    display:inline;
+    position:absolute;
+    border:2px solid #fff;
+    color:#eee;
+    background-color:black;
+} 
+
+.ca-bottom{
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    left: 50%;
+}
+
+.la-bottom{
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    left: 10px;
+}
+.ra-bottom{
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    right: 10px;
+}
+
+.vm{
+    vertical-align: middle;
+}
+.vt{
+    vertical-align: top;
+}
+.vb{
+    vertical-align: bottom;
+}
+
+
+.ca{
+    text-align: center;
+}
+.la{
+    text-align: left;
+}
+.ra{
+    text-align: right;
+}
+
+.ca-top{
+    position: relative;
+    top: 0;
+    display: inline-block;
+    left: 40%;
+}
+
+.la-top{
+    position: relative;
+    top: 0;
+    display: inline-block;
+    left: 10px;
+}
+.ra-top{
+    position: relative;
+    top: 0;
+    display: inline-block;
+    right: 0px;
+}
+
+.feedBox{
+    height: 300px;
+    width: 300px;
+    overflow: auto;
+    position: relative;
+    border: 2px solid #795548;
+    margin: 5px;
+}
+
+.pagebox {
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -200px; 
+    z-index: 2;
+    padding: 2px;
+    box-shadow: 0px 0px 8px steelblue;
+    overflow: scroll;
+    background-color: inherit;
+    font-size: 8pt;
+    display: none;
+}
+
+.footerData div{
+    margin: 10px;
+    overflow: auto;
+    position: relative;
+    width:100%;
+    font-size: 8pt;
+}
+
+.raText8{
+    text-align: right;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.chatDiv{
+    /*width:300px;*/
+    float: right; 
+    position: fixed; 
+    margin: 5px 5px;
+    bottom:0;
+    right:0;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.textCateg{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.headerDiv i{
+    /*background: #286090 none repeat scroll 0 0;*/
+    /*border-radius: 5px;*/
+    text-align: center;
+    /*font-weight: bold;*/
+    padding:2px;
+    cursor: pointer;
+}
+.headerDiv i:hover{
+    /*transition: all 0.3s ease-in 0s;*/
+    background: #286090 none repeat scroll 0 0;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    /*font-weight: bold;*/
+}
+
+.small-box1{
+    font-weight: inherit;
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: center;
+    min-height: 50px;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.small-box1:hover{
+    border-top: 2px solid #286090;
+    color: red;
+}
+
+.clsCount{
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.clsRate{
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.small-box1:hover .clsCount{
+    color:goldenrod;
+}
+
+.small-box1:hover .clsRate{
+    color:red;
+}
+.footerSection1 i{
+    z-index: -1;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: bold;
+    display: inline-block;
+    padding:5px;
+    cursor: pointer;
+}
+.footerSection1 li:hover, .footerSection1 i:hover{
+    background: #286090 none repeat scroll 0 0;
+    transition: all 0.1s ease-in 0s;
+    z-index: -1;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+.footerSection1 li, .footerSection1 li a{
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 8pt;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li, li a
+{
+    list-style:none;
+    cursor: pointer;
+    padding: 1px;
+    margin: 2px;
+    left: 0;
+    vertical-align: middle;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.Navigation a:link, a:active, a:visited
+{
+    padding: 2px;
+    text-decoration:none;
+    position: relative;
+    left:0;
+    font-weight: bold;
+    font-size: 8pt;
+}
+/*.Navigation a:hover, .Navigation li:hover
+{
+    color: white;
+    background: #286090 none repeat scroll 0 0;
+    transition: all ease-in .2s;
+}*/
+
+.clsRegForm{
+    /*    border: solid 1px #dcdcdc;
+        border-radius:5px;*/
+}
+.clsRegForm div {
+    padding: 5px;
+}
+.clsRegForm div input[type="text"], .clsRegForm div input[type="select"]{
+    width:100%;
+    height:30px;
+    border-radius:5px;
+    font-size: inherit;
+    font-weight: bold;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.clsRegForm div input[type="text"]:focus,.clsRegForm div input[type="select"]:focus{
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #286090;
+}
+
+
+

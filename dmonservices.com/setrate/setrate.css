@@ -1,0 +1,54 @@
+html,body {
+	position: relative;
+	display: block;
+	font-size: 10pt;
+	font-family: serif, monospace, sans-serif;
+	margin: 10px;
+	color: #286090;
+}
+
+div{
+	width: 100%;
+}
+
+#idStatus {
+	font-weight: bold;
+}
+
+table {
+	width: 100%;
+	color: #286090;
+	font-weight: bold;
+	border: 1px solid #286090;
+	overflow: none;
+}
+td{
+	border-bottom: 1px solid #286090;
+}
+th{
+	text-align: left;
+}
+table td input[type=text]{
+	border:0px;
+	width:100%;
+}
+
+
+/*
+@media all and (min-width: 15em) {
+	.tftable,div.mainDiv {width: 350px;}
+}
+@media all and (min-width: 20em) {
+	.tftable,div.mainDiv {width: 450px;}
+}
+@media all and (min-width: 25em) {
+	.tftable,div.mainDiv {width: 550px;}
+}
+@media all and (min-width: 30em) {
+	.tftable,div.mainDiv {width: 750px;}
+}
+@media all and (min-width: 40em) {
+	.tftable,div.mainDiv {width: 850px;}
+}
+*/
+

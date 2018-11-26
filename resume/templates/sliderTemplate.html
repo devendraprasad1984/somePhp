@@ -1,0 +1,17 @@
+<style>
+    #slideBar {
+        text-align: center;
+        margin: 10px;
+    }
+
+    #slideBar > button {
+        font-weight: bolder;
+        font-size: 16pt;
+    }
+</style>
+<div id="runTimeTemplateId" ng-controller="runX">
+    <div id="slideBar">
+        <button class="btn btn-success" ng-click="slidePrev(x.slideId)">Prev</button>
+        <button class="btn btn-danger" ng-click="slideNext(x.slideId)">Next</button>
+    </div>
+</div>

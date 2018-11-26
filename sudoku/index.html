@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>funtime with sudoku</title>
+    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+    <style>
+        li{
+            display: inline-block;
+            font-size: 16pt;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="sudokuLinks">
+    <li onclick="displayMyViews(this,'index1.html')">sudoku-1</li>
+    <li onclick="displayMyViews(this,'index2.html')">sudoku-2</li>
+    <li onclick="displayMyViews(this,'index3.html')">sudoku-3</li>
+    <li onclick="displayMyViews(this,'index4.html')">sudoku-4</li>
+    <li onclick="displayMyViews(this,'index5.html')">sudoku-5</li>
+    <li onclick="displayMyViews(this,'index6.html')">sudoku-6</li>
+</ul>
+<div id="contentPanel"></div>
+
+
+<script>
+    function displayMyViews(id,url) {
+        $("#sudokuLinks li").each(function(i,elem){
+            elem.style.backgroundColor=""
+        })
+        id.style.backgroundColor="gold"
+        var osName = navigator.platform.toLowerCase();
+        var myPlaceHolder = "#contentPanel";
+        var xHeight = "700px";
+        var content = "<iframe src='" + url + "'" +
+            " style='" +
+            "border:0;" +
+            "width:100%;" +
+            "height:" + xHeight + ";" +
+            "'>" +
+            "</iframe>";
+        $(myPlaceHolder).html(content);
+
+    }
+</script>
+
+</body>
+</html>

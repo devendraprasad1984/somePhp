@@ -1,0 +1,17 @@
+<root>
+    <SMTPDebug>0</SMTPDebug>
+    <Mailer>smtp</Mailer>
+    <Host>smtp.gmail.com</Host>
+    <Port>465</Port>
+    <SMTPAuth>true</SMTPAuth>
+    <Username>sonicageindia@gmail.com</Username>
+    <Password>rbs6200#</Password>
+    <SMTPSecure>ssl</SMTPSecure>
+    <FromAddress>sonicageindia@gmail.com</FromAddress>
+    <FromName>we.com</FromName>
+    <ToAddress></ToAddress>
+    <ReplyAddress></ReplyAddress>
+    <Plugdir>js/</Plugdir>
+    <Wordwrap>150</Wordwrap>
+    <Subject>we.com mailer</Subject>
+</root>

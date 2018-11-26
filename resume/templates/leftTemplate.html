@@ -1,0 +1,36 @@
+<section class="bs nav-tabs-custom ">
+    <div ng-app="myAjs">
+        <div class="row">
+            <div class="col-lg-3">
+                <img id="profileImage" src="images/dp.png" class="pic"/>
+            </div>
+            <div class="col-lg-9">
+                <div>
+                    <p class="badge badge-info">+91 95 827 977 72</p>
+                    <p class="badge badge-info">devendraprasad1984@gmail.com</p>
+                    <div>
+                        <p class="btn btn-info font-weight-bold" onclick="setHref(this,'docs/Devendra_Prasad_CV.pdf',undefined,'My Resume - Downloadable');">CV</p>
+                        <p class="btn btn-info font-weight-bold" onclick="setHref(this,'images/github.png','https://github.com/devendraprasad1984','my github profile - click image');">GitHub</p>
+                        <p class="btn btn-info font-weight-bold" onclick="setHref(this,'templates/mailer.html',undefined,'Drop me a Note');">Leave Message</p>
+                        <p class="btn btn-info font-weight-bold" onclick="setHref(this,'https://sites.google.com/view/dpresume',undefined,'google sites');">google sites</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="itSummaryScope" class="col-lg-12" ng-controller="ITSummary">
+                <div ng-repeat="x in ratingData">
+                    <div class="progress" style="cursor: pointer; margin: 10px; font-weight: bold; height: 25px">
+                        <div ng-click="setHref(this,x.href,undefined,x.skillName)" class="progress-bar {{x.bg}}  progress-bar-striped progress-bar-animated"
+                             aria-valuenow="{{x.rating}}" aria-valuemin="0" aria-valuemax="100" role="progressbar"
+                             style="{{x.style}};width: {{x.rating}}%; text-align: left; padding:5px; font-size: 10pt;">
+                            {{x.skillName}} - {{x.rating}}%
+                        </div>
+                        <!--<span class="badge badge-light">{{x.rating}}%</span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

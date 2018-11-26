@@ -1,0 +1,5 @@
+<ROOT>
+<ROW><BILL>R0001022</BILL><GR>200</GR><GRDR>0</GRDR><DISC>0</DISC><DiscDR>0</DiscDR><VAT1>27.5</VAT1><VAT2>0</VAT2><SrvChg>20</SrvChg><Taxable>220</Taxable><CASHSale>247.5</CASHSale><CREDITSale>0</CREDITSale><Total>247.5</Total><creditNo></creditNo><Rem></Rem></ROW>
+<ROW><BILL>R0001023</BILL><GR>302</GR><GRDR>0</GRDR><DISC>0</DISC><DiscDR>0</DiscDR><VAT1>41.52</VAT1><VAT2>0</VAT2><SrvChg>30.2</SrvChg><Taxable>332.2</Taxable><CASHSale>373.72</CASHSale><CREDITSale>0</CREDITSale><Total>373.72</Total><creditNo></creditNo><Rem></Rem></ROW>
+<ROW><BILL>Z#</BILL><GR>502</GR><GRDR>0</GRDR><DISC>0</DISC><DiscDR>0</DiscDR><VAT1>69.02</VAT1><VAT2>0</VAT2><SrvChg>50.2</SrvChg><Taxable>552.2</Taxable><CASHSale>621.22</CASHSale><CREDITSale>0</CREDITSale><Total>621.22</Total><creditNo></creditNo><Rem></Rem></ROW>
+</ROOT>
