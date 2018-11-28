@@ -29,7 +29,7 @@ function saveData() {
     // console.log($.param(sParam))
     $.ajax({
         type: "POST",
-        url: '../services/ServiceDetails.php?saveData=1'
+        url: '../services/ServiceDetails.php?saveData=1&jwt='+getToken()
         , data: $.param(sParam)
         , success: function (res) {
             // console.log(res)
@@ -77,7 +77,7 @@ function deleteData() {
     var deleteFileName = deleteURI.substr(deleteURI.indexOf("=") + 1)
     if (deleteText.substr(0, 1) == "*") {
         var sParam = {fileDelete: deleteFileName}
-        var url = "../services/ServiceDetails.php?" + $.param(sParam);
+        var url = "../services/ServiceDetails.php?jwt="+getToken()+"&" + $.param(sParam)
         $.get(url, function (res) {
             $("#statusMessage").html("please wait...")
         }).success(function (res) {
@@ -90,6 +90,10 @@ function deleteData() {
     }
 }
 
+function getToken(){
+    return sessionStorage.guid;
+}
+
 function checkSession() {
     // $.get("../services/ServiceDetails.php?sessionCheck=1", function (res) {
     //     return res.trim();
@@ -99,7 +103,7 @@ function checkSession() {
         return 0
     }
     else {
-        $("#idSession").html(sessionStorage.guid)
+        $("#idSession").html("session key: "+sessionStorage.guid.substr(0,40))
         return 1
     }
 
@@ -111,7 +115,7 @@ function refresh(e) {
         return
     }
     var searchString = $.param({"search": $("#idSearch").val()})
-    $("#idAdminPanel").load("../services/ServiceDetails.php?getDataFile=data&getType=option&toload=txtEditor&search=" + $("#idSearch").val())
+    $("#idAdminPanel").load("../services/ServiceDetails.php?jwt="+getToken()+"&getDataFile=data&getType=option&toload=txtEditor&search=" + $("#idSearch").val())
     // toastr.info("refreshed successfully")
     resetData()
     e.preventDefault()
@@ -122,7 +126,7 @@ function manageSlider() {
         logoutControl()
         return
     }
-    $.get("../services/ServiceDetails.php?manageSlider=1", function (res) {
+    $.get("../services/ServiceDetails.php?manageSlider=1&jwt="+getToken(), function (res) {
         var newVal = ""
         newVal += "<div class='row'><div class='col-lg-10'><iframe id='idFrameForForm' name='idFrameForForm' class='btn btn-light'></iframe></div>" +
             "<div class='col-lg-2'><span onclick='closeNav()' class='btn btn-danger'>Close</span></div></div>"
@@ -146,11 +150,22 @@ function manageSlider() {
 }
 
 function deleteSlider(cur,filename) {
-    $("#" + cur).load("../services/ServiceDetails.php?manageSlider=del&filename="+filename, function (res) {
+    $("#" + cur).load("../services/ServiceDetails.php?jwt="+getToken()+"&manageSlider=del&filename="+filename, function (res) {
         toastr.info(res)
         $("#mainRow" + cur).html("")
     })
 }
+function checkLogs() {
+    $.get("../services/ServiceDetails.php?logging=1", function (res) {
+        var dt="<span onclick='closeNav()' class='btn btn-danger'>Close</span>"
+        dt+=res
+        $("#tempContainer").html(dt,function(){
+            $("#tempContainer pre").css({'white-space':''})
+        })
+        $("#tempContainer").css({"width": "100%", "display": "block"})
+    })
+}
+
 // function loadMsg(){
 //     $("form").submit(function(e){
 //         toastr.success($("#idFrameForForm").html())
@@ -242,12 +257,14 @@ function loginControl() {
     guidGen = guid()
     $.ajax({
         type: "POST",
-        url: '../services/ServiceDetails.php?login=1&guid=' + guidGen
+        url: '../services/ServiceDetails.php?login=1'
         , data: $.param(sParam)
         , success: function (res) {
-            if (res.trim() == 1) {
+            res=$.parseJSON(res)
+            // console.log(res,$.parseJSON(res))
+            if (res.isLoggedIn == 1) {
                 $("#idSession").html("session: " + guidGen)
-                sessionStorage.guid = guidGen
+                sessionStorage.guid = res.jwt
                 toastr.success("Welcome, " + $("#idLogin").val())
                 $("#idLoginContainer input").val("");
                 $("#mainContainer").show()
@@ -267,7 +284,7 @@ function loginControl() {
 }
 
 function logoutControl() {
-    $.get("../services/ServiceDetails.php?logout=1", function (res) {
+    $.get("../services/ServiceDetails.php?logout=1&jwt="+getToken(), function (res) {
         if (res.trim() == 0) {
             var mainContainer = $("#mainContainer")
             var loginContainer = $("#loginContainer")
@@ -293,7 +310,7 @@ function guid() {
 
 function forgotControl() {
     $("#statusMessage").html("please wait...")
-    $.get("../services/ServiceDetails.php?forgotPassword=1", function () {
+    $.get("../services/ServiceDetails.php?forgotPassword=1&jwt="+getToken(), function () {
     }).success(function (res) {
         if (res.toLowerCase().indexOf("err:") != -1) {
             toastr.error("there is some error")

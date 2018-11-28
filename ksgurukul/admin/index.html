@@ -36,8 +36,9 @@
                 <div class="col-lg-2">
                     <input id="idSearch" type="text" placeholder="search (small letters)" onkeydown="if (event.keyCode==13) refresh(event);"/>
                 </div>
-                <div class="col-lg-9" id="idAdminPanel"></div>
-                <div class="col-lg-1">
+                <div class="col-lg-8" id="idAdminPanel"></div>
+                <div class="col-lg-2">
+                    <span class="btn btn-info" onclick="checkLogs()">Logs</span>
                     <span class="btn btn-danger" onclick="logoutControl()">Logout</span>
                 </div>
             </div>

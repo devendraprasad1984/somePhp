@@ -96,7 +96,8 @@ h3 {
     padding-top: 102px;
 }
 
-pre, div {
+
+div,pre {
     font-size: 10pt;
     white-space: normal !important;
     word-wrap: break-word;

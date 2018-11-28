@@ -60,11 +60,14 @@ function addColorsAndStoreHtml(htmlData) {
     if(loadOnClickMode){
         $.each(menuObject, function (i, v) {
             if (v["name"] == curHtmlPage) {
-                v.mydata=htmlData
+                // v.mydata=htmlData
+                var hdata=$("#mainContentSection").html()
+                hdata=hdata.substr(0,hdata.indexOf("<script>"))
+                v.mydata=hdata
                 return
             }
         })
-        console.log(menuObject)
+        // console.log(menuObject)
     }
 }
 
@@ -87,7 +90,6 @@ function displayData(cur, tagId) {
                 return
             }
         })
-        console.log(menuObject)
     } else {
         tagId = "#id" + tagId
         $("#mainContentSection div").each(function (i, elm) {
