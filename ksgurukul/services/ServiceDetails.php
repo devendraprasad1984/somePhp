@@ -22,6 +22,14 @@ Class genericObjects
     public $baseDataPath = '../data/';
     public $secret_key="genericmailsender2019";
 
+    public function getTokenArray(){
+        $token=[
+            "host"=>$this->getHost()
+            ,"fakekey"=>$this->secret_key."-nouse"
+            ,"timestamp"=>date("H:i:s")
+        ];
+        return $token;
+    }
     public function __construct()
     {
         @set_exception_handler(array($this, 'myErrorHandler'));
@@ -112,18 +120,18 @@ Class genericObjects
             $label = str_replace(".txt", "", $value);
 
             if ($withFileContent === "yes") {
-                $data = "<div class='box' style='margin-top: 4px;'>";
+                $data = "<div class='box ltqt' style='margin-top: 4px;'>";
                 if ($this->div2LoadIn != "")
                     $data .= "<div style='font-weight: bolder; font-size: 15pt;'>$label</div>";
                 $data .= "<div>" . $this->readFileContents($folderPath, $value) . "</div>";
                 $data .= "</div>";
             } elseif ($withFileContent === "anchor") {
-                $data = "<span><a class='btn' href='#' onclick=\"getServerData('$host?fileRead=$xPath','$this->div2LoadIn','$label')\">$label</a></span>";
+                $data = "<span><a class='btn' href='#' onclick=\"getServerData('$host?fileRead=$xPath&loadnormal=1','$this->div2LoadIn','$label')\">$label</a></span>";
             } elseif ($withFileContent === "option") {
                 if ($spath === "data") {
                     $data = "<option value='$host?fileRead=$xPath' class='font-weight-bold bg-info text-white' style='font-size: 13pt;'><div>$label</div></option>";
                 } else {
-                    $data = "<option value='$host?fileRead=$xPath' class='font-weight-bold' style='font-size: 11pt;'><div>$label</div></option>";
+                    $data = "<option value='$host?fileRead=$xPath&loadnormal=1' class='font-weight-bold' style='font-size: 11pt;'><div>$label</div></option>";
                 }
                 $xPath = str_replace("//", "/", $xPath);
                 $files = array_slice(scandir($this->baseDataPath . $value), 2);
@@ -185,20 +193,23 @@ Class genericObjects
     }
 
     public function generateToken(){
-        JWT::$leeway = 60*60; // $leeway in seconds
-        $token=[
-            "host"=>$this->getHost()
-            ,"fakekey"=>$this->secret_key."-nouse"
-        ];
-        $jwt = JWT::encode($token, $this->secret_key);
-        return $jwt;
+        $jwt="";
+        try{
+            JWT::$leeway = 60*60; // $leeway in seconds
+            $jwt = JWT::encode($this->getTokenArray(), $this->secret_key);
+        }catch (Exception $ex){
+            $this->writeLog("error in generating auth token: ".$ex->getMessage().', trace: '. $ex->getTraceAsString());
+        }
+            return $jwt;
     }
     public function validateToken(){
         $isValid=false;
         if(isset($_REQUEST['jwt'])){
             $jwt=$_REQUEST['jwt']; //most prob get it in post with every call
             try{
+                $tokenVal=$this->getTokenArray();
                 $decoded = JWT::decode($jwt, $this->secret_key, array('HS256'));
+                //see how token array will be matched with decoded objects
                 $isValid=true;
             }catch (Exception $ex){
                 $this->writeLog("the token cannot be validated, may be an attempt to hack");
@@ -217,7 +228,7 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         $sPath = $_REQUEST['getDataFile'];
         if (strtolower($_REQUEST['getDataFile']) !== "none") {
             if ($sPath === "data") {
-                if(!$allowAdmin) exit();
+                if(!$allowAdmin || !$objSer->validateToken()) exit();
                 $sPath = "";
                 $objSer->readFolders($sPath, $_REQUEST['getType']);
                 exit();
@@ -236,9 +247,13 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         $data2Save = $_POST['data'];
         if ($val2check=== "2") {
             $data2Save = strip_tags($data2Save);
+            $data = $objSer->writeToFile($fileName, $data2Save);
+            $objSer->writeLog($fileName . " - has been saved");
+        }else{
+            if(!$allowAdmin || !$objSer->validateToken()) exit();
+            $data = $objSer->writeToFile($fileName, $data2Save);
+            $objSer->writeLog($fileName . " - has been saved");
         }
-        $data = $objSer->writeToFile($fileName, $data2Save);
-        $objSer->writeLog($fileName . " - has been saved");
         echo $data;
     } catch (Exception $ex) {
         $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
@@ -246,6 +261,10 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
     }
 } else if (isset($_REQUEST['fileRead'])) {
     try {
+        if(!$allowAdmin) exit();
+        if(!isset($_REQUEST['loadnormal']) && !$objSer->validateToken()){
+            exit(); //coming from admin and hence validation to be checked
+        }
         $filePath = $_REQUEST['fileRead'];
         $data = $objSer->readFileContents($filePath, '');
         $data = "<pre>$data</pre>";
@@ -255,9 +274,8 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['fileDelete'])) {
-    if(!$allowAdmin) exit();
-
     try {
+        if(!$allowAdmin || !$objSer->validateToken()) exit();
         $filePath = $_REQUEST['fileDelete'];
         $data = $objSer->deleteFile($filePath);
         $data = "<pre>$data</pre>";
@@ -288,8 +306,8 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['login'])) {
-    if(!$allowAdmin) exit();
     try {
+        if(!$allowAdmin) exit();
         $username = $_POST['username'];
         $password = $_POST['password'];
         $content = 0;
@@ -309,8 +327,8 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['logout'])) {
-    if(!$allowAdmin) exit();
     try {
+        if(!$allowAdmin || !$objSer->validateToken()) exit();
         $content = 0;
 //        $_SESSION['lol'] = 0;
 //        session_unset();
@@ -321,8 +339,8 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['forgotPassword'])) {
-    if(!$allowAdmin) exit();
     try {
+        if(!$allowAdmin || !$objSer->validateToken()) exit();
         $content = "";
         $content .= "<div style='background-color:#28a745; text-align: center; font-size: 14pt;font-weight: bolder'>Your login details</div>";
         foreach ($users as $key => $value) {
@@ -351,7 +369,10 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
     }
 } else if (isset($_REQUEST['manageSlider'])) {
     try {
+//        if(!$allowAdmin || !$objSer->validateToken()) exit();
+        if(!$allowAdmin) exit();
         if ($_REQUEST['manageSlider'] === "1") {
+            if(!$objSer->validateToken()) exit();
             $content = $objSer->getSliderInfo();
             echo implode(";", $content);
         } else if ($_REQUEST['manageSlider'] === "add") {
@@ -381,6 +402,7 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
             }
             echo $msg;
         } else if ($_REQUEST['manageSlider'] === "del") {
+            if(!$objSer->validateToken()) exit();
             $fn=$_REQUEST['filename'];
             $delFile=$objSer->baseDataPath."slider/".$fn;
             if(unlink($delFile)){
@@ -396,22 +418,16 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
     }
 } else if (isset($_REQUEST['logging'])) {
     try {
-        echo "<pre>" . $objSer->readLog() . "</pre>";
-    } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
-        //throw new Exception($ex);
-    }
-} else if (isset($_REQUEST['sessionCheck'])) {
-    try {
-        echo "error in check";
+        if(!$allowAdmin || !$objSer->validateToken()) exit();
+        echo "<pre class='log text-white'>" . $objSer->readLog() . "</pre>";
     } catch (Exception $ex) {
         $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
         //throw new Exception($ex);
     }
 }
 ob_implicit_flush(true);
-die();
-exit();
+//die();
+//exit();
 
 ?>
 

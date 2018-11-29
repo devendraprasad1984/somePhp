@@ -156,11 +156,11 @@ function deleteSlider(cur,filename) {
     })
 }
 function checkLogs() {
-    $.get("../services/ServiceDetails.php?logging=1", function (res) {
+    $.get("../services/ServiceDetails.php?logging=1&jwt="+getToken(), function (res) {
         var dt="<span onclick='closeNav()' class='btn btn-danger'>Close</span>"
         dt+=res
         $("#tempContainer").html(dt,function(){
-            $("#tempContainer pre").css({'white-space':''})
+            // $("#tempContainer pre").css({'white-space':'pre'})
         })
         $("#tempContainer").css({"width": "100%", "display": "block"})
     })
@@ -237,6 +237,7 @@ function getServerData(url, div2LoadIn, label) {
         selVal = selVal.substr(1)
         $("#idTag").val(selVal)
     }
+    url+="&jwt="+getToken()
     $.get(url, function (res) {
         // toastr.info("please wait...")
     }).success(function (res) {

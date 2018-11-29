@@ -5,8 +5,8 @@ var show = "show"
 var bgColor = "bg-white"
 var textColor = "text-dark"
 var textWhite = "white"
-var successColor = "btn-success"
-var anchorHeadColor = "btn-info"
+var successColor = "btn-outline-dark text-white"
+var anchorHeadColor = "btn-outline-dark"
 var darkColor = "btn-dark " + bgColor + " " + textColor
 var runtimeContent = "<div $id class='$p1'></div>"
 var allTagsRunTime = ""
@@ -55,6 +55,7 @@ function createMenu() {
 function addColorsAndStoreHtml(htmlData) {
     $("span a").addClass(darkColor)
     $("#top1 div").removeClass('box');
+    $("#top1 div").removeClass('ltqt');
     $("#top1 div, #top1 pre, #top1 span").css({'color': textWhite});
 
     if(loadOnClickMode){
@@ -125,10 +126,10 @@ function getServerData(url, div2LoadIn, label) {
         var newData = ""
         if (typeof label != 'undefined'){
             // newData = "<div class='btn " + anchorHeadColor + " font-weight-bold' style='width: 100%; font-size: 14pt;'>" + label + "</div>";
-            newData+="<fieldset><legend style='width: auto;' class='btn "+anchorHeadColor+"'>"+label+"</legend><div class='box'>" + res + "</div></fieldset>"
+            newData+="<fieldset><legend style='width: auto;' class='btn "+anchorHeadColor+"'>"+label+"</legend><div class='box ltqt'>" + res + "</div></fieldset>"
         }
         else{
-            newData += "<div class='box'>" + res + "</div>";
+            newData += "<div class='box ltqt'>" + res + "</div>";
         }
         $("#" + div2LoadIn).html(newData);
     })
