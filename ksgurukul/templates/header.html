@@ -12,17 +12,3 @@
     <select name="" id="idTopMenuSelect" onchange="displayData(this.id,this.value)"></select>
 </div>
 
-
-<script>
-    $("#top1").load("services/ServiceDetails.php?getDataFile=header&getType=yes&toload=", function (res) {
-        addColorsAndStoreHtml(res)
-    })
-    $.get("services/ServiceDetails.php?slider=1", function (res) {
-        // addColorsAndStoreHtml()
-        displaySlider(res, 'sliderLine');
-    })
-    $(document).ready(function () {
-        createMenu()
-        displayData('id1', 'home')
-    });
-</script>

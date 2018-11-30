@@ -678,3 +678,31 @@ User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP
 info: /testimonials/test_11272018-110533-PM.txt - has been saved
 -------------------------
 
+User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 29, 2018, 7:24 am
+info: /testimonials/dptest_11292018-85408-PM.txt - has been saved
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJob3N0IjoiaHR0cDpcL1wvbG9jYWxob3N0XC9rc2d1cnVrdWxcL3NlcnZpY2VzXC9TZXJ2aWNlRGV0YWlscy5waHAiLCJmYWtla2V5IjoiZ2VuZXJpY21haWxzZW5kZXIyMDE5LW5vdXNlIn0.GQ5Ck4zKW1obIhK6bm5F-NbkMb3_rZBjMuHIs7v-Kq8, host IP: ,  - November 29, 2018, 8:10 am
+info: /blog/cultural fest @22ndNov2018.txt - has been saved
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJob3N0IjoiaHR0cDpcL1wvbG9jYWxob3N0XC9rc2d1cnVrdWxcL3NlcnZpY2VzXC9TZXJ2aWNlRGV0YWlscy5waHAiLCJmYWtla2V5IjoiZ2VuZXJpY21haWxzZW5kZXIyMDE5LW5vdXNlIiwidGltZXN0YW1wIjoiMDg6Mjk6MDkifQ.M5QDNCCyhz4SDeNsGgePSy6xK5Qwxq2u6Gza2uFSdKk, host IP: ,  - November 29, 2018, 8:29 am
+info: /blog/cultural fest @22ndNov2018.txt - has been saved
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 29, 2018, 8:47 am
+info: /testimonials/ranges_11292018-101706-PM.txt - has been saved
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add&jwt=, host IP: ,  - November 29, 2018, 8:53 am
+info: the token cannot be validated, may be an attempt to hack
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add&jwt=, host IP: ,  - November 29, 2018, 8:55 am
+info: the token cannot be validated, may be an attempt to hack
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 30, 2018, 7:19 am
+info: /testimonials/asd_11302018-84926-PM.txt - has been saved
+-------------------------
+

@@ -5,9 +5,3 @@
         <div id="myCourseData"></div>
     </section>
 </div>
-
-<script>
-    $("#courseID").load("services/ServiceDetails.php?getDataFile=courses&getType=option&toload=myCourseData",function (res) {
-        addColorsAndStoreHtml(res)
-    })
-</script>

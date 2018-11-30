@@ -1,5 +1,5 @@
 <style>
-    .topMenu div a,.topMenu div span {
+    .topMenu div a, .topMenu div span {
         /*left: 20%;*/
         margin: 5px;
         padding: 10px;
@@ -7,15 +7,13 @@
     }
 </style>
 <div ng-app="myAjs" class="bg-gray">
-    <div  ng-controller="templatesController">
-        <header class="topMenu">
-            <div>
-                <span class="btn btn-warning" ng-click="getTemplates('Home','leftTemplate');" type="button">Home</span>
-                <span class="btn btn-warning" ng-click="getTemplates('Education','educationTemplate');" type="button">Educations</span>
-                <span class="btn btn-warning" ng-click="getTemplates('Experience','experienceTemplate');" type="button">Experience</span>
-                <span class="btn btn-warning" ng-click="getTemplates('Skills','footerIKnow');" type="button">Skills</span>
-                <span class="btn btn-warning" ng-click="getTemplates('I Know','footerLinks');" type="button">Samples</span>
-            </div>
+    <div ng-controller="templatesController">
+        <header class="topMenu6">
+            <span id="id71" class="btn " ng-click="getTemplates('id71','Home','leftTemplate');" type="button">Home</span>
+            <span id="id72" class="btn " ng-click="getTemplates('id72','Education','educationTemplate');" type="button">Educations</span>
+            <span id="id73" class="btn " ng-click="getTemplates('id73','Experience','experienceTemplate');" type="button">Experience</span>
+            <span id="id74" class="btn " ng-click="getTemplates('id74','Skills','footerIKnow');" type="button">Skills</span>
+            <span id="id75" class="btn " ng-click="getTemplates('id75','I Know','footerLinks');" type="button">Samples</span>
         </header>
 
 
@@ -29,7 +27,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <run-time-templates url="templates/boxTemplates.html"></run-time-templates>
+                    <!--<run-time-templates url="templates/boxTemplates.html"></run-time-templates>-->
                     <run-time-templates url="templates/footerIKnow.html"></run-time-templates>
                     <run-time-templates url="templates/ichart.html"></run-time-templates>
                 </div>

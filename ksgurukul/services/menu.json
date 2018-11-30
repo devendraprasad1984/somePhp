@@ -1,11 +1,86 @@
 {
-"menu":[
-  {"id":"1","name":"home","desc":"Home","defaultLoad":"show"}
-  ,{"id":"2","name":"course","desc":"Course","defaultLoad":"hide"}
-  ,{"id":"3","name":"event","desc":"Events","defaultLoad":"hide"}
-  ,{"id":"4","name":"team","desc":"Faculty","defaultLoad":"hide"}
-  ,{"id":"5","name":"blog","desc":"Blog","defaultLoad":"hide"}
-  ,{"id":"6","name":"testimonial","desc":"Testimonials","defaultLoad":"hide"}
-  ,{"id":"7","name":"contact","desc":"Contact","defaultLoad":"hide"}
-]
+  "menu": [
+    {
+      "id": "1",
+      "name": "home",
+      "desc": "Home",
+      "defaultLoad": "show",
+      "loadIn": "myHomeData",
+      "uri": "services/ServiceDetails.php?getDataFile=home&getType=yes&toload="
+    },
+    {
+      "id": "2",
+      "name": "course",
+      "desc": "Course",
+      "defaultLoad": "hide",
+      "loadIn": "courseID",
+      "uri": "services/ServiceDetails.php?getDataFile=courses&getType=option&toload=myCourseData"
+    },
+    {
+      "id": "3",
+      "name": "event",
+      "desc": "Events",
+      "defaultLoad": "hide",
+      "loadIn": "eventID",
+      "uri": "services/ServiceDetails.php?getDataFile=events&getType=anchor&toload=myEventData"
+    },
+    {
+      "id": "4",
+      "name": "team",
+      "desc": "Faculty",
+      "defaultLoad": "hide",
+      "loadIn": "teamId",
+      "uri": "services/ServiceDetails.php?getDataFile=team&getType=yes&toload="
+    },
+    {
+      "id": "5",
+      "name": "blog",
+      "desc": "Blog",
+      "defaultLoad": "hide",
+      "loadIn": "myBlogData",
+      "uri": "services/ServiceDetails.php?getDataFile=blog&getType=yes&toload=myBlogData"
+    },
+    {
+      "id": "6",
+      "name": "testimonial",
+      "desc": "Testimonials",
+      "defaultLoad": "hide",
+      "loadIn": "myTestimonialData",
+      "uri": "services/ServiceDetails.php?getDataFile=testimonials&getType=yes&toload=myTestimonialData"
+    },
+    {
+      "id": "7",
+      "name": "contact",
+      "desc": "Contact",
+      "defaultLoad": "hide",
+      "loadIn": "contactID",
+      "uri": "services/ServiceDetails.php?getDataFile=contact&getType=anchor&toload=contactID"
+    },
+    {
+      "id": "0",
+      "name": "header",
+      "desc": "",
+      "defaultLoad": "show",
+      "loadIn": "top1",
+      "uri": "services/ServiceDetails.php?getDataFile=header&getType=yes&toload="
+    },
+    {
+      "id": "0",
+      "name": "footer",
+      "desc": "",
+      "defaultLoad": "show",
+      "loadIn": "footerID",
+      "uri": "services/ServiceDetails.php?getDataFile=footer&getType=yes&toload="
+    }
+  ,
+    {
+      "id": "0",
+      "name": "slider",
+      "desc": "",
+      "defaultLoad": "show",
+      "loadIn": "",
+      "uri": "services/ServiceDetails.php?slider=1",
+      "func":"displayData('id1', 'home');displaySlider($res, 'sliderLine');"
+    }
+  ]
 }

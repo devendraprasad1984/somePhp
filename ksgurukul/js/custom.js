@@ -7,21 +7,26 @@ var textColor = "text-dark"
 var textWhite = "white"
 var successColor = "btn-outline-dark text-white"
 var anchorHeadColor = "btn-outline-dark"
-var darkColor = "btn-dark " + bgColor + " " + textColor
+var darkColor = anchorHeadColor+" " + bgColor + " " + textColor
 var runtimeContent = "<div $id class='$p1'></div>"
 var allTagsRunTime = ""
 var loadOnClickMode = false
 var menuObject = {}
-var curHtmlPage=""
+var curHtmlPage = ""
+
+$(function () {
+    createMenu()
+})
+
 
 function createMenu() {
-    var topMenu = $("#topMenu")
-    var topMenuSelect = $("#idTopMenuSelect")
+    // var topMenu = $("#topMenu")
+    // var topMenuSelect = $("#idTopMenuSelect")
     var counter = 0
     var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
     $.get("services/menu.json", function (res) {
         menuObject = res["menu"]
-        $.each(res["menu"], function (i, v) {
+        $.each(menuObject, function (i, v) {
             v.loaded = 0
             v.mydata = ""
             counter += 1
@@ -34,37 +39,62 @@ function createMenu() {
             } else {
                 newElm = newElm.replace("$c1", "btn " + successColor)
             }
-            topMenu.append(newElm)
-            topMenuSelect.append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
-
             var div1 = runtimeContent
             var newUrl = "templates/" + v["name"] + ".html"
             var newId = "id" + v["name"] + ""
             div1 = div1.replace("$id", "id='" + newId + "'")
             div1 = div1.replace("$p1", v["defaultLoad"])
-            // div1 = div1.replace("$url", newUrl)
-            // allTagsRunTime+=div1
+
+            $("#topMenu").append(newElm)
+            $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
             if (!loadOnClickMode) {
-                $("#mainContentSection").append(div1)
-                $("#" + newId).load(newUrl)
+                if (v.id != "0" || (v.id == "0" && v.loadIn != "")) {
+                    $("#mainContentSection").append(div1)
+                    $("#" + newId).load(newUrl, function (loadedData) {
+                        $("#" + v.loadIn).load(v.uri,function(res){
+                            execFunc(v.func,res)
+                        });
+                    })
+                } else if (v.id == "0" && v.loadIn == "") {
+                    $.get(v.uri,function(res){
+                        execFunc(v.func,res)
+                    });
+                }
             }
         })
     })
 }
 
+function execFunc(fnName, res) {
+    // console.log(res)
+    //call function if set
+    if (typeof fnName != 'undefined') {
+        displayData('id1', 'home');
+        displaySlider(res, 'sliderLine');
+        addColorsAndStoreHtml(res)
+        // var funcs = fnName.split(";")
+        // $.each(funcs, function (i, fn) {
+        //     // console.log("executing " + fn)
+        //     if(fn.indexOf('$res')!=-1)
+        //         fn = fn.replace('$res', "'"+res+"'")
+        //     eval(fn)
+        // })
+    }
+}
+
 function addColorsAndStoreHtml(htmlData) {
-    $("span a").addClass(darkColor)
+    $("span a, a.btn").addClass(anchorHeadColor)
     $("#top1 div").removeClass('box');
     $("#top1 div").removeClass('ltqt');
     $("#top1 div, #top1 pre, #top1 span").css({'color': textWhite});
 
-    if(loadOnClickMode){
+    if (loadOnClickMode) {
         $.each(menuObject, function (i, v) {
             if (v["name"] == curHtmlPage) {
                 // v.mydata=htmlData
-                var hdata=$("#mainContentSection").html()
-                hdata=hdata.substr(0,hdata.indexOf("<script>"))
-                v.mydata=hdata
+                var hdata = $("#mainContentSection").html()
+                hdata = hdata.substr(0, hdata.indexOf("<script>"))
+                v.mydata = hdata
                 return
             }
         })
@@ -73,11 +103,13 @@ function addColorsAndStoreHtml(htmlData) {
 }
 
 function displayData(cur, tagId) {
+    addColorsAndStoreHtml(undefined)
     $("#topMenu span.btn").removeClass(darkColor).addClass(successColor)
     $("#" + cur).removeClass(successColor).addClass(darkColor)
+
     if (loadOnClickMode) {
         newUrl = "templates/" + tagId + ".html"
-        curHtmlPage=tagId
+        curHtmlPage = tagId
         // $("#mainContentSection").load(newUrl)
         $.each(menuObject, function (i, v) {
             if (v["name"] == tagId) {
@@ -124,11 +156,11 @@ function getServerData(url, div2LoadIn, label) {
         // toastr.info("please wait...")
     }).success(function (res) {
         var newData = ""
-        if (typeof label != 'undefined'){
+        if (typeof label != 'undefined') {
             // newData = "<div class='btn " + anchorHeadColor + " font-weight-bold' style='width: 100%; font-size: 14pt;'>" + label + "</div>";
-            newData+="<fieldset><legend style='width: auto;' class='btn "+anchorHeadColor+"'>"+label+"</legend><div class='box ltqt'>" + res + "</div></fieldset>"
+            newData += "<fieldset><legend style='width: auto;' class='btn " + anchorHeadColor + "'>" + label + "</legend><div class='box ltqt'>" + res + "</div></fieldset>"
         }
-        else{
+        else {
             newData += "<div class='box ltqt'>" + res + "</div>";
         }
         $("#" + div2LoadIn).html(newData);

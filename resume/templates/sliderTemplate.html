@@ -11,7 +11,13 @@
 </style>
 <div id="runTimeTemplateId" ng-controller="runX">
     <div id="slideBar">
-        <button class="btn btn-success" ng-click="slidePrev(x.slideId)">Prev</button>
-        <button class="btn btn-danger" ng-click="slideNext(x.slideId)">Next</button>
+        <span class="btn" ng-click="slidePrev(x.slideId)">Prev</span>
+        <span class="btn" ng-click="slideNext(x.slideId)">Next</span>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        setBtnDisplay()
+    })
+</script>

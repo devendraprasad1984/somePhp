@@ -8,7 +8,8 @@ var defaultView = "view7";
 // var defaultView = views [Math.round(Math.random() * views.length)] ||"view6"
 // alert("current selected view is " + defaultView)
 var viewsToHaveCharts = ["view1", "view6"];
-var colorsArray = ["bg-success", "bg-info", "bg-aqua", "bg-orange", "bg-danger", "bg-warning", "bg-primary", "bg-blue", "bg-fuchsia"]
+// var colorsArray = ["bg-success", "bg-info", "bg-aqua", "bg-orange", "bg-danger", "bg-warning", "bg-primary", "bg-blue", "bg-fuchsia"]
+var colorsArray = ["bg-success", "bg-info", "bg-dark", "bg-light"]
 var loadJsElemForGoogleCharts = "<script src='js/loader.js'></script>"
 var view3CircleJs = "<link rel='stylesheet' href='css/view3.css'><script src='js/view3.js'></script>"
 var objUrlLoaded = {}
@@ -16,10 +17,10 @@ var cntr = 0
 
 var hide = "hide"
 var show = "show"
-var bgColor = "bg-white"
-var textColor = "text-dark"
-var successColor = "btn-success"
-var darkColor = "btn-dark " + bgColor + " " + textColor
+var bgColor = "bg-dark"
+var textColor = bgColor+" text-white"
+var successColor = "btn-outline-dark"
+// var darkColor = successColor+" " + textColor
 
 
 $(function () {
@@ -28,7 +29,20 @@ $(function () {
     //     console.log(res)
     // })
     loadOnView4()
+    setBtnDisplay();
 });
+
+
+function setBtnDisplay(){
+    $(".btn").addClass(successColor)
+    // $(".btn").addClass(textColor)
+
+    // $(".btn").on('click',function(){
+    //     selElem="#topMenu span.btn, #topMenu6 span.btn"
+    //     $(selElem).removeClass(textColor).addClass(successColor)
+    //     $("#" + this.id).removeClass(successColor).addClass(textColor)
+    // })
+}
 
 function loadOnView4() {
     if (defaultView == "view4") {
@@ -166,6 +180,7 @@ app.directive("runTimeTemplates", function () {
         controller: 'runX',
         controllerAs: 'x',
         templateUrl: function (elm, attr) {
+            // setBtnDisplay();
             return attr.url;
         },
         bindToController: true,
@@ -174,6 +189,7 @@ app.directive("runTimeTemplates", function () {
             if (attrs.slideid != undefined) {
                 runXCtrl.slideId = attrs.slideid
                 scope.hideSliderElem(runXCtrl.slideId)
+                // setBtnDisplay()
                 // $rootScope.$emit('sliderNextFromNg',$scope.slideNext(runXCtrl.slideId))
                 // $rootScope.$broadcast('sliderNextFromNg-bgk',$scope.slideNext(runXCtrl.slideId))
             }
@@ -193,7 +209,7 @@ app.directive("runTimeOnClickLoad", function () {
         bindToController: true,
         transclude: true,
         template: [
-            "<span class='btn btn-dark bg-white text-dark' ng-click='getHtmlContents(id,url)'>{{title}}</span>"
+            "<span class='btn text-white' ng-click='getHtmlContents(id,url)'>{{title}}</span>"
         ].join("")
         // , compile: function (tElem,tAttr) {
         //     return function ($scope) {
@@ -203,6 +219,7 @@ app.directive("runTimeOnClickLoad", function () {
         // }
         , controller: function ($scope, $http, $compile) {
             $scope.getHtmlContents = function (cur, url) {
+                // setBtnDisplay()
                 // $("#view7Menu span.btn").removeClass(darkColor).addClass(successColor)
                 // $('#'+cur +" span btn").removeClass(successColor).addClass(darkColor)
 
@@ -262,8 +279,8 @@ app.directive("mainContentPanel", function ($http, $templateCache, $compile) {
 app.controller('mainViewController', function ($scope, $element) {
     $scope.viewName = defaultView + ".html";
     $scope.displayMyViews = function (cur, url, curLabel) {
-        $("#topMenu span.btn").removeClass(darkColor).addClass(successColor)
-        $("#" + cur).removeClass(successColor).addClass(darkColor)
+        // $("#topMenu span.btn").removeClass(darkColor).addClass(successColor)
+        // $("#" + cur).removeClass(successColor).addClass(darkColor)
         // var viewLabel = (typeof curObj == "undefined") ? "..." : $(curObj).text();
         $("#idBadgeInfo").html(curLabel);
         if (url == "curr") {
@@ -273,6 +290,8 @@ app.controller('mainViewController', function ($scope, $element) {
             loadView3JS()
         }
         $scope.viewName = url + ".html";
+
+        // setBtnDisplay()
         // loadDefaultChart(this.viewName);
         loadOnView4();
     }
@@ -313,6 +332,7 @@ function changeBg() {
 
 
 app.controller("Summary", function ($scope, $timeout, $http) {
+    // setBtnDisplay()
     $scope.setDisplayValues = function (idTag) {
         cleanTags();
         var tagName = "";
@@ -388,9 +408,11 @@ function displayRunTimeNav(cnt) {
 // });
 
 app.controller("templatesController", function ($scope, $http) {
+    // setBtnDisplay()
     $scope.viewLabel = 'Home';
     $scope.strTemplateUrl = "templates/leftTemplate.html";
-    $scope.getTemplates = function (a, b) {
+    $scope.getTemplates = function (cur,a, b) {
+        // setBtnDisplay()
         $scope.viewLabel = a;
         $scope.strTemplateUrl = "templates/" + b + ".html";
         // console.log($scope.viewLabel,$scope.strTemplateUrl)
@@ -927,7 +949,8 @@ app.controller("ITSummary", function ($scope, $http) {
         }
         // console.log("from sethref",$scope.bgTagColor)
         // if ($scope.bgTagColor=="" || $scope.bgTagColor=='undefined')
-        $("#mTag").html("<div class='" + $scope.bgTagColor + "'><span>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
+        // $("#mTag").html("<div class='" + $scope.bgTagColor + "'><span style='font-size:20pt'>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
+        $("#mTag").html("<div ><span style='font-size:20pt'>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
         $("#mContent").html(contentData);
         // document.getElementById("myNav").style.width = "100%";
         $("#myNav").css({'width': '100%', 'display': 'block'})

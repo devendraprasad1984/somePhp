@@ -56,9 +56,9 @@
 </style>
 
 <div>
-    <div class="bg-gray" id="divHeader">
-        <div style="font-size: 20pt; text-align: left; font-weight: bolder">Devendra Prasad
-            <p class="badge badge-danger" style="text-align: center;">Senior Software Engineer / Tech Lead / Fullstack Developer</p>
+    <div class="bg-black-gradient" id="divHeader">
+        <span style="font-size: 20pt; text-align: left; font-weight: bolder">Devendra Prasad
+            <p class="badge" style="text-align: center;">Senior Software Engineer / Tech Lead / Fullstack Developer</p>
             <p id="idAngularBadge" class="badge badge-light">angular1.7</p>
             <p id="idJqueryBadge" class="badge badge-light">jquery</p>
             <p id="idBootstrapBadge" class="badge badge-light">bootstrap</p>
@@ -68,7 +68,7 @@
             <!--<p id="idReactBadge" class="badge badge-info" onclick="createReactMenu(this)">react</p>-->
             <a id="idReactBadge" href="https://github.com/devendraprasad1984/PythonAndNodeSamples/tree/master/react" target="_blank" class="badge badge-info">react</a>
             <p id="idAngular2Badge" class="badge badge-light">angular2</p>
-        </div>
+        </span>
     </div>
 
     <!--<div class="badge dropdown">-->
@@ -86,16 +86,16 @@
     <!--</div>-->
     <!--</div>-->
 
-    <div class="bg-gray" style="margin-top: 5px;">
+    <div class="" style="margin-top: 5px;">
         <div id="topMenu" style="padding: 5px;">
-            <span id="id1" class="btn btn-dark bg-white text-dark font-weight-bold" ng-click="displayMyViews('id1','view7','on-demand');">On-Demand</span>
-            <span id="id2" class="btn btn-success font-weight-bold" ng-click="displayMyViews('id2','view1','Flat');">Flat</span>
-            <span id="id3" class="btn btn-success font-weight-bold" ng-click="displayMyViews('id3','view2','Tabbed');">Tabbed</span>
-            <span id="id4" class="btn btn-success font-weight-bold" ng-click="displayMyViews('id4','view3','Circular');">Circular</span>
-            <span id="id5" class="btn btn-success font-weight-bold" ng-click="displayMyViews('id5','view4','Carousal');">Carousal</span>
-            <span id="id6" class="btn btn-success font-weight-bold" ng-click="displayMyViews('id6','view5','Collage');">Collage</span>
-            <span id="id7" class="btn btn-success font-weight-bold" ng-click="displayMyViews('id7','view6','Dashboard');">Dashboard</span>
-            <span><a class="btn btn-danger font-weight-bold" href="react.html" target="_blank">ReactJS</a></span>
+            <span id="id1" class="btn " ng-click="displayMyViews('id1','view7','on-demand');">On-Demand</span>
+            <span id="id2" class="btn  " ng-click="displayMyViews('id2','view1','Flat');">Flat</span>
+            <span id="id3" class="btn  " ng-click="displayMyViews('id3','view2','Tabbed');">Tabbed</span>
+            <span id="id4" class="btn  " ng-click="displayMyViews('id4','view3','Circular');">Circular</span>
+            <span id="id5" class="btn  " ng-click="displayMyViews('id5','view4','Carousal');">Carousal</span>
+            <span id="id6" class="btn  " ng-click="displayMyViews('id6','view5','Collage');">Collage</span>
+            <span id="id7" class="btn  " ng-click="displayMyViews('id7','view6','Dashboard');">Dashboard</span>
+            <span><a class="btn  " href="react.html" target="_blank">ReactJS</a></span>
         </div>
     </div>
 </div>
@@ -159,4 +159,11 @@
             }
         }
     }
+</script>
+
+
+<script>
+    $(document).ready(function(){
+        setBtnDisplay()
+    })
 </script>

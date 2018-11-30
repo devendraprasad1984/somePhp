@@ -6,8 +6,8 @@ class config
     {
         $cont = "";
         $xmlFileName = "config_gmail.xml";
-        $host="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-        if (strpos($host,'localhost')<=0) {
+        $host = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        if (strpos($host, 'localhost') <= 0) {
             $xmlFileName = "config.xml";
         }
         $xml = simplexml_load_file($xmlFileName);
@@ -18,7 +18,7 @@ class config
             if ($tag->getName() == $id)
                 $cont = $tag;
         }
-        echo "$cont";
+//        echo "$cont";
         return $cont;
     }
 
@@ -50,7 +50,7 @@ Class Mailer
 
     function getHost()
     {
-        return $_SERVER[HTTP_HOST] + "/" + $_SERVER[REQUEST_URI];
+        return $_SERVER[HTTP_HOST] . "/" . $_SERVER[REQUEST_URI];
     }
 
     function clean_string($string)
@@ -66,21 +66,29 @@ Class Mailer
         $mail = new PHPMailer();
         $cfg = new config();
         $mail->isSMTP(true);
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
         $mail->SMTPDebug = (int)$cfg->getConfig("SMTPDebug");
         $mail->Mailer = $cfg->getConfig("Mailer");
         $mail->CharSet = 'UTF-8';
-        $mail->Host = $cfg->getConfig("Host");
+        $mail->Host = $cfg->getConfig("Host"); //587, 465
         $mail->Port = (int)$cfg->getConfig("Port");
-        $mail->SMTPAuth = true;// settype($cfg->getConfig("SMTPAuth"),'bool');
+        $mail->SMTPAuth = settype($cfg->getConfig("SMTPAuth"),'bool');
         $mail->Username = $cfg->getConfig("Username");
-        $mail->Password = $cfg->getConfig("Password");
+        $mail->Password = "rbs6200#";//$cfg->getConfig("Password");
         $mail->SMTPSecure = $cfg->getConfig("SMTPSecure");
         $mail->PluginDir = $cfg->getConfig("Plugdir");
+
         if (!$mail->SmtpConnect()) {
             return 'Could not connect to mail server';
-            exit;
+            exit(-1);
         } else {
-            $from = $cfg->getConfig("FromAddress");
+            $from = $cfg->getConfig("Username");
             $to_addr = $cfg->getConfig("ToAddress");
             $subject = $cfg->getConfig("Subject");
             $mail->From = $from;
@@ -93,16 +101,24 @@ Class Mailer
             $mail->Subject = $subject;// $cfg->getConfig("Subject");
 //            $mail->Body ="<div style='font-weight: bolder; background-color:#20c997;'>Client IP: ".$this->getIP()."</div>".$this->emailData;
             $mail->Body = $this->emailData;
+
+            $headers = 'From: ' . $from . "\r\n";
+            $headers .= 'Reply-To: ' . $to_addr . "\r\n";
+            $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
+            $headers .= "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
             $msg = "";
             if (!$mail->send()) {
-                $msg .= "<span class='error' style='font-size:8pt;'>Error: " . $mail->ErrorInfo;
-                return $msg;
-                exit;
+                $msg = "<div>err: $mail->ErrorInfo</div>";
+
+            } else {
+                $msg = "Message has been sent";
             }
         }
         $mail = null;
         $cfg = null;
-        return "Message has been sent";
+        return $msg;
+        exit();
     }
 }
 
