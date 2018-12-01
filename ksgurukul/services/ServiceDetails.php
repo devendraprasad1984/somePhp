@@ -2,6 +2,7 @@
 //session_start();
 require_once 'emailer.php';
 require_once '../services/token/JWT.php';
+
 use Firebase\JWT\JWT;
 
 $objMail = new Mailer();
@@ -12,7 +13,7 @@ $users = json_decode('[
 ,{"username":"user3","password":"pwd3"}
 ,{"username":"root","password":"admin"}
 ]', true);
-$allowAdmin=true;
+$allowAdmin = true;
 
 
 Class genericObjects
@@ -20,16 +21,18 @@ Class genericObjects
     public $div2LoadIn = "";
     public $counter = 0;
     public $baseDataPath = '../data/';
-    public $secret_key="genericmailsender2019";
+    public $secret_key = "genericmailsender2019";
 
-    public function getTokenArray(){
-        $token=[
-            "host"=>$this->getHost()
-            ,"fakekey"=>$this->secret_key."-nouse"
-            ,"timestamp"=>date("H:i:s")
+    public function getTokenArray()
+    {
+        $token = [
+            "host" => $this->getHost()
+            , "fakekey" => $this->secret_key . "-nouse"
+            , "timestamp" => date("H:i:s")
         ];
         return $token;
     }
+
     public function __construct()
     {
         @set_exception_handler(array($this, 'myErrorHandler'));
@@ -48,7 +51,7 @@ Class genericObjects
 
     public function getHost()
     {
-        $host="http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+        $host = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
         return $host;
     }
 
@@ -90,7 +93,7 @@ Class genericObjects
         return $msg;
     }
 
-    public function readFolders($folderPath, $withFileContent)
+    public function readFolders($folderPath, $withFileContent,$isEcho=true)
     {
         $sName = $this->baseDataPath . $folderPath;
         $searchString = "";
@@ -152,7 +155,8 @@ Class genericObjects
         if ($withFileContent === "option") {
             $allData .= "</select>";
         }
-        echo html_entity_decode($allData);
+        if($isEcho)
+            echo html_entity_decode($allData);
         return html_entity_decode($allData);
     }
 
@@ -192,28 +196,31 @@ Class genericObjects
         return $arr;
     }
 
-    public function generateToken(){
-        $jwt="";
-        try{
-            JWT::$leeway = 60*60; // $leeway in seconds
+    public function generateToken()
+    {
+        $jwt = "";
+        try {
+            JWT::$leeway = 60 * 60; // $leeway in seconds
             $jwt = JWT::encode($this->getTokenArray(), $this->secret_key);
-        }catch (Exception $ex){
-            $this->writeLog("error in generating auth token: ".$ex->getMessage().', trace: '. $ex->getTraceAsString());
+        } catch (Exception $ex) {
+            $this->writeLog("error in generating auth token: " . $ex->getMessage() . ', trace: ' . $ex->getTraceAsString());
         }
-            return $jwt;
+        return $jwt;
     }
-    public function validateToken(){
-        $isValid=false;
-        if(isset($_REQUEST['jwt'])){
-            $jwt=$_REQUEST['jwt']; //most prob get it in post with every call
-            try{
-                $tokenVal=$this->getTokenArray();
+
+    public function validateToken()
+    {
+        $isValid = false;
+        if (isset($_REQUEST['jwt'])) {
+            $jwt = $_REQUEST['jwt']; //most prob get it in post with every call
+            try {
+                $tokenVal = $this->getTokenArray();
                 $decoded = JWT::decode($jwt, $this->secret_key, array('HS256'));
                 //see how token array will be matched with decoded objects
-                $isValid=true;
-            }catch (Exception $ex){
+                $isValid = true;
+            } catch (Exception $ex) {
                 $this->writeLog("the token cannot be validated, may be an attempt to hack");
-                $isValid=false;
+                $isValid = false;
             }
         }
         return $isValid;
@@ -228,7 +235,7 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         $sPath = $_REQUEST['getDataFile'];
         if (strtolower($_REQUEST['getDataFile']) !== "none") {
             if ($sPath === "data") {
-                if(!$allowAdmin || !$objSer->validateToken()) exit();
+                if (!$allowAdmin || !$objSer->validateToken()) exit();
                 $sPath = "";
                 $objSer->readFolders($sPath, $_REQUEST['getType']);
                 exit();
@@ -236,33 +243,33 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
             $objSer->readFolders($sPath, $_REQUEST['getType']);
         }
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['saveData'])) {
     try {
         $data = "";
-        $val2check=$_REQUEST['saveData'];
+        $val2check = $_REQUEST['saveData'];
         $fileName = $_POST['tag'];
         $data2Save = $_POST['data'];
-        if ($val2check=== "2") {
+        if ($val2check === "2") {
             $data2Save = strip_tags($data2Save);
             $data = $objSer->writeToFile($fileName, $data2Save);
             $objSer->writeLog($fileName . " - has been saved");
-        }else{
-            if(!$allowAdmin || !$objSer->validateToken()) exit();
+        } else {
+            if (!$allowAdmin || !$objSer->validateToken()) exit();
             $data = $objSer->writeToFile($fileName, $data2Save);
             $objSer->writeLog($fileName . " - has been saved");
         }
         echo $data;
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['fileRead'])) {
     try {
-        if(!$allowAdmin) exit();
-        if(!isset($_REQUEST['loadnormal']) && !$objSer->validateToken()){
+        if (!$allowAdmin) exit();
+        if (!isset($_REQUEST['loadnormal']) && !$objSer->validateToken()) {
             exit(); //coming from admin and hence validation to be checked
         }
         $filePath = $_REQUEST['fileRead'];
@@ -270,19 +277,19 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         $data = "<pre>$data</pre>";
         echo $data;
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['fileDelete'])) {
     try {
-        if(!$allowAdmin || !$objSer->validateToken()) exit();
+        if (!$allowAdmin || !$objSer->validateToken()) exit();
         $filePath = $_REQUEST['fileDelete'];
         $data = $objSer->deleteFile($filePath);
         $data = "<pre>$data</pre>";
         $objSer->writeLog($filePath . " - has been deleted");
         echo $data;
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['mail'])) {
@@ -302,12 +309,12 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
 //        throw new Exception("mail: " . $msg);
         //throw new Exception($ex);
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['login'])) {
     try {
-        if(!$allowAdmin) exit();
+        if (!$allowAdmin) exit();
         $username = $_POST['username'];
         $password = $_POST['password'];
         $content = 0;
@@ -317,30 +324,30 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
 //                session_start();
 //                $_SESSION['lol'] = 1;
                 $jwt = $objSer->generateToken();
-                $ret=json_encode(["isLoggedIn"=>$content,"jwt"=>$jwt]);
+                $ret = json_encode(["isLoggedIn" => $content, "jwt" => $jwt]);
                 break;
             }
         }
         echo $ret;
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['logout'])) {
     try {
-        if(!$allowAdmin || !$objSer->validateToken()) exit();
+        if (!$allowAdmin || !$objSer->validateToken()) exit();
         $content = 0;
 //        $_SESSION['lol'] = 0;
 //        session_unset();
 //        session_destroy();
         echo $content;
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['forgotPassword'])) {
     try {
-        if(!$allowAdmin || !$objSer->validateToken()) exit();
+        if (!$allowAdmin || !$objSer->validateToken()) exit();
         $content = "";
         $content .= "<div style='background-color:#28a745; text-align: center; font-size: 14pt;font-weight: bolder'>Your login details</div>";
         foreach ($users as $key => $value) {
@@ -356,7 +363,7 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
             echo "forgot password mail has been sent to your registered email id";
         }
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['slider'])) {
@@ -364,15 +371,15 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
         $content = $objSer->getSliderInfo();
         echo implode(";", $content);
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['manageSlider'])) {
     try {
 //        if(!$allowAdmin || !$objSer->validateToken()) exit();
-        if(!$allowAdmin) exit();
+        if (!$allowAdmin) exit();
         if ($_REQUEST['manageSlider'] === "1") {
-            if(!$objSer->validateToken()) exit();
+            if (!$objSer->validateToken()) exit();
             $content = $objSer->getSliderInfo();
             echo implode(";", $content);
         } else if ($_REQUEST['manageSlider'] === "add") {
@@ -402,32 +409,51 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
             }
             echo $msg;
         } else if ($_REQUEST['manageSlider'] === "del") {
-            if(!$objSer->validateToken()) exit();
-            $fn=$_REQUEST['filename'];
-            $delFile=$objSer->baseDataPath."slider/".$fn;
-            if(unlink($delFile)){
+            if (!$objSer->validateToken()) exit();
+            $fn = $_REQUEST['filename'];
+            $delFile = $objSer->baseDataPath . "slider/" . $fn;
+            if (unlink($delFile)) {
                 $msg = "$fn is deleted";
-            }else{
+            } else {
                 $msg = "error deleting file - $fn";
             }
             echo $msg;
         }
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_REQUEST['logging'])) {
     try {
-        if(!$allowAdmin || !$objSer->validateToken()) exit();
+        if (!$allowAdmin || !$objSer->validateToken()) exit();
         echo "<pre class='log text-white'>" . $objSer->readLog() . "</pre>";
     } catch (Exception $ex) {
-        $objSer->writeLog($ex->getMessage()."->".$ex->getTraceAsString());
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
+        //throw new Exception($ex);
+    }
+} else if (isset($_POST['loadAll'])) {
+    try {
+        $allObj=$_POST['alldata'];
+        foreach ($allObj as $i => $v) {
+            $xcall = substr($v["uri"], strpos($v["uri"], "?") + 1);
+            $strArray = explode("&", $xcall);
+            $spath=substr($strArray[0],1+strpos($strArray[0],"="));
+            $getType=substr($strArray[1],1+strpos($strArray[1],"="));
+            if(sizeof($strArray)===3)
+                $toload=substr($strArray[2],1+strpos($strArray[2],"="));
+            $objSer->div2LoadIn = $toload;
+            $sdata=$objSer->readFolders($spath, $getType,false);
+            $allObj[$i]["jsdata"]=$sdata;
+        }
+        echo json_encode($allObj);
+    } catch (Exception $ex) {
+        $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 }
 ob_implicit_flush(true);
 //die();
-//exit();
+exit();
 
 ?>
 

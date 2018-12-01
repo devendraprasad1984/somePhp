@@ -6,7 +6,7 @@
       "desc": "Home",
       "defaultLoad": "show",
       "loadIn": "myHomeData",
-      "uri": "services/ServiceDetails.php?getDataFile=home&getType=yes&toload="
+      "uri": "services/ServiceDetails.php?getDataFile=home&getType=yes"
     },
     {
       "id": "2",
@@ -30,7 +30,7 @@
       "desc": "Faculty",
       "defaultLoad": "hide",
       "loadIn": "teamId",
-      "uri": "services/ServiceDetails.php?getDataFile=team&getType=yes&toload="
+      "uri": "services/ServiceDetails.php?getDataFile=team&getType=yes"
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "desc": "Blog",
       "defaultLoad": "hide",
       "loadIn": "myBlogData",
-      "uri": "services/ServiceDetails.php?getDataFile=blog&getType=yes&toload=myBlogData"
+      "uri": "services/ServiceDetails.php?getDataFile=blog&getType=yes"
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "desc": "Testimonials",
       "defaultLoad": "hide",
       "loadIn": "myTestimonialData",
-      "uri": "services/ServiceDetails.php?getDataFile=testimonials&getType=yes&toload=myTestimonialData"
+      "uri": "services/ServiceDetails.php?getDataFile=testimonials&getType=yes"
     },
     {
       "id": "7",
@@ -62,7 +62,7 @@
       "desc": "",
       "defaultLoad": "show",
       "loadIn": "top1",
-      "uri": "services/ServiceDetails.php?getDataFile=header&getType=yes&toload="
+      "uri": "services/ServiceDetails.php?getDataFile=header&getType=yes"
     },
     {
       "id": "0",
@@ -70,7 +70,7 @@
       "desc": "",
       "defaultLoad": "show",
       "loadIn": "footerID",
-      "uri": "services/ServiceDetails.php?getDataFile=footer&getType=yes&toload="
+      "uri": "services/ServiceDetails.php?getDataFile=footer&getType=yes"
     }
   ,
     {

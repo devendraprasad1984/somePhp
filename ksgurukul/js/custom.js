@@ -3,20 +3,40 @@ var app = angular.module("myAjs", []);
 var hide = "hide"
 var show = "show"
 var bgColor = "bg-white"
+var backcolor = "red"
 var textColor = "text-dark"
 var textWhite = "white"
-var successColor = "btn-outline-dark text-white"
-var anchorHeadColor = "btn-outline-dark"
+var btn="btn-outline-dark"
+var successColor = btn+" text-white"
+var anchorHeadColor = btn
 var darkColor = anchorHeadColor+" " + bgColor + " " + textColor
 var runtimeContent = "<div $id class='$p1'></div>"
-var allTagsRunTime = ""
 var loadOnClickMode = false
+var loadAllTogether = false
 var menuObject = {}
+var allDataLoad=[]
 var curHtmlPage = ""
 
 $(function () {
     createMenu()
 })
+
+function loadAllDataAtOnce(){
+    $.get("services/menu.json", function (res) {
+        menuObject = res["menu"]
+        var allDataLoad=[]
+        $.each(menuObject, function (i, v) {
+            allDataLoad.push({jsid:v.loadIn, uri:v.uri, jsdata:""})
+        })
+        $.post('services/ServiceDetails.php',{loadAll:1,alldata:allDataLoad},function(res){
+            allDataLoad=JSON.parse(res)
+            console.log(allDataLoad)
+            $.each(allDataLoad,function(i,v){
+                $("#"+v.jsid).html(v.jsdata)
+            })
+        })
+    })
+}
 
 
 function createMenu() {
@@ -45,29 +65,38 @@ function createMenu() {
             div1 = div1.replace("$id", "id='" + newId + "'")
             div1 = div1.replace("$p1", v["defaultLoad"])
 
-            $("#topMenu").append(newElm)
-            $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
+            if (v.id != "0") {
+                $("#topMenu").append(newElm)
+                $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
+            }
             if (!loadOnClickMode) {
-                if (v.id != "0" || (v.id == "0" && v.loadIn != "")) {
-                    $("#mainContentSection").append(div1)
-                    $("#" + newId).load(newUrl, function (loadedData) {
-                        $("#" + v.loadIn).load(v.uri,function(res){
+                if(!loadAllTogether){
+                    if (v.id != "0" || (v.id == "0" && v.loadIn != "")) {
+                        $("#mainContentSection").append(div1)
+                        $("#" + newId).load(newUrl, function (loadedData) {
+                            $("#" + v.loadIn).load(v.uri,function(res){
+                                execFunc(v.func,res)
+                            });
+                        })
+                    } else if (v.id == "0" && v.loadIn == "") {
+                        $.get(v.uri,function(res){
                             execFunc(v.func,res)
                         });
-                    })
-                } else if (v.id == "0" && v.loadIn == "") {
-                    $.get(v.uri,function(res){
-                        execFunc(v.func,res)
-                    });
+                    }
+                }else{
+                    if (v.id != "0" || (v.id == "0" && v.loadIn != "")) {
+                        $("#mainContentSection").append(div1)
+                        $("#" + newId).load(newUrl)
+                    }
                 }
             }
         })
+        if(loadAllTogether && !loadOnClickMode)
+            loadAllDataAtOnce()
     })
 }
 
 function execFunc(fnName, res) {
-    // console.log(res)
-    //call function if set
     if (typeof fnName != 'undefined') {
         displayData('id1', 'home');
         displaySlider(res, 'sliderLine');
@@ -87,6 +116,7 @@ function addColorsAndStoreHtml(htmlData) {
     $("#top1 div").removeClass('box');
     $("#top1 div").removeClass('ltqt');
     $("#top1 div, #top1 pre, #top1 span").css({'color': textWhite});
+    $("h1 h2 h3 h4").css({'background-color': backcolor});
 
     if (loadOnClickMode) {
         $.each(menuObject, function (i, v) {
