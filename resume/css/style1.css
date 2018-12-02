@@ -1,20 +1,20 @@
-html{
+html {
     /*font-size: 1.2vw;*/
-    zoom:90%;
+    zoom: 90%;
     font-family: monospace, sans-serif;
     /*color: grey;*/
     white-space: normal !important;
     word-wrap: break-word;
 }
 
-div,span,.badge,p,.btn {
+div, span, .badge, p, .btn {
     white-space: normal !important;
     word-wrap: break-word;
     font-size: 9pt;
     /*font-size: 1.2vw;*/
 }
 
-div{
+div {
     color: black;
 }
 
@@ -170,6 +170,7 @@ b {
 .h1 {
     font-size: 18pt;
     font-weight: bold;
+    /*color: white;*/
 }
 
 .h2 {
@@ -737,3 +738,85 @@ h3 {
     font-size: 16pt;
 }
 
+.main_color a {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    display: inline;
+    font-size: 16pt;
+}
+
+.preview {
+    position: relative;
+    float: left;
+    width: 29%;
+    height: 29%;
+    margin: 2%;
+    padding: 1px
+}
+
+.color-1 {
+    background: #7e6df6
+}
+
+.color-2 {
+    background: #f44336
+}
+
+.color-3 {
+    background: #2196f3
+}
+
+.color-4 {
+    background: #ff5722
+}
+
+.color-5 {
+    background: #2eca7f
+}
+
+.color-6 {
+    background: #29b6f6
+}
+
+.color-7 {
+    background: #e91e63
+}
+
+.color-8 {
+    background: #a0f
+}
+
+.color-9 {
+    background: #ff9800
+}
+
+.color-10 {
+    background: #fbc02d
+}
+
+.color-11 {
+    background: #9dd100
+}
+
+.color-12 {
+    background: #26d9ac
+}
+
+/*a.active {*/
+    /*border-bottom: 5px solid red;*/
+    /*background-color: white;*/
+    /*color: black;*/
+/*}*/
+#topMenu,#topColors{
+    position: relative;
+    /*top: 0;*/
+}
+#topMenu a{
+    background-color: black;
+    color: white;
+}
+#bodySection{
+    position: relative;
+    margin-top: 2em;
+}

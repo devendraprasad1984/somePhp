@@ -1,10 +1,10 @@
-var app = angular.module("myAjs", []);
+ app = angular.module("myAjs", []);
 var isChartLoadOnce = false
 var isLoadedGoogleCharts = false
 var timerId;
 var timerValue = 2000;
 var views = ["view1", "view2", "view3", "view4", "view6"]
-var defaultView = "view7";
+var defaultView = "view8";
 // var defaultView = views [Math.round(Math.random() * views.length)] ||"view6"
 // alert("current selected view is " + defaultView)
 var viewsToHaveCharts = ["view1", "view6"];
@@ -20,14 +20,11 @@ var show = "show"
 var bgColor = "bg-dark"
 var textColor = bgColor+" text-white"
 var successColor = "btn-outline-dark"
-// var darkColor = successColor+" " + textColor
+var backColor="black";
+ // var darkColor = successColor+" " + textColor
 
 
 $(function () {
-    // loadDefaultChart(defaultView);
-    // $.get("services/ServiceDetails.php?test=1", function (res) {
-    //     console.log(res)
-    // })
     loadOnView4()
     setBtnDisplay();
 });
@@ -209,7 +206,7 @@ app.directive("runTimeOnClickLoad", function () {
         bindToController: true,
         transclude: true,
         template: [
-            "<span class='btn text-white' ng-click='getHtmlContents(id,url)'>{{title}}</span>"
+            "<span class='btn text-white' ng-click='getHtmlContents(id,url,title)'>{{title}}</span>"
         ].join("")
         // , compile: function (tElem,tAttr) {
         //     return function ($scope) {
@@ -218,7 +215,7 @@ app.directive("runTimeOnClickLoad", function () {
         //     }
         // }
         , controller: function ($scope, $http, $compile) {
-            $scope.getHtmlContents = function (cur, url) {
+            $scope.getHtmlContents = function (cur, url,title) {
                 // setBtnDisplay()
                 // $("#view7Menu span.btn").removeClass(darkColor).addClass(successColor)
                 // $('#'+cur +" span btn").removeClass(successColor).addClass(darkColor)
@@ -229,6 +226,7 @@ app.directive("runTimeOnClickLoad", function () {
                     $.extend(objUrlLoaded, {url: url, isLoaded: true, contents: res.data})
                     var elm = $("#idRightHtmlContent")
                     elm.html($scope.xdata)
+                    elm.prepend("<div class='h1 "+textColor+"'>"+title+"</div>")
                     $compile(elm.contents())($scope);
                 });
                 // console.log("cache",objUrlLoaded)
@@ -358,7 +356,7 @@ app.controller("Summary", function ($scope, $timeout, $http) {
                     break;
                 }
             }
-            $("#mTag").html("<div class='" + bgTagColor + "'><span>" + tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
+            $("#mTag").html("<div class='" + bgTagColor + "'><span style='font-size:20pt;color: white'>" + tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
             $("#mContent").html(imgs)
             $scope.$emit("objCounter", counter)
         });
@@ -950,7 +948,7 @@ app.controller("ITSummary", function ($scope, $http) {
         // console.log("from sethref",$scope.bgTagColor)
         // if ($scope.bgTagColor=="" || $scope.bgTagColor=='undefined')
         // $("#mTag").html("<div class='" + $scope.bgTagColor + "'><span style='font-size:20pt'>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
-        $("#mTag").html("<div ><span style='font-size:20pt'>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
+        $("#mTag").html("<div ><span style='font-size:20pt;color: white;'>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
         $("#mContent").html(contentData);
         // document.getElementById("myNav").style.width = "100%";
         $("#myNav").css({'width': '100%', 'display': 'block'})
