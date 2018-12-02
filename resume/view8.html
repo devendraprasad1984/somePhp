@@ -33,10 +33,9 @@
         </div>
 
         <div class="row">
-            <div id="topMenu" class="col-lg-12 main_color">
+            <div id="topMenu8" class="col-lg-12 main_color">
                 <a class="btn" href="#Home">About Me</a>
-                <a class="btn" href="#Education">Education</a>
-                <a class="btn" href="#Experience">Experience</a>
+                <a class="btn" href="#Resume">Resume</a>
                 <a class="btn" href="#Skills">Skills</a>
                 <a class="btn" href="#Contact">Contact</a>
             </div>
@@ -46,18 +45,32 @@
 
 <section id="bodySection">
     <aside id="Home" style="display: block">
-        <div ng-include="" ng-view="" src="'templates/about.html'"></div>
-        <div ng-include="" ng-view="" src="'templates/leftTemplate.html'"></div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>About Me</h1>
+                <div ng-include="" ng-view="" src="'templates/about.html'"></div>
+                <div ng-include="" ng-view="" src="'templates/footerLinks.html'"></div>
+            </div>
+            <div class="col-lg-6">
+                <h1>What I know</h1>
+                <div ng-include="" ng-view="" src="'templates/leftTemplatePlane.html'"></div>
+            </div>
+        </div>
     </aside>
-    <aside id="Education" style="display: none">
-        <div ng-include="" ng-view="" src="'templates/educationTemplate.html'"></div>
-    </aside>
-    <aside id="Experience" style="display: none">
-        <div ng-include="" ng-view="" src="'templates/experienceTemplate.html'"></div>
+    <aside id="Resume" style="display: none">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Education</h1>
+                <div ng-include="" ng-view="" src="'templates/educationTemplate.html'"></div>
+            </div>
+            <div class="col-lg-6">
+                <h1>Experience</h1>
+                <div ng-include="" ng-view="" src="'templates/experienceTemplate.html'"></div>
+            </div>
+        </div>
     </aside>
     <aside id="Skills" style="display: none">
         <div ng-include="" ng-view="" src="'templates/footerIKnow.html'"></div>
-        <div ng-include="" ng-view="" src="'templates/footerLinks.html'"></div>
         <div ng-include="" ng-view="" src="'templates/ichart.html'"></div>
     </aside>
     <aside id="Contact" style="display: none">
@@ -85,19 +98,14 @@
         }
         $(curId).css({"display": "block"})
 
-        $("#topMenu a").on('click', function () {
+        $("#topMenu8 a").on('click', function () {
             $("#bodySection aside").css({"display": "none"})
-            $("#topMenu a").css({"background-color": backColor, "color": "white"})
+            backColor=$("#idcolor").html()
+            $("#topMenu8 a").css({"background-color": backColor, "color": "white"})
             $(this).css({"background-color": "white", "color": "black"})
             $($(this).attr("href")).css({"display": "block"})
+            $('#bodySection aside > div').addClass('animate_class_name');
         })
-        $("#topColors a").on('click', function () {
-            var curAnc = $(this)
-            backColor = curAnc.css("background-color")
-            $(".btn").css({"background-color": backColor, "color": "white"})
-            $("#topMenu.btn, .h1,.h2").css({"color": backColor})
-            $("div.progress-bar").removeClass(bgColor).css({"background-color": backColor, "color": "white"})
-
-        })
+        setBtnDisplay()
     });
 </script>

@@ -4,7 +4,7 @@ var isLoadedGoogleCharts = false
 var timerId;
 var timerValue = 2000;
 var views = ["view1", "view2", "view3", "view4", "view6"]
-var defaultView = "view8";
+var defaultView = "view4";
 // var defaultView = views [Math.round(Math.random() * views.length)] ||"view6"
 // alert("current selected view is " + defaultView)
 var viewsToHaveCharts = ["view1", "view6"];
@@ -20,7 +20,7 @@ var show = "show"
 var bgColor = "bg-dark"
 var textColor = bgColor+" text-white"
 var successColor = "btn-outline-dark"
-var backColor="black";
+var backColor="lightgray";
  // var darkColor = successColor+" " + textColor
 
 
@@ -32,13 +32,28 @@ $(function () {
 
 function setBtnDisplay(){
     $(".btn").addClass(successColor)
-    // $(".btn").addClass(textColor)
-
-    // $(".btn").on('click',function(){
-    //     selElem="#topMenu span.btn, #topMenu6 span.btn"
-    //     $(selElem).removeClass(textColor).addClass(successColor)
-    //     $("#" + this.id).removeClass(successColor).addClass(textColor)
-    // })
+    var backColor="lightgray";
+    $("#topColors a").on('click', function () {
+        var curAnc = $(this)
+        backColor = curAnc.css("background-color")
+        // $("#idcolor").css({"background-color":backColor})
+        $("#idcolor").html(backColor)
+        xset()
+    })
+    function xset(){
+        backColor=$("#idcolor").html()||"darkgray"
+        $(".btn").css({"font-size":"10pt"})
+        $(".badge,#idExperienceController").css({"font-size":"12px"})
+        if(backColor==""||backColor=="darkgray"){
+            $(".btn").css({"background-color": backColor, "color": "black"})
+        }else{
+            $(".btn").css({"background-color": backColor, "color": "white"})
+        }
+        $("h1,h2,h3").css({"color": backColor})
+        $("#idExperienceController .badge").css({"background-color": backColor, "color": "white"})
+        $("div.progress-bar").removeClass(bgColor).css({"background-color": backColor, "color": "white"})
+    }
+    xset()
 }
 
 function loadOnView4() {
@@ -289,7 +304,7 @@ app.controller('mainViewController', function ($scope, $element) {
         }
         $scope.viewName = url + ".html";
 
-        // setBtnDisplay()
+        setBtnDisplay()
         // loadDefaultChart(this.viewName);
         loadOnView4();
     }
@@ -408,7 +423,7 @@ function displayRunTimeNav(cnt) {
 app.controller("templatesController", function ($scope, $http) {
     // setBtnDisplay()
     $scope.viewLabel = 'Home';
-    $scope.strTemplateUrl = "templates/leftTemplate.html";
+    $scope.strTemplateUrl = "templates/leftTemplatePlane.html";
     $scope.getTemplates = function (cur,a, b) {
         // setBtnDisplay()
         $scope.viewLabel = a;
@@ -927,6 +942,7 @@ app.controller("ITSummary", function ($scope, $http) {
     $scope.tagName = "[]"
     $http.get(uri).then(function (res) {
         $scope.ratingData = res.data.skills;
+        setBtnDisplay()
     });
     $scope.setHref = function (id, url, gotoUrl, mTag) {
         $scope.bgTagColor = colorsArray[Math.round(Math.random() * colorsArray.length)]
