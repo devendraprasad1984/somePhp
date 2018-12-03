@@ -31,8 +31,8 @@
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#legend#0;n#fieldset#0;n#!!top" expanded="true" />
               </folding>
@@ -161,7 +161,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="8010" listening_started="true" notify_if_session_was_finished_without_being_paused="false" />
+  <component name="PhpDebugGeneral" xdebug_debug_port="8010" notify_if_session_was_finished_without_being_paused="false" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="cbe2426f-2391-4a15-9186-1852e9c7bbeb" name="localhost" />
@@ -175,7 +175,7 @@
       <path value="$PROJECT_DIR$/../../lib" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -187,7 +187,17 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ksgurukul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgurukul" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -274,12 +284,12 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20272315" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20272315" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
       <window_info anchor="right" id="SciView" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.2677761" />
+      <window_info anchor="right" id="Debug" order="6" visible="true" weight="0.2677761" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -307,7 +317,7 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>$this-&gt;div2LoadIn != &quot;&quot; &amp;&amp; $this-&gt;div2LoadIn != &quot;no&quot;</expression-string>
+        <expression-string />
         <language-id>PHP</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -317,7 +327,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>$this-&gt;div2LoadIn === &quot;no&quot;</expression-string>
+        <expression-string />
         <language-id>PHP</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -608,8 +618,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        <state relative-caret-position="238">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#legend#0;n#fieldset#0;n#!!top" expanded="true" />
           </folding>
