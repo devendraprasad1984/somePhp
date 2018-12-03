@@ -6,7 +6,8 @@
       "desc": "Home",
       "defaultLoad": "show",
       "loadIn": "myHomeData",
-      "uri": "services/ServiceDetails.php?getDataFile=home&getType=yes"
+      "uri": "services/ServiceDetails.php?getDataFile=home&getType=yes&title=no",
+      "func":"home"
     },
     {
       "id": "2",
@@ -60,27 +61,27 @@
       "id": "0",
       "name": "header",
       "desc": "",
-      "defaultLoad": "show",
+      "defaultLoad": "hide",
       "loadIn": "top1",
-      "uri": "services/ServiceDetails.php?getDataFile=header&getType=yes"
+      "uri": "services/ServiceDetails.php?getDataFile=header&getType=yes&title=no"
     },
     {
       "id": "0",
       "name": "footer",
       "desc": "",
-      "defaultLoad": "show",
+      "defaultLoad": "hide",
       "loadIn": "footerID",
-      "uri": "services/ServiceDetails.php?getDataFile=footer&getType=yes"
+      "uri": "services/ServiceDetails.php?getDataFile=footer&getType=yes&title=no"
     }
   ,
     {
       "id": "0",
       "name": "slider",
       "desc": "",
-      "defaultLoad": "show",
+      "defaultLoad": "hide",
       "loadIn": "",
       "uri": "services/ServiceDetails.php?slider=1",
-      "func":"displayData('id1', 'home');displaySlider($res, 'sliderLine');"
+      "func":"slider"
     }
   ]
 }

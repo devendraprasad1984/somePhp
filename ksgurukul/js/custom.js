@@ -12,13 +12,14 @@ var anchorHeadColor = btn
 var darkColor = anchorHeadColor+" " + bgColor + " " + textColor
 var runtimeContent = "<div $id class='$p1'></div>"
 var loadOnClickMode = false
-var loadAllTogether = false
+var loadAllTogether = true
 var menuObject = {}
 var allDataLoad=[]
 var curHtmlPage = ""
 
 $(function () {
-    createMenu()
+    createMenuAndContents()
+    // $("img.lazy").lazyload();
 })
 
 function loadAllDataAtOnce(){
@@ -26,20 +27,21 @@ function loadAllDataAtOnce(){
         menuObject = res["menu"]
         var allDataLoad=[]
         $.each(menuObject, function (i, v) {
-            allDataLoad.push({jsid:v.loadIn, uri:v.uri, jsdata:""})
+            allDataLoad.push({jsid:v.loadIn, uri:v.uri, jsdata:"",func:v.func})
         })
         $.post('services/ServiceDetails.php',{loadAll:1,alldata:allDataLoad},function(res){
             allDataLoad=JSON.parse(res)
-            console.log(allDataLoad)
+            // console.log(allDataLoad)
             $.each(allDataLoad,function(i,v){
                 $("#"+v.jsid).html(v.jsdata)
+                execFunc(v.func,v.jsdata)
             })
         })
     })
 }
 
 
-function createMenu() {
+function createMenuAndContents() {
     // var topMenu = $("#topMenu")
     // var topMenuSelect = $("#idTopMenuSelect")
     var counter = 0
@@ -98,16 +100,12 @@ function createMenu() {
 
 function execFunc(fnName, res) {
     if (typeof fnName != 'undefined') {
-        displayData('id1', 'home');
-        displaySlider(res, 'sliderLine');
         addColorsAndStoreHtml(res)
-        // var funcs = fnName.split(";")
-        // $.each(funcs, function (i, fn) {
-        //     // console.log("executing " + fn)
-        //     if(fn.indexOf('$res')!=-1)
-        //         fn = fn.replace('$res', "'"+res+"'")
-        //     eval(fn)
-        // })
+        if(fnName=="slider"){
+            displaySlider(res.join(";"), 'sliderLine');
+        }else if(fnName=="slider"){
+            displayData('id1', fnName);
+        }
     }
 }
 

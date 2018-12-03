@@ -124,7 +124,7 @@ Class genericObjects
 
             if ($withFileContent === "yes") {
                 $data = "<div class='box ltqt' style='margin-top: 4px;'>";
-                if ($this->div2LoadIn != "")
+                if ($this->div2LoadIn != "" && $this->div2LoadIn != "no")
                     $data .= "<div style='font-weight: bolder; font-size: 15pt;'>$label</div>";
                 $data .= "<div>" . $this->readFileContents($folderPath, $value) . "</div>";
                 $data .= "</div>";
@@ -442,7 +442,11 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
             if(sizeof($strArray)===3)
                 $toload=substr($strArray[2],1+strpos($strArray[2],"="));
             $objSer->div2LoadIn = $toload;
-            $sdata=$objSer->readFolders($spath, $getType,false);
+            if(strpos($v["uri"],"slider")>0){
+                $sdata=$objSer->getSliderInfo();
+            }else{
+                $sdata=$objSer->readFolders($spath, $getType,false);
+            }
             $allObj[$i]["jsdata"]=$sdata;
         }
         echo json_encode($allObj);
