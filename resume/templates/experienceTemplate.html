@@ -1,23 +1,32 @@
 <div id="idExperienceController" ng-app="myAjs" class="bs nav-tabs-custom" style="height: 600px;overflow: auto; position: relative">
     <div ng-controller="experienceController">
-        <div ng-repeat="xObj in experienceData | filter: { bg: ('badge-info badge text-left') }"  style='padding-top: 3em;'>
-            <div style='float:left;font-weight: bolder; font-size: 20pt;'>{{xObj.company}}</div>
-            <div>
-                <div style='width:100%;font-size:12pt;font-weight:bolder' class="badge badge-dark">{{xObj.name}}
-                    <div style='float:right;'>
-                        <span class='badge badge-light'>{{xObj.role}}</span>
+        <div ng-repeat="xObj in experienceData | filter: { bg: ('badge-info badge text-left') }" style='padding-top: 3px;'>
+            <span class="h2">{{xObj.company}}</span>
+            <ul class="timeline">
+                <li class="">
+                    <div>
+                        <span style='font-size:12pt;font-weight:bolder' class="badge">{{xObj.name}}</span>
+                        <span class="badge badge-danger">{{xObj.from}}</span>
                     </div>
-                </div>
-                <div>{{xObj.desc}}</div>
-                <span class='text-danger' style='float:right;'>{{xObj.tech}}</span>
-            </div>
+                </li>
+                <li>
+                    <div class="timeline-item">
+                        <div class="timeline-body">
+                            <div>{{xObj.desc}}</div>
+                            <div style='float:right;'>
+                                <span class='badge badge-light'>{{xObj.role}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
 
 
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         setBtnDisplay()
     })
 </script>

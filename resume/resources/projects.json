@@ -7,6 +7,7 @@
       "bg":"badge-info badge text-left",
       "tech": "agile,sdlc,user adoption,gap analysis,requirement gathering",
       "company": "Royal Bank Of Scotland, Gurugram(HR), India",
+      "from":"Sep2018-current",
       "desc":
       "FRC (Finance Reporting Cube) over OACS (Oracle Analytics Clound) platform is SaaS which has to be onboarded by GFS teams for management and budget reporting",
       "images": []
@@ -17,6 +18,7 @@
       "role":"Senior Software Designer / FullStack Developer",
       "bg":"badge-info badge text-left",
       "tech": "java,spring,mvn,html5,angular1,js,jquery,typescript,gulp,excel,recs",
+      "from":"Dec2016-Aug2018",
       "desc":
       "This is RBS wide portal framework written in HTML5, Java, Angular, Typescript. We have used this for our project SDP Automation which is about simplifying bank for Disclosure Reporting and reducing the overall submission cycle from 2months to 12days. we have use oracle 11g and PL/SQL to transform the bank and called the APIs from Finance Portal Java Layer. Within the bank, many applications are moving onto this framework, as its lightweight and very less number of resources can support this portal framework",
       "images": []
@@ -27,6 +29,7 @@
       "role":"Software Designer",
       "bg":"badge-info badge text-left",
       "tech": "impala,hue,bigdata,excel,reconciliations",
+      "from":"Mar2016-Oct2016",
       "desc":
         "This is a POC project where we have automated Mortgage and Credit Cards disclosure reporting over hadoop platform. we were successfully able to replicate the reporting and functional behaviour of the process by using HIVE queries but business needed a writeback functionality over portal which was not possible using hadoop architecture and infra. Hence, the management decided to use the Oracle and cloud space to automate the end to end process and satify business needs.",
       "images": []
@@ -37,6 +40,7 @@
       "role":"Software Designer",
       "bg":"badge-info badge text-left",
       "tech": "python,mongo,rest,flask,html,jquery,excel,vba",
+      "from":"Feb2016-Feb2016",
       "desc":
         "this was again a POC where we were prove what MongoDB can do and can we fit it into some of our applications. so as part of POC, a team of 4 was formed and we loaded couple of heavy JSON files via import utility, sharded it on 3 different server and tested the accessibility of data via the 'mongos' command line as well as via the HTML5 UI by exposing the sharded data over REST Service. But at the end, it was not something we could implememt it in our project as the concurrency and consistency of data was very much needed as well as the data was relational in nature which was difficult to implement.<br/>The REST service was written in Python using PyFlask API.",
       "images": []
@@ -47,6 +51,7 @@
       "role":"Software Designer",
       "bg":"badge-info badge text-left",
       "tech": "excel,access,vba,change+release+stakeholder",
+      "from":"Jan2015-Dec2015",
       "desc":
         "as part of CoRep Reporting needs, I had prepared a RT5000 recon dashboard for reconciliation purpose of 2 systems consuming datasets in Row-Column Point based data formatting needs before actually feeding into FRS systems for regulatory reporting submission. this is based in excel and in order to compare 2 text files, i had used MS-Access as an interim layer so that I can read text files as if they are RDBMS tables. I had used SQL queries to compare the 2 sets and get the different lines out of both the sets as well as matching records. also telling some suggestions as to where to correct differences in point based format and source system being affected by that change. These different were generally coming as sources have EBA TAXONOMY changes at their end but some mistakes were left in implementing them at our end. This rec was awarded as one of the best excel based recon dashboard with reg reporting paradigm",
       "images": []
@@ -57,6 +62,7 @@
       "role":"Software Engineer",
       "bg":"badge-info badge text-left",
       "tech": "vb6,t-sql,wss",
+      "from":"Jan2012-Nov2015",
       "desc":
         "this is VB6+SQL+C++ Server based short terms money market front office system where Retails Bankers in UK within RBS used to book the money market corporate and private banking trades,bonds,deals etc. The trades were then made to flow to WSS(formaly) and then calypso(later) settlement systems for further settlement with RBS. The application maintains customer and trades history and also prints the deals on network printer or via GDS bulk print module. To achieve the printing and bulk mailing facility, potter had JAVA service configured running windows app server",
       "images": []
@@ -67,6 +73,7 @@
       "role":"Software Engineer",
       "bg":"badge-info badge text-left",
       "tech": "vb6,t-sql",
+      "from":"Jan2012-Nov2015",
       "desc":
         "the wss system had initial bug where if any trade over 4 year was booked and the maturity amount is to be paid at final day of matiurity, then rather than paying all amount in one go, it would pay into multiple installments (e.g. 4.5 year trade -> maturity to be paid into 6 intervals). This issue was fixed in WSS system in 2012 but the trades booked prior to that had to be fixed. From Potter application side, I was engaged to fix this issue and after having various discussion with technology and business, it was agreed that we will cancel and rebook all such trades but without notifying customers about this activity (as in production, notification would be sent to customers). We had to suppress all such 30000 trades into 2 downstream systems. All these activities happened directly in production with a dummy test in non prod. There were hectic coordinations with all downstream systems. But this was a success and was also acknowledge by the business for having zero impact on customers and Bank's reputation was saved",
       "images": []
@@ -77,6 +84,7 @@
       "role":"Software Engineer",
       "bg":"badge-info badge text-left",
       "tech": "excel,vba,soap,wss",
+      "from":"Jan2012-Nov2015",
       "desc":
         "Excel(Soap, WSS JPO API, Attachmate API->mainframe terminal hit) based solution which gives trades the real time FX funding positions across globe. Any trade balances hit by anyone in RBS (trade desk) was captured into this solution via WSS JOT APIs. When NWB system came into RBS, a connection via JAVA CIL Services->Score systems where also made and balances were fetched to give more closer real time view to traders",
       "images": []
@@ -87,6 +95,7 @@
       "role":"Software Engineer / Business Analyst",
       "bg":"badge-info badge text-left",
       "tech": "change+release management,coordination,troubleshooting",
+      "from":"Dec2016-Jan2016",
       "desc":
         "This was a third party application (IBM) for Bank's Statutory Reporting. I was engaged from application support perspective. For any issue reported by business, i have to anlyse the impact and assess whether that issue can be solved by any config provided by vendor or need to engage IBM Support.",
       "images": []
@@ -98,6 +107,7 @@
       "bg":"badge-info badge text-left",
       "tech": "excel,vba,mysql,unix ksh",
       "company": "Syntel Inc, Pune(MH), India",
+      "from":"Apr2011-Aug2011",
       "desc": "",
       "images": []
     },
@@ -108,6 +118,7 @@
       "bg":"badge-info badge text-left",
       "tech": "core java,VB6,SqlServer,SDLC,excel,macro,vba",
       "company": "9 Dimentions Infotech, Noida(UP), India",
+      "from":"Nov2008-Mar2010",
       "desc": "",
       "images": []
     },
@@ -118,6 +129,7 @@
       "bg":"badge-info badge text-left",
       "tech": "VB6,SqlServer,SDLC",
       "company": "DAV Institute of Management, Faridbad(HR), India",
+      "from":"Nov2007-Sep2008",
       "desc": "",
       "images": []
     },
@@ -127,6 +139,7 @@
       "bg":"badge-success badge text-left",
       "tech": "IT Management",
       "company": "Post Graduation",
+      "from":"Apr2015-Jan2017",
       "desc": "",
       "images": ["images/study/pgditm.png"]
     },
@@ -136,6 +149,7 @@
       "bg":"badge-success badge text-left",
       "tech": "Information Technology (hons)",
       "company": "Graduation",
+      "from":"Apr2002-Mar2006",
       "desc": "",
       "images": ["images/study/degree.jpg"]
     },
@@ -145,6 +159,7 @@
       "bg":"badge-success badge text-left",
       "tech": "physics,chemistry,maths,biology",
       "company": "Inter College, (10+2)",
+      "from":"Year 2002",
       "desc": "",
       "images": ["images/study/12th.jpg"]
     },
@@ -154,6 +169,7 @@
       "bg":"badge-success badge text-left",
       "company": "High School (10th)",
       "tech": "all subjects",
+      "from":"Year 2000",
       "desc": "",
       "images": ["images/study/10th.jpg"]
     },

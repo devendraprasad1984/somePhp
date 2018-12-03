@@ -16,7 +16,7 @@
     #mobiMenu{
         display: block;
     }
-    #topMenu{
+    #topMenu,#topColors{
         display: none;
     }
     #topMenu a,#topMenu8 a{
@@ -765,7 +765,7 @@ h3 {
 .main_color a {
     width: 20px;
     height: 20px;
-    padding: 2px;
+    padding: 2px 2px;
     display: inline;
 }
 
@@ -774,7 +774,7 @@ h3 {
     float: left;
     width: 29%;
     height: 29%;
-    margin: 2%;
+    margin: 3px;
     padding: 1px
 }
 
@@ -838,8 +838,8 @@ h3 {
 #topMenu8 a{
     background-color: black;
     color: white;
-    font-size: 14pt;
-    padding: 3px 3px;
+    font-size: 12pt;
+    padding: 1px 1px;
 }
 #bodySection{
     position: relative;
@@ -990,4 +990,32 @@ h3 {
 .fa-rss {
     background: #ff6600;
     color: white;
+}
+
+
+
+.photo {
+    max-width: 280px;
+    margin-bottom: -75px;
+    border: 3px solid #fff;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.photo:hover {
+    -webkit-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    -o-transform: translateY(-9px);
+    transform: translateY(-9px);
+    -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
 }
