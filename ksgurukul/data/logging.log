@@ -706,3 +706,7 @@ User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP
 info: /testimonials/asd_11302018-84926-PM.txt - has been saved
 -------------------------
 
+User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=etst&email=tetst&mobile=tetst&course=&qualification=a&comments=asdadssd, host IP: ,  - December 3, 2018, 9:43 pm
+info: mail: Message has been sent
+-------------------------
+

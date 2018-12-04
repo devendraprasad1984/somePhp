@@ -6,15 +6,15 @@ var bgColor = "bg-white"
 var backcolor = "red"
 var textColor = "text-dark"
 var textWhite = "white"
-var btn="btn-outline-dark"
-var successColor = btn+" text-white"
+var btn = "btn-outline-dark"
+var successColor = btn + " text-white"
 var anchorHeadColor = btn
-var darkColor = anchorHeadColor+" " + bgColor + " " + textColor
+var darkColor = anchorHeadColor + " " + bgColor + " " + textColor
 var runtimeContent = "<div $id class='$p1'></div>"
 var loadOnClickMode = false
 var loadAllTogether = true
 var menuObject = {}
-var allDataLoad=[]
+var allDataLoad = []
 var curHtmlPage = ""
 
 $(function () {
@@ -22,36 +22,31 @@ $(function () {
     // $("img.lazy").lazyload();
 })
 
-function loadAllDataAtOnce(){
-    $.get("services/menu.json", function (res) {
-        menuObject = res["menu"]
-        var allDataLoad=[]
-        $.each(menuObject, function (i, v) {
-            allDataLoad.push({jsid:v.loadIn, uri:v.uri, jsdata:"",func:v.func})
-        })
-        $.post('services/ServiceDetails.php',{loadAll:1,alldata:allDataLoad},function(res){
-            allDataLoad=JSON.parse(res)
-            // console.log(allDataLoad)
-            $.each(allDataLoad,function(i,v){
-                $("#"+v.jsid).html(v.jsdata)
-                execFunc(v.func,v.jsdata)
+function getAllIds(){
+    var ids=""
+    if(menuObject.length==0){
+        $.get("services/menu.json", function (res) {
+            menuObject = res["menu"]
+            $.each(menuObject, function (i, v) {
+                ids += "#id" + v.name + ","
             })
         })
-    })
+    }else{
+        $.each(menuObject, function (i, v) {
+            ids += "#id" + v.name + ","
+        })
+    }
+    ids=ids.substr(0,ids.length-1)
+    return ids
 }
 
-
-function createMenuAndContents() {
-    // var topMenu = $("#topMenu")
-    // var topMenuSelect = $("#idTopMenuSelect")
-    var counter = 0
-    var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
+function loadAllDataAtOnce() {
     $.get("services/menu.json", function (res) {
         menuObject = res["menu"]
+        var allDataLoad = []
+        var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
+        var counter = 0
         $.each(menuObject, function (i, v) {
-            v.loaded = 0
-            v.mydata = ""
-            counter += 1
             newElm = elm
             newElm = newElm.replace("$p1", "id" + v["id"])
             newElm = newElm.replace("$p2", v["name"])
@@ -68,42 +63,101 @@ function createMenuAndContents() {
             div1 = div1.replace("$p1", v["defaultLoad"])
 
             if (v.id != "0") {
+                $("#mainContentSection").append(div1)
+                $("#"+newId).load(newUrl)
+
                 $("#topMenu").append(newElm)
                 $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
             }
-            if (!loadOnClickMode) {
-                if(!loadAllTogether){
+
+            allDataLoad.push({jsid: v.loadIn, uri: v.uri, jsdata: "", func: v.func})
+        })
+        $.post('services/ServiceDetails.php', {loadAll: 1, alldata: allDataLoad}, function (res) {
+            allDataLoad = JSON.parse(res)
+            // console.log(allDataLoad)
+            $.each(allDataLoad, function (i, v) {
+                $("#" + v.jsid).html(v.jsdata)
+                execFunc(v.func, v.jsdata)
+            })
+        })
+    })
+}
+
+
+function createMenuAndContents() {
+    loadOnClickMode = detectmob()
+    var counter = 0
+    var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
+    if (loadAllTogether && !loadOnClickMode){
+        loadAllDataAtOnce()
+        return
+    }
+
+    $.get("services/menu.json", function (res) {
+        menuObject = res["menu"]
+        $.each(menuObject, function (i, v) {
+                v.loaded = 0
+                v.mydata = ""
+                counter += 1
+                newElm = elm
+                newElm = newElm.replace("$p1", "id" + v["id"])
+                newElm = newElm.replace("$p2", v["name"])
+                newElm = newElm.replace("$p3", v["desc"])
+                if (counter == 1) {
+                    newElm = newElm.replace("$c1", "btn " + darkColor)
+                } else {
+                    newElm = newElm.replace("$c1", "btn " + successColor)
+                }
+                var div1 = runtimeContent
+                var newUrl = "templates/" + v["name"] + ".html"
+                var newId = "id" + v["name"] + ""
+                div1 = div1.replace("$id", "id='" + newId + "'")
+                div1 = div1.replace("$p1", v["defaultLoad"])
+
+                if (v.id != "0") {
+                    $("#mainContentSection").append(div1)
+                    $("#topMenu").append(newElm)
+                    $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
+                }
+                if (!loadOnClickMode) {
                     if (v.id != "0" || (v.id == "0" && v.loadIn != "")) {
-                        $("#mainContentSection").append(div1)
                         $("#" + newId).load(newUrl, function (loadedData) {
-                            $("#" + v.loadIn).load(v.uri,function(res){
-                                execFunc(v.func,res)
+                            $("#" + v.loadIn).load(v.uri, function (res) {
+                                execFunc(v.func, res)
                             });
                         })
                     } else if (v.id == "0" && v.loadIn == "") {
-                        $.get(v.uri,function(res){
-                            execFunc(v.func,res)
+                        $.get(v.uri, function (res) {
+                            execFunc(v.func, res)
                         });
                     }
-                }else{
-                    if (v.id != "0" || (v.id == "0" && v.loadIn != "")) {
-                        $("#mainContentSection").append(div1)
-                        $("#" + newId).load(newUrl)
+                } else {
+                    if (v.func == "home") {
+                        execFunc(v.func, undefined)
+                    } else {
+                        displayData(newId, v.loadIn);
+                    }
+                    if (v.id == "0" && v.loadIn == "") {
+                        $.get(v.uri, function (res) {
+                            execFunc(v.func, res)
+                        });
                     }
                 }
             }
-        })
-        if(loadAllTogether && !loadOnClickMode)
-            loadAllDataAtOnce()
+        )
     })
 }
 
 function execFunc(fnName, res) {
     if (typeof fnName != 'undefined') {
         addColorsAndStoreHtml(res)
-        if(fnName=="slider"){
-            displaySlider(res.join(";"), 'sliderLine');
-        }else if(fnName=="slider"){
+        if (fnName == "slider") {
+            var imgStr = res
+            if (Array.isArray(res)) {
+                imgStr = res.join(";")
+            }
+            displaySlider(imgStr, 'sliderLine');
+        } else if (fnName == "home") {
             displayData('id1', fnName);
         }
     }
@@ -115,50 +169,51 @@ function addColorsAndStoreHtml(htmlData) {
     $("#top1 div").removeClass('ltqt');
     $("#top1 div, #top1 pre, #top1 span").css({'color': textWhite});
     $("h1 h2 h3 h4").css({'background-color': backcolor});
+}
 
-    if (loadOnClickMode) {
-        $.each(menuObject, function (i, v) {
-            if (v["name"] == curHtmlPage) {
-                // v.mydata=htmlData
-                var hdata = $("#mainContentSection").html()
-                hdata = hdata.substr(0, hdata.indexOf("<script>"))
-                v.mydata = hdata
-                return
-            }
-        })
-        // console.log(menuObject)
+function detectmob() {
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        return true;
+    }
+    else {
+        return false;
     }
 }
 
 function displayData(cur, tagId) {
     addColorsAndStoreHtml(undefined)
     $("#topMenu span.btn").removeClass(darkColor).addClass(successColor)
-    $("#" + cur).removeClass(successColor).addClass(darkColor)
-
+    $("#id" + cur).removeClass(successColor).addClass(darkColor)
+    // $("#mainContentSection div").addClass(hide).removeClass(show)
+    $(getAllIds()).addClass(hide).removeClass(show)
     if (loadOnClickMode) {
         newUrl = "templates/" + tagId + ".html"
         curHtmlPage = tagId
-        // $("#mainContentSection").load(newUrl)
         $.each(menuObject, function (i, v) {
             if (v["name"] == tagId) {
-                if (v["loaded"] == 0) {
-                    v.loaded = 1
-                    $("#mainContentSection").load(newUrl)
-                } else {
-                    $("#mainContentSection").html(v.mydata)
-                    // $("#mainContentSection").load(newUrl) //temporary
-                }
-                return
+                $("#id" + tagId).load(newUrl, function (loadedData) {
+                    $("#" + v.loadIn).load(v.uri, function (res) {
+                        addColorsAndStoreHtml(undefined)
+                        $("#id" + tagId).addClass(show).removeClass(hide)
+                        // execFunc(v.func, res)
+                    });
+                })
             }
         })
     } else {
-        tagId = "#id" + tagId
         $("#mainContentSection div").each(function (i, elm) {
             if (elm.id.substr(0, 2) == "id") {
                 $("#" + elm.id).removeClass(show).addClass(hide)
             }
         });
-        $(tagId).removeClass(hide).addClass(show)
+        $("#id" + tagId).addClass(show).removeClass(hide)
     }
 }
 
