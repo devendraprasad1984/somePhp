@@ -22,21 +22,21 @@ $(function () {
     // $("img.lazy").lazyload();
 })
 
-function getAllIds(){
-    var ids=""
-    if(menuObject.length==0){
+function getAllIds() {
+    var ids = ""
+    if (menuObject.length == 0) {
         $.get("services/menu.json", function (res) {
             menuObject = res["menu"]
             $.each(menuObject, function (i, v) {
                 ids += "#id" + v.name + ","
             })
         })
-    }else{
+    } else {
         $.each(menuObject, function (i, v) {
             ids += "#id" + v.name + ","
         })
     }
-    ids=ids.substr(0,ids.length-1)
+    ids = ids.substr(0, ids.length - 1)
     return ids
 }
 
@@ -64,7 +64,7 @@ function loadAllDataAtOnce() {
 
             if (v.id != "0") {
                 $("#mainContentSection").append(div1)
-                $("#"+newId).load(newUrl)
+                $("#" + newId).load(newUrl)
 
                 $("#topMenu").append(newElm)
                 $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
@@ -88,7 +88,7 @@ function createMenuAndContents() {
     loadOnClickMode = detectmob()
     var counter = 0
     var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
-    if (loadAllTogether && !loadOnClickMode){
+    if (loadAllTogether && !loadOnClickMode) {
         loadAllDataAtOnce()
         return
     }
@@ -131,17 +131,17 @@ function createMenuAndContents() {
                             execFunc(v.func, res)
                         });
                     }
-                } else {
-                    if (v.func == "home") {
-                        execFunc(v.func, undefined)
-                    } else {
-                        displayData(newId, v.loadIn);
-                    }
-                    if (v.id == "0" && v.loadIn == "") {
+                }
+                else {
+                    if (v.id == 1) {
+                        displayData(newId, v.name);
+                    } else if (v.id == 0) {
                         $.get(v.uri, function (res) {
+                            $("#"+v.loadIn).html(res)
                             execFunc(v.func, res)
                         });
                     }
+
                 }
             }
         )
@@ -202,7 +202,6 @@ function displayData(cur, tagId) {
                     $("#" + v.loadIn).load(v.uri, function (res) {
                         addColorsAndStoreHtml(undefined)
                         $("#id" + tagId).addClass(show).removeClass(hide)
-                        // execFunc(v.func, res)
                     });
                 })
             }

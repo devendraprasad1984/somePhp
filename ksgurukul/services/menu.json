@@ -47,7 +47,7 @@
       "desc": "Testimonials",
       "defaultLoad": "hide",
       "loadIn": "myTestimonialData",
-      "uri": "services/ServiceDetails.php?getDataFile=testimonials&getType=yes"
+      "uri": "services/ServiceDetails.php?getDataFile=testimonials&getType=yes&toload=ok"
     },
     {
       "id": "7",

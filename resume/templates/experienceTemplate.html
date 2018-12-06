@@ -2,24 +2,12 @@
     <div ng-controller="experienceController">
         <div ng-repeat="xObj in experienceData | filter: { bg: ('badge-info badge text-left') }" style='padding-top: 3px;'>
             <span class="h2">{{xObj.company}}</span>
-            <ul class="timeline">
-                <li class="">
-                    <div>
-                        <span style='font-size:12pt;font-weight:bolder' class="badge">{{xObj.name}}</span>
-                        <span class="badge badge-danger">{{xObj.from}}</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-item">
-                        <div class="timeline-body">
-                            <div>{{xObj.desc}}</div>
-                            <div style='float:right;'>
-                                <span class='badge badge-light'>{{xObj.role}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div class="boxS">
+                <span style='font-size:14pt;font-weight:bolder' class="badge">{{xObj.name}}</span>
+                <span class="badge bg-danger">{{xObj.from}}</span>
+                <span class='badge badge-light' style="float: right">{{xObj.role}}</span>
+                <div>{{xObj.desc}}</div>
+            </div>
         </div>
     </div>
 </div>
