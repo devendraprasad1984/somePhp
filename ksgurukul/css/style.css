@@ -519,3 +519,18 @@ iframe{
     width: 100%;
     border: 0;
 }
+
+.fa{
+    background-color: inherit;
+    font-size: 14pt;
+    padding: 5px 5px;
+    margin: 2px;
+    color: inherit;
+}
+
+
+a.fa:hover,span.fa:hover,div.fa:hover{
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
+}
