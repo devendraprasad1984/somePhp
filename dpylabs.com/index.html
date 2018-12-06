@@ -1,71 +1,43 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="IT Services(Python, Oracle, PlSql, SqlServer, RDBMS, Excel, Analytics)">
-    <meta name="author" content="Devendra Prasad">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <TITLE>dpylabs-python,excel,access,seo,windows,websites,tutorials,analytics,plsq,database,php,mongo,aws,cloud</TITLE>
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/w3.css">
-    <script src="js/angular.js"></script>
-    <script src="js/jQuery.js"></script>
-    <script src="js/myJs1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="css/bootstrap.min.css" async/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" async/>
+    <link href="js/toastr.min.css" rel="stylesheet" async/>
+    <link href="css/style.css" rel="stylesheet" async/>
+    <link href="css/w3.css" rel="stylesheet" async/>
+    <style>
+        td {
+            border: 0px solid #0c5460;
+        }
+    </style>
 </head>
 
-<body class="bgImg1">
-<div id="container" ng-app="myAjs">
-    <div id="header">
-        <div style="text-align:left; float:left; overflow: hidden;">dpyLabs IT Services</div>
-        <div style="text-align: right; float:right; overflow: hidden;">
-            <input type="button" value="..." />
-        </div>
-        <div><img src="images/img1.png" style="height: 100px; width: 100%;" /></div>
-    </div>
-    <div id="body">
-        <table width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td style="background-color: black; width: 200px;" id="tdLeftcolumn">
-                    <div style="text-align:left; float:left; overflow: hidden;" id="leftcolumn"
-                         ng-controller="Contents" ng-init="getContentsById('');">
-                        <ul>
-                            <li id="id1"><a href="#" ng-click="getContentsById('python');">&#9989 Python Programming</a></li>
-                            <li id="id2"><a href="#" ng-click="getContentsById('excel');">&#9989 Excel+Access Analytics</a></li>
-                            <li id="id3"><a href="#" ng-click="getContentsById('dbms');">&#9989 Database Management</a></li>
-                            <li id="id4"><a href="#" ng-click="getContentsById('websites');">&#9989 Websites</a></li>
-                            <li id="id5"><a href="#" ng-click="getContentsById('winapp');">&#9989 Windows Applications</a></li>
-                            <li id="id6"><a href="#" ng-click="getContentsById('itcns');">&#9989 IT Consulting</a></li>
-                            <li id="id7"><a href="#" ng-click="getContentsById('projects');">&#9989 Projects & Assignments</a></li>
-                        </ul>
-                    </div>
-                </td>
-                <td>
-                    <div style="" id="rightcolumn" ng-controller="Contents">
-                        <div id="mAllServices"></div>
-                        <div style="display: block;" class="w3-green"><h1 id="mTag"></h1></div>
-                        <div style="display: block;" id="mContent"></div>
-                        <div style="display: block;" id="mImages"></div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div id="footer" ng-controller="Contents">
-        <ul>
-            <li id="id8"><a href="#" ng-click="getContentsById('');">Home</a></li>
-            <li id="id9"><a href="#">Products</a></li>
-            <li id="id10"><a href="#">Services</a></li>
-            <li id="id11"><a href="#">FB</a></li>
-            <li id="id12"><a href="#">TW</a></li>
-            <li id="id13"><a href="#">LN</a></li>
-            <li id="id14"><a href="#" ng-click="getContentsById('contactus');">Contact Us</a></li>
-        </ul>
 
+<body class="container" ng-app="myAjs">
+
+<header class="box">
+    <div id="topheader" class="header">
+        <div ng-include ng-view src="'templates/header.html'"></div>
     </div>
-</div>
+</header>
+
+<section class="box">
+    <div id="mainContentSection"></div>
+</section>
+
+<footer>
+    <div id="divFooter" class="">
+        <div ng-view ng-include="" src="'templates/footer.html'"></div>
+    </div>
+</footer>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/toastr.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
-
 </html>

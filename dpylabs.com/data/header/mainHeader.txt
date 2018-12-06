@@ -1,0 +1,4 @@
+<div style='float:left;'>
+    <div class='h3'>dPyLabs IT Services</div>
+    <div style='font-size:10pt;'>+91 9582797772, dpylabs@gmail.com</div>
+</div>
