@@ -3,41 +3,46 @@
     {
       "id": "1",
       "name": "home",
-      "desc": "Home",
+      "desc": " Home",
       "defaultLoad": "show",
       "loadIn": "myHomeData",
+      "class":"",
       "uri": "services/ServiceDetails.php?getDataFile=home&getType=yes&title=no",
       "func":"home"
     },
     {
-      "id": "2",
-      "name": "services",
-      "desc": "Services",
+      "id": "0",
+      "name": "",
+      "desc": "",
       "defaultLoad": "hide",
       "loadIn": "productID",
+      "class":"",
       "uri": "services/ServiceDetails.php?getDataFile=services&getType=yes"
     },
     {
       "id": "3",
       "name": "event",
-      "desc": "Events",
+      "desc": " News",
       "defaultLoad": "hide",
+      "class":"",
       "loadIn": "eventID",
       "uri": "services/ServiceDetails.php?getDataFile=events&getType=yes"
     },
     {
       "id": "4",
       "name": "team",
-      "desc": "Team",
+      "desc": " Team",
       "defaultLoad": "hide",
+      "class":"",
       "loadIn": "teamId",
       "uri": "services/ServiceDetails.php?getDataFile=team&getType=yes"
     },
     {
       "id": "7",
       "name": "contact",
-      "desc": "Contact",
+      "desc": " Contact Us",
       "defaultLoad": "hide",
+      "class":"",
       "loadIn": "contactID",
       "uri": "services/ServiceDetails.php?getDataFile=contact&getType=yes&toload=no"
     },

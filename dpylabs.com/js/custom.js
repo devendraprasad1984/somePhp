@@ -2,16 +2,15 @@ var app = angular.module("myAjs", []);
 
 var hide = "hide"
 var show = "show"
-var bgColor = "bg-info"
+var bgColor = "bg-white"
 var backcolor = "red"
-var textColor = "text-black"
-var textWhite = "black"
-var btn = "btn-outline-primary"
-var successColor = btn + " "+textColor
+var textColor = "text-dark"
+var textWhite = "white"
+var btn = "btn-primary"
+var successColor = btn + " text-black"
 var anchorHeadColor = btn
 var darkColor = anchorHeadColor + " " + bgColor + " " + textColor
 var runtimeContent = "<div $id class='$p1'></div>"
-var loadOnClickMode = false
 var loadAllTogether = true
 var menuObject = {}
 var allDataLoad = []
@@ -19,7 +18,6 @@ var curHtmlPage = ""
 
 $(function () {
     createMenuAndContents()
-    // $("img.lazy").lazyload();
 })
 
 function getAllIds() {
@@ -52,9 +50,9 @@ function loadAllDataAtOnce() {
             newElm = newElm.replace("$p2", v["name"])
             newElm = newElm.replace("$p3", v["desc"])
             if (counter == 1) {
-                newElm = newElm.replace("$c1", "btn " + darkColor)
+                newElm = newElm.replace("$c1", "btn " + darkColor + " " + v["class"])
             } else {
-                newElm = newElm.replace("$c1", "btn " + successColor)
+                newElm = newElm.replace("$c1", "btn " + successColor + " " + v["class"])
             }
             var div1 = runtimeContent
             var newUrl = "templates/" + v["name"] + ".html"
@@ -74,7 +72,6 @@ function loadAllDataAtOnce() {
         })
         $.post('services/ServiceDetails.php', {loadAll: 1, alldata: allDataLoad}, function (res) {
             allDataLoad = JSON.parse(res)
-            // console.log(allDataLoad)
             $.each(allDataLoad, function (i, v) {
                 $("#" + v.jsid).html(v.jsdata)
                 execFunc(v.func, v.jsdata)
@@ -85,10 +82,7 @@ function loadAllDataAtOnce() {
 
 
 function createMenuAndContents() {
-    // loadOnClickMode = detectmob()
-    var counter = 0
-    var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
-    if (loadAllTogether && !loadOnClickMode) {
+    if (loadAllTogether) {
         loadAllDataAtOnce()
         return
     }
@@ -110,7 +104,7 @@ function execFunc(fnName, res) {
 }
 
 function addColorsAndStoreHtml(htmlData) {
-    $("span a, a.btn").addClass(anchorHeadColor)
+    // $("span a, a.btn").addClass(anchorHeadColor)
     $("#top1 div").removeClass('box');
     $("#top1 div").removeClass('ltqt');
     $("#top1 div, #top1 pre, #top1 span").css({'color': textWhite});
@@ -136,10 +130,10 @@ function detectmob() {
 function displayData(cur, tagId) {
     addColorsAndStoreHtml(undefined)
     $("#topMenu span.btn").removeClass(darkColor).addClass(successColor)
-    $("#id" + cur).removeClass(successColor).addClass(darkColor)
+    $("#" + cur).removeClass(successColor).addClass(darkColor)
     // $("#mainContentSection div").addClass(hide).removeClass(show)
     $(getAllIds()).addClass(hide).removeClass(show)
-    if (loadOnClickMode) {
+    if (!loadAllTogether) {
         newUrl = "templates/" + tagId + ".html"
         curHtmlPage = tagId
         $.each(menuObject, function (i, v) {
@@ -243,7 +237,7 @@ function displaySlider(imgStr, idDiv) {
     var loadInto = "#" + idDiv
     for (i = 0; i < imgArr.length; i++) {
         imgSrc = imgArr[i].substr(3)
-        imgTag = "<a href='" + imgSrc + "' target='_blank'><img src='" + imgSrc + "' class='sliderImg mySlides' /></a>"
+        imgTag = "<a href='" + imgSrc + "' target='_blank'><img src='" + imgSrc + "' class='mySlides rounded sliderImg' /></a>"
         $(loadInto).append(imgTag)
     }
     showDivs(slideIndex);
