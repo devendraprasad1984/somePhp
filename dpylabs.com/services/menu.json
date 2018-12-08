@@ -13,8 +13,8 @@
     {
       "id": "0",
       "name": "",
-      "desc": "",
-      "defaultLoad": "hide",
+      "desc": "load",
+      "defaultLoad": "show",
       "loadIn": "productID",
       "class":"",
       "uri": "services/ServiceDetails.php?getDataFile=services&getType=yes"

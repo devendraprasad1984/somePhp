@@ -17,9 +17,9 @@ var menuObject = {}
 var allDataLoad = []
 var curHtmlPage = ""
 
+
 $(function () {
     createMenuAndContents()
-    // $("img.lazy").lazyload();
 })
 
 function getAllIds() {
@@ -40,11 +40,10 @@ function getAllIds() {
     return ids
 }
 
-function loadAllDataAtOnce() {
+function createMenu(callback) {
+    var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
     $.get("services/menu.json", function (res) {
         menuObject = res["menu"]
-        var allDataLoad = []
-        var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
         var counter = 0
         $.each(menuObject, function (i, v) {
             newElm = elm
@@ -52,9 +51,9 @@ function loadAllDataAtOnce() {
             newElm = newElm.replace("$p2", v["name"])
             newElm = newElm.replace("$p3", v["desc"])
             if (counter == 1) {
-                newElm = newElm.replace("$c1", "btn " + darkColor)
+                newElm = newElm.replace("$c1", "btn " + darkColor + " " + v["class"])
             } else {
-                newElm = newElm.replace("$c1", "btn " + successColor)
+                newElm = newElm.replace("$c1", "btn " + successColor + " " + v["class"])
             }
             var div1 = runtimeContent
             var newUrl = "templates/" + v["name"] + ".html"
@@ -70,82 +69,55 @@ function loadAllDataAtOnce() {
                 $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
             }
 
-            allDataLoad.push({jsid: v.loadIn, uri: v.uri, jsdata: "", func: v.func})
+            allDataLoad.push({jsid: v.loadIn, uri: v.uri, jsdata: "", func: v.func, vid: v.id, desc: v.desc})
         })
-        $.post('services/ServiceDetails.php', {loadAll: 1, alldata: allDataLoad}, function (res) {
-            allDataLoad = JSON.parse(res)
-            // console.log(allDataLoad)
-            $.each(allDataLoad, function (i, v) {
+        if (typeof callback != 'undefined')
+            callback(allDataLoad)
+    })
+}
+
+function loadAllData(allMenuObjData) {
+    $.post('services/ServiceDetails.php', {loadAll: 1, alldata: allMenuObjData}, function (res) {
+        newLoadObject = JSON.parse(res)
+        $.each(newLoadObject, function (i, v) {
+            $("#" + v.jsid).html(v.jsdata)
+            menuObjUpdate(v.jsid, v.jsdata);
+            execFunc(v.func, v.jsdata)
+        })
+    })
+}
+
+function menuObjUpdate(jsid, data) {
+    $.each(menuObject, function (i, x) {
+        if (x.loadIn == jsid) {
+            x.data = data
+            x.loaded = 1
+        }
+    })
+}
+
+function loadOneByOne(allMenuObjData) {
+    $.each(allMenuObjData, function (i, v) {
+        if (v.vid == 0 || v.vid == 1 || v.desc == "load") {
+            $.get(v.uri, function (res) {
+                v.jsdata = res
                 $("#" + v.jsid).html(v.jsdata)
+                menuObjUpdate(v.jsid, v.jsdata);
                 execFunc(v.func, v.jsdata)
             })
-        })
+        }
     })
 }
 
 
 function createMenuAndContents() {
-    loadOnClickMode = detectmob()
-    var counter = 0
-    var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
-    if (loadAllTogether && !loadOnClickMode) {
-        loadAllDataAtOnce()
-        return
+    loadAllTogether=!detectmob()
+    // loadAllTogether = false
+    if (loadAllTogether) {
+        createMenu(loadAllData)
+    } else {
+        createMenu(loadOneByOne)
     }
-
-    $.get("services/menu.json", function (res) {
-        menuObject = res["menu"]
-        $.each(menuObject, function (i, v) {
-                v.loaded = 0
-                v.mydata = ""
-                counter += 1
-                newElm = elm
-                newElm = newElm.replace("$p1", "id" + v["id"])
-                newElm = newElm.replace("$p2", v["name"])
-                newElm = newElm.replace("$p3", v["desc"])
-                if (counter == 1) {
-                    newElm = newElm.replace("$c1", "btn " + darkColor)
-                } else {
-                    newElm = newElm.replace("$c1", "btn " + successColor)
-                }
-                var div1 = runtimeContent
-                var newUrl = "templates/" + v["name"] + ".html"
-                var newId = "id" + v["name"] + ""
-                div1 = div1.replace("$id", "id='" + newId + "'")
-                div1 = div1.replace("$p1", v["defaultLoad"])
-
-                if (v.id != "0") {
-                    $("#mainContentSection").append(div1)
-                    $("#topMenu").append(newElm)
-                    $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
-                }
-                if (!loadOnClickMode) {
-                    if (v.id != "0" || (v.id == "0" && v.loadIn != "")) {
-                        $("#" + newId).load(newUrl, function (loadedData) {
-                            $("#" + v.loadIn).load(v.uri, function (res) {
-                                execFunc(v.func, res)
-                            });
-                        })
-                    } else if (v.id == "0" && v.loadIn == "") {
-                        $.get(v.uri, function (res) {
-                            execFunc(v.func, res)
-                        });
-                    }
-                }
-                else {
-                    if (v.id == 1) {
-                        displayData(newId, v.name);
-                    } else if (v.id == 0) {
-                        $.get(v.uri, function (res) {
-                            $("#"+v.loadIn).html(res)
-                            execFunc(v.func, res)
-                        });
-                    }
-
-                }
-            }
-        )
-    })
 }
 
 function execFunc(fnName, res) {
@@ -164,7 +136,7 @@ function execFunc(fnName, res) {
 }
 
 function addColorsAndStoreHtml(htmlData) {
-    $("span a, a.btn").addClass(anchorHeadColor)
+    // $("span a, a.btn").addClass(anchorHeadColor)
     $("#top1 div").removeClass('box');
     $("#top1 div").removeClass('ltqt');
     $("#top1 div, #top1 pre, #top1 span").css({'color': textWhite});
@@ -190,20 +162,29 @@ function detectmob() {
 function displayData(cur, tagId) {
     addColorsAndStoreHtml(undefined)
     $("#topMenu span.btn").removeClass(darkColor).addClass(successColor)
-    $("#id" + cur).removeClass(successColor).addClass(darkColor)
+    $("#" + cur).removeClass(successColor).addClass(darkColor)
     // $("#mainContentSection div").addClass(hide).removeClass(show)
     $(getAllIds()).addClass(hide).removeClass(show)
-    if (loadOnClickMode) {
+    if (!loadAllTogether) {
         newUrl = "templates/" + tagId + ".html"
         curHtmlPage = tagId
         $.each(menuObject, function (i, v) {
             if (v["name"] == tagId) {
-                $("#id" + tagId).load(newUrl, function (loadedData) {
-                    $("#" + v.loadIn).load(v.uri, function (res) {
-                        addColorsAndStoreHtml(undefined)
-                        $("#id" + tagId).addClass(show).removeClass(hide)
-                    });
-                })
+                if (v.loaded == 0 || typeof v.loaded == 'undefined') {
+                    $("#id" + tagId).load(newUrl, function (loadedData) {
+                        $("#" + v.loadIn).load(v.uri, function (res) {
+                            addColorsAndStoreHtml(undefined)
+                            $("#id" + tagId).addClass(show).removeClass(hide)
+                            v.loaded = 1
+                            v.data = res
+                        });
+                    })
+                } else {
+                    if($("#id" + tagId).html().length==0)
+                        $("#id" + tagId).html(v.data)
+                    addColorsAndStoreHtml(undefined)
+                    $("#id" + tagId).addClass(show).removeClass(hide)
+                }
             }
         })
     } else {
@@ -297,7 +278,7 @@ function displaySlider(imgStr, idDiv) {
     var loadInto = "#" + idDiv
     for (i = 0; i < imgArr.length; i++) {
         imgSrc = imgArr[i].substr(3)
-        imgTag = "<a href='" + imgSrc + "' target='_blank'><img src='" + imgSrc + "' class='sliderImg mySlides' /></a>"
+        imgTag = "<a href='" + imgSrc + "' target='_blank'><img src='" + imgSrc + "' class='mySlides rounded sliderImg' /></a>"
         $(loadInto).append(imgTag)
     }
     showDivs(slideIndex);

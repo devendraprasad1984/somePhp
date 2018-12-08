@@ -38,11 +38,10 @@ function getAllIds() {
     return ids
 }
 
-function loadAllDataAtOnce() {
+function createMenu(callback) {
+    var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
     $.get("services/menu.json", function (res) {
         menuObject = res["menu"]
-        var allDataLoad = []
-        var elm = "<span id='$p1' class='$c1' onclick=\"displayData(this.id,'$p2');\">$p3</span>"
         var counter = 0
         $.each(menuObject, function (i, v) {
             newElm = elm
@@ -68,23 +67,54 @@ function loadAllDataAtOnce() {
                 $("#idTopMenuSelect").append("<option value='" + v["name"] + "'>" + v["desc"] + "</option>")
             }
 
-            allDataLoad.push({jsid: v.loadIn, uri: v.uri, jsdata: "", func: v.func})
+            allDataLoad.push({jsid: v.loadIn, uri: v.uri, jsdata: "", func: v.func, vid: v.id, desc: v.desc})
         })
-        $.post('services/ServiceDetails.php', {loadAll: 1, alldata: allDataLoad}, function (res) {
-            allDataLoad = JSON.parse(res)
-            $.each(allDataLoad, function (i, v) {
+        if (typeof callback != 'undefined')
+            callback(allDataLoad)
+    })
+}
+
+function loadAllData(allMenuObjData) {
+    $.post('services/ServiceDetails.php', {loadAll: 1, alldata: allMenuObjData}, function (res) {
+        newLoadObject = JSON.parse(res)
+        $.each(newLoadObject, function (i, v) {
+            $("#" + v.jsid).html(v.jsdata)
+            menuObjUpdate(v.jsid, v.jsdata);
+            execFunc(v.func, v.jsdata)
+        })
+    })
+}
+
+function menuObjUpdate(jsid, data) {
+    $.each(menuObject, function (i, x) {
+        if (x.loadIn == jsid) {
+            x.data = data
+            x.loaded = 1
+        }
+    })
+}
+
+function loadOneByOne(allMenuObjData) {
+    $.each(allMenuObjData, function (i, v) {
+        if (v.vid == 0 || v.vid == 1 || v.desc == "load") {
+            $.get(v.uri, function (res) {
+                v.jsdata = res
                 $("#" + v.jsid).html(v.jsdata)
+                menuObjUpdate(v.jsid, v.jsdata);
                 execFunc(v.func, v.jsdata)
             })
-        })
+        }
     })
 }
 
 
 function createMenuAndContents() {
+    loadAllTogether=!detectmob()
+    // loadAllTogether = false
     if (loadAllTogether) {
-        loadAllDataAtOnce()
-        return
+        createMenu(loadAllData)
+    } else {
+        createMenu(loadOneByOne)
     }
 }
 
@@ -138,12 +168,21 @@ function displayData(cur, tagId) {
         curHtmlPage = tagId
         $.each(menuObject, function (i, v) {
             if (v["name"] == tagId) {
-                $("#id" + tagId).load(newUrl, function (loadedData) {
-                    $("#" + v.loadIn).load(v.uri, function (res) {
-                        addColorsAndStoreHtml(undefined)
-                        $("#id" + tagId).addClass(show).removeClass(hide)
-                    });
-                })
+                if (v.loaded == 0 || typeof v.loaded == 'undefined') {
+                    $("#id" + tagId).load(newUrl, function (loadedData) {
+                        $("#" + v.loadIn).load(v.uri, function (res) {
+                            addColorsAndStoreHtml(undefined)
+                            $("#id" + tagId).addClass(show).removeClass(hide)
+                            v.loaded = 1
+                            v.data = res
+                        });
+                    })
+                } else {
+                    if($("#id" + tagId).html().length==0)
+                        $("#id" + tagId).html(v.data)
+                    addColorsAndStoreHtml(undefined)
+                    $("#id" + tagId).addClass(show).removeClass(hide)
+                }
             }
         })
     } else {

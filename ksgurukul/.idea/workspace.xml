@@ -15,51 +15,10 @@
     <pharPath>C:\wamp7118\php\composer.phar</pharPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/custom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#legend#0;n#fieldset#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="364" column="18" selection-start-line="364" selection-start-column="18" selection-end-line="364" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/menu.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>services</find>
       <find>login</find>
       <find>$secret_key</find>
       <find>idSession</find>
@@ -89,6 +48,7 @@
       <find>showDivs</find>
       <find>img</find>
       <find>displayData</find>
+      <find>getdata</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -97,7 +57,6 @@
         <option value="$PROJECT_DIR$/css/w3.css" />
         <option value="$PROJECT_DIR$/templates/blog.html" />
         <option value="$PROJECT_DIR$/templates/contact.html" />
-        <option value="$PROJECT_DIR$/templates/footer.html" />
         <option value="$PROJECT_DIR$/templates/testimonial.html" />
         <option value="$PROJECT_DIR$/admin/logging.html" />
         <option value="$PROJECT_DIR$/templates/event.html" />
@@ -116,17 +75,19 @@
         <option value="$PROJECT_DIR$/admin/test.php" />
         <option value="$PROJECT_DIR$/admin/test-jwt.php" />
         <option value="$PROJECT_DIR$/templates/header.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/templates/team.html" />
         <option value="$PROJECT_DIR$/templates/course.html" />
         <option value="$PROJECT_DIR$/services/config.xml" />
         <option value="$PROJECT_DIR$/js/customEditorFunc.js" />
         <option value="$PROJECT_DIR$/../resume/services/ServiceDetails.php" />
         <option value="$PROJECT_DIR$/../resume/css/style1.css" />
-        <option value="$PROJECT_DIR$/services/menu.json" />
         <option value="$PROJECT_DIR$/services/ServiceDetails.php" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/services/menu.json" />
         <option value="$PROJECT_DIR$/js/custom.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/templates/footer.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/data/header/mainHeader.txt" />
       </list>
     </option>
   </component>
@@ -170,6 +131,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,12 +140,26 @@
               <item name="ksgurukul" type="b2602c69:ProjectViewProjectNode" />
               <item name="ksgurukul" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ksgurukul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgurukul" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgurukul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgurukul" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ksgurukul" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ksgurukul" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,7 +172,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -259,7 +236,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -269,12 +245,12 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15648855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18501529" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.39389068" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.360134" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="6" />
@@ -293,14 +269,26 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/services/ServiceDetails.php</url>
+          <line>124</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="103" />
+      <option name="time" value="125" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>$this-&gt;div2LoadIn</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>res</expression-string>
         <language-id>JavaScript</language-id>
@@ -327,11 +315,6 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>$this-&gt;div2LoadIn</expression-string>
-        <language-id>PHP</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
         <expression-string />
         <language-id>PHP</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -349,7 +332,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/services/database.php" />
     <entry file="file://$PROJECT_DIR$/services/uploadN.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -368,13 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -499,14 +474,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="134" column="72" selection-start-line="134" selection-start-column="72" selection-end-line="134" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../resume/services/server.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../resume/services/ServiceDetails.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -539,41 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/ServiceDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/menu.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/event.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -581,20 +515,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../resume/services/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="364" column="18" selection-start-line="364" selection-start-column="18" selection-end-line="364" selection-end-column="18" />
+        <state relative-caret-position="50">
+          <caret line="10641" column="4" selection-start-line="10641" selection-start-column="4" selection-end-line="10641" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/menu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="586">
+          <caret line="141" column="27" selection-start-line="141" selection-start-column="27" selection-end-line="141" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#legend#0;n#fieldset#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/ServiceDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="528" column="1" lean-forward="true" selection-start-line="528" selection-start-column="1" selection-end-line="528" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/header/mainHeader.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="66" />
         </state>
       </provider>
     </entry>
