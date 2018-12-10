@@ -2,8 +2,20 @@
 //session_start();
 require_once 'emailer.php';
 require_once '../services/token/JWT.php';
+require_once '../services/imgOpt/OptimizerChainFactory.php';
+require_once '../services/imgOpt/Image.php';
+require_once '../services/imgOpt/OptimizerChain.php';
+require_once '../services/imgOpt/Optimizer.php';
+require_once '../services/imgOpt/Optimizers/BaseOptimizer.php';
+require_once '../services/imgOpt/Optimizers/Optipng.php';
+require_once '../services/imgOpt/Optimizers/Jpegoptim.php';
+require_once '../services/imgOpt/Optimizers/Pngquant.php';
+require_once '../services/imgOpt/Optimizers/Svgo.php';
+require_once '../services/imgOpt/Optimizers/Gifsicle.php';
+
 
 use Firebase\JWT\JWT;
+use Spatie\ImageOptimizer\OptimizerChainFactory;
 
 $objMail = new Mailer();
 $objSer = new genericObjects();
@@ -69,9 +81,31 @@ Class genericObjects
         fclose($f);
     }
 
-    public function readLog()
+    public function readLog($lines)
     {
-        return $this->readFileContents($this->baseDataPath, "logging.log");
+        if ($lines === 0)
+            return $this->readFileContents($this->baseDataPath, "logging.log");
+        else {
+            $logLines = "";
+            try {
+                $file = file($this->baseDataPath . "logging.log");
+//                for ($i = max(0, count($file) - $lines); $i < count($file); $i++) {
+                for ($i =count($file); $i > max(0, count($file) - $lines)-1; $i--) {
+                    $logLines .= "<b>".($i)."</b>: \t".$file[$i];
+                }
+//                $cnt = 0;
+//                $myfile = fopen($this->baseDataPath . "logging.log", "r");
+//                while (!feof($myfile)) {
+//                    $cnt += 1;
+//                    $logLines .= fgets($myfile);
+//                    if ($lines === $cnt) break;
+//                }
+//                fclose($myfile);
+            } catch (Exception $ex) {
+                $this->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
+            }
+            return $logLines;
+        }
     }
 
     public function writeToFile($filename, $strData)
@@ -93,7 +127,7 @@ Class genericObjects
         return $msg;
     }
 
-    public function readFolders($folderPath, $withFileContent,$isEcho=true)
+    public function readFolders($folderPath, $withFileContent, $isEcho = true)
     {
         $sName = $this->baseDataPath . $folderPath;
         $searchString = "";
@@ -155,7 +189,7 @@ Class genericObjects
         if ($withFileContent === "option") {
             $allData .= "</select>";
         }
-        if($isEcho)
+        if ($isEcho)
             echo html_entity_decode($allData);
         return html_entity_decode($allData);
     }
@@ -397,8 +431,18 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
                 $msg .= "File is an image - " . $check["mime"] . ".";
                 $msg .= "<br/>saved slider - $baseFileName - $tmpFileName";
                 if (move_uploaded_file($tmpFileName, $savePath)) {
-                    $msg = "The file " . $baseFileName . " has been uploaded.";
+                    $originalSize = filesize($savePath);
+                    $msg = "The file $baseFileName has been uploaded, Original size is $originalSize kb, ";
                     $uploadOk = 1;
+                    $factory = new OptimizerChainFactory();
+                    $optimizer = $factory->create();
+                    $optimizer->optimize($savePath);
+                    $factory = null;
+                    clearstatcache();
+                    $optimizedSize = filesize($savePath);
+                    $percentChange = (1 - $optimizedSize / $originalSize) * 100;
+                    $msg .= "updated size is $optimizedSize kb, The image is now $percentChange% smaller";
+
                 } else {
                     $msg .= "Sorry, there was an error uploading your file.";
                     $uploadOk = 0;
@@ -417,37 +461,39 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
             } else {
                 $msg = "error deleting file - $fn";
             }
-            echo $msg;
+//            echo $msg;
         }
     } catch (Exception $ex) {
         $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
+    } finally {
+        echo $msg;
     }
 } else if (isset($_REQUEST['logging'])) {
     try {
         if (!$allowAdmin || !$objSer->validateToken()) exit();
-        echo "<pre class='log text-white'>" . $objSer->readLog() . "</pre>";
+        echo "<p class='log'>" . $objSer->readLog(100) . "</p>";
     } catch (Exception $ex) {
         $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
     }
 } else if (isset($_POST['loadAll'])) {
     try {
-        $allObj=$_POST['alldata'];
+        $allObj = $_POST['alldata'];
         foreach ($allObj as $i => $v) {
             $xcall = substr($v["uri"], strpos($v["uri"], "?") + 1);
             $strArray = explode("&", $xcall);
-            $spath=substr($strArray[0],1+strpos($strArray[0],"="));
-            $getType=substr($strArray[1],1+strpos($strArray[1],"="));
-            if(sizeof($strArray)===3)
-                $toload=substr($strArray[2],1+strpos($strArray[2],"="));
+            $spath = substr($strArray[0], 1 + strpos($strArray[0], "="));
+            $getType = substr($strArray[1], 1 + strpos($strArray[1], "="));
+            if (sizeof($strArray) === 3)
+                $toload = substr($strArray[2], 1 + strpos($strArray[2], "="));
             $objSer->div2LoadIn = $toload;
-            if(strpos($v["uri"],"slider")>0){
-                $sdata=$objSer->getSliderInfo();
-            }else{
-                $sdata=$objSer->readFolders($spath, $getType,false);
+            if (strpos($v["uri"], "slider") > 0) {
+                $sdata = $objSer->getSliderInfo();
+            } else {
+                $sdata = $objSer->readFolders($spath, $getType, false);
             }
-            $allObj[$i]["jsdata"]=$sdata;
+            $allObj[$i]["jsdata"] = $sdata;
         }
         echo json_encode($allObj);
     } catch (Exception $ex) {

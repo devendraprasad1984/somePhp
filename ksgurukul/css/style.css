@@ -112,6 +112,10 @@ div,pre {
     font-size: 10pt;
     word-wrap: break-word;
     white-space:pre;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .img {

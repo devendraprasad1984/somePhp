@@ -1,0 +1,9 @@
+{
+    "require": {
+		"firebase/php-jwt": "^5.0",
+        "spatie/image-optimizer": "^1.1",
+        "tinify/tinify": "^1.5",
+        "nielse63/phpimagecache": "^1.0",
+        "spatie/laravel-image-optimizer": "^1.3"
+    }
+}

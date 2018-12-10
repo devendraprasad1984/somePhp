@@ -1,3 +1,7 @@
+// $("#idFullEditor").load("full_editor.html")
+// var dataInHtmlString = $("#txtEditor .fr-element p").html()
+
+
 var hide = "hide"
 var show = "show"
 var bgColor = "bg-white"
@@ -158,10 +162,8 @@ function deleteSlider(cur,filename) {
 function checkLogs() {
     $.get("../services/ServiceDetails.php?logging=1&jwt="+getToken(), function (res) {
         var dt="<span onclick='closeNav()' class='btn btn-danger'>Close</span>"
-        dt+=res
-        $("#tempContainer").html(dt,function(){
-            // $("#tempContainer pre").css({'white-space':'pre'})
-        })
+        dt+="<div  style='height: 600px; overflow: auto'>"+res+"</div>"
+        $("#tempContainer").html(dt)
         $("#tempContainer").css({"width": "100%", "display": "block"})
     })
 }
