@@ -20,6 +20,14 @@ $(function () {
     createMenuAndContents()
 })
 
+function setImageMargin(){
+    if(detectmob()){
+        $("#sliderLine").css({"margin-top":"13rem"})
+    }else{
+        $("#sliderLine").css({"margin-top":"7rem"})
+    }
+}
+
 function getAllIds() {
     var ids = ""
     if (menuObject.length == 0) {
@@ -128,6 +136,7 @@ function execFunc(fnName, res) {
             }
             displaySlider(imgStr, 'sliderLine');
         } else if (fnName == "home") {
+            setImageMargin()
             displayData('id1', fnName);
         }
     }
@@ -158,6 +167,7 @@ function detectmob() {
 }
 
 function displayData(cur, tagId) {
+    setImageMargin()
     addColorsAndStoreHtml(undefined)
     $("#topMenu span.btn").removeClass(darkColor).addClass(successColor)
     $("#" + cur).removeClass(successColor).addClass(darkColor)

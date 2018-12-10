@@ -6,7 +6,7 @@
     <SMTPAuth>true</SMTPAuth>
     <Username>genericmailsender2019@gmail.com</Username>
     <SMTPSecure>ssl</SMTPSecure>
-    <ToAddress>devendraprasad1984@gmail.com</ToAddress>
+    <ToAddress>dpylabs@gmail.com</ToAddress>
     <ReplyAddress></ReplyAddress>
     <Plugdir></Plugdir>
     <Wordwrap>150</Wordwrap>

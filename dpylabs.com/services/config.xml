@@ -6,7 +6,7 @@
     <SMTPAuth>true</SMTPAuth>
     <Username>support@ksgurukul.in</Username>
     <SMTPSecure></SMTPSecure>
-    <ToAddress>ks.academic@yahoo.com</ToAddress>
+    <ToAddress>dpylabs@gmail.com</ToAddress>
     <ReplyAddress></ReplyAddress>
     <Plugdir></Plugdir>
     <Wordwrap>150</Wordwrap>
