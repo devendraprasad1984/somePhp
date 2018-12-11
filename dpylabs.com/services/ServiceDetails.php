@@ -54,6 +54,11 @@ Class genericObjects
         $host = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
         return $host;
     }
+    public function getHostRef()
+    {
+        $ref = str_replace("index.html","", $_SERVER['HTTP_REFERER'])."data/";
+        return $ref;
+    }
 
     public function writeLog($someData)
     {
@@ -93,7 +98,7 @@ Class genericObjects
         return $msg;
     }
 
-    public function readFolders($folderPath, $withFileContent,$isEcho=true)
+    public function readFolders($folderPath, $withFileContent, $isEcho = true)
     {
         $sName = $this->baseDataPath . $folderPath;
         $searchString = "";
@@ -115,8 +120,9 @@ Class genericObjects
         }
         foreach ($dirs as $key => $value) {
             $xPath = $folderPath . "/" . $value;
+            $fullPath=$this->getHostRef().$xPath;
 //            echo "<br/>path: ".$xPath;
-            if ((strpos($value, ".txt") === false && $spath !== "data") || (strpos($value, ".log") > 0 || $value === "slider")) {
+            if ((strpos($value, ".pdf")<0) && (strpos($value, ".txt") === false && $spath !== "data") || (strpos($value, ".log") > 0 || $value === "slider")) {
 //                echo "skipping: $value";
                 continue;
             }
@@ -126,7 +132,12 @@ Class genericObjects
                 $data = "<div class='box ltqt' style='margin-top: 4px;'>";
                 if ($this->div2LoadIn != "" && $this->div2LoadIn != "no")
                     $data .= "<div style='font-weight: bolder; font-size: 15pt;'>$label</div>";
-                $data .= "<div>" . $this->readFileContents($folderPath, $value) . "</div>";
+                if (strpos($value, ".txt")>0)
+                    $data .= "<div>" . $this->readFileContents($folderPath, $value) . "</div>";
+                else if (strpos($value, ".pdf")>0)
+                    $data .= "<div id='obj$this->counter' class='pdfView' style='background-color: white; height: 300px;'><object data='$fullPath' type='application/pdf' class='pdfView'></object></div>";
+                else if (strpos($value, ".png")>0 || strpos($value, ".jpg")>0)
+                    $data .= "<div><img src='$fullPath' class='imgInDiv'/></div>";
                 $data .= "</div>";
             } elseif ($withFileContent === "anchor") {
                 $data = "<span><a class='btn' href='#' onclick=\"getServerData('$host?fileRead=$xPath&loadnormal=1','$this->div2LoadIn','$label')\">$label</a></span>";
@@ -155,7 +166,7 @@ Class genericObjects
         if ($withFileContent === "option") {
             $allData .= "</select>";
         }
-        if($isEcho)
+        if ($isEcho)
             echo html_entity_decode($allData);
         return html_entity_decode($allData);
     }
@@ -433,21 +444,21 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
     }
 } else if (isset($_POST['loadAll'])) {
     try {
-        $allObj=$_POST['alldata'];
+        $allObj = $_POST['alldata'];
         foreach ($allObj as $i => $v) {
             $xcall = substr($v["uri"], strpos($v["uri"], "?") + 1);
             $strArray = explode("&", $xcall);
-            $spath=substr($strArray[0],1+strpos($strArray[0],"="));
-            $getType=substr($strArray[1],1+strpos($strArray[1],"="));
-            if(sizeof($strArray)===3)
-                $toload=substr($strArray[2],1+strpos($strArray[2],"="));
+            $spath = substr($strArray[0], 1 + strpos($strArray[0], "="));
+            $getType = substr($strArray[1], 1 + strpos($strArray[1], "="));
+            if (sizeof($strArray) === 3)
+                $toload = substr($strArray[2], 1 + strpos($strArray[2], "="));
             $objSer->div2LoadIn = $toload;
-            if(strpos($v["uri"],"slider")>0){
-                $sdata=$objSer->getSliderInfo();
-            }else{
-                $sdata=$objSer->readFolders($spath, $getType,false);
+            if (strpos($v["uri"], "slider") > 0) {
+                $sdata = $objSer->getSliderInfo();
+            } else {
+                $sdata = $objSer->readFolders($spath, $getType, false);
             }
-            $allObj[$i]["jsdata"]=$sdata;
+            $allObj[$i]["jsdata"] = $sdata;
         }
         echo json_encode($allObj);
     } catch (Exception $ex) {

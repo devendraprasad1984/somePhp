@@ -352,3 +352,13 @@ iframe {
 #sliderLine span.btn {
     font-size: 20pt;
 }
+
+.pdfView {
+    height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.imgInDiv {
+    height: inherit;
+    width: 100%;
+}
