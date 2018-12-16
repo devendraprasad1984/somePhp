@@ -1,0 +1,31 @@
+<% layout('layout') %>
+
+<h1>All Pins - that we have created in mongo db</h1>
+
+<div class="container">
+    <div id="idAllPins" style="width: 100%  ">
+        <% for(var i=0; i < pins.length; i++){ %>
+        <div class="box" style="margin: 20px;">
+            <a href="/pins/details/<%= pins[i]._id %>">
+                <img src="<%= pins[i].path %>" style="width: 200px; height: 200px" alt="">
+            </a>
+            <h2><a href="/pins/details/<%= pins[i]._id %>"><%= pins[i].title %></a></h2>
+            <p>
+                submitted by: <%= pins[i].username %>
+                <a href="/pins/delete/<%= pins[i]._id %>" class="btn btn-default">delete</a>
+            </p>
+        </div>
+        <% } %>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        return $("#idAllPins").imagesLoaded(function(){
+            return $("#idAllPins").masonry({
+                itemSelector:'.box'
+                ,isFitWidth:true
+            })
+        })
+    })
+</script>

@@ -1,0 +1,28 @@
+<% layout('layout') %>
+
+<style>
+    .card{
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="">
+    <div class="container">
+        <div class="card" style="width: 30rem">
+            <img src="<%= oneRec.path %>" alt="">
+            <div class="card-block">
+                <h4 class="card-title"><%= oneRec.title %></h4>
+                <p class="card-text"><%= oneRec.desc %></p>
+            </div>
+            <div class="btn-group pull-right">
+                <a href="/pins/save/<%= oneRec._id%>" class="btn btn-success">
+                    <span class="fa <%- (oneRec.isSave)?'fa-star':'fa-star-o' %> fa-lg"></span>
+                </a>
+                <a href="/pins/edit/<%= oneRec._id%>" class="btn btn-danger">Edit</a>
+            </div>
+        </div>
+    </div>
+</div>
+
