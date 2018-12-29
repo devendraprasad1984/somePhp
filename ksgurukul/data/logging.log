@@ -1,712 +1,812 @@
-User: ::1 - November 19, 2018, 1:20 am
-info: ../data/blog/Diwali Celeb @7thNov-TEST.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: ::1 - November 19, 2018, 1:20 am
-info: ../data/blog/our expenses.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: ::1 - November 19, 2018, 1:20 am
-info: ../data/courses/computer science course.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: ::1 - November 19, 2018, 1:21 am
-info: forgot mail has been sent
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1 - November 19, 2018, 1:22 am
-info: ../data/blog/Diwali Celeb @7thNov-TEST.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1 - November 19, 2018, 1:22 am
-info: ../data/events/testing.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP:  - November 19, 2018, 1:54 am
-info: ../data/blog/cultural fest @22ndNov2018.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP:  - November 19, 2018, 1:55 am
-info: ../data/blog/cultural fest @22ndNov2018.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP:  - November 19, 2018, 1:55 am
-info: ../data/blog/cultural fest @22ndNov2018.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 19, 2018, 1:55 am
-info: ../data/blog/message from CTO.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 19, 2018, 1:55 am
-info: ../data/blog/message from CTO.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 19, 2018, 8:11 am
-info: ../data/blog/message fromCEO.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 20, 2018, 6:15 am
-info: forgot mail has been sent
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fhome%2F1.txt, host IP: ,  - November 21, 2018, 8:23 am
-info: ../data/home/1.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:25 am
-info: ../data//home/baseContent.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/contact/contact info.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fevents%2FDiwali+Celeb+%407thNov.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/events/Diwali Celeb @7thNov.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fevents%2FKS+Aniv.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/events/KS Aniv.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fevents%2Ftesting.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/events/testing.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fevents%2Ffantastic+dp.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/events/fantastic dp.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fblog%2FDiwali+Celeb+%407thNov-TEST.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/blog/Diwali Celeb @7thNov-TEST.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fblog%2FDiwali+Celeb+%407thNov.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/blog/Diwali Celeb @7thNov.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fblog%2Ffantastic+dp.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/blog/fantastic dp.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fblog%2Fmessage+from+CTO.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/blog/message from CTO.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fblog%2Four+faculty+say.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/blog/our faculty say.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fblog%2Four+students+journey.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/blog/our students journey.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fblog%2Fhow+we+evolved.txt, host IP: ,  - November 21, 2018, 8:27 am
-info: ../data/blog/how we evolved.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fblog%2Fmessage+fromCEO.txt, host IP: ,  - November 21, 2018, 8:28 am
-info: ../data/blog/message fromCEO.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:31 am
-info: ../data/team/teamInfo.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fteam%2Fteam.txt, host IP: ,  - November 21, 2018, 8:31 am
-info: ../data/team/team.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:34 am
-info: ../data/team/teamInfo.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:41 am
-info: ../data/team/teamInfo.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:46 am
-info: ../data/team/teamInfo.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:48 am
-info: ../data/home/baseContent.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:51 am
-info: ../data//courses/TECHNICAL – SSC –JE, RRB- JE , DMRC.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:51 am
-info: ../data//courses/NON TECHNICAL –SSC –CGL , CDS , NDS .txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fcourses%2Fbasic+course.txt, host IP: ,  - November 21, 2018, 8:51 am
-info: ../data/courses/basic course.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fcourses%2Fcomputer+science+course.txt, host IP: ,  - November 21, 2018, 8:51 am
-info: ../data/courses/computer science course.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Fcourses%2Finterpersonal+Skills+Developement.txt, host IP: ,  - November 21, 2018, 8:51 am
-info: ../data/courses/interpersonal Skills Developement.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:52 am
-info: ../data/courses/TECHNICAL – SSC –JE, RRB- JE , DMRC.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:52 am
-info: ../data/courses/NON TECHNICAL –SSC –CGL , CDS , NDS .txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:53 am
-info: ../data/courses/NON TECHNICAL –SSC –CGL , CDS , NDS .txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:53 am
-info: ../data/courses/TECHNICAL – SSC –JE, RRB- JE , DMRC.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:54 am
-info: ../data/courses/TECHNICAL – SSC –JE, RRB- JE , DMRC.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:55 am
-info: ../data/courses/NON TECHNICAL –SSC –CGL , CDS , NDS .txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Ftestimonials%2Fmessage+from+CTO.txt, host IP: ,  - November 21, 2018, 8:56 am
-info: ../data/testimonials/message from CTO.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Ftestimonials%2Four+expenses.txt, host IP: ,  - November 21, 2018, 8:56 am
-info: ../data/testimonials/our expenses.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Ftestimonials%2Four+faculty+say.txt, host IP: ,  - November 21, 2018, 8:56 am
-info: ../data/testimonials/our faculty say.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?fileDelete=..%2Fdata%2Ftestimonials%2Four+students+journey.txt, host IP: ,  - November 21, 2018, 8:56 am
-info: ../data/testimonials/our students journey.txt - has been deleted
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:56 am
-info: ../data/testimonials/message fromCEO.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:57 am
-info: ../data/team/teamInfo.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:57 am
-info: ../data/footer/footer.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 8:58 am
-info: ../data/contact/contact info.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 6:29 pm
-info: ../data//header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 6:32 pm
-info: ../data//header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 6:32 pm
-info: ../data//header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 6:33 pm
-info: ../data//header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 6:33 pm
-info: ../data//header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 6:34 pm
-info: ../data//header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 21, 2018, 6:34 pm
-info: ../data//header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=devendra+prasad&email=devendraprasad1984%40gmail.com&mobile=9582797772&course=test&qualification=test&comments=this+is+test+message+from+ksgurukul.in, host IP: ,  - November 21, 2018, 6:46 pm
-info: mail has been sent
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 22, 2018, 12:24 am
-info: ../data/header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 22, 2018, 12:35 am
-info: ../data/header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 22, 2018, 12:35 am
-info: ../data/header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 22, 2018, 12:36 am
-info: ../data/header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 22, 2018, 12:37 am
-info: ../data/header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 22, 2018, 4:15 am
-info: ../data/courses/TECHNICAL(SSC_JE_RRB_JE_DMRC).txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 22, 2018, 4:17 am
-info: ../data/courses/NON TECHNICAL(SSC_CGL_CDS_NDS) .txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 5:39 am
-info: /blog/test blog entry.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 5:40 am
-info: /blog/test blog entry.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:16 am
-info: forgot mail has been sent
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:19 am
-info: forgot mail has been sent
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:24 am
-info: error:Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:280
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:27 am
-info: error:Exception: <span class='error' style='font-size:8pt;'>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError w10sm44658402pgi.81 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError w10sm44658402pgi.81 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError w10sm44658402pgi.81 - gsmtp
-</p>
- in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:277
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:42 am
-info: error:Exception in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:280
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:42 am
-info: error:Exception in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:280
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:44 am
-info: error:Exception: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError y5sm43479584pge.49 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError y5sm43479584pge.49 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError y5sm43479584pge.49 - gsmtp
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:277
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:45 am
-info: error:Exception: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError a16-v6sm50090219pfh.107 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError a16-v6sm50090219pfh.107 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError a16-v6sm50090219pfh.107 - gsmtp
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:277
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:46 am
-info: error:Exception: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError k70-v6sm62506884pfc.76 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError k70-v6sm62506884pfc.76 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError k70-v6sm62506884pfc.76 - gsmtp
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:277
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:47 am
-info: Exception: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError d202sm61493224pfd.58 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError d202sm61493224pfd.58 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError d202sm61493224pfd.58 - gsmtp
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:277
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:48 am
-info: Exception: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError g5sm54806142pgu.57 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError g5sm54806142pgu.57 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError g5sm54806142pgu.57 - gsmtp
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:277
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 6:50 am
-info: Exception: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError l5sm9736320pgp.82 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError l5sm9736320pgp.82 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError l5sm9736320pgp.82 - gsmtp
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:277
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=&email=&mobile=&course=&qualification=&comments=, host IP: ,  - November 23, 2018, 6:51 am
-info: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError d80sm131685422pfm.146 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError d80sm131685422pfm.146 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError d80sm131685422pfm.146 - gsmtp
-</p>
-</div>
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=&email=&mobile=&course=&qualification=&comments=, host IP: ,  - November 23, 2018, 6:55 am
-info: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError t62sm59271837pgb.39 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError t62sm59271837pgb.39 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError t62sm59271837pgb.39 - gsmtp
-</p>
-</div>
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=&email=&mobile=&course=&qualification=&comments=, host IP: ,  - November 23, 2018, 6:57 am
-info: <div>err: The following From address failed: devendraprasad1984@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError 196-v6sm169356709pfc.71 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError 196-v6sm169356709pfc.71 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError 196-v6sm169356709pfc.71 - gsmtp
-</p>
-</div>
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 7:00 am
-info: Exception: <div>err: The following From address failed: sonicageindia@gmail.com : MAIL not accepted from server,530,5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError p83sm89887878pfi.85 - gsmtp
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError p83sm89887878pfi.85 - gsmtp
-</p>
-<p>SMTP server error: 5.5.1 Authentication Required. Learn more at
-530 5.5.1  https://support.google.com/mail/?p=WantAuthError p83sm89887878pfi.85 - gsmtp
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:277
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 7:06 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:280
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 285
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 7:11 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:281
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 284
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=&email=&mobile=&course=&qualification=&comments=, host IP: ,  - November 23, 2018, 7:15 am
-info: Exception: mail: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:238
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 243
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=tested&email=tested&mobile=testedt&course=tested&qualification=tetse&comments=testmsg+rtios+isndpd, host IP: ,  - November 23, 2018, 7:18 am
-info: Exception: mail: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:235
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 237
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 7:20 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 8:44 am
-info: Exception: <div>err: The following From address failed: genericmailsender2019@gmail.com : Called Mail() without being connected</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:272
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 8:44 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 8:54 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 8:55 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=&email=&mobile=&course=&qualification=&comments=, host IP: ,  - November 23, 2018, 8:55 am
-info: Exception: mail: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:235
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 237
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 8:55 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 9:15 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 9:17 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 9:18 am
-info: Exception: <div>err: SMTP Error: The following recipients failed: devendraprasad1984@gmail.com<p>SMTP server error: relay access denied - please authenticate
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:272
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 9:19 am
-info: Exception: <div>err: SMTP Error: The following recipients failed: devendraprasad1984@gmail.com<p>SMTP server error: relay access denied - please authenticate
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:272
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 9:19 am
-info: Exception: <div>err: SMTP Error: The following recipients failed: devendraprasad1984@gmail.com<p>SMTP server error: relay access denied - please authenticate
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:272
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 9:20 am
-info: Exception: <div>err: SMTP Error: The following recipients failed: devendraprasad1984@gmail.com<p>SMTP server error: relay access denied - please authenticate
-</p>
-</div> in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:272
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 9:24 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?forgotPassword=1, host IP: ,  - November 23, 2018, 9:34 am
-info: Exception: Message has been sent in C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php:275
-Stack trace:
-#0 {main}, trace: #0 {main}, line: 278
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 7:15 pm
-info: /header/mainHeader.txt/.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 7:16 pm
-info: /header/mainHeader.txt/.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 7:21 pm
-info: /header/mainHeader.txt/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 7:26 pm
-info: /header/mainHeader.txt/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 7:26 pm
-info: /header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 7:26 pm
-info: /events/teste one event.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 7:44 pm
-info: /header/mainHeader.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 8:09 pm
-info: /testimonials/devendra prasad_11242018-93955-AM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1, host IP: ,  - November 23, 2018, 8:10 pm
-info: /testimonials/new-to-it_11242018-94025-AM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 24, 2018, 1:25 am
-info: /testimonials/anothertest_11242018-25524-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:04 am
-info: /testimonials/dp_11272018-103449-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:08 am
-info: /testimonials/dp_11272018-103828-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2&tag=dp12, host IP: ,  - November 27, 2018, 9:14 am
-info:  - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:14 am
-info:  - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:14 am
-info:  - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:14 am
-info:  - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:15 am
-info: /testimonials/test_11272018-104551-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:16 am
-info: /testimonials/sa_11272018-104640-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:24 am
-info: /testimonials/asdasd_11272018-105451-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost:63342/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:25 am
-info: /testimonials/sad_11272018-105515-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost:63342/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:25 am
-info:  - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost:63342/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:26 am
-info:  - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:27 am
-info: /testimonials/test_11272018-105734-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:28 am
-info: /testimonials/asas_11272018-105810-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:35 am
-info: /testimonials/sasdasd_11272018-110505-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 27, 2018, 9:35 am
-info: /testimonials/test_11272018-110533-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 29, 2018, 7:24 am
-info: /testimonials/dptest_11292018-85408-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJob3N0IjoiaHR0cDpcL1wvbG9jYWxob3N0XC9rc2d1cnVrdWxcL3NlcnZpY2VzXC9TZXJ2aWNlRGV0YWlscy5waHAiLCJmYWtla2V5IjoiZ2VuZXJpY21haWxzZW5kZXIyMDE5LW5vdXNlIn0.GQ5Ck4zKW1obIhK6bm5F-NbkMb3_rZBjMuHIs7v-Kq8, host IP: ,  - November 29, 2018, 8:10 am
-info: /blog/cultural fest @22ndNov2018.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=1&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJob3N0IjoiaHR0cDpcL1wvbG9jYWxob3N0XC9rc2d1cnVrdWxcL3NlcnZpY2VzXC9TZXJ2aWNlRGV0YWlscy5waHAiLCJmYWtla2V5IjoiZ2VuZXJpY21haWxzZW5kZXIyMDE5LW5vdXNlIiwidGltZXN0YW1wIjoiMDg6Mjk6MDkifQ.M5QDNCCyhz4SDeNsGgePSy6xK5Qwxq2u6Gza2uFSdKk, host IP: ,  - November 29, 2018, 8:29 am
-info: /blog/cultural fest @22ndNov2018.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 29, 2018, 8:47 am
-info: /testimonials/ranges_11292018-101706-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add&jwt=, host IP: ,  - November 29, 2018, 8:53 am
-info: the token cannot be validated, may be an attempt to hack
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add&jwt=, host IP: ,  - November 29, 2018, 8:55 am
-info: the token cannot be validated, may be an attempt to hack
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?saveData=2, host IP: ,  - November 30, 2018, 7:19 am
-info: /testimonials/asd_11302018-84926-PM.txt - has been saved
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 
-User: http://localhost/ksgurukul/services/ServiceDetails.php?mail=mail_1&name=etst&email=tetst&mobile=tetst&course=&qualification=a&comments=asdadssd, host IP: ,  - December 3, 2018, 9:43 pm
-info: mail: Message has been sent
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:14 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(408): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:15 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(418): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:16 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(417): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:28 am
+info: Call to undefined method Spatie\ImageOptimizer\OptimizerChainFactory::get(), trace: #0 {main}, line: 418
+-------------------------
+
+User: http://localhost/ksgurukul/services/ServiceDetails.php?manageSlider=add, host IP: ,  - December 9, 2018, 3:29 am
+info: Call to a member function info() on null, trace: #0 C:\wamp7118\apache2\htdocs\ksgurukul\services\ServiceDetails.php(419): Spatie\ImageOptimizer\OptimizerChain->optimize('../data/slider/...')
+#1 {main}, line: 74
 -------------------------
 

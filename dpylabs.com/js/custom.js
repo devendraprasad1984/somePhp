@@ -1,3 +1,4 @@
+// https://stackoverflow.com/questions/29960999/how-to-run-or-debug-php-on-visual-studio-code-vscode
 var app = angular.module("myAjs", []);
 
 var hide = "hide"
@@ -18,7 +19,14 @@ var curHtmlPage = ""
 
 $(function () {
     createMenuAndContents()
+    changeBg()
 })
+
+function changeBg(){
+    var colors = [ "#1F5EA8", "#20D2DC", "#1BBC9B" , "#FA5021", "#FB9F54", "#4CAF58", "#1FA895", "#2196F3", "#61338F"];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('.change').css("background-color", colors[rand]);
+}
 
 function setImageMargin(){
     if(detectmob()){
@@ -203,6 +211,7 @@ function displayData(cur, tagId) {
         });
         $("#id" + tagId).addClass(show).removeClass(hide)
     }
+    changeBg()
 }
 
 var forEmail = new Array;

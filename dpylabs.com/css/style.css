@@ -95,7 +95,8 @@ div, pre {
 }
 
 .box {
-    /*background: white;*/
+    background: white;
+    opacity: 0.9;
     border-radius: 5px;
     position: relative;
     padding: 2px 2px;
@@ -269,45 +270,6 @@ a.btn-info {
 #sliderLine span {
     display: inline;
 }
-
-@media only screen and (max-width: 600px) {
-    #topMenu {
-        display: none;
-    }
-
-    #idTopMenuSelect {
-        display: block;
-    }
-
-    .sliderImg {
-        height: 100px;
-        width: 100%;
-    }
-
-    #idCompanyName {
-        font-size: 20pt;
-    }
-
-    .img {
-        width: 50px;
-        height: 50px;
-    }
-
-    #divHeaderLine1 span a {
-        font-size: 10pt;
-    }
-
-    #divHeaderLine1 {
-        position: relative;
-        width: 100%;
-        z-index: -1;
-    }
-    #sliderLine span.btn {
-        display: none;
-    }
-}
-
-
 #divHeaderLine1 {
     position: fixed;
     top: 0;
@@ -358,7 +320,78 @@ iframe {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
 }
+
 .imgInDiv {
-    height: inherit;
+    height: 220px;
     width: 100%;
+}
+
+.anim-bkg {
+    background: teal url(../images/anim.png);
+    width: 100%;
+    height: 343px;
+    margin: 0;
+    /*text-align: center;*/
+    box-sizing: border-box;
+    -webkit-animation: slide 50s linear infinite;
+    /*opacity: 1;*/
+}
+@-webkit-keyframes slide {  from {
+    background-position: 0 0;
+}
+    to { background-position: -2000px 500px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #topMenu {
+        display: none;
+    }
+
+    #idTopMenuSelect {
+        display: block;
+    }
+
+    .sliderImg {
+        height: 100px;
+        width: 100%;
+    }
+
+    #idCompanyName {
+        font-size: 20pt;
+    }
+
+    .img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #divHeaderLine1 span a {
+        font-size: 10pt;
+    }
+
+    #divHeaderLine1 {
+        /*position: relative;*/
+        width: 100%;
+        z-index: 2;
+    }
+
+    #sliderLine span.btn {
+        display: none;
+    }
+    .imgInDiv {
+        height: 100px;
+        width: 100%;
+    }
 }

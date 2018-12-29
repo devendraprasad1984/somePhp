@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost/dpylabs.com",
+            "webRoot": "${workspaceFolder}"
+        }
+    ,{
+        "type": "php",
+        "request": "launch",
+        "name": "Run using PHP executable",
+        "program": "${file}",
+        "runtimeExecutable": "C:\\wamp7118\\php\\php.exe"
+        },
+
+    ]
+}

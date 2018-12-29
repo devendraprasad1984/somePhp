@@ -2,20 +2,8 @@
 //session_start();
 require_once 'emailer.php';
 require_once '../services/token/JWT.php';
-require_once '../services/imgOpt/OptimizerChainFactory.php';
-require_once '../services/imgOpt/Image.php';
-require_once '../services/imgOpt/OptimizerChain.php';
-require_once '../services/imgOpt/Optimizer.php';
-require_once '../services/imgOpt/Optimizers/BaseOptimizer.php';
-require_once '../services/imgOpt/Optimizers/Optipng.php';
-require_once '../services/imgOpt/Optimizers/Jpegoptim.php';
-require_once '../services/imgOpt/Optimizers/Pngquant.php';
-require_once '../services/imgOpt/Optimizers/Svgo.php';
-require_once '../services/imgOpt/Optimizers/Gifsicle.php';
-
 
 use Firebase\JWT\JWT;
-use Spatie\ImageOptimizer\OptimizerChainFactory;
 
 $objMail = new Mailer();
 $objSer = new genericObjects();
@@ -66,6 +54,11 @@ Class genericObjects
         $host = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
         return $host;
     }
+    public function getHostRef()
+    {
+        $ref = str_replace("index.html","", $_SERVER['HTTP_REFERER'])."data/";
+        return $ref;
+    }
 
     public function writeLog($someData)
     {
@@ -81,31 +74,9 @@ Class genericObjects
         fclose($f);
     }
 
-    public function readLog($lines)
+    public function readLog()
     {
-        if ($lines === 0)
-            return $this->readFileContents($this->baseDataPath, "logging.log");
-        else {
-            $logLines = "";
-            try {
-                $file = file($this->baseDataPath . "logging.log");
-//                for ($i = max(0, count($file) - $lines); $i < count($file); $i++) {
-                for ($i =count($file); $i > max(0, count($file) - $lines)-1; $i--) {
-                    $logLines .= "<b>".($i)."</b>: \t".$file[$i];
-                }
-//                $cnt = 0;
-//                $myfile = fopen($this->baseDataPath . "logging.log", "r");
-//                while (!feof($myfile)) {
-//                    $cnt += 1;
-//                    $logLines .= fgets($myfile);
-//                    if ($lines === $cnt) break;
-//                }
-//                fclose($myfile);
-            } catch (Exception $ex) {
-                $this->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
-            }
-            return $logLines;
-        }
+        return $this->readFileContents($this->baseDataPath, "logging.log");
     }
 
     public function writeToFile($filename, $strData)
@@ -149,8 +120,9 @@ Class genericObjects
         }
         foreach ($dirs as $key => $value) {
             $xPath = $folderPath . "/" . $value;
+            $fullPath=$this->getHostRef().$xPath;
 //            echo "<br/>path: ".$xPath;
-            if ((strpos($value, ".txt") === false && $spath !== "data") || (strpos($value, ".log") > 0 || $value === "slider")) {
+            if (strpos($value, ".del")>0||(strpos($value, ".pdf")<0) && (strpos($value, ".txt") === false && $spath !== "data") || (strpos($value, ".log") > 0 || $value === "slider")) {
 //                echo "skipping: $value";
                 continue;
             }
@@ -160,7 +132,12 @@ Class genericObjects
                 $data = "<div class='box ltqt' style='margin-top: 4px;'>";
                 if ($this->div2LoadIn != "" && $this->div2LoadIn != "no")
                     $data .= "<div style='font-weight: bolder; font-size: 15pt;'>$label</div>";
-                $data .= "<div>" . $this->readFileContents($folderPath, $value) . "</div>";
+                if (strpos($value, ".txt")>0)
+                    $data .= "<div>" . $this->readFileContents($folderPath, $value) . "</div>";
+                else if (strpos($value, ".pdf")>0)
+                    $data .= "<div id='obj$this->counter' class='pdfView' style='background-color: white; height: 300px;'><object data='$fullPath' type='application/pdf' class='pdfView'></object></div>";
+                else if (strpos($value, ".png")>0 || strpos($value, ".jpg")>0)
+                    $data .= "<div><img src='$fullPath' class='imgInDiv'/></div>";
                 $data .= "</div>";
             } elseif ($withFileContent === "anchor") {
                 $data = "<span><a class='btn' href='#' onclick=\"getServerData('$host?fileRead=$xPath&loadnormal=1','$this->div2LoadIn','$label')\">$label</a></span>";
@@ -171,18 +148,21 @@ Class genericObjects
                     $data = "<option value='$host?fileRead=$xPath&loadnormal=1' class='font-weight-bold' style='font-size: 11pt;'><div>$label</div></option>";
                 }
                 $xPath = str_replace("//", "/", $xPath);
-                $files = array_slice(scandir($this->baseDataPath . $value), 2);
+                if(is_dir($this->baseDataPath . $value)){
+                    $files = array_slice(scandir($this->baseDataPath . $value), 2);
 //                print_r($files);
-                foreach ($files as $k1 => $v1) {
-                    if (strpos(strtolower($v1), ".txt") > 0 && $spath === "data") {
-                        if ($searchString !== "") {
-                            if (strpos(strtolower("*$v1"), $searchString) > 0)
+                    foreach ($files as $k1 => $v1) {
+                        if (strpos(strtolower($v1), ".txt") > 0 && $spath === "data") {
+                            if ($searchString !== "") {
+                                if (strpos(strtolower("*$v1"), $searchString) > 0)
+                                    $data .= "<option value='$host?fileRead=$xPath/$v1' style='font-size: 9pt;'>*" . str_replace(".txt", "", $v1) . "</option>";
+                            } else {
                                 $data .= "<option value='$host?fileRead=$xPath/$v1' style='font-size: 9pt;'>*" . str_replace(".txt", "", $v1) . "</option>";
-                        } else {
-                            $data .= "<option value='$host?fileRead=$xPath/$v1' style='font-size: 9pt;'>*" . str_replace(".txt", "", $v1) . "</option>";
+                            }
                         }
                     }
                 }
+
             }
             $allData .= $data;
         }
@@ -431,18 +411,8 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
                 $msg .= "File is an image - " . $check["mime"] . ".";
                 $msg .= "<br/>saved slider - $baseFileName - $tmpFileName";
                 if (move_uploaded_file($tmpFileName, $savePath)) {
-                    $originalSize = filesize($savePath);
-                    $msg = "The file $baseFileName has been uploaded, Original size is $originalSize kb, ";
+                    $msg = "The file " . $baseFileName . " has been uploaded.";
                     $uploadOk = 1;
-                    $factory = new OptimizerChainFactory();
-                    $optimizer = $factory->create();
-                    $optimizer->optimize($savePath);
-                    $factory = null;
-                    clearstatcache();
-                    $optimizedSize = filesize($savePath);
-                    $percentChange = (1 - $optimizedSize / $originalSize) * 100;
-                    $msg .= "updated size is $optimizedSize kb, The image is now $percentChange% smaller";
-
                 } else {
                     $msg .= "Sorry, there was an error uploading your file.";
                     $uploadOk = 0;
@@ -461,18 +431,16 @@ if (isset($_REQUEST['getDataFile']) && isset($_REQUEST['getType'])) {
             } else {
                 $msg = "error deleting file - $fn";
             }
-//            echo $msg;
+            echo $msg;
         }
     } catch (Exception $ex) {
         $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
-    } finally {
-        echo $msg;
     }
 } else if (isset($_REQUEST['logging'])) {
     try {
         if (!$allowAdmin || !$objSer->validateToken()) exit();
-        echo "<p class='log'>" . $objSer->readLog(100) . "</p>";
+        echo "<pre class='log text-white'>" . $objSer->readLog() . "</pre>";
     } catch (Exception $ex) {
         $objSer->writeLog($ex->getMessage() . "->" . $ex->getTraceAsString());
         //throw new Exception($ex);
