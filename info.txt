@@ -1,0 +1,1100 @@
+some ubuntu command
+alt+f2-run
+ctrl+alt+f* keys -
+ctrl+alt+t-terminal
+
+https://askubuntu.com/questions/337874/change-apache-document-root-folder-to-secondary-hard-drive
+sudo su - root
+chmod -R 777 <foldername>
+service --status-all
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install python3.7 python3-pip node default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo apt-get install libapache2-mod-php7.2 php7.2-cli php7.2-mysql php7.2-gd php7.2-imagick php7.2-recode php7.2-tidy php7.2-xmlrpc
+
+sudo apt autoremove
+sudo apt remove php-xdebug
+sudo apt-get install php-xdebug: .../php-xdebug_2.6.0-0ubuntu1_amd64.deb
+sudo a2enmod actions
+sudo a2dismod php5
+configure apache php to run as cgi - /etc/apache2/sites-enabled/
+apache2 -version
+edit docroot: /etc/apache2
+	nano apache2.conf
+	update  Options Indexes FollowSymLinks Includes ExecCGI in <directtory /> tag
+	/sites-available
+	nano 000-default.conf
+	change DocumentRoot /path/to/my/project
+/var/www/html
+<Directory /var/www/>
+	Options Indexes FollowSymLinks MultiViews
+	AllowOverride None
+	Order allow,deny
+	allow from all
+
+	AddHandler cgi-handler .php
+	Action cgi-handler /local-bin/php-cgi
+</Directory>
+ScriptAlias /local-bin /usr/bin
+sudo service apache2 restart
+service apache2 status
+sudo apt-get install php5-cgi libapache2-mod-php5
+sudo a2enmod php5-cgi
+sudo service apache2 restart
+php -m
+php --version
+sudo a2enmod php5-cgi
+sudo service apache2 restart
+
+
+sudo apt-get --purge remove bluefish
+for aptana
+sudo su - root->rbs1984#
+add-apt-repository ppa:webupd8team/java
+apt-get update
+apt-get install oracle-java7-installer
+apt-get install libjpeg62 libwebkitgtk-1.0-0 git-core
+wget https://github.com/aptana/studio3/releases/download/v3.6.1/Aptana_Studio_3_Setup_Linux_x86_64_3.6.1.zip or download manually
+unzip Aptana_Studio_3_Setup_Linux_x86_64_3.6.1.zip
+sudo apt-get install php-xdebug
+open cd /etc/php/7.2/mods-available/xdebug.ini
+
+xdebug: https://xdebug.org/download.php
+https://www.jetbrains.com/help/phpstorm/configuring-php-development-environment.html#installPHP
+
+sudo apt-get install php-xdebug: 2.6.0-0ubuntu1
+gedit /etc/php/7.2/apache2/php.ini
+gedit /etc/php/7.2/cli/php.ini
+[Xdebug]
+#zend_extension="/home/devendra/deven/dpgit/somePhp/php_xdebug-2.6.0-7.2-vc15-x86_64.dll"
+zend_extension="/usr/lib/php/20170718/xdebug.so"
+xdebug.remote_enable=1
+xdebug.remote_port="9000"
+
+
+https://github.com/aptana/studio3/releases
+http://www.zend.com/en/products/studio/downloads-studio#Linux
+
+<script>alert('test')</script>
+website page insights: https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fksgurukul.in%2F&tab=mobile
+https://wordpress.org/plugins/wp-super-cache/
+https://www.shoutmeloud.com/wp-super-cache-wordpress-optimization-plugin.html
+https://wordpress.org/plugins/wp-smushit/
+https://imagekit.io/blog/lazy-loading-images-complete-guide/
+https://github.com/spatie/image-optimizer
+https://cloudinary.com/blog/image_optimization_in_php
+https://tinypng.com/developers/reference/php
+https://laravelcode.com/post/image-optimization-in-laravel-with-spatie
+
+https://www.sitepoint.com/8-practices-to-secure-your-web-app/
+
+design pattern: https://sourcemaking.com/design_patterns
+https://www.toptal.com/python/an-introduction-to-mocking-in-python
+https://www.toptal.com/python/python-design-patterns
+https://www.tutorialspoint.com/python_design_patterns/index.htm
+
+https://ihatetomatoes.net/get-advanced-react-workshop/
+https://itnext.io/how-to-develop-a-professional-react-app-c259382372cb
+
+http://interactivepython.org/runestone/static/pythonds/index.html
+https://github.com/charulagrl/data-structures-and-algorithms
+https://www.geeksforgeeks.org/advanced-data-structures/
+https://data-flair.training/blogs/top-python-interview-questions-answer/
+https://www.cs.auckland.ac.nz/courses/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf
+
+
+10-Dec-2018 (10-Dec-2018)	TO TRANSFER 
+INB IMPS/P2A/834417971151/XXXXXXX364CORP	UA0120011954MOAAXRADE8	49,900.00	
+
+SHEI20
+
+express: https://www.youtube.com/watch?v=Dm5BmG82LEI
+spa:https://github.com/toufiqElahy/SPA-In-2-Minutes
+react native: https://www.youtube.com/watch?v=whZNYPldMEY
+https://www.youtube.com/watch?v=7Ot5LSGHLyY
+https://www.youtube.com/watch?v=0FMFklHcJ_E&list=PL8p2I9GklV44z6euF3nqS0TlKbaGiFUGO
+https://facebook.github.io/react-native/docs/getting-started.html
+Simulator not installed. Please visit https://developer.apple.com/xcode/download/ to download Xcode and the iOS simulator. 
+If you already have the latest version of Xcode installed, you may have to run the command `sudo xcode-select -s /Applications/Xcode.app`.
+
+
+https://sites.google.com/view/dpresume
+
+codility practice Qs: https://app.codility.com/programmers/lessons
+solutions to all practice problem: https://codesays.com/solutions-to-training-by-codility/
+
+https://code.google.com/codejam/past-contests
+
+https://app.codility.com/demo/results/trainingWSMPKQ-CVH/
+
+
+lets connect, i am totally fresh in freelancing, can work more dedicated, I am a fullstack senior Developer
+
+https://www.youtube.com/watch?v=G6iYmLMZ1ns&list=PL1BVonut8CRNtshuiEZPuEdtKgxy0O0Qw
+kris wright demo on dynamic prog and algo
+
+Mahavir Enclave Part 1 - RZD3/83, Flat 101 - IN-DL18352377865746M
+myIP address: 112.196.133.234, 112.196.133.37
+
+
+I am interested in this profile, pfa my profile and also find it on web
+would you go through it and if found suitable, lets connect
+http://dpresume.com
+https://github.com/devendraprasad1984/PythonAndNodeSamples
+https://www.linkedin.com/in/devendraprasad/
+
+Google
+ExcelGuru
+Account Id: 35370795
+Tracking Id: UA-35370795-1
+http://sites.google.com/site/devendraprasad1984
+
+VBAGalaxy: UA-35370795-2, http://sonicageindia.com, Adsense Prop: pub-2750760224895811 AdSense for Content
+Adwords Account: 221-377-9816
+into every page
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-35370795-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+Create a PHP file named "analyticstracking.php" with the code above and include it on each PHP template page. Then, add the following line to each template page immediately after the opening <body> tag:
+<?php include_once("analyticstracking.php") ?>
+
+
+hosting nov2018
+https://www.nextraone.com
+invoice: 20169506
+Hosting Package: Lin-Basic Domain: dpresume.com 
+First Payment Amount: INR 1476.00 Recurring Amount: INR 2952.00 Billing Cycle: Triennially Next Due Date: Monday, October 25th, 2021 
+Control Panel URL: https://103.228.112.39:8443->https://dpresume.com:8443
+Temporary FTP Hostname: 103.228.112.39 login: dlrgvkes->3vg3wWRm56
+FTP Hostname: dpresume.com Webpage URL: http://www.dpresume.com 
+Server Name: 103.228.112.39 
+Linux Shared Hosting IP: 103.228.112.39 Database Server IP: 10.50.0.123 or localhost
+If you are using an existing domain which is registered with any other domain ragistrar then you will need to update bellow 
+records in your domain regsitrar  Name Server to make your website accessible globaly by domain name.
+A Record: dpresume.com point to(103.228.112.39) 
+CNAME Record : www.dpresume.com point to (dpresume.com)
+A Record: mssql.dpresume.com   point to  (103.228.112.39)
+Or Change The Name Server as follows: ns39.resellerone.host/ns40.resellerone.host/ns1.nextraone.com/ns2.nextraone.com
+mail server: dlrgvkes@dpresume.com->3vg3wWRm56->mail.dpresume.com->25->Security/TLS/SSL: None->Authentication: Enabled
+
+ksgurukul.in
+txn id: https://securegw.paytm.in/theia/v1/transactionStatus?id=20181110111212800110168544744785396
+spprakash55@gmail.com(Satya@2694)->rbs1984#->order: 4707891128
+ksgurukul.in->21->qzvgdwhi->fBJ1602mrb
+ftp.ksgurukul.in->21->qzvgdwhi_logs->fBJ1602mrb
+Server Name: webhost3.resellerone.host
+Server IP: 103.228.112.92
+Control Panel URL: https://webhost3.resellerone.host:2083->qzvgdwhi->fBJ1602mrb
+Once your domain has propagated, you may also use https://webhost3.resellerone.host:2083
+Nameserver 1: ns92.resellerone.host
+Nameserver 2: ns93.resellerone.host
+
+
+master firefox pwd: 6200
+netsetinfo: https://ftp.net4india.com / host: 202.71.129.6 netsetinfotech.com ns1.net4india.com / login: 000768516 rbs6200#
+amdeetech
+CRNID:000752244 pwd:mandeep old zuiz9751ZU
+Call : From India: 18001084444 (Toll Free)
+
+https://ftp.net4india.com / host: 118.67.244.8 / amdeetech: mandeep
+
+ns1.asplhost.com,  ftp://ftp.b2bhospitalityindia.com Login:  b2bhospi Password: Bq1*0I?k@o#
+http://b2bhospitalityindia.com/wp-admin (admin - rbs1984$)
+http://www.b2bhospitalityindia.com/cpanel (b2bhospi - hqQn1FWgL*}W)
+
+
+
+HostGator.com folder
+http://delhistrikers.in.md-in-36.webhostbox.net:2082/cpsess4389659441/frontend/x3/filemanager/index.html?dirselect=webroot&domainselect=sonicageindia.co.in&dir=%2Fhome%2Fdelhi8oi%2Fpublic_html
+
+
+-------------------------------------------------------------------
+www.dmonservices.com
+in.godaddy.com
+devendraprasad1984@gmail.com->dmonServices.com2015->6200
+order: 874165144
+https://mya.godaddy.com/payments.aspx?paymentstab=orderhistory&orderid=874165144
+https://mya.godaddy.com
+http://dcc.godaddy.r
+primary godaddy NS1: ns75.domaincontrol.com
+secondary godaddy NS2: ns76.domaincontrol.com
+Customer Account: 111630670->6200
+Domain Name: dmonservices.com 
+Authorization Code: K5E{(652D+2K4.2# 
+website IP / ftp IP: 166.62.28.145
+DB: 11.62.0.40
+ftp dpresume->rbs1984#
+ftp sonicageindia->rbs1984#
+ftp dmonservices->rbs1984#
+ftp we->rbs1984#
+
+in.godaddy.com
+cpanel: devenpanel->October1984#
+cpanel: dpylabs->October1984#
+dpylabs@dpylabs.com->dpylabs.com->21
+dpresume.com
+sonicageindia.co.in
+dmonservices.com
+simple Poll->admin->`rWMhWo&nrL1
+devenpanel@sg2plcpnl0061.prod.sin2.secureserver.net
+111630670->devendraprasad1984@gmail.com->Rmar2018#
+166.62.28.145, ns21.domaincontrol.com, ns22.domaincontrol.com
+
+
+
+
+id_rsa_dp->rbs1984#
+Your identification has been saved in /home/devenpanel/.ssh/id_rsa_dp.
+Your public key has been saved in /home/devenp
+
+python checks over dpresume.com virtal server
+ls -la /usr/bin/python
+Python -V
+wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz
+tar xvzf Python-3.4.3.tgz
+cd Python-3.4.3
+./configure --prefix=$HOME/.local
+make
+make install
+cd $home
+vi .bash_profile
+
+alias dl="ls -ltrh; pwd;"
+alias dp="cd /home/devenpanel/dpsoft/"
+PATH=$PATH
+export PATH="$HOME/bin .local/bin :$PATH"
+export PATH="/home/devenpanel/dpsoft/mongo349/bin:$PATH"
+
+
+source ~/.bash_profile
+
+python3 -m pip install virtualenv
+python -m pip install –user virtualenv
+
+python3 -m pip install --upgrade pip
+python3 -m pip install pymongo
+python3 -m pip install django
+python3 -m pip install flask
+python3 -m pip install boto3
+python3 -m pip install mysql
+
+mkdir PythonTest
+cd PythonTest
+virtualenv PythonTest
+source PythonTest/bin/activate
+
+Mongo Install
+curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.4.9.tgz
+tar -zxvf mongodb-linux-x86_64-3.4.9.tgz
+export PATH=<mongodb-install-directory>/bin:$PATH
+mkdir -p /data/db
+
+mongod --dbpath <path to data directory>
+mongod --config=/home/devenpanel/dpsoft/mongodata/mongo1.conf
+
+create database mydb
+use mydb
+mongoimport --db mydb --collection zips --drop --file /home/devenpanel/dpsoft/mongodata/zips.json
+mongoimport --db mydb --collection companies --drop --file /home/devenpanel/dpsoft/mongodata/companies.json
+mongoimport --db mydb --collection enron --drop --file /home/devenpanel/dpsoft/mongodata/enron.json
+mongoimport --db mydb --collection stocks --drop --file /home/devenpanel/dpsoft/mongodata/stocks.json
+mongoimport --db mydb --collection world_bank --drop --file /home/devenpanel/dpsoft/mongodata/world_bank.json
+
+
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
+nvm install 6.0.0
+npm install -g gulp
+npm install -g bower
+npm install -g karma
+npm install -g http-server
+
+
+
+
+
+
+------------------------------------------------------------------
+DNS Switch Ref: 150482240001
+
+SonicAgeIndia.co.in
+Login URL 	: 	https://my.indialinks.com
+User Name 	: 	i48224soni
+Password 	: 	sonic6200
+Email		: 	devendraprasad1984@gmail.com
+
+update DNS to a different server:
+login->products->Managed DNS->Manage DNS Zones->change A and MX records to Destination Server IP
+103.21.58.29(hostgator) in my case
+
+
+Domain Name: sonicageindia.co.in
+FTP Server : ftp.sonicageindia.co.in / 72.9.105.182->	sonicageindia->ehz79xa5
+Control Panel: http://mail.sonicageindia.co.in/menu ->sonicageindia ->ehz79xa5
+POP Server:	mail.sonicageindia.co.in / 72.9.105.182
+SMTP Server: mail.sonicageindia.co.in
+Note: SMTP Server requires you to Enable My Server Requires Authentication option in your Email Software (Outlook, Eudora). You will not be able to send/relay emails without this setting.
+You can access your emails online at http://mail.sonicageindia.co.in/mail
+http://www.sonicageindia.co.in/stats   (updated weekly)
+sonicageindia@sonicageindia.co.in
+Delegation for sonicageindia.co.in
+ns5.indialinks.com,ns6.indialinks.com,ns7.indialinks.com,ns8.indialinks.com
+
+Change Name Servers (india links)
+Log-in to MyIndialinks (customer support portal) at https://my.indialinks.com
+Click on Products >> Domain Names >> List all Domains
+On next page, you will see list of your domain names.
+Click on Manage Domain link of the desired domain name.
+You will be redirected to the domain control panel.
+Click on Delegation and then Edit Delegation
+Make required changes of name servers and click on Submit
+
+-------------------------------------------------------------------------
+deepak hostgator
+Accessing your website
+www.hostgator.in->deepakprasad25@gmail.com->vpn#25dpk
+http://delhistrikers.in.md-in-36.webhostbox.net
+http://delhistrikers.in.md-in-36.webhostbox.net/cpanel
+
+In order to access your website using delhistrikers.in or www.delhistrikers.in, you will need to change the Name Servers of delhistrikers.in to the following:
+Name Server 1: ns2.md-in-36.webhostbox.net
+Name Server 2: ns1.md-in-36.webhostbox.net
+IP: 103.21.58.29
+
+Changing your Nameservers
+Using our DNS service (domain registered through us): Changing your Nameservers
+It will take between 24-72 hours for the Nameserver changes to come into effect. Until such time, continue using the Temporary URL provided above to access your website
+
+Managing your Website
+You can manage all aspects of your order by logging into your Control Panel: Manage Order
+You may access your website using cPanel(your website control panel) through one of the following URLs:
+URL(s): 103.21.58.29/cpanel OR delhistrikers.in/cpanel OR http://delhistrikers.in.md-in-36.webhostbox.net/cpanel 
+Your credentials to login to cPanel are:
+cpanel password: delhi8oi->8!#1%+9SnGaL
+FTP:  ftpes://103.21.58.29->delhi8oi->8!#1%+9SnGaL
+Using FTP with your Hosting Package
+ftp.delhistrikers.in->dpftp@delhistrikers.in->rbs1984#->21
+myftpdir: /home/delhi8oi/sonicageindia.co.in
+Go Back to �/home/delhi8oi/public_html/sonicageindia.co.in�
+
+
+Manage your Email Accounts
+Your Hosting package also includes Email hosting. You can administer you Email service through the cPanel. Refer to the Email Administrators Guide for detailed instructions on creating and managing email addresses.
+Detailed Documentation
+For detailed instructions on using your cPanel Linux Hosting Package, please refer to our online knowledgebase at: Detailed Documentation
+You should ideally go through all the articles in this section before you begin using your Hosting Account actively.
+Tech Support URL: http://support.hostgator.in
+
+Sales Contact: Email Address: sales@hostgator.in Tel No.: +91.18002098833
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Net4.In
+InternetWithoutLimit.co.in
+000826343->cbyh1990CB
+
+
+
+sonicageindia.co.in/SonicWebR/index.php?id=TESTPOS
+
+
+ftp.sonicageindia.co.in,sonicageindia, ehz79xa5
+PUT F:\VBProjects\newSonicPOS\WEBDir\SaleReport_12-Aug-14.xml /www/SonicWebR/TESTPOS/KarolBagh/SaleReport_12-Aug-14.xml
+
+
+WAMP
+--------------
+root/mysql-> admin
+mysql: root@localhost->admin, test
+host: db4free.net:3306, database: wecom, wecom, rbs1984#, devendraprasad1984@gmail.com
+bitnami wamp:root password: admin1234
+maria db local
+pwd: admin
+service:mariadb->3306
+
+
+
+Hi
+I have made restaurant POS software which work on desktop and can make the sales available over email and web
+https://www.dropbox.com/s/booot21zqzjaasj/SonicAgeIndia-POS.mp4?dl=0
+
+Plz forward this message to the restaurants that may need it
+
+rgds,
+dev
+
+
+
+
+Default SSID: D-Link_DIR-600M
+SSID Name: devenWifi
+default username: Admin, pwd:<blank>
+web port: 6200
+WPA2-PSK(AES): 2239582797772
+
+
+Building Expenses
+https://docs.google.com/spreadsheets/d/1Ri__apXD3tw_gpBTb2iq1Wt2NZty-frF1J7B0kQCXnE/pubhtml
+https://docs.google.com/spreadsheets/d/1Ri__apXD3tw_gpBTb2iq1Wt2NZty-frF1J7B0kQCXnE/edit?usp=sharing
+dropbox docs: https://www.dropbox.com/sh/5ziw1415h3bumlb/AAAqmPwMphr8o_CmYYe7HYbVa?dl=0
+
+
+AWS
+==================
+Instance: i-291714ed
+Public IP: 54.213.81.190
+Private IP: 172.31.31.95 (ip-172-31-31-95.us-west-2.compute.internal)
+NS: win-r1tnaqrh289.
+User name: Administrator
+Password: ;D3mabHFD6k
+ComputerName: WIN-R1TNAQRH289
+
+myIp: 112.196.177.24, 112.196.172.132 
+wamp mysql: c:/wamp/bin/mysql/mysql5.6.17/data
+use credential to connect to my sql on AWS server:
+dmon [54.213.167.147]:3306->dmon->dmonadmin (try blank password as well)
+test [54.213.167.147]:3306->root->dmonadmin
+dmon->dmonadmin
+root->dmonadmin
+
+need to set windows firewall off and allow connection to all http and tcp connection
+
+http://54.213.81.190/dmonrestapi/sonicageindia/rating.txt
+http://54.213.81.190/sonicageindia.co.in
+http://54.213.81.190/dmonservices.com
+http://54.213.81.190/dmonrestapi
+http://54.213.81.190/phpmyadmin/
+\\WIN-R1TNAQRH289\dmonNode
+\\WIN-R1TNAQRH289\www
+
+
+phpMyAdmin: to make it public-make sure you goto c:\wamp\www\alias dir and change all ini files to "Allow from all" and remove other specific ip line
+and comment "#Require local"
+httpd.conf
+<Directory "c:/wamp/www/">
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+    Require all granted
+</Directory>
+UPDATE mysql.user SET Password=PASSWORD('NewPasswordHere') WHERE User='root';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;
+
+Node gets you json object for database object easily and use angular to play with it easily
+Node: download and install it
+cd C:\node\node_modules\npm
+cmd->npm install/unistall mysql
+npm install simple-node-logger
+npm install/unistallmd
+mssql
+
+
+git clone git://github.com/boto/boto.git
+cd boto
+python setup.py install
+
+git clone https://github.com/boto/boto3.git
+cd boto3
+
+pip install Sphinx
+npm install -g heroku-cli
+
+
+
+
+global npm dir
+npm install -g <module>: use it if you want any node module to work globally i.e via the CLI like gulp, grunt, karma, mocha, bower etc. These modules cannot be imported by require() in node js file
+dont use -g if you want to leverage the module in js script like express and react js api
+
+C:\Users\DP\AppData\Roaming\npm
+
+cd C:\node\node_modules\npm
+gulp installation has to be in the local root directory of web server
+npm install gulp -g
+npm install --save-dev gulp gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename
+from with in project to have gulp build setup
+npm install gulp --save-dev gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename gulp-uglifycss gulp-minify-html
+npm install --save gulp-uglifycss
+npm install --save gulp-minify-html
+
+cd to your folder directory
+java -jar c:\yuiCompress.jar js/myjs.js -o dist/js/myjs1.js
+java -jar c:\yuiCompress.jar js/*.js -o dist/js/all.js
+java -jar c:\yuiCompress.jar css/*.css -o dist/css/all.css
+
+
+
+node f:\dmon\node\mysql.js
+node f:\dmon\node\httpServer.js
+node f:\dmon\node\tcpServer.js
+
+==========================================================================================================================
+
+
+
+
+sql Server 2005
+SYSTEM->rbs1984#->NT AUTHORITY
+C:\Program Files\Microsoft SQL Server\
+Database Engine: NT Service\MSSQL$SQLEXPRESS
+Server: IDEA-PC\SQLEXPRESS
+windows auth mode: idea-PC\DP (DP)
+C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\Data
+
+SMS APIs
+---------------
+AirtelSMS.com
+http://yourdomainname.com/GatewayAPI/rest?method=SendMessage&send_to=9582797772&msg_type=TEXT&mask=ARCELI&loginid=xxxx&auth_scheme=plain&password=123456&v=1.1&format=text&msg=G(T0):12292 (T1): 12827 S(T0):35556 (T1):35590 P(T0):65 (T1):65.01 dmonTest
+
+
+dmonAdm!n:999983
+8123h123u1273:10
+3kjasdu98342:10
+kskkjlkjl33w:10
+
+
+I have a new unique business idea and want to contact investors. HELP/GUIDE@devendraprasad1984@gmail.com, +91 958279777
+
+Hi,I have designed a new unique service IDEA. Please use below code@ dmonServices.com/demo
+code: 8123h123u1273, 3kjasdu98342
+
+
+============================================
+Hi,
+I am Deven, a Senior Software Designer, with one of the leading investment bank in Delhi-NCR. I have designed an idea (dmonServices.com) which would work for everyone in the country and it would be beneficial for everyone. If people would feel having money saved with the help of dmonServices, they would stay connected with us forever. This would work without internet as well and would have more connected people for varied society of india, from elite to poor. please view demo
+
+Please use below code to have the demo view: 8123h123u1273, 3kjasdu98342, kskkjlkjl33w
+Type the above code in the text box on http://dmonServices.com/demo and click on "Demo View". You will get 10 views with each code. If you need more views of the idea, Please call me or mail me, I will renew it.
+
+Would you call me to discuss in detail if you like the video and can get me a funding to make demon a real success in INDIA
+Rgds,
+Deven
++91 9582797772
+
+dmonServices.com - concise idea
+capture the commodity rates from various sources and provide to everyone via sms. help sources to talk to each other for better society. help people to know the changing rates pattern and thus help the economy aware of the changing rate patterns regularly
+==========================================
+total of 9 yrs of IT development experience, I now want to solve agriculture problem and help economy
+https://letsventure.com/dmonservices
+
+
+
+create a windows service as bat file - for node
+open CMD as administrator
+sc.exe create testNodeService binpath= "c:\windows\system32\cmd.exe --service \"F:\dmon\node\testNode.bat\"" DisplayName= "testNodeService" start= "auto"
+sc.exe delete intelliServer1
+
+sc.exe create intelliServer2 binpath= "c:\windows\system32\cmd.exe \"F:\SETUP\JAVA\LicenceServer(1.3)_intelliJ\IntelliJIDEALicenseServer_windows_386.exe\"" DisplayName= "intelliServer2" 
+
+
+visual studio 2010 express key
+PQT8W-68YB2-MPY6C-9JV9X-42WJV
+
+
+
+excel classess
+------------------
+abhinav: 8860413106
+jatin: 9953148777
+vikrant: 995399971
+
+
+
+
+
+Hi,
+I am working professional with one of the investment banks in gurgaon and I work on advance excel+vba. I have got +9 yrs experience of software development in this technology. I am free over weekends and thinking to start coaching over weekends on part time basis. Should you have any training needs in these technologies, please contact me. PFB the resume
+
+
+http://goo.gl/forms/rYzDnwCthw
+
+
+
+<a class="twitter-timeline" href="https://twitter.com/hashtag/StartupIndia" data-widget-id="688612655385329664">#StartupIndia Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<a class="twitter-timeline" href="https://twitter.com/devendraprasad1" data-widget-id="688616049659392000">Tweets by @devendraprasad1</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+<a class="twitter-timeline" href="https://twitter.com/dmonservices" data-widget-id="688647479928041473">Tweets by @dmonservices</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+want to be part of overall journey with Uber and this space can utilize my skills which I leaned out of hobby (JS/Jquery/Angular/Node/Php). I work for RBS and I work on Advance Excel+VBA+Sql projects, this have limited set of growth in overall journey. I hope, I become an asset to Uber
+
+
+
+Freelancer.com
+------------------------------
+I am experienced VBA programmer. Have a look over my profile at sonicageindia.co.in
+I have over 8 yrs of wide experience in the same IT development field. I can code and troubleshoot at very fast speed
+Rgds
+
+
+
+
+HotelSunNSnow.com
+-----------------------
+net4.in->000685625->majesticview2012(old)->dp2016hsnscom
+Rahul Gupta - 8126417222
+
+
+
+1yrs
+-----------------
+web hosting - 116*12 = 1392
+email: 183*12 = 2184
+total: 3600
+-----------------
+Initial Cost + onboarding cost: 3000
+Annual Maintenance Contract (AMC): 9600
+
+OverAll Tasks Involved + AMC (for HotelSunNSnow)
+--------------------------
+- get hold of the running website (without access)
+- write the email sender from scratch because cracking it from public source hides the secured and invisible codes
+	email will be sent to newly configured mail or gmail whichever possible
+- hosting the website to new host and manage the traffic route to this domain
+- google ad words management - finding possibilities for getting hold of the google account for ad window
+	google account for ad is not in my control and hence cannot decide on cost at the momment, will update later
+
+AMC
+would cover changes or amendment to existing components (text, images, links, slider, contacts) present over the website.
+The cost for anything / any new design required in the website will be decide at the time of request
+
+
+
+Total: 3600 + 3000 + 9600 = 16200
+
+
+
+dmon ec2 aws server
+54.200.248.237->;D3mabHFD6k
+
+
+
+
+Angular-----------
+Default application server configuration
+var PORT             = 5555;
+var LIVE_RELOAD_PORT = 4002;
+var APP_BASE         = '/';
+Configure at runtime
+
+npm run serve.dev -- --port 8080 --reload-port 4000 --base /my-app/
+Now to extend?
+
+If you want to use your custom libraries:
+npm install my-library --save
+vim gulpfile.js
+Add reference to the installed library in PATH.src.lib into ./tools/workflow.config.js.
+
+Running test
+# In a single bash window
+npm run test
+# Debug - In two bash windows
+npm run karma      # 1st window
+npm run test.dev   # 2nd window
+
+
+
+These samples use Angular 2.0
+
+Live DEMO here: http://www.syntaxsuccess.com/angular-2-samples
+Documentation: http://www.syntaxsuccess.com/angular-2-articles
+
+Here are the prerequisites for running the project:
+
+1) npm run install-application 
+   
+   -Installs all dependencies 
+   -AOT compiles
+   -Tree shakes 
+   -Bundles app into single file
+
+2) npm run start
+
+
+
+lite-server dev server
+Installation and Usage
+
+The recommended installation method is a local NPM install for your project:
+
+$ npm install lite-server --save-dev
+...and add a "script" entry within your project's package.json file:
+
+# Inside package.json...
+  "scripts": {    
+    "dev": "lite-server"
+  },
+With the above script entry, you can then start lite-server via:
+
+$ npm run dev
+Other options for running locally installed NPM binaries is discussed in this Stack Overflow question: How to use package installed locally in node_modules
+
+Global Installation
+
+lite-server can be also installed globally, if preferred:
+
+$ npm install -g lite-server
+
+# To run:
+$ lite-server
+Custom Configuration
+
+The default behavior serves from the current folder, opens a browser, and applies a HTML5 route fallback to ./index.html.
+
+lite-server uses BrowserSync, and allows for configuration overrides via a local bs-config.json or bs-config.js file in your project.
+
+You can provide custom path to your config file via -c or --config= run time options:
+
+lite-server -c configs/my-bs-config.js
+For example, to change the server port, watched file paths, and base directory for your project, create a bs-config.json in your project's folder:
+
+{
+  "port": 8000,
+  "files": ["./src/**/*.{html,htm,css,js}"],
+  "server": { "baseDir": "./src" }
+}
+A more complicated example with modifications to the server middleware can be done with a bs-config.js file, which requires the module.exports = { ... }; syntax:
+
+module.exports = {
+  server: {
+    middleware: {
+      // overrides the second middleware default with new settings
+      1: require('connect-history-api-fallback')({index: '/index.html', verbose: true})
+    }
+  }
+};
+The bs-config.js file may also export a function that receives the lite-server Browsersync instance as its only argument. While not required, the return value of this function will be used to extend the default lite-server configuration.
+
+module.exports = function(bs) {
+
+  return {
+    server: {
+      middleware: {
+        // overrides the second middleware default with new settings
+        1: require('connect-history-api-fallback')({
+          index: '/index.html',
+          verbose: true
+        })
+      }
+    }
+  };
+
+};
+NOTE: Keep in mind that when using middleware overrides the specific middleware module must be installed in your project. For the above example, you'll need to do:
+
+$ npm install connect-history-api-fallback --save-dev
+...otherwise you'll get an error similar to:
+
+Error: Cannot find module 'connect-history-api-fallback'
+Another example: To remove one of the default middlewares, such as connect-logger, you can set it's array index to null:
+
+module.exports = {
+  server: {
+    middleware: {      
+      0: null     // removes default `connect-logger` middleware
+    }
+  }
+};
+A list of the entire set of BrowserSync options can be found in its docs: http://www.browsersync.io/docs/options/
+
+Testing
+
+When using lite-server to run end to end tests, we may not want to log verbosely. We may also want to prevent the browser from opening. These options in the bs-config.js will silence all logging from lite-server:
+
+  open: false
+  logLevel: "silent",
+  server: {
+    middleware: {
+      0: null
+    }
+  }
+Known Issues
+
+CSS with Angular 2 is embedded thus even though BrowserSync detects the file change to CSS, it does not inject the file via sockets. As a workaround, injectChanges defaults to false.
+
+Contributing
+
+Fork and clone it
+Install dependencies: npm install
+Create a feature branch: git checkout -b new-feature
+Commit changes: git commit -am 'Added a feature'
+Run static code analysis and unit tests: npm test
+Push to the remote branch: git push origin new-feature
+Create a new Pull Request
+
+
+
+
+configure Dropbox to run as a service.
+
+Log into the server or desktop with the account that you want to run the service as and setup Dropbox. Configure Dropbox to not run at startup and exit the application.
+Download srvany.exe from Microsoft Windows 2003 Resource Kit (available free from Microsoft). After installing the Resource Kit (default in C:\Program Files (x86)\Windows Resource Kits\Tools) copy srvany.exe into the folder where Dropbox is installed.
+Open a windows cmd prompt (run as administrator) and type in the service and authentication details you want (in our case DropboxSync) i.e. sc create DropboxSync displayName= "Dropbox Service" start= auto obj= "<domain>\<username>" password= "<password>" binPath= "C:\Program Files (x86)\Dropbox\srvany.exe"
+Goto your Start Menu, type in regedit and goto the new service (in this case DropboxSync) HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DropboxSync
+Create subkey Parameters below in which you must create a string value: Create a String Value called Application then right click on this and add the path to Dropbox.exe (e.g C:\Program Files (x86)\Dropbox\Client\Dropbox.exe)
+From the command prompt run net start DropboxSync or start the service via the services snap-in
+You can then manage Dropbox as a service. If you need to edit the settings within Dropbox log in as the account that the service is running under, stop the service then start Dropbox from the icon in the start menu. When you have completed the changes to the settings close the google drive desktop application and start the service back up again.
+
+sc create DropboxSync displayName= "Dropbox Service" start= auto obj= "devendraprasad1984@gmail.com" password= "rbs1984#" binPath= "C:\Program Files (x86)\Dropbox\srvany.exe"
+
+
+
+
+Big Data ReadMe
+Twitter sentiments analysis (steps)
+https://docs.microsoft.com/nl-nl/azure/stream-analytics/stream-analytics-twitter-sentiment-analysis-trends
+ 
+ 
+ 
+Demo for Running Hadoop Cluster & Map Reduce Job
+http://www.rajatratewal.com/2014/07/25/hadoop-tutorial-series-1-installing-hadoop-windows-ubuntu/
+Demo for Installing Pig and Running Pig Scripts
+http://www.rajatratewal.com/2014/09/12/hadoop-tutorial-series-1-installing-pig/
+http://www.rajatratewal.com/2014/11/12/dive-pig-latin-via-demo-use-case/
+Demo for Hive
+http://www.rajatratewal.com/2014/09/16/hadoop-tutorial-series-1-installing-hive/
+Demo for Sqoop
+http://www.rajatratewal.com/2016/07/14/sqoop-transferring-relationa-data/
+Demo for Oozie workflow
+http://www.rajatratewal.com/2014/09/15/hadoop-tutorial-series-1-installing-oozie-workflow-scheduler-hadoop/
+ 
+ 
+Buzz word Big Data
+http://www.rajatratewal.com/2014/10/01/buzz-word-big-data/
+ 
+Yahoo Tutorial
+https://developer.yahoo.com/hadoop/tutorial/
+ 
+pdf: Hadoop in action
+ 
+ 
+Must Have
+Udemy Hadoop Course
+https://www.udemy.com/hadoopstarterkit/
+ 
+Setup a Hadoop Cluser on Azure
+http://hortonworks.com/hadoop-tutorial/deploying-hortonworks-sandbox-on-microsoft-azure/
+ 
+Sentiment Analysis
+http://hortonworks.com/hadoop-tutorial/how-to-refine-and-visualize-sentiment-data/
+ 
+ 
+Any one as per your skill set and area of expertise
+Map-R (Analyst)
+http://learn.mapr.com/da-440-apache-hive-essentials
+http://learn.mapr.com/da-450-apache-pig-essentials
+ 
+Map-R (Developer)
+http://learn.mapr.com/dev-301-developing-hadoop-applications
+ 
+Map-R (Database)
+http://learn.mapr.com/dev-320-hbase-data-model-and-architecture
+http://learn.mapr.com/dev-325-hbase-schema-design
+http://learn.mapr.com/da-440-apache-hive-essentials
+ 
+Various Practical Use Cases to help you with Hackathon
+http://hortonworks.com/tutorials/
+
+
+Social media analysis using python � google python social media api
+https://www.analyticsvidhya.com/blog/2014/09/mining-youtube-python-social-media-analysis/
+ 
+ 
+
+ 
+citi ref: 7274
+remaining: 29522.68
+
+node watcher: npm install -g nodemon
+
+
+heroku 
+git clone https://github.com/heroku/node-js-getting-started.git
+https://limitless-sea-34608.herokuapp.com/ | https://git.heroku.com/limitless-sea-34608.git
+heroku.exe login
+heroku.exe create
+git push heroku master
+heroku.exe ps:scale web=1
+heroku.exe open
+heroku.exe logs --tail
+
+npm install --save --save-exact cool-ascii-faces
+heroku.exe local web
+
+
+https://limitless-sea-34608.herokuapp.com/
+
+git config --global user.email "devendraprasad1984@gmail.com"
+git config --global user.name "devendraprasad1984"
+
+git clone git@github.com:devendraprasad1984/test1.git
+git clone https://github.com/devendraprasad1984/test1.git
+
+https://github.com/devendraprasad1984/PythonAndNodeSamples.git
+echo "# test1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/devendraprasad1984/test1.git
+git remote add origin https://github.com/devendraprasad1984/test2.git
+git push --set-upstream origin master
+git push -u origin master
+
+heroku.exe login
+heroku.exe create
+https://murmuring-tundra-42584.herokuapp.com/ | https://git.heroku.com/murmuring-tundra-42584.git
+git remote -v
+heroku.exe git:remote -a murmuring-tundra-42584
+--git remote rename heroku heroku-staging
+git push heroku master
+heroku.exe ps:scale web=1
+heroku.exe open
+
+git remote add origin https://github.com/devendraprasad1984/test1.git
+git remote add origin https://github.com/devendraprasad1984/test2.git
+git push -u origin master
+
+git clone https://github.com/ccoenraets/directory-react-nodejs.git
+git clone git@github.com:devendraprasad1984/test3.git
+git remote add origin https://github.com/devendraprasad1984/test3.git
+
+Creating app... done, mysterious-inlet-67999
+https://mysterious-inlet-67999.herokuapp.com/ | https://git.heroku.com/mysterious-inlet-67999.git
+heroku.exe git:remote -a mysterious-inlet-67999
+
+
+
+RUBY
+ruby+devkit: https://rubyinstaller.org/downloads/
+rubyGems+rails: https://rubygems.org/pages/download
+mysql: dev.mysql.com
+mySqlRubeGems: 
+
+https://www.youtube.com/watch?v=HRqacHVmePU&list=PLgPJX9sVy92yV7Qt6_8ElC9paGWdtdIbb&index=3
+
+
+
+
+
+
+
+DP: i can be a match as well to the project, dpresume[dot]com
+
+
+
+sublime c & CPP setting
+for c
+{
+"shell_cmd" : "gcc $file_name -o ${file_base_name}",
+"working_dir" : "$file_path",
+ 
+"variants":
+[
+    {
+        "name": "Run",
+        "shell_cmd": "gcc $file_name -o ${file_base_name} && ${file_path}/${file_base_name}"
+    }
+]
+}
+
+
+for c++
+{
+"shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\"",
+"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+"working_dir": "${file_path}",
+"selector": "source.c, source.c++",
+ 
+"variants":
+[
+    {
+        "name": "Run",
+        "shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
+    }
+]
+}
+
+
+
+
+
+
+oracle
+c:\ora\product\11.1.0\db_2
+jdbc:oracle:thin:@192.168.0.11:1521:master
+https://192.168.0.11:5500/em->system->admin
+all other DB like HR,MDDATA etc->amdmin
+globaldb->sid->master
+192.168.0.11:1521->SYSTEM->admin->master
+
+
+
+
+
+
+
+
+
+commands
+"C:\Program Files\Git\bin\sh.exe" --login
+tail -f /c/wamp7118/apache2/logs/error.log
+
+
+in jetbrains
+GET http://localhost/ksgurukul/services/ServiceDetails.php?test=1
+Accept: */*
+Cache-Control: no-cache
+
+
+
+
+
+
+
+
+
+{"licenseId":"ThisCrackLicenseId",
+"licenseeName":"Rover12421",
+"assigneeName":"Rover12421",
+"assigneeEmail":"rover12421@163.com",
+"licenseRestriction":"By Rover12421 Crack, Only Test! Please support genuine!!!",
+"checkConcurrentUse":false,
+"products":[
+{"code":"II","paidUpTo":"2099-12-31"},
+{"code":"DM","paidUpTo":"2099-12-31"},
+{"code":"AC","paidUpTo":"2099-12-31"},
+{"code":"RS0","paidUpTo":"2099-12-31"},
+{"code":"WS","paidUpTo":"2099-12-31"},
+{"code":"DPN","paidUpTo":"2099-12-31"},
+{"code":"RC","paidUpTo":"2099-12-31"},
+{"code":"PS","paidUpTo":"2099-12-31"},
+{"code":"DC","paidUpTo":"2099-12-31"},
+{"code":"RM","paidUpTo":"2099-12-31"},
+{"code":"CL","paidUpTo":"2099-12-31"},
+{"code":"PC","paidUpTo":"2099-12-31"},
+{"code":"DB","paidUpTo":"2099-12-31"},
+{"code":"GO","paidUpTo":"2099-12-31"},
+{"code":"RD","paidUpTo":"2099-12-31"}
+],
+"hash":"2911276/0",
+"gracePeriodDays":7,
+"autoProlongated":false}

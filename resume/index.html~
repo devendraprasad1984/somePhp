@@ -68,7 +68,7 @@
                 <div style="margin-top: 1em;" ng-include="viewName"></div>
             </div>
         </div>
-        <run-time-templates url="templates/pageDiv.html"></run-time-templates>        
+        <run-time-templates url="templates/pageDiv.html"></run-time-templates>
     </div>
 </div>
 <div id="idRunTimeScriptsContainer"></div>
