@@ -71,6 +71,14 @@ xdebug.remote_enable=1
 xdebug.remote_port="9000"
 
 
+https://www.ubuntupit.com/best-linux-desktop-environment-reviewed-and-compared/
+https://www.ubuntupit.com/top-15-best-gnome-shell-themes-gnome-desktop/
+https://github.com/vinceliuice/Sierra-gtk-theme
+
+ubuntu themes: https://www.youtube.com/watch?v=IEzrs1ZU4R0
+http://gnome-look.org
+https://www.opendesktop.org/
+
 https://github.com/aptana/studio3/releases
 http://www.zend.com/en/products/studio/downloads-studio#Linux
 
@@ -91,6 +99,10 @@ design pattern: https://sourcemaking.com/design_patterns
 https://www.toptal.com/python/an-introduction-to-mocking-in-python
 https://www.toptal.com/python/python-design-patterns
 https://www.tutorialspoint.com/python_design_patterns/index.htm
+https://www.edureka.co/blog/interview-questions/python-interview-questions/
+https://intellipaat.com/interview-question/python-interview-questions/
+https://www.educba.com/python-interview-questions/
+
 
 https://ihatetomatoes.net/get-advanced-react-workshop/
 https://itnext.io/how-to-develop-a-professional-react-app-c259382372cb
@@ -101,6 +113,7 @@ https://www.geeksforgeeks.org/advanced-data-structures/
 https://data-flair.training/blogs/top-python-interview-questions-answer/
 https://www.cs.auckland.ac.nz/courses/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf
 
+mailspring login: devendraprasad1984@gmail.com->rbs6200#
 
 10-Dec-2018 (10-Dec-2018)	TO TRANSFER 
 INB IMPS/P2A/834417971151/XXXXXXX364CORP	UA0120011954MOAAXRADE8	49,900.00	
