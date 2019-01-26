@@ -3,6 +3,8 @@ alt+f2-run
 ctrl+alt+f* keys -
 ctrl+alt+t-terminal
 
+git: devendraprasad1984@gmail.com rbs6200#
+
 https://askubuntu.com/questions/337874/change-apache-document-root-folder-to-secondary-hard-drive
 sudo su - root
 chmod -R 777 <foldername>
