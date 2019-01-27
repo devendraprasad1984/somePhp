@@ -1,0 +1,70 @@
+{
+  "menu": [
+    {
+      "id": "1",
+      "name": "home",
+      "desc": "Home",
+      "defaultLoad": "show",
+      "loadIn": "myHomeData",
+      "uri": "services/ServiceDetails.php?getDataFile=home&getType=yes&title=no",
+      "func":"home"
+    },
+    {
+      "id": "2",
+      "name": "products",
+      "desc": "Products",
+      "defaultLoad": "hide",
+      "loadIn": "productID",
+      "uri": "services/ServiceDetails.php?getDataFile=products&getType=yes&title=no"
+    },
+    {
+      "id": "3",
+      "name": "news",
+      "desc": "News",
+      "defaultLoad": "hide",
+      "loadIn": "newsData",
+      "uri": "services/ServiceDetails.php?getDataFile=news&getType=yes&title=no"
+    },
+    {
+      "id": "4",
+      "name": "about",
+      "desc": "About Us",
+      "defaultLoad": "hide",
+      "loadIn": "aboutId",
+      "uri": "services/ServiceDetails.php?getDataFile=about&getType=yes&title=no"
+    },
+    {
+      "id": "5",
+      "name": "contact",
+      "desc": "Contact",
+      "defaultLoad": "hide",
+      "loadIn": "contactID",
+      "uri": "services/ServiceDetails.php?getDataFile=contact&getType=yes&title=no"
+    },
+    {
+      "id": "0",
+      "name": "header",
+      "desc": "",
+      "defaultLoad": "hide",
+      "loadIn": "top1",
+      "uri": "services/ServiceDetails.php?getDataFile=header&getType=yes&title=no"
+    },
+    {
+      "id": "0",
+      "name": "footer",
+      "desc": "",
+      "defaultLoad": "hide",
+      "loadIn": "footerID",
+      "uri": "services/ServiceDetails.php?getDataFile=footer&getType=yes&title=no"
+    },
+    {
+      "id": "0",
+      "name": "slider",
+      "desc": "",
+      "defaultLoad": "hide",
+      "loadIn": "",
+      "uri": "services/ServiceDetails.php?slider=1",
+      "func":"slider"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<div>
+    PHONE: 7703852842<br>
+    EMAIL: ks.academic@yahoo.com<br>
+    LOCATION: C- 103, GALI NO – 5, BHAJANURA <br>
+    (NEAR BHAJANPURA POLICE STATION) DELHI -110053<br>
+</div>
+
+
+<div class="">
+    <div class="">
+        <iframe width="100%" id="gmap_canvas" style="height: 500px;"
+                src="https://maps.google.com/maps?q=bhajan%20pura%2C%20delhi%2C%20india&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+</div>
+

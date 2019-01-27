@@ -1,0 +1,61 @@
+<div style="text-align: left; vertical-align: center">
+    <div class="row">
+        <div class="col-sm-4"><img src="./images/pic9.png" alt=""></div>
+        <div class="col-sm-8">
+            <div style="min-height: 200px">
+                <strong>BIO-CASSAVA BAG</strong><br>
+                Every year, an estimated of 1 trillion plastic bags are consumed worldwide, and Avani’s cassava-based
+                eco bags are the <br>
+                perfect replacement to mitigate this horrible worldwide epidemic. Avani bags are made from purely 100%
+                bio-based material <br>
+                and it is also widely considered as one of the lowest cost for cassava-based bioplastic.<br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="topMar row">
+        <div class="col-sm-4"><img src="./images/pic5.png" alt=""></div>
+        <div class="col-sm-8">
+            <div style="min-height: 200px">
+                <strong>PRODUCT 2</strong><br>
+                Every year, an estimated of 1 trillion plastic bags are consumed worldwide, and Avani’s cassava-based
+                eco bags are the <br>
+                perfect replacement to mitigate this horrible worldwide epidemic. Avani bags are made from purely 100%
+                bio-based material <br>
+                and it is also widely considered as one of the lowest cost for cassava-based bioplastic.<br>
+            </div>
+        </div>
+    </div>
+
+    <div class="topMar row">
+        <div class="col-sm-4"><img src="./images/pic9.png" alt=""></div>
+        <div class="col-sm-8">
+            <div style="min-height: 200px">
+                <strong>PRODUCT 3</strong><br>
+                Every year, an estimated of 1 trillion plastic bags are consumed worldwide, and Avani’s cassava-based
+                eco bags are the <br>
+                perfect replacement to mitigate this horrible worldwide epidemic. Avani bags are made from purely 100%
+                bio-based material <br>
+                and it is also widely considered as one of the lowest cost for cassava-based bioplastic.<br>
+            </div>
+        </div>
+    </div>
+
+    <div class="topMar row">
+        <div class="col-sm-4"><img src="./images/pic9.png" alt=""></div>
+        <div class="col-sm-8">
+            <div style="min-height: 200px">
+                <strong>PRODUCT 3</strong><br>
+                Every year, an estimated of 1 trillion plastic bags are consumed worldwide, and Avani’s cassava-based
+                eco bags are the <br>
+                perfect replacement to mitigate this horrible worldwide epidemic. Avani bags are made from purely 100%
+                bio-based material <br>
+                and it is also widely considered as one of the lowest cost for cassava-based bioplastic.<br>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+

@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-sm-12" style="text-align: center">
+        <strong>Who We Are...</strong><br>
+        We established in the year of 2014 spearheaded by individuals who strive to be difference makers utilizing technology<br>
+        as a solution to combat the global epidemic of plastic pollution. Avani provides a game-changing compostable bioplastic made<br>
+        from cassava starch as well as a full range of sustainable food packaging and hospitality products made from renewable resources<br>
+        Through years of research and development prior to its launch, Avani have came up with groundbreaking technology that enables them <br>
+        to replace the otherwise disposable plastic products which take hundreds and even thousands of years to be decomposed by Mother <br>
+        nature by using renewable resources made from plants. Parallel to that, as a social impact enterprise, we are committed to exercise <br>
+        good corporate governance through our business practices as well as adopting the Triple Bottom Line approach in assuring the <br>
+        sustainability of our business.<br>
+    </div>
+</div>
+
+<br>
+<strong>OUR TEAM</strong><br>
+<div class="row">
+    <div class="col-sm-6" style="vertical-align: middle">
+        <strong>Prince Kumar</strong><br>
+        Co-Founder<br>
+        social entrepreneur and evangelist of all things he is passionate about. With an educational background from the fields of biology, medical and also business management, Kevin is a transformational leader possessing an animated and charismatic personality. As a status quo challenger, Kevin is a true believer that frustration is truly the mother of invention as his entire businesses share this same particular common denominator. He is the co-founder and Chief Green Officer of an eco-technology company, AVANI, embarking on a mission to cut down global plastic consumption by offering a proven integrated eco-friendly solution to replace petroleum-based disposable plastic products. Kevin Kumala is an entrepreneur and an idea seeker who is truly a doer, not a dreamer.
+    </div>
+    <div class="col-sm-6"><img src="./images/team1.png" class="imgTeam"/></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6"><img src="./images/team2.png" class="imgTeam"/></div>
+    <div class="col-sm-6" style="vertical-align: middle">
+        <strong>Amit Kumar</strong><br>
+        Co-Founder<br>
+        social entrepreneur and evangelist of all things he is passionate about. With an educational background from the fields of biology, medical and also business management, Kevin is a transformational leader possessing an animated and charismatic personality. As a status quo challenger, Kevin is a true believer that frustration is truly the mother of invention as his entire businesses share this same particular common denominator. He is the co-founder and Chief Green Officer of an eco-technology company, AVANI, embarking on a mission to cut down global plastic consumption by offering a proven integrated eco-friendly solution to replace petroleum-based disposable plastic products. Kevin Kumala is an entrepreneur and an idea seeker who is truly a doer, not a dreamer.
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6" style="vertical-align: middle">
+        <strong>Satya Prakash</strong><br>
+        Co-Founder<br>
+        social entrepreneur and evangelist of all things he is passionate about. With an educational background from the fields of biology, medical and also business management, Kevin is a transformational leader possessing an animated and charismatic personality. As a status quo challenger, Kevin is a true believer that frustration is truly the mother of invention as his entire businesses share this same particular common denominator. He is the co-founder and Chief Green Officer of an eco-technology company, AVANI, embarking on a mission to cut down global plastic consumption by offering a proven integrated eco-friendly solution to replace petroleum-based disposable plastic products. Kevin Kumala is an entrepreneur and an idea seeker who is truly a doer, not a dreamer.
+    </div>
+    <div class="col-sm-6"><img src="./images/team3.png" class="imgTeam"/></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6"><img src="./images/team4.png" class="imgTeam"/></div>
+    <div class="col-sm-6" style="vertical-align: middle">
+        <strong>XSD</strong><br>
+        Co-Founder<br>
+        social entrepreneur and evangelist of all things he is passionate about. With an educational background from the fields of biology, medical and also business management, Kevin is a transformational leader possessing an animated and charismatic personality. As a status quo challenger, Kevin is a true believer that frustration is truly the mother of invention as his entire businesses share this same particular common denominator. He is the co-founder and Chief Green Officer of an eco-technology company, AVANI, embarking on a mission to cut down global plastic consumption by offering a proven integrated eco-friendly solution to replace petroleum-based disposable plastic products. Kevin Kumala is an entrepreneur and an idea seeker who is truly a doer, not a dreamer.
+    </div>
+</div>

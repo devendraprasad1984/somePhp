@@ -1,0 +1,67 @@
+<div style="text-align: left; vertical-align: center">
+    <div class="" style="font-size: 20pt">
+        From COUNTRY comes a total solution for the world's plastic epidemic
+    </div>
+
+    <div class="topMar row">
+        <div class="col-sm-3"><img src="./images/pic7.jpg" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic2.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic4.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic5.png" alt=""></div>
+    </div>
+
+    <div class="topMar" style="min-height: 300px">
+        <strong style="font-size: 20pt">Engineered Eco-Products</strong><br>
+        Many products which are marketed as 'eco-friendly' may not necessarily be beneficial to the environment.<br>
+        The notion of 'greenwashing' has been the common denominator done by many 'green' companies worldwide in order to maximize<br>
+        profit without the sincere integrity and passion in striving for a cleaner and greener world. Here at Avani, we believe<br>
+        that there is no grey area - we are fully committed to deliver the most economical best in class eco-friendly products with<br>
+        ZERO tolerance towards using petroleum-based plastic in order to save our planet from this ongoing massive plastic epidemic.<br>
+    </div>
+
+    <div class="topMar row">
+        <div class="col-sm-3"><img src="./images/pic5.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic9.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic5.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic2.png" alt=""></div>
+    </div>
+
+    <div class="topMar row">
+        <div class="col-sm-3"><img src="./images/pic9.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic9.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic5.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic2.png" alt=""></div>
+    </div>
+
+    <div class="topMar row">
+        <div class="col-sm-3"><img src="./images/pic5.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic7.jpg" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic9.png" alt=""></div>
+        <div class="col-sm-3"><img src="./images/pic5.png" alt=""></div>
+    </div>
+
+
+    <div class="topMar" style="min-height: 400px">
+        <strong style="font-size: 20pt">Eco-Products Engineered in Bali</strong><br>
+        Avani aims to help rehabilitate the Middle East by offering 100% sustainable disposable packaging solutions and compostable<br>
+        plastic alternatives to the regions hospitality & retail industries. By focusing to replace single-use plastic products,<br>
+        the company offers:<br>
+        Take-away cups<br>
+        Take-aways boxes<br>
+        Wooden eating cutlery<br>
+        Paper Straws<br>
+        Shopping bags<br>
+        Apparel Poly bags<br>
+        Laundry bags<br>
+        and more<br>
+        By providing affordable & eco-friendly alternatives along with the cooperation of the local service & retail<br>
+        industries we hope to minimize the amount of toxic plastics consumed and discarded into the regions critical ecosystems.<br>
+        At the same time, in delivering its values as a social enterprise, Avani is committed to help teach everyone,<br>
+        through our partnership programs, how to maintain a sustainable future for generations to come.<br>
+    </div>
+
+    <strong>Follow Us on Twitter</strong>
+    <div id="twitterFeedsOnHome"></div>
+
+</div>
+
