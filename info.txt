@@ -10,7 +10,7 @@ sudo su - root
 chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install python3.7 python3-pip node default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo apt-get install python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
 sudo apt-get install libapache2-mod-php7.2 php7.2-cli php7.2-mysql php7.2-gd php7.2-imagick php7.2-recode php7.2-tidy php7.2-xmlrpc
 
 sudo apt autoremove
@@ -131,6 +131,27 @@ https://facebook.github.io/react-native/docs/getting-started.html
 Simulator not installed. Please visit https://developer.apple.com/xcode/download/ to download Xcode and the iOS simulator. 
 If you already have the latest version of Xcode installed, you may have to run the command `sudo xcode-select -s /Applications/Xcode.app`.
 
+udemy downloader:
+https://stackoverflow.com/questions/41931230/how-to-download-udemy-videos
+open cmd prompt
+type in there pip install youtube-dl
+then after downloading youtube-dl , open your udemy account where you have subscribed for the course or in case you have bought the udemy course
+open the course which you have to download.
+click on the course content option
+copy the link in url bar copy the link in url bar
+write the python script in cmd as follows:
+cli->youtube-dl -u devendraprasad1984@gmail.com -p rbs1984# <course link>
+type your uername or registered e-mail and password
+you will appearing this in the cmd if the user name and password is correct written by you
+
+sudo pip install udemy-dl
+udemy-dl course-url
+udemy-dl -u devendraprasad1984@gmail.com -p rbs1984# https://www.udemy.com/react-redux
+udemy-dl -u devendraprasad1984@gmail.com -p rbs1984# --lecture-start 1 --lecture-end 2 https://www.udemy.com/react-redux/learn/v4/t/lecture/12531044
+npm install -g udemy-dl
+udl https://www.udemy.com/COURSE_NAME
+udl -u devendraprasad1984@gmail.com -p rbs1984# https://www.udemy.com/react-redux
+udl -u devendraprasad1984@gmail.com -p rbs1984# https://www.udemy.com/the-complete-react-native-and-redux-course
 
 https://sites.google.com/view/dpresume
 
@@ -936,3 +957,13 @@ Cache-Control: no-cache
 "hash":"2911276/0",
 "gracePeriodDays":7,
 "autoProlongated":false}
+
+
+
+
+https://colorlib.com/wp/free-event-website-templates/
+https://themefisher.com/best-free-html5-templates/
+http://www.themesindustry.com/html/arone/medical.html
+http://preview.themeforest.net/item/navis-personal-portfolio-vcard/full_screen_preview/21309475?ref=cirvitis
+
+rbsconnect: https://rbsconnect.rbspeople.com/Citrix/VCSDesktopWeb/
