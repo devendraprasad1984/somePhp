@@ -1,0 +1,2 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+20:13:49	262/262	---M--	301	error ('Moved%20Permanently')	text/html	date:Wed,%2030%20Jan%202019%2014:43:51%20GMT	http://freetemplates.pro/preview/?template=maguwohost	/home/devendra/deven/dpgit/somePhp/websiteCopies/test2/freetemplates.pro/preview/index2000.html	(from )

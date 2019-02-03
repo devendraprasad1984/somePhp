@@ -1,0 +1,10 @@
+https://www.draw.io/
+ste.grider@gmail.com
+
+https://codepen.io/sgrider/pen/yRWZEq
+react cdn: https://cdnjs.cloudflare.com/ajax/libs/react/16.7.0/umd/react.production.min.js
+https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.7.0/umd/react-dom.production.min.js
+
+
+
+http://facebook.github.io/react-native/

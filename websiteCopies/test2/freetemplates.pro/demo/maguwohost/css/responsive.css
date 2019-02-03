@@ -1,0 +1,288 @@
+
+
+/* #Media Queries
+================================================== */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+nav ul li a {
+    margin-right: 23px;
+}
+.rightnav {
+    padding: 15px 0 0px 10px;
+}
+a.call {
+    font-size: 20px;
+    padding: 5px 0 5px 8px;
+}
+header {
+    height: 130px;
+}
+#banner h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+#banner {
+    padding: 113px 0 70px;
+}
+header.sticky .rightnav {
+    padding: 8px 0 7px 10px;
+}
+#pricing h2 {
+    font-size: 33px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+nav ul li a {
+    margin-right: 12px;
+	font-size: 14px;
+}
+.rightnav {
+    padding: 15px 0 0px 10px;
+}
+a.call {
+    font-size: 20px;
+    padding: 5px 0 5px 8px;
+}
+header {
+    height: 130px;
+}
+#banner img {
+    margin: 25px auto;
+}
+#banner h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#banner {
+    padding: 113px 0 70px;
+}
+header.sticky .rightnav {
+    padding: 8px 0 7px 10px;
+}
+#pricing h2 {
+    font-size: 24px;
+}
+a.live {
+    width: 80px;
+    margin-right: 10px;
+}
+.logo a img{width:170px; height:auto;}
+#service h2 {
+    font-size: 26px;
+}
+#pricing {
+    padding: 50px 0;
+}
+#service h1 {
+    font-size: 90px;
+}
+#rightcorner {
+    padding: 70px 15px 10px 15px;
+}
+#leftcorner {
+    padding: 36px 15px 10px 15px;
+}
+#leftcorner, #rightcorner {
+    min-height: 530px;
+}
+#fetures h3 {
+    font-size: 22px;
+}
+#fetures {
+    padding: 50px 0 50px;
+}
+#client {
+    padding: 50px 0 70px;
+}
+.topsec {
+    margin-bottom: 20px;
+}
+#client img.img1 {
+    display: block;
+    width: 100%;
+}
+
+#pricing a {
+    width: 200px;
+}
+	}
+
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+.leftnav {
+    width: 100%;
+	    padding: 15px 0px;
+}
+.rightnav {
+    display:none;
+}
+
+header , header.sticky{height:auto;}
+
+.backcolor{background:#fff;}
+header.sticky .rightnav {
+   display:none;
+}
+.logo a img {
+    display: block;
+    width: 170px;
+    height: auto;
+    margin-top: 14px;
+}
+nav {
+    width: 100% !important;
+    float: left !important;
+    text-align: center;
+    margin-left: 0px;
+}
+nav ul li a {
+    margin-right: 0px;
+    padding: 10px 0;
+}
+header.sticky .leftnav {
+    padding: 10px 0;
+}
+#banner h1 {
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+#banner p {
+    font-size: 18px;
+}
+#banner img {
+    margin: 12px auto;
+}
+#banner {
+    padding: 45px 0 40px;
+}
+#banner form {
+    width: 100%;
+}
+#banner input {
+    width: 100%;
+}
+#banner select {
+    width: 50%;
+}
+#banner a.send {
+    width: 50%;
+    font-size: 13px;
+}
+
+#leftcorner, #rightcorner {
+    width: 100%;
+    min-height: auto;
+	 padding: 30px 0;
+}
+
+#service h2 {
+    font-size: 23px;
+    margin-top: 25px;
+}
+#leftcorner img{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+#service h1 {
+    font-size: 60px;
+    line-height: 53px;
+}
+#fetures h2 {
+    font-size: 26px;
+}
+p.top {
+    margin-bottom: 30px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#fetures {
+    padding: 35px 0 35px;
+}
+span.line {
+    margin: 15px auto;
+}
+#fetures h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+#fetures p{margin-bottom:20px;}
+#client {
+    padding: 35px 0 20px;
+}
+#client h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#client img.img1 {
+    /* margin-top: 20px; */
+    margin: 20px auto;
+    display: block;
+}
+.bottomsec aside {
+    margin-bottom: 70px;
+}
+#pricing h2 {
+    font-size: 22px;
+}
+#pricing p {
+    margin-bottom: 25px;
+}
+#pricing {
+    padding: 30px 0;
+}
+#pricing a {
+    width: 230px;
+    height: 50px;
+    line-height: 48px;
+}
+.naviright {
+    position: relative;
+    right: 0;
+    top: 0;
+    text-align: center;
+    bottom: 0;
+}
+.naviright ul li{display:inline-block; padding:0 4px;}
+.naviright ul li a {
+    display: block;
+}
+.naviright ul li:last-child a {
+    border-bottom: 1px solid #565870;
+}
+.naviright h2 {
+    margin: 25px 0 10px;
+}
+.socials {
+    padding: 15px 0 15px;
+}
+footer {
+    min-height: 480px;
+}
+.fdata {
+    top: 375px;
+}
+.location {
+    left: 0px;
+     top: 225px;
+}
+.location h3 {
+    font-size: 14px;
+}
+		}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+		}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		
+		
+		}
+

@@ -5,12 +5,27 @@ ctrl+alt+t-terminal
 
 git: devendraprasad1984@gmail.com rbs6200#
 
+https://reactjs.org/
+https://babeljs.org/
+https://semantic-ui.com
+
+babel- ES5(all browser),ES2015(almost all),(16,17,18,19)(poor support) - hence babel is used for cross browser support for any ver of js, output es5 code
+while cerate react, react-dom, react-scripts (webpack,babel,dev server)
+webpack is bunlder
+component nesting, reusability, configuration
+component lifecycle: constructore(init)->render(jsx)->componentDidMount(data load)->componentDidUpdate(state changes/updares/rerender)->componentWillUnmount(final cleanup)
+other: shouldComponentUpdate, getDrivedStateFromProps, getSnapshotBeforeUpdate
+
+
+
 https://askubuntu.com/questions/337874/change-apache-document-root-folder-to-secondary-hard-drive
 sudo su - root
 chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo su - root and npm install -g create-react-app react-devtools
+
 sudo apt-get install webhttrack
 http://dpz580:8080/server/index.html
 sudo apt-get install libapache2-mod-php7.2 php7.2-cli php7.2-mysql php7.2-gd php7.2-imagick php7.2-recode php7.2-tidy php7.2-xmlrpc
@@ -965,8 +980,11 @@ website download:
 wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains themesindustry.com --no-parent http://www.themesindustry.com/html/arone
 
 https://colorlib.com/wp/free-event-website-templates/
+https://colorlib.com/wp/free-seo-friendly-website-templates/
+https://colorlib.com/etc/cellon/index.html
 https://themefisher.com/best-free-html5-templates/
+https://freetemplates.pro/demo/maguwohost/
 http://www.themesindustry.com/html/arone/medical.html
-http://preview.themeforest.net/item/navis-personal-portfolio-vcard/full_screen_preview/21309475?ref=cirvitis
+gianfar.ltd.ua/navis/parallax/index.html
 
 rbsconnect: https://rbsconnect.rbspeople.com/Citrix/VCSDesktopWeb/
