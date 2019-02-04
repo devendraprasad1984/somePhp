@@ -3,11 +3,12 @@ import React from 'react'
 export class SearchBar extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {term: 'default value'}
+        this.state = {inputText: 'cars'}
         // this.setTextInputValueTEST=this.setTextInputValueTEST.bind(this) //way 2 solve this undefined issue
     }
 
     componentDidMount() {
+        console.log("searchBar component mounted")
     }
 
     onInputChangeClick(event) {
@@ -30,8 +31,12 @@ export class SearchBar extends React.Component {
     }
 
     setTextInputValueTEST2(){
-        this.setState({inputText: this.getTextInputValue()})
-        console.log("inside setText TEST2",this.state.inputText)
+        let sval=this.getTextInputValue()
+        this.setState({inputText: sval})
+        console.log("inside setText TEST2",sval)
+        //from parent component callback AppSearchBar
+        this.props.onSeachSubmitFromAppSearchBar(this.state.inputText)
+
     }
 
     onFormSubmit(){
@@ -57,6 +62,7 @@ export class SearchBar extends React.Component {
 
                     <button onClick={this.setTextInputValueTEST}>Search TEST</button>
                     <button onClick={()=>this.setTextInputValueTEST2()}>Search TEST2 arrow</button>
+                    <button onClick={()=>this.props.onSeachSubmitFromAppSearchBar(this.state.inputText)}>Search Callback From Parent</button>
 
                 </div>
                 <SearchDisplayList txt2search={'default - ' + this.state.inputText}/>
@@ -64,6 +70,9 @@ export class SearchBar extends React.Component {
         )
     }
 }
+
+
+
 
 export class SearchDisplayList extends React.Component {
     constructor(props) {
@@ -82,3 +91,5 @@ export class SearchDisplayList extends React.Component {
         )
     }
 }
+
+

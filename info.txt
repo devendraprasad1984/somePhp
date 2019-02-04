@@ -5,9 +5,11 @@ ctrl+alt+t-terminal
 
 git: devendraprasad1984@gmail.com rbs6200#
 
+http://www.javadecompilers.com/
 https://reactjs.org/
 https://babeljs.org/
 https://semantic-ui.com
+https://unsplash.com/developers
 
 babel- ES5(all browser),ES2015(almost all),(16,17,18,19)(poor support) - hence babel is used for cross browser support for any ver of js, output es5 code
 while cerate react, react-dom, react-scripts (webpack,babel,dev server)
@@ -15,6 +17,7 @@ webpack is bunlder
 component nesting, reusability, configuration
 component lifecycle: constructore(init)->render(jsx)->componentDidMount(data load)->componentDidUpdate(state changes/updares/rerender)->componentWillUnmount(final cleanup)
 other: shouldComponentUpdate, getDrivedStateFromProps, getSnapshotBeforeUpdate
+
 
 
 

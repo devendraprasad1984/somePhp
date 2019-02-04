@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 // import './icon.css';
 
 import App from './App';
 import FuncApp from './FuncApp'
 import ComponentsTest from './components-test'
-import {SeasonsComponent,SeasonsDisplayComponent} from './seasons'
-import {SearchBar,SearchDisplayList} from './searchBarAndList'
+import {SeasonsComponent, SeasonsDisplayComponent} from './seasons'
+// import {SearchBar, SearchDisplayList} from './searchBarAndList'
 import * as serviceWorker from './serviceWorker';
+import {AppSeachBar} from "./AppSearchBar";
 
 ReactDOM.render(<div>
     <span>APP COMPONENT</span><br/>
@@ -22,23 +24,16 @@ ReactDOM.render(
         <span>TEST COMPONENT</span><br/>
         <ComponentsTest></ComponentsTest>
     </div>
-    ,document.getElementById('root_comments'))
+    , document.getElementById('root_comments'))
 
 ReactDOM.render(
     <div>
         <span>SEASONS COMPONENT</span><br/>
         <SeasonsComponent></SeasonsComponent><br/>
     </div>
-    ,document.getElementById('root_seasons'))
+    , document.getElementById('root_seasons'))
 
-
-ReactDOM.render(
-    <div className="ui container">
-        <span>Search Bar Component</span><br/>
-        <SearchBar></SearchBar><br/>
-    </div>
-    ,document.getElementById('root_searchBarAndList'))
-
+ReactDOM.render(<div><AppSeachBar /></div>, document.getElementById('root_searchBarAndList'))
 
 
 // If you want your app to work offline and load faster, you can change
