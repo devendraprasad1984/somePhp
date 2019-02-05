@@ -4,13 +4,14 @@ import './index.css';
 
 // import './icon.css';
 
-import App from './App';
-import FuncApp from './FuncApp'
-import ComponentsTest from './components-test'
-import {SeasonsComponent, SeasonsDisplayComponent} from './seasons'
+import App from './components/App';
+import FuncApp from './components/FuncApp'
+import ComponentsTest from './components/components-test'
+import {SeasonsComponent, SeasonsDisplayComponent} from './components/seasons'
 // import {SearchBar, SearchDisplayList} from './searchBarAndList'
-import * as serviceWorker from './serviceWorker';
-import {AppSeachBar} from "./AppSearchBar";
+import * as serviceWorker from './components/serviceWorker';
+import {AppSeachBar} from "./components/AppSearchBar";
+import {AppVideoComponent} from "./components/appVideoComponent";
 
 ReactDOM.render(<div>
     <span>APP COMPONENT</span><br/>
@@ -34,6 +35,8 @@ ReactDOM.render(
     , document.getElementById('root_seasons'))
 
 ReactDOM.render(<div><AppSeachBar /></div>, document.getElementById('root_searchBarAndList'))
+
+ReactDOM.render(<div><AppVideoComponent /></div>, document.getElementById('root_AppVideoComponent'))
 
 
 // If you want your app to work offline and load faster, you can change
