@@ -5,12 +5,23 @@
     }
 </style>
 
+<script>
+    function displayViewOnThisPage(id){
+        $("#1_view,#2_view").css({"display":"none"})
+        $("#"+id).css({"display":"block"})
+    }
+</script>
+
 <div id="id_vw_elg" ng-app="myAjs" class="bg-white">
     <div class="row">
         <div class="col-lg-12 h1 bg-light-blue-gradient">CV</div>
+        <div class="col-lg-12 h3 ">
+            <a href="" onclick="displayViewOnThisPage('2_view')">SideBar View</a>
+            | <a href="" onclick="displayViewOnThisPage('1_view')">Flat View</a>
+        </div>
         <div class="col-lg-10 ">
-            <iframe class='pdfView' style='background-color: white; height: 500px;' src='docs/Devendra_Prasad_CV.pdf#view=FitH'
-                    frameborder=0></iframe>
+            <iframe id="1_view" class='pdfView' style='background-color: white; height: 500px; display: none' src='docs/Devendra_Prasad_CV.pdf#view=FitH'frameborder=0></iframe>
+            <iframe id="2_view" class='pdfView' style='background-color: white; height: 500px;' src='docs/Devendra_Prasad_sidebar.pdf#view=FitH'frameborder=0></iframe>
         </div>
         <div class="col-lg-2 ">
             <span class="h2">some links</span>

@@ -12,6 +12,8 @@ import {SeasonsComponent, SeasonsDisplayComponent} from './components/seasons'
 import * as serviceWorker from './components/serviceWorker';
 import {AppSeachBar} from "./components/AppSearchBar";
 import {AppVideoComponent} from "./components/appVideoComponent";
+import {AppSongs} from "./components/AppSongs";
+import {AppBlogPosts} from "./components/AppBlogPosts";
 
 ReactDOM.render(<div>
     <span>APP COMPONENT</span><br/>
@@ -37,6 +39,11 @@ ReactDOM.render(
 ReactDOM.render(<div><AppSeachBar /></div>, document.getElementById('root_searchBarAndList'))
 
 ReactDOM.render(<div><AppVideoComponent /></div>, document.getElementById('root_AppVideoComponent'))
+
+// songs app using redux and react-redux
+ReactDOM.render(<div><AppSongs /></div>, document.getElementById('root_AppSongs'))
+
+ReactDOM.render(<div><AppBlogPosts /></div>, document.getElementById('root_AppBlogPosts'))
 
 
 // If you want your app to work offline and load faster, you can change

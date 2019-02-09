@@ -98,6 +98,8 @@ zend_extension="/usr/lib/php/20170718/xdebug.so"
 xdebug.remote_enable=1
 xdebug.remote_port="9000"
 
+sudo apt-get remove xubuntu-desktop xfce4-goodies xfce4
+sudo apt autoremove
 
 https://www.ubuntupit.com/best-linux-desktop-environment-reviewed-and-compared/
 https://www.ubuntupit.com/top-15-best-gnome-shell-themes-gnome-desktop/
