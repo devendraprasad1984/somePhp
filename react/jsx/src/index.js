@@ -15,6 +15,11 @@ import {AppVideoComponent} from "./components/appVideoComponent";
 import {AppSongs} from "./components/AppSongs";
 import {AppBlogPosts} from "./components/AppBlogPosts";
 
+//if normal named exports are used then while importing {} is used and if default export is used, then that module will have only one export statement
+//and like that only with that function name if written  without {} will be used
+//and if in case of default no function name written, fileName will be used as that module name
+
+
 ReactDOM.render(<div>
     <span>APP COMPONENT</span><br/>
     <App/><br/>

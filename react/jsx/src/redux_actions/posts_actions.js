@@ -16,18 +16,37 @@ import jsonPlaceHolder from '../api/jsonPlaceHolder'
 // see over thunk git - https://github.com/reduxjs/redux-thunk/blob/master/src/index.js
 //that all it does...
 
+//when thunk is used, return a function which will in turn return action object
+//it returns a promise
+//this is fine as well
 // export const fetchPosts=()=>{
-//     return function(dispatch,getstate){
-//         const promise=jsonPlaceHolder.get('/posts')
-//         return{
-//             type:'FETCH_POSTS'
-//             ,payload:promise
-//         }
+//     return async function(dispatch,getstate){
+//         const response=await jsonPlaceHolder.get('/posts')
+//         dispatch({type:'FETCH_POST', payload: response})
 //     }
 // }
 
 export const fetchPosts = () => {
-    return {
-        type: 'FETCH_POSTS'
+    return async (dispatch, getstate) => {
+        const response = await jsonPlaceHolder.get('/posts')
+        dispatch({type: 'FETCH_POST', payload: response})
     }
 }
+//both functions are identical with single param arrow function ES2015 syntax
+export const fetchPostsRefactoredES2015 = () => async dispatch => {
+    const response = await jsonPlaceHolder.get('/posts')
+    dispatch({type: 'FETCH_POST', payload: response})
+}
+
+
+// export const fetchPosts = () => {
+//     return {
+//         type: 'FETCH_POSTS'
+//     }
+// }
+//
+// export const selectPost = () => {
+//     return {
+//         type: 'SELECT_POST'
+//     }
+// }
