@@ -4,7 +4,7 @@ var isLoadedGoogleCharts = false
 var timerId;
 var timerValue = 2000;
 var views = ["view1", "view2", "view3", "view4", "view6"]
-var defaultView = "view4";
+var defaultView = "viewElegant";
 // var defaultView = views [Math.round(Math.random() * views.length)] ||"view6"
 // alert("current selected view is " + defaultView)
 var viewsToHaveCharts = ["view1", "view6"];

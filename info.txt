@@ -17,9 +17,14 @@ webpack is bunlder
 component nesting, reusability, configuration
 component lifecycle: constructore(init)->render(jsx)->componentDidMount(data load)->componentDidUpdate(state changes/updares/rerender)->componentWillUnmount(final cleanup)
 other: shouldComponentUpdate, getDrivedStateFromProps, getSnapshotBeforeUpdate
+redux with insurance analogy
+redux:action creator->action->dispatch->reducers->state
+insurance: person dropping off form->the form->form receiver->departments->compiled department data
+
+https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.min.js
 
 
-
+https://pages.github.com/
 
 https://askubuntu.com/questions/337874/change-apache-document-root-folder-to-secondary-hard-drive
 sudo su - root
@@ -32,6 +37,7 @@ sudo su - root and npm install -g create-react-app react-devtools
 sudo apt-get install webhttrack
 http://dpz580:8080/server/index.html
 sudo apt-get install libapache2-mod-php7.2 php7.2-cli php7.2-mysql php7.2-gd php7.2-imagick php7.2-recode php7.2-tidy php7.2-xmlrpc
+local server live edit refresh: https://laragon.org/download/
 
 sudo apt autoremove
 sudo apt remove php-xdebug

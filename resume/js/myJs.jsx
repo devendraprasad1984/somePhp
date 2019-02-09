@@ -129,8 +129,8 @@ var GetRestResources = React.createClass({
                     var xObj = newObj[key];
                     // console.log(xObj)
                     var mstyle = {
-                        width: xObj.rating + '%'
-                        , fontSize: '10pt'
+                        width: xObj.rating  + '%'
+                        , fontSize: '12px'
                         , paddingLeft: '5px'
                     }
                     return (
