@@ -5,7 +5,7 @@ import {Provider} from 'react-redux'
 import postIndexReducers from '../redux_reducers/postIndexReducers'
 //connect the thunk middleware
 import thunk from 'redux-thunk'
-import {Middleware} from "redux";
+import {applyMiddleware} from "redux";
 
 //github.com/reduxjs/redux
 

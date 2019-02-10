@@ -29,7 +29,7 @@ import jsonPlaceHolder from '../api/jsonPlaceHolder'
 export const fetchPosts = () => {
     return async (dispatch, getstate) => {
         const response = await jsonPlaceHolder.get('/posts')
-        dispatch({type: 'FETCH_POST', payload: response})
+        dispatch({type: 'FETCH_POST', payload: response.data})
     }
 }
 //both functions are identical with single param arrow function ES2015 syntax

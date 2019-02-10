@@ -1,7 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d7844ab-5711-40c4-bee3-9ba0479400b6" name="Default Changelist" comment="" />
+    <list default="true" id="7d7844ab-5711-40c4-bee3-9ba0479400b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/.versions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/accordion.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/accordion.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/ad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/ad.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/api.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/breadcrumb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/breadcrumb.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/button.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/card.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/checkbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/checkbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/checkbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/colorize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/colorize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/comment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/comment.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/container.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/dimmer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/dimmer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/dimmer.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/dimmer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/divider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/divider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/dropdown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/dropdown.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/dropdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/embed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/embed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/embed.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/embed.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/feed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/feed.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/flag.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/flag.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/form.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/form.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/header.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/icon.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/image.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/input.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/item.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/label.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/label.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/list.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/loader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/loader.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/menu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/message.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/message.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/modal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/modal.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/nag.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/nag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/nag.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/nag.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/placeholder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/placeholder.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/popup.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/progress.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/progress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/progress.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/progress.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/rail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/rail.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/rating.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/rating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/rating.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/rating.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/reset.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/reveal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/reveal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/search.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/search.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/segment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/segment.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/shape.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/shape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/shape.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/shape.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/sidebar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/sidebar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/site.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/site.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/state.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/statistic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/statistic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/step.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/step.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/sticky.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/sticky.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/sticky.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/tab.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/tab.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/tab.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/transition.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/transition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/transition.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/transition.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/video.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/visibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/visibility.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/visit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/components/visit.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/semantic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/semantic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/semantic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/semantic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semantic-UI-CSS-master/themes/default/assets/images/flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/public/themes/default/assets/images/flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/src/components/post_userHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/src/redux_actions/user_actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/src/redux_reducers/users_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/components/AppBlogPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/AppBlogPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/components/postList.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/postList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/redux_actions/posts_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/redux_actions/posts_actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/redux_reducers/postIndexReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/redux_reducers/postIndexReducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/redux_reducers/posts_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/redux_reducers/posts_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resume/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../resume/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resume/viewElegant.html" beforeDir="false" afterPath="$PROJECT_DIR$/../resume/viewElegant.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,35 +211,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jsx/src/components/AppBlogPosts.js">
+        <entry file="file://$PROJECT_DIR$/jsx/src/components/postList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="345">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="53" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <element signature="e#225#256#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jsx/src/components/post_userHeader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jsx/src/redux_reducers/posts_reducer.js">
+        <entry file="file://$PROJECT_DIR$/jsx/src/redux_reducers/postIndexReducers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+            <state relative-caret-position="135">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jsx/src/redux_reducers/postIndexReducers.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jsx/src/redux_reducers/users_reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -58,6 +268,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>term</find>
+      <find>fetchPosts</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,7 +291,6 @@
         <option value="$PROJECT_DIR$/jsx/src/seasons.js" />
         <option value="$PROJECT_DIR$/jsx/src/spinner.js" />
         <option value="$PROJECT_DIR$/jsx/src/seasonDisplay.css" />
-        <option value="$PROJECT_DIR$/jsx/src/index.css" />
         <option value="$PROJECT_DIR$/jsx/src/App.js" />
         <option value="$PROJECT_DIR$/jsx/src/searchBarAndList.js" />
         <option value="$PROJECT_DIR$/jsx/src/AppSearchBar.js" />
@@ -103,18 +313,23 @@
         <option value="$PROJECT_DIR$/jsx/public/index.html" />
         <option value="$PROJECT_DIR$/jsx/src/api/jsonPlaceHolder.js" />
         <option value="$PROJECT_DIR$/jsx/src/redux_reducers/posts_reducers.js" />
-        <option value="$PROJECT_DIR$/jsx/src/components/postList.js" />
-        <option value="$PROJECT_DIR$/jsx/src/redux_actions/posts_actions.js" />
         <option value="$PROJECT_DIR$/jsx/src/index.js" />
-        <option value="$PROJECT_DIR$/jsx/src/redux_reducers/posts_reducer.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/AppBlogPosts.js" />
+        <option value="$PROJECT_DIR$/jsx/src/redux_reducers/posts_reducer.js" />
+        <option value="$PROJECT_DIR$/jsx/src/redux_actions/posts_actions.js" />
+        <option value="$PROJECT_DIR$/jsx/src/redux_actions/user_actions.js" />
         <option value="$PROJECT_DIR$/jsx/src/redux_reducers/postIndexReducers.js" />
+        <option value="$PROJECT_DIR$/jsx/src/index.css" />
+        <option value="$PROJECT_DIR$/jsx/src/redux_reducers/users_reducer.js" />
+        <option value="$PROJECT_DIR$/jsx/src/components/postList.js" />
+        <option value="$PROJECT_DIR$/jsx/src/components/post_userHeader.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="683" />
+    <option name="width" value="650" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -125,8 +340,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,30 +352,12 @@
               <item name="react" type="462c0819:PsiDirectoryNode" />
               <item name="jsx" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="jsx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="jsx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="jsx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="redux_reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,12 +368,13 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/jsx/src/redux_reducers" />
-      <recent name="$PROJECT_DIR$/jsx/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jsx/src/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jsx/src/redux_reducers" />
+      <recent name="$PROJECT_DIR$/jsx/src/redux_actions" />
+      <recent name="$PROJECT_DIR$/jsx/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -197,13 +393,12 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="683" height="741" extended-state="4" />
-    <editor active="true" />
+    <frame x="67" y="27" width="650" height="741" extended-state="4" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.16792738" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.5066007" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -267,13 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="345" column="16" selection-start-line="345" selection-start-column="16" selection-end-line="345" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -473,34 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/api/jsonPlaceHolder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/components/postList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="72" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/components/AppSongs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="33" selection-start-line="2" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/redux_actions/posts_actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -516,30 +680,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/redux_reducers/posts_reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/redux_actions/posts_actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/components/AppBlogPosts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="330">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="35" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#225#256#0" expanded="true" />
+            <element signature="e#231#262#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/redux_reducers/posts_reducer.js">
+    <entry file="file://$PROJECT_DIR$/jsx/src/redux_reducers/users_reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/redux_reducers/postIndexReducers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="10" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/api/jsonPlaceHolder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/components/postList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/redux_actions/user_actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/components/post_userHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
