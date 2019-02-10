@@ -1,3 +1,13 @@
+install win7 booteable drive: http://www.webupd8.org/2010/10/create-bootable-windows-7-usb-drive.html
+https://softlay.net/download/file
+https://softfamous.com/microsoft-windows-7-ultimate-official-iso-image/
+sudo apt-get install gparted
+sudo apt-get install ntfs-3g
+
+sudo apt-get install powertop
+sudo powertop
+sudo powertop --auto-tune
+
 some ubuntu command
 alt+f2-run
 ctrl+alt+f* keys -
