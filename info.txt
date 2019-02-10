@@ -23,6 +23,9 @@ https://reactjs.org/
 https://babeljs.org/
 https://semantic-ui.com
 https://unsplash.com/developers
+http://twitch.tv/directory/game/Programming - see how people around the world program and solve different problems
+OBS - Open Broadcasting Software - video streaming software & recording desktop working
+RTMP - Real Time Messaging Protocol
 
 babel- ES5(all browser),ES2015(almost all),(16,17,18,19)(poor support) - hence babel is used for cross browser support for any ver of js, output es5 code
 while cerate react, react-dom, react-scripts (webpack,babel,dev server)

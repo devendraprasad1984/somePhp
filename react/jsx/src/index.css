@@ -21,3 +21,24 @@ span {
 label {
     font-size: 10pt;
 }
+
+div{
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div, p{
+    white-space: normal !important;
+    word-wrap: break-word;
+    font-size: 9pt;
+    /*font-size: 1.2vw;*/
+}
+
+
+
+div a{
+    font-size: 14pt;
+    font-weight: bolder;
+    padding: 5px 5px;
+}

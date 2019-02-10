@@ -32,7 +32,7 @@ class PostList extends React.Component {
     render() {
         console.log("posts list from state to props", this.props)
         return (
-            <div className="ui relaxed divided list" style={{width:'800px',height:'400px',overflow:'auto' }}>
+            <div className="ui relaxed divided list" style={{height:'400px'}}>
                 <p>blog post list goes here</p>
                 <div>{this.renderList()}</div>
             </div>
