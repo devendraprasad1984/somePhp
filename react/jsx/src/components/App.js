@@ -26,13 +26,6 @@ class App extends Component {
                         Learn React
                     </a>
                 </header>
-
-                {/*/!*search bar api handle is to be done by app component*!/*/}
-                {/*/!*for this child value of search to be made available to parent app component*!/*/}
-                {/*/!*in the form of function callback from parent to child*!/*/}
-                {/*/!*{in such cases property must be the exact event handler as in child component}*!/*/}
-                {/*<SearchBar onClick={this.onSearchSubmit}/>*/}
-
             </div>
         );
     }
@@ -40,3 +33,15 @@ class App extends Component {
 
 
 export default App;
+
+
+//{/*/!*search bar api handle is to be done by app component*!/*/
+//}
+//{/*/!*for this child value of search to be made available to parent app component*!/*/
+//}
+//{/*/!*in the form of function callback from parent to child*!/*/
+//}
+//{/*/!*{in such cases property must be the exact event handler as in child component}*!/*/
+//}
+//{/*<SearchBar onClick={this.onSearchSubmit}/>*/
+//}

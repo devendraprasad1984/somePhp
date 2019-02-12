@@ -12,25 +12,20 @@ export const ImageListFunctionalComponent = (props) => {
     //         <div>images has count of: {props.allImages.length}</div>
     //     )
     // }
-    const imageStyle = {
-        height: 'auto',
-        width: '300px'
-    }
     //faster
     const images2display = props.allImages.map((image) => {
         return (
             <div>
-                {/*<img key={image.id} src={image.urls.regular} alt={image.description} style={imageStyle}/>*/}
                 <ImageCard key={image.id} src={image} />
             </div>
         )
     })
     //slower as keys needs to be mapped behind the scenes for every call
-    const images2displayWithProps = props.allImages.map(({id, urls, description}) => {
-        return (
-            <img key={id} src={urls.regular} alt={description} style={imageStyle}/>
-        )
-    })
+    // const images2displayWithProps = props.allImages.map(({id, urls, description}) => {
+    //     return (
+    //         <img key={id} src={urls.regular} alt={description} style={imageStyle}/>
+    //     )
+    // })
     return (
         <div>
             <div>

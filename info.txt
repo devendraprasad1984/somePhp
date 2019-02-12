@@ -23,6 +23,10 @@ https://reactjs.org/
 https://babeljs.org/
 https://semantic-ui.com
 https://unsplash.com/developers
+console.developers.google.com
+streamy-react: client id: 217054210790-pr0kbfv8e68md93p8bddpspabssansa5.apps.googleusercontent.com
+streamy-react: secret key: qy6AH678c438SrQR4QTvEaju
+
 http://twitch.tv/directory/game/Programming - see how people around the world program and solve different problems
 OBS - Open Broadcasting Software - video streaming software & recording desktop working
 RTMP - Real Time Messaging Protocol
@@ -39,6 +43,11 @@ insurance: person dropping off form->the form->form receiver->departments->compi
 
 https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.min.js
 
+http://plugins.netbeans.org/PluginPortal/
+
+netbeans slowness heapsize
+i'm facing the same issue, but it works fine after increase the heap size by adding -J-Xmx2048m in <NETBEANS_DIR>\etc\netbeans.conf
+mine looks like this: netbeans_default_options="-J-client -J-Xss2m -J-Xms2048m -J-Xmx2048m -J-XX:PermSize=32m ......
 
 https://pages.github.com/
 
@@ -974,6 +983,9 @@ Cache-Control: no-cache
 
 
 
+-javaagent:/home/devendra/deven/software/jb/JetbrainsIdesCrack-3.4-release-enc.jar
+-javaagent:/home/devendra/deven/software/jb/JetbrainsCrack-3.1-release-enc.jar
+-javaagent:/home/devendra/deven/software/jb/JetbrainsCrack.jar
 
 {"licenseId":"ThisCrackLicenseId",
 "licenseeName":"Rover12421",
@@ -1002,6 +1014,58 @@ Cache-Control: no-cache
 "gracePeriodDays":7,
 "autoProlongated":false}
 
+{
+"licenseId":"ThisCrackLicenseId",
+"licenseeName":"idea",  "assigneeName":"",
+ "assigneeEmail":"idea@163.com",
+"licenseRestriction":"For This Crack, Only Test! Please support genuine!!!",  "checkConcurrentUse":false,
+"products":[
+{"code":"II","paidUpTo":"2099-12-31"},
+{"code":"DM","paidUpTo":"2099-12-31"},
+{"code":"AC","paidUpTo":"2099-12-31"},
+{"code":"RS0","paidUpTo":"2099-12-31"},
+{"code":"WS","paidUpTo":"2099-12-31"},
+{"code":"DPN","paidUpTo":"2099-12-31"},
+{"code":"RC","paidUpTo":"2099-12-31"},
+{"code":"PS","paidUpTo":"2099-12-31"},
+{"code":"DC","paidUpTo":"2099-12-31"},
+{"code":"RM","paidUpTo":"2099-12-31"},
+{"code":"CL","paidUpTo":"2099-12-31"},
+{"code":"PC","paidUpTo":"2099-12-31"}
+],
+"hash":"2911276/0",
+"gracePeriodDays":7,
+"autoProlongated":false
+}
+
+
+ThisCrackLicenseId-{ 
+“licenseId”:”ThisCrackLicenseId”, 
+“licenseeName”:”Yanggc”, 
+“assigneeName”:”Yanggc”, 
+“assigneeEmail”:”YoungGengChen@Gmail.com”, 
+“licenseRestriction”:”For This Crack, Only Test! Please support genuine!!!”, 
+“checkConcurrentUse”:false, 
+“products”:[ 
+{“code”:”II”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”DM”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”AC”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”RS0”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”WS”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”DPN”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”RC”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”PS”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”DC”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”RM”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”CL”,”paidUpTo”:”2099-12-31”}, 
+{“code”:”PC”,”paidUpTo”:”2099-12-31”} 
+], 
+“hash”:”2911276/0”, 
+“gracePeriodDays”:7, 
+“autoProlongated”:false}
+
+
+
 
 website download: 
 wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains themesindustry.com --no-parent http://www.themesindustry.com/html/arone
@@ -1015,3 +1079,63 @@ http://www.themesindustry.com/html/arone/medical.html
 gianfar.ltd.ua/navis/parallax/index.html
 
 rbsconnect: https://rbsconnect.rbspeople.com/Citrix/VCSDesktopWeb/
+
+
+
+
+
+reset intellij evaluation
+#!/bin/bash
+
+echo "removeing evaluation key"
+rm -rf ~/.IntelliJIdea2018.3/config/eval
+#rm ~/.IntelliJIdea2018.3/config/eval/idea183.evaluation.key
+
+echo "resetting evalsprt in options.xml"
+sed -i '/evlsprt/d' ~/.IntelliJIdea2018.3/config/options/other.xml
+
+echo "resetting evalsprt in prefs.xml"
+sed -i '/evlsprt/d' ~/.java/.userPrefs/prefs.xml
+
+
+# https://www.quora.com/Is-there-a-way-to-extends-trial-period-of-Jetbrains-IDE
+
+## or:
+#For IntelliJ IDEA 2017.1.2 EAP on Windows 10, I had to:
+#
+#Go to ´~/.IntelliJIdea2017.1/config´
+#Remove the folder ´eval´
+#Edit file options/options.xml and remove all properties that the name begins with evlsprt, such as:
+#<property name="evlsprt3.171" value="18" />
+#Go to Windows Registry and under subkeys of HKCU\Software\JavaSoft\Prefs\jetbrains\idea delete keys that begin with evlsprt
+
+
+#!/bin/bash
+
+#echo "removeing evaluation key"
+#rm  -rf ~/.IntelliJIdea*/config/eval
+#rm  -rf ~/.GoLand*/config/eval
+#rm  -rf ~/.WebStorm*/config/eval
+
+#rm -rf ~/.java/.userPrefs/jetbrains/goland
+#rm -rf ~/.java/.userPrefs/jetbrains/idea
+#rm -rf ~/.java/.userPrefs/jetbrains/webstorm
+
+#echo "resetting evalsprt in options.xml"
+#sed -i '/evlsprt/d' ~/.IntelliJIdea*/config/options/options.xml
+#sed -i '/evlsprt/d' ~/.GoLand*/config/options/options.xml
+#sed -i '/evlsprt/d' ~/.WebStorm*/config/options/options.xml
+
+#echo "resetting evalsprt in prefs.xml"
+#sed -i '/evlsprt/d' ~/.java/.userPrefs/prefs.xml
+
+
+#echo "change date file"
+#find ~/.IntelliJIdea* -type d -exec touch -t $(date +"%Y%m%d%H%M") {} +;
+#find ~/.IntelliJIdea* -type f -exec touch -t $(date +"%Y%m%d%H%M") {} +;
+
+#find ~/.GoLand* -type d -exec touch -t $(date +"%Y%m%d%H%M") {} +;
+#find ~/.GoLand* -type f -exec touch -t $(date +"%Y%m%d%H%M") {} +;
+
+#find ~/.WebStorm* -type d -exec touch -t $(date +"%Y%m%d%H%M") {} +;
+#find ~/.WebStorm* -type f -exec touch -t $(date +"%Y%m%d%H%M") {} +;

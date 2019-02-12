@@ -28,9 +28,6 @@ export class ImageCard extends React.Component{
         this.imageSrc=this.props.src
         return(
             <div style={{gridRowEnd:`span ${this.state.span}`}}>
-                {/*<img src={this.props.src} alt=""/>*/}
-                {/*<img src={this.imageSrc.urls.regular} alt={this.imageSrc.description}/>*/}
-                {/*ref keyword in img tells its a JSX tag and not html tag, and handles accordingly*/}
                 <img ref={this.imageRef} src={this.imageSrc.urls.regular} alt={this.imageSrc.description}/>
             </div>
         )

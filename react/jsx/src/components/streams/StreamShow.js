@@ -1,11 +1,7 @@
 import React from "react";
 
 class StreamShow extends React.Component{
-    constructor(props){
-        super(props)
-    }
-
-    render(){
+     render(){
         return(
             <div>
                 <span>stream show</span>

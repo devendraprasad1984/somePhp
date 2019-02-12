@@ -2,11 +2,11 @@ import React from 'react'
 import {connect} from "react-redux";
 // import {fetchUserMemoized} from "../redux_actions/app_post_actions";
 
-class Post_UserHeader extends React.Component {
+class PostUserHeader extends React.Component {
 
-    constructor(props) {
-        super(props)
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
 
     // //memoise solution needs it and the second sol wont need it
     // componentDidMount() {
@@ -44,6 +44,6 @@ const mapStateToProps = (state, ownProps) => {
 
 // export default connect(mapStateToProps, {
 //     fetchUser: fetchUserMemoized
-// })(Post_UserHeader)
+// })(PostUserHeader)
 
-export default connect(mapStateToProps)(Post_UserHeader)
+export default connect(mapStateToProps)(PostUserHeader)

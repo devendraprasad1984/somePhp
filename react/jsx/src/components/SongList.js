@@ -3,9 +3,9 @@ import {connect} from 'react-redux'
 import {selectSong} from "../redux_actions";
 
 class SongList extends React.Component{
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
     componentDidMount() {
         console.log("song lis just mounted")
     }

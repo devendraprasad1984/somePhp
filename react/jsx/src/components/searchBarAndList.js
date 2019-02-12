@@ -42,7 +42,7 @@ export class SearchBar extends React.Component {
 
     onKeyPress=(e)=>{
         // console.log(e,e.keycode)
-        if(e.keyCode==13){
+        if(e.keyCode===13){
             console.log("enter is press")
             this.setTextInputValueTEST2()
         }
@@ -60,9 +60,7 @@ export class SearchBar extends React.Component {
                 <p>search bar component goes here</p><br/>
                 <div className="ui form">
                     <label className="field">Search</label>
-                    {/*<input type="text" placeholder="search" id="txtSearchBar" onKeyPress={(event)=>this.onKeyPress(event)}/>*/}
                     <input type="text" placeholder="search" id="txtSearchBar"/>
-                    {/*<button onClick={()=>this.setState({inputText: document.getElementById('txtSearchBar').value})}>Search</button>*/}
                     <button onClick={() => {
                         this.setTextInputValue()
                         console.log("outside setText", this.state.inputText)
@@ -88,13 +86,6 @@ export class SearchBar extends React.Component {
 
 
 export class SearchDisplayList extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
-    componentDidMount() {
-    }
-
     render() {
         return (
             <div>

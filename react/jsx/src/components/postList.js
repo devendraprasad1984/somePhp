@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {fetchPosts, fetchPostsAndUsers} from '../redux_actions/app_post_actions'
-import Post_UserHeader from "./post_userHeader";
+import {fetchPostsAndUsers} from '../redux_actions/app_post_actions'
+import PostUserHeader from "./post_userHeader";
 
 
 
@@ -22,7 +22,7 @@ class PostList extends React.Component {
                             <h2>{post.title}</h2>
                             <p>{post.body}</p>
                         </div>
-                        <div> <Post_UserHeader userId={post.userId}/> </div>
+                        <div><PostUserHeader userId={post.userId}/> </div>
                     </div>
                 </div>
             )

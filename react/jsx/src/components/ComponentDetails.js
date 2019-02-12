@@ -11,7 +11,7 @@ const ComponentDetails = (props) => {
                 <a href="/" className="avatar">
                     <img src={faker.image.avatar()} alt="avatar" className="right floated mini ui image"/>
                 </a>
-                <span><a href="" className="header">{props.author}</a></span>
+                <span><a href="/" className="header">{props.author}</a></span>
                 <div className="content">
                     <div className="text"><span>{props.commentText}</span></div>
                     {/*<a href="" className="author">{props.author} - {faker.name.findName()} | {faker.internet.email()}</a>*/}

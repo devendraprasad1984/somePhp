@@ -20,9 +20,9 @@ export class AppSeachBar extends React.Component {
             }
         }).then((responseFromApi)=>{
             console.log("image list response back",responseFromApi.data.results)
-            responseFromApi.data.results.map((elm)=>{
-                console.log(elm.urls.regular)
-            })
+            // responseFromApi.data.results.map((elm)=>{
+            //     console.log(elm.urls.regular)
+            // })
         })
     }
     // async onSearchBarSubmitAsync(searchText){
@@ -35,9 +35,9 @@ export class AppSeachBar extends React.Component {
         })
         console.log("promise async await api call",responseFromAsyncApiCall)
         this.setState({photos:responseFromAsyncApiCall.data.results})
-        responseFromAsyncApiCall.data.results.map((elm)=>{
-            console.log(elm.urls.regular)
-        })
+        // responseFromAsyncApiCall.data.results.map((elm)=>{
+        //     console.log(elm.urls.regular)
+        // })
         console.log("state images object",this.state.photos)
     }
 
@@ -45,9 +45,6 @@ export class AppSeachBar extends React.Component {
         return (
             <div className="ui container">
                 <span>Search Bar Component</span><br/>
-                {/*search bar api handle is to be done by app component*/}
-                {/*for this child value of search to be made available to parent app component*/}
-                {/*in the form of function callback from parent to child*/}
                 <SearchBar onSeachSubmitFromAppSearchBar={this.onSearchBarSubmitAsync}></SearchBar><br/>
                 <span>found:{this.state.photos.length} images</span>
                 <ImageListFunctionalComponent allImages={this.state.photos} />
@@ -55,3 +52,7 @@ export class AppSeachBar extends React.Component {
         )
     }
 }
+
+//{/*search bar api handle is to be done by app component*/}
+//{/*for this child value of search to be made available to parent app component*/}
+//{/*in the form of function callback from parent to child*/}-- >-->

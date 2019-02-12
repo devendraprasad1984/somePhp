@@ -4,17 +4,17 @@ import Spinner from './spinner'
 
 
 export class SeasonsComponent extends React.Component {
-    constructor(props) {
-        super(props)
-        // this.state = {posLat: 0, posLong: 0, errMsg: ''}
-
-        // window.navigator.geolocation.getCurrentPosition(
-        //     (position) => {
-        //         this.setState({posLat: position.coords.latitude, posLong: position.coords.longitude})
-        //     }
-        //     , (err) => this.setState({errMsg: err.message})
-        // )
-    }
+    // constructor(props) {
+    //     super(props)
+    //     // this.state = {posLat: 0, posLong: 0, errMsg: ''}
+    //
+    //     // window.navigator.geolocation.getCurrentPosition(
+    //     //     (position) => {
+    //     //         this.setState({posLat: position.coords.latitude, posLong: position.coords.longitude})
+    //     //     }
+    //     //     , (err) => this.setState({errMsg: err.message})
+    //     // )
+    // }
 
     state = {posLat: 0, posLong: 0, errMsg: ''} //alternate way to state init
 
@@ -86,7 +86,7 @@ export class SeasonsDisplayComponent extends React.Component {
     componentDidMount() {
         this.setState({seasonLat: this.props.lat})
         var seasonName = this.getSeason(this.state.seasonLat, this.state.month)
-        const seasonConfigObj = this.seasonConfig[seasonName]
+        // const seasonConfigObj = this.seasonConfig[seasonName]
         this.setState({season: this.seasonConfig[seasonName]})
 
         // this.setState({month:this.months[new Date().getMonth()-1]})
@@ -102,7 +102,6 @@ export class SeasonsDisplayComponent extends React.Component {
                 <span>this is season Display new component</span>
                 <p>this is new lat in seaosn display <span>{this.state.seasonLat}</span></p>
                 <p>Month is <span>{this.state.month}</span></p>
-                {/*<span>{this.state.season.text} {this.state.season.iconName}</span>*/}
                 <div className="container">
                     <i className={`left icon ${this.state.season.iconName} massive`}></i>
                     <p className="season-content">Season is <span>{this.state.season.text}</span></p>

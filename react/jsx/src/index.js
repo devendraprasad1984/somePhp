@@ -7,7 +7,7 @@ import './index.css';
 import App from './components/App';
 import FuncApp from './components/FuncApp'
 import ComponentsTest from './components/components-test'
-import {SeasonsComponent, SeasonsDisplayComponent} from './components/seasons'
+import {SeasonsComponent} from './components/seasons'
 // import {SearchBar, SearchDisplayList} from './searchBarAndList'
 import * as serviceWorker from './components/serviceWorker';
 import {AppSeachBar} from "./components/AppSearchBar";
@@ -29,18 +29,18 @@ ReactDOM.render(<div className="ui segment">
 </div>, document.getElementById('root'));
 
 ReactDOM.render(
-    <div className="ui segment">
-        <span>TEST COMPONENT</span><br/>
-        <ComponentsTest></ComponentsTest>
-    </div>
-    , document.getElementById('root_comments'))
+        <div className="ui segment">
+            <span>TEST COMPONENT</span><br/>
+            <ComponentsTest></ComponentsTest>
+        </div>
+        , document.getElementById('root_comments'))
 
 ReactDOM.render(
-    <div className="ui segment">
-        <span>SEASONS COMPONENT</span><br/>
-        <SeasonsComponent></SeasonsComponent><br/>
-    </div>
-    , document.getElementById('root_seasons'))
+        <div className="ui segment">
+            <span>SEASONS COMPONENT</span><br/>
+            <SeasonsComponent></SeasonsComponent><br/>
+        </div>
+        , document.getElementById('root_seasons'))
 
 ReactDOM.render(<div className="ui segment"><AppSeachBar /></div>, document.getElementById('root_searchBarAndList'))
 
@@ -60,6 +60,8 @@ ReactDOM.render(<div className="ui segment"><AppTwitchTV /></div>, document.getE
 // serviceWorker.unregister();
 serviceWorker.register();
 
+// setState is component level state and to app level it can be passed from compoent to component in a parent child relation model
+//redux is application wide state management model
+//ES2015 - arrow function context are managed automatically and hence this is resolved perfactly fine
+//javascript in depth - STUDY - _PROTO_ Object hierarchy STUDY
 
-
-//187 - react router

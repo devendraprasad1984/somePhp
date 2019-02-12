@@ -1,12 +1,8 @@
 import React from "react";
 
-class StreamList extends React.Component{
-    constructor(props){
-        super(props)
-    }
-
-    render(){
-        return(
+class StreamList extends React.Component {
+    render() {
+        return (
             <div>
                 <span>stream list</span>
             </div>
