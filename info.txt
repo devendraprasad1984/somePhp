@@ -24,6 +24,7 @@ https://babeljs.org/
 https://semantic-ui.com
 https://unsplash.com/developers
 console.developers.google.com
+redux dev tools: github.com/zalmoxisus/redux-devtools-extension
 streamy-react: client id: 217054210790-pr0kbfv8e68md93p8bddpspabssansa5.apps.googleusercontent.com
 streamy-react: secret key: qy6AH678c438SrQR4QTvEaju
 
