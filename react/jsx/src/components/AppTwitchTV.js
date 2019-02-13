@@ -9,11 +9,14 @@ import StreamShow from "./streams/StreamShow";
 import StreamsNav from "./streams/StreamsNav";
 import StreamsHeader from './streamsHeader'
 import {Provider} from 'react-redux'
-import {createStore} from 'redux'
+// import {createStore} from 'redux'
+import {createStore,applyMiddleware,compose} from 'redux' //compose - for redux dev tools and better debugging
 import googleAuthReducers from '../redux_reducers/googleAuthReducers'
+import thunk from 'redux-thunk'
 
 class AppTwitchTV extends React.Component {
-    store=createStore(googleAuthReducers)
+    composeEnhancers=window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__||compose
+    store=createStore(googleAuthReducers,this.composeEnhancers(applyMiddleware(thunk)))
     render() {
         return (
             <Provider store={this.store}>
