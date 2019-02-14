@@ -1,7 +1,15 @@
 import React from "react";
 import {Field, reduxForm} from 'redux-form'
 import {connect} from 'react-redux'
-import {createStream} from '../../redux_actions/googleAuthActions'
+import {
+    createStream,
+    signIn,
+    signOut,
+    deleteStreamById,
+    editStreamById,
+    fetchStreamById,
+    fetchStreams
+} from '../../redux_actions/googleAuthActions'
 
 class StreamCreate extends React.Component {
     renderInput(formProps) {
@@ -44,7 +52,7 @@ class StreamCreate extends React.Component {
     // onSubmit(event){
     //     event.preventDefault()
     // }
-    onSubmit=(formValues)=> {
+    onSubmit = (formValues) => {
         console.log("StreamCreate form values", formValues)
         this.props.createStream(formValues)
     }
@@ -88,18 +96,16 @@ const validateUIForm = (formValues) => {
 //     })(StreamCreate)
 // )
 
-const formWrapped=reduxForm({
+const formWrapped = reduxForm({
     form: 'streamCreateForm'
     , validate: validateUIForm
 })(StreamCreate)
 
-const mapStateToProps=(state)=>{
-    return{
-
-    }
+const mapStateToProps = (state) => {
+    return {}
 }
 
-export default connect(mapStateToProps,{
+export default connect(mapStateToProps, {
     createStream: createStream
 })(formWrapped)
 

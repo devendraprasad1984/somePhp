@@ -6,6 +6,7 @@ import StreamCreate from "./streams/StreamCreate";
 import StreamEdit from "./streams/StreamEdit";
 import StreamDelete from "./streams/StreamDelete";
 import StreamShow from "./streams/StreamShow";
+import StreamCurrentUserOnly from './streams/StreamCurrentUserOnly'
 import StreamsNav from "./streams/StreamsNav";
 import StreamsHeader from './streamsHeader'
 import {Provider} from 'react-redux'
@@ -35,6 +36,7 @@ class AppTwitchTV extends React.Component {
                             <Route path="/streams/edit" component={StreamEdit}></Route>
                             <Route path="/streams/delete" component={StreamDelete}></Route>
                             <Route path="/streams/show" component={StreamShow}></Route>
+                            <Route path="/streams/currentUserOnly" component={StreamCurrentUserOnly}></Route>
                         </div>
                     </BrowserRouter>
                 </div>

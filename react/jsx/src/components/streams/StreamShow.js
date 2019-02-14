@@ -1,4 +1,5 @@
 import React from "react";
+import StreamList from './StreamList'
 
 class StreamShow extends React.Component{
      render(){

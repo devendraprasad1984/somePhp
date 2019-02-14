@@ -10,6 +10,7 @@ class StreamsNav extends React.Component{
                 <Link to="/streams/edit">Edit</Link>
                 <Link to="/streams/delete">Delete</Link>
                 <Link to="/streams/show">Show</Link>
+                <Link to="/streams/currentUserOnly">Current User Streams</Link>
             </div>
         )
     }
