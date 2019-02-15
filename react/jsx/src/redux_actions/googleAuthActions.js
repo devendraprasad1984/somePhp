@@ -1,5 +1,6 @@
 import streams from '../api/streams'
 import * as x from '../types'
+import browserHistory from '../browserHistory'
 
 export const signIn = (userId) => {
     return {
@@ -16,6 +17,9 @@ export const signOut = () => {
     }
 }
 
+//history - of navigational references
+//formValues from page this reducer is passed in
+//browser routed listens all history of navigatoinal changes as well
 export const createStream = (formValues) => {
     //because we are using thunk
     return async (dispatch, getState) => {
@@ -25,6 +29,9 @@ export const createStream = (formValues) => {
         // const response = await streams.post('/streams', formValues)
         const response = await streams.post('/streams', {...formValues,userId})
         dispatch({type: x.CREATE_STREAM, payload: response.data})
+    //    navigate user back to the home page once successful submission
+        console.log("history of navigations",browserHistory)
+        browserHistory.push('/')
     }
 }
 
