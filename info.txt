@@ -20,6 +20,9 @@ ctrl+alt+t-terminal
 
 git: devendraprasad1984@gmail.com rbs6200#
 
+react: https://www.youtube.com/watch?v=Ke90Tje7VS0
+https://www.youtube.com/watch?v=DLX62G4lc44
+
 http://www.javadecompilers.com/
 https://reactjs.org/
 https://babeljs.org/
@@ -29,6 +32,16 @@ console.developers.google.com
 redux dev tools: github.com/zalmoxisus/redux-devtools-extension -> chrome store->https://chrome.google.com/webstore/search/redux%20dev%20tools (redux devtools)
 http://redux-form.com
 rest api server: npmjs.com/package/json-server
+rtmp server: github.com/illuspas/Node-Media-Server
+obs open broadcaster streams videos: obsproject.com -> 
+sudo apt-get install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt-get update
+sudo apt-get install obs-studio
+
+npmjs.com/package/flv.js
+
+
 streamy-react: client id: 217054210790-pr0kbfv8e68md93p8bddpspabssansa5.apps.googleusercontent.com
 streamy-react: secret key: qy6AH678c438SrQR4QTvEaju
 
@@ -64,6 +77,8 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
 sudo su - root and npm install -g create-react-app react-devtools
 sudo apt-get install openssh-server
+
+pip3 install cx-oracle flask
 
 sudo apt-get install webhttrack
 http://dpz580:8080/server/index.html

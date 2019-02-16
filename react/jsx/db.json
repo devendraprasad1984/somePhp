@@ -1,26 +1,44 @@
 {
   "streams": [
     {
-      "title": "wow dp",
+      "title": "React JS course",
       "description": "this is cool stream",
-      "id": 1
+      "id": 1,
+      "url": "https://www.youtube.com/watch?v=Ke90Tje7VS0"
     },
     {
-      "title": "cool buddy",
+      "title": "Python - 1",
       "description": "hello there",
-      "id": 2
+      "id": 2,
+      "url": "https://www.youtube.com/watch?v=kLZuut1fYzQ"
     },
     {
-      "title": "ok so thats how it would work",
+      "title": "Python - 2",
       "description": "ok so thats how it would work",
       "userId": "112825300242729695031",
-      "id": 4
+      "id": 4,
+      "url": "https://www.youtube.com/watch?v=D6esTdOLXh4"
     },
     {
-      "title": "new text",
+      "title": "react advance",
       "description": "this one was the defaulter",
       "userId": "112825300242729695031",
-      "id": 5
+      "id": 5,
+      "url": "https://www.youtube.com/watch?v=xa-_FIy2NgE"
+    },
+    {
+      "title": "a simple one by Puneet Bairagi",
+      "description": "a simple one by Puneet Bairagi",
+      "url": "https://www.youtube.com/watch?v=MBm5Uey8H6s",
+      "userId": "112825300242729695031",
+      "id": 6
+    },
+    {
+      "title": "aankh maare",
+      "description": "aankh maare ranvir singh",
+      "url": "https://www.youtube.com/watch?v=vu5-aKf_QqA",
+      "userId": "112825300242729695031",
+      "id": 7
     }
   ]
 }

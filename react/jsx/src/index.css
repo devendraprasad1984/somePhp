@@ -26,6 +26,7 @@ div{
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;
+    min-height: 30px;
 }
 
 div, p{

@@ -56,7 +56,7 @@ export const editStreamById = (streamId, formValues) => {
     //if only some values need updates as part rest convension, use PATCH instead of PUT
     return async (dispatch,getState) => {
         const {userId} = getState().authFromReducer
-        const response = await streams.put('/streams/' + streamId, {...formValues, userId})
+        const response = await streams.patch('/streams/' + streamId, {...formValues, userId})
         // const response = await streams.patch'/streams/' + streamId, formValues)
         dispatch({type: x.EDIT_STREAM_BY_ID, payload: response.data})
         browserHistory.push('/')

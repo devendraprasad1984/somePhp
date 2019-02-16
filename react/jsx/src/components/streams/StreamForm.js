@@ -46,6 +46,7 @@ class StreamForm extends React.Component {
                 <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error">
                     <Field name="title" component={this.renderInput_short} label="enter title"></Field>
                     <Field name="description" component={this.renderInput_short} label="enter desc"></Field>
+                    <Field name="url" component={this.renderInput_short} label="enter youtube url"></Field>
                     <button className="ui button primary">Submit</button>
                     <Link to="/" className="ui button secondary">Cancel</Link>
                 </form>
@@ -61,6 +62,9 @@ const validateUIForm = (formValues) => {
     }
     if (!formValues.description) {
         errors.description = "you must enter a description"
+    }
+    if (!formValues.url) {
+        errors.url = "you must enter a valid youtube url"
     }
     return errors
 }

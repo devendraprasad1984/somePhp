@@ -31,7 +31,8 @@ class StreamEdit extends React.Component {
                 <StreamForm
                     initialValues={{
                         title: this.props.foundStreamById.title,
-                        description: this.props.foundStreamById.description
+                        description: this.props.foundStreamById.description,
+                        url: this.props.foundStreamById.url
                     }}
                     onSubmit={this.onEditSubmit}></StreamForm>
                 {/*initialValues is special redux form property and it looks for Field object with the same name as that these props supplied e.g. title and description and ties back to its values automatically*/}
@@ -79,5 +80,3 @@ export default connect(mapStateToProps, {
     fetchStreamById, editStreamById
 })(StreamEdit)
 
-
-//262

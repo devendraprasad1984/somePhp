@@ -61,7 +61,7 @@ export class SearchBar extends React.Component {
                 <div className="ui form">
                     <label className="field">Search</label>
                     <input type="text" placeholder="search" id="txtSearchBar"/>
-                    <button onClick={() => {
+                    <button className="ui button red" onClick={() => {
                         this.setTextInputValue()
                         console.log("outside setText", this.state.inputText)
                         // this.setState({inputText: this.getTextInputValue()})
@@ -71,9 +71,9 @@ export class SearchBar extends React.Component {
                     >Search
                     </button>
 
-                    <button onClick={this.setTextInputValueTEST}>Search TEST</button>
-                    <button onClick={() => this.setTextInputValueTEST2()}>Search TEST2 arrow</button>
-                    <button onClick={() => this.props.onSeachSubmitFromAppSearchBar(this.state.inputText)}>Search
+                    <button className="ui button" onClick={this.setTextInputValueTEST}>Search TEST</button>
+                    <button className="ui button primary" onClick={() => this.setTextInputValueTEST2()}>Search TEST2 arrow</button>
+                    <button className="ui button pink" onClick={() => this.props.onSeachSubmitFromAppSearchBar(this.state.inputText)}>Search
                         Callback From Parent
                     </button>
 
