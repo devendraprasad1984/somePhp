@@ -15,7 +15,7 @@ class StreamEdit extends React.Component {
     }
 
     onEditSubmit = (formValues) => {
-        this.props.editStreamById(this.props.match.params.id)
+        this.props.editStreamById(this.props.match.params.id, formValues)
     }
 
     displayFoundStream = () => {
@@ -26,6 +26,8 @@ class StreamEdit extends React.Component {
             <div className="content">
                 <span>common form component draw same as StreamCreate - but with some edit init props</span>
                 <span>1st option for Redux Form initial values ties back to Field name</span>
+                {/*you can use _.pick(object, list of all values to extract) as well*/}
+                {/*1st case is always appropriate, pass only what is needed and not everything like the 2nd case*/}
                 <StreamForm
                     initialValues={{
                         title: this.props.foundStreamById.title,
@@ -34,21 +36,21 @@ class StreamEdit extends React.Component {
                     onSubmit={this.onEditSubmit}></StreamForm>
                 {/*initialValues is special redux form property and it looks for Field object with the same name as that these props supplied e.g. title and description and ties back to its values automatically*/}
 
-                <span>2nd option for Redux Form initial values ties back to Field name</span>
-                <StreamForm initialValues={this.props.foundStreamById} onSubmit={this.onEditSubmit}></StreamForm>
+                {/*<span>2nd option for Redux Form initial values ties back to Field name</span>*/}
+                {/*<StreamForm initialValues={this.props.foundStreamById} onSubmit={this.onEditSubmit}></StreamForm>*/}
 
 
-                <span>Manual Form Draw</span>
-                <form className="ui form">
-                    <div><label>id</label><input type="text" value={this.props.foundStreamById.id}/></div>
-                    <div><label>title</label><input type="text" value={this.props.foundStreamById.title}/></div>
-                    <div><label>description</label><input type="text" value={this.props.foundStreamById.description}/>
-                    </div>
-                </form>
-                <div>
-                    <button onSubmit={this.onEditSubmit} className="ui button primary">Update</button>
-                    <Link to="/" className="ui button secondary">Cancel</Link>
-                </div>
+                {/*<span>Manual Form Draw</span>*/}
+                {/*<form className="ui form">*/}
+                    {/*<div><label>id</label><input type="text" value={this.props.foundStreamById.id}/></div>*/}
+                    {/*<div><label>title</label><input type="text" value={this.props.foundStreamById.title}/></div>*/}
+                    {/*<div><label>description</label><input type="text" value={this.props.foundStreamById.description}/>*/}
+                    {/*</div>*/}
+                {/*</form>*/}
+                {/*<div>*/}
+                    {/*<button onSubmit={this.onEditSubmit} className="ui button primary">Update</button>*/}
+                    {/*<Link to="/" className="ui button secondary">Cancel</Link>*/}
+                {/*</div>*/}
             </div>
         )
     }

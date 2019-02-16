@@ -24,13 +24,13 @@ export const createStream = (formValues) => {
     //because we are using thunk
     return async (dispatch, getState) => {
         // const userId=getState().authFromReducer.userId
-        const {userId}=getState().authFromReducer
+        const {userId} = getState().authFromReducer
         // console.log(getState().authFromReducer.userId)
         // const response = await streams.post('/streams', formValues)
-        const response = await streams.post('/streams', {...formValues,userId})
+        const response = await streams.post('/streams', {...formValues, userId})
         dispatch({type: x.CREATE_STREAM, payload: response.data})
-    //    navigate user back to the home page once successful submission
-        console.log("history of navigations",browserHistory)
+        //    navigate user back to the home page once successful submission
+        console.log("history of navigations", browserHistory)
         browserHistory.push('/')
     }
 }
@@ -46,23 +46,28 @@ export const fetchStreams = () => {
 export const fetchStreamById = (streamId) => {
     //because we are using thunk
     return async (dispatch) => {
-        const response = await streams.get('/streams/'+streamId)
+        const response = await streams.get('/streams/' + streamId)
         dispatch({type: x.FETCH_STREAM_BY_ID, payload: response.data})
     }
 }
 
-export const editStreamById = (streamId,formValues) => {
+export const editStreamById = (streamId, formValues) => {
     //because we are using thunk
-    return async (dispatch) => {
-        const response = await streams.put('/streams/'+streamId, formValues)
+    //if only some values need updates as part rest convension, use PATCH instead of PUT
+    return async (dispatch,getState) => {
+        const {userId} = getState().authFromReducer
+        const response = await streams.put('/streams/' + streamId, {...formValues, userId})
+        // const response = await streams.patch'/streams/' + streamId, formValues)
         dispatch({type: x.EDIT_STREAM_BY_ID, payload: response.data})
+        browserHistory.push('/')
     }
 }
 
 export const deleteStreamById = (streamId) => {
     //because we are using thunk
     return async (dispatch) => {
-        await streams.delete('/streams/'+streamId)
-            dispatch({type: x.DELETE_STREAM_BY_ID, payload: streamId})
+        await streams.delete('/streams/' + streamId)
+        dispatch({type: x.DELETE_STREAM_BY_ID, payload: streamId})
+        browserHistory.push('/')
     }
 }
