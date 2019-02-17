@@ -65,3 +65,4 @@ serviceWorker.register();
 //ES2015 - arrow function context are managed automatically and hence this is resolved perfactly fine
 //javascript in depth - STUDY - _PROTO_ Object hierarchy STUDY
 
+//288 to continue

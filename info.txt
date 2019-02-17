@@ -75,6 +75,7 @@ chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo snap install --classic heroku
 sudo su - root and npm install -g create-react-app react-devtools
 sudo apt-get install openssh-server
 

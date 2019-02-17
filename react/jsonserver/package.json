@@ -1,0 +1,14 @@
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jsonserver": "json-server -p 3010 -w db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.14.2"
+  }
+}
