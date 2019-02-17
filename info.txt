@@ -79,6 +79,15 @@ sudo snap install --classic heroku
 sudo su - root and npm install -g create-react-app react-devtools
 sudo apt-get install openssh-server
 
+heroku create --buildpack https://github.com/devendraprasad1984/somePhp/tree/master/react/jsonserver
+heroku buildpacks:set https://github.com/devendraprasad1984/somePhp/tree/master/react/jsonserver
+heroku create morning-brushlands-98453
+git push heroku master
+git open
+
+
+
+
 pip3 install cx-oracle flask
 
 sudo apt-get install webhttrack
