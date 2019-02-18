@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-// import './icon.css';
-
 import App from './components/App';
 import FuncApp from './components/FuncApp'
 import ComponentsTest from './components/components-test'
@@ -15,6 +12,9 @@ import {AppVideoComponent} from "./components/appVideoComponent";
 import {AppSongs} from "./components/AppSongs";
 import {AppBlogPosts} from "./components/AppBlogPosts";
 import AppTwitchTV from "./components/AppTwitchTV";
+import AppContextTest from "./components/app_context_test";
+
+// import './icon.css';
 
 //if normal named exports are used then while importing {} is used and if default export is used, then that module will have only one export statement
 //and like that only with that function name if written  without {} will be used
@@ -53,6 +53,8 @@ ReactDOM.render(<div className="ui segment"><AppBlogPosts /></div>, document.get
 
 ReactDOM.render(<div className="ui segment"><AppTwitchTV /></div>, document.getElementById('root_AppTwitchTV'))
 
+ReactDOM.render(<div className="ui segment"><AppContextTest /></div>, document.getElementById('root_context_app'))
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
@@ -65,4 +67,11 @@ serviceWorker.register();
 //ES2015 - arrow function context are managed automatically and hence this is resolved perfactly fine
 //javascript in depth - STUDY - _PROTO_ Object hierarchy STUDY
 
-//288 to continue
+
+//hook system - class based component have setStates & life cycle method and functional components dont have these as they are pure simple jsx logic presentaion only that have very less ui logic
+//hook system makes functional componentn equivalent to class based compoent by providing setStates and lifecycle methods
+//hook makes sharing/reuse logic between components very easily
+
+
+
+//309

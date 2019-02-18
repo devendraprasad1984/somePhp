@@ -34,7 +34,7 @@ class PostList extends React.Component {
         return (
             <div className="ui relaxed divided list" style={{height:'400px'}}>
                 <p>blog post list goes here</p>
-                <div>{this.renderList()}</div>
+                <div style={{height:'300px', overflow:'auto',position:'relative'}}>{this.renderList()}</div>
             </div>
         )
     }

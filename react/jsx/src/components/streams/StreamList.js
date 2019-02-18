@@ -16,16 +16,25 @@ class StreamList extends React.Component {
             return (
                 <div className="right floated content">
                     <Link to={"/streams/edit/" + stream.id} className="ui button primary">Edit</Link>
-                    <Link to={"/streams/delete/" + stream.id}  className="ui button negative">Delete</Link>
+                    <Link to={"/streams/delete/" + stream.id} className="ui button negative">Delete</Link>
                 </div>
             )
         }
     }
 
+    renderAdminAlways = (stream) => {
+        return (
+            <div className="right floated content">
+                <Link to={"/streams/edit/" + stream.id} className="ui button primary">Edit</Link>
+                <Link to={"/streams/delete/" + stream.id} className="ui button negative disabled">Delete</Link>
+            </div>
+        )
+    }
+
     displayMappedDataOnly = (stream) => {
         return (
             <div key={stream.id} className="item">
-                {this.renderAdmin(stream)}
+                {this.renderAdminAlways(stream)}
                 <div className="content">
                     <i className="large middle aligned icon camera"></i>
                     <Link to={"/streams/show/" + stream.id}><span>{stream.id} - {stream.title}</span></Link>
@@ -60,9 +69,17 @@ class StreamList extends React.Component {
                     <Link to="/streams/new" className="ui button green right floated">Create Stream</Link>
                 </div>
             )
-        }else{
+        } else {
             return null
         }
+    }
+
+    renderCreateAlways = () => {
+        return (
+            <div>
+                <Link to="/streams/new" className="ui button green right floated">Create Stream</Link>
+            </div>
+        )
     }
 
     render() {
@@ -72,7 +89,7 @@ class StreamList extends React.Component {
                 <div className="ui celled list container-fluid" style={{overflow: 'auto', height: '300px'}}>
                     {this.renderList(this.props.streamList)}
                 </div>
-                {this.renderCreate()}
+                {this.renderCreateAlways()}
             </div>
         )
     }
