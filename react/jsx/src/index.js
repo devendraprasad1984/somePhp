@@ -13,6 +13,7 @@ import {AppSongs} from "./components/AppSongs";
 import {AppBlogPosts} from "./components/AppBlogPosts";
 import AppTwitchTV from "./components/AppTwitchTV";
 import AppContextTest from "./components/app_context_test";
+import HooksApp from "./components/App_Hooks";
 
 // import './icon.css';
 
@@ -54,6 +55,8 @@ ReactDOM.render(<div className="ui segment"><AppBlogPosts /></div>, document.get
 ReactDOM.render(<div className="ui segment"><AppTwitchTV /></div>, document.getElementById('root_AppTwitchTV'))
 
 ReactDOM.render(<div className="ui segment"><AppContextTest /></div>, document.getElementById('root_context_app'))
+
+ReactDOM.render(<div className="ui segment"><HooksApp /></div>, document.getElementById('root_hooks'))
 
 
 // If you want your app to work offline and load faster, you can change
