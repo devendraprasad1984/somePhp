@@ -1,19 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
-import FuncApp from './components/FuncApp'
-import ComponentsTest from './components/components-test'
-import {SeasonsComponent} from './components/seasons'
 // import {SearchBar, SearchDisplayList} from './searchBarAndList'
 import * as serviceWorker from './components/serviceWorker';
-import {AppSeachBar} from "./components/AppSearchBar";
-import {AppVideoComponent} from "./components/appVideoComponent";
-import {AppSongs} from "./components/AppSongs";
-import {AppBlogPosts} from "./components/AppBlogPosts";
-import AppTwitchTV from "./components/AppTwitchTV";
-import AppContextTest from "./components/app_context_test";
-import HooksApp from "./components/App_Hooks";
+import HomeRouteMenu from "./components/HomeRouteMenu";
 
 // import './icon.css';
 
@@ -23,40 +13,46 @@ import HooksApp from "./components/App_Hooks";
 
 
 ReactDOM.render(<div className="ui segment">
-    <span>APP COMPONENT</span><br/>
-    <App/><br/>
-    <span>FUNC COMPONENT</span><br/>
-    <FuncApp/><br/>
-</div>, document.getElementById('root'));
-
-ReactDOM.render(
-        <div className="ui segment">
-            <span>TEST COMPONENT</span><br/>
-            <ComponentsTest></ComponentsTest>
-        </div>
-        , document.getElementById('root_comments'))
-
-ReactDOM.render(
-        <div className="ui segment">
-            <span>SEASONS COMPONENT</span><br/>
-            <SeasonsComponent></SeasonsComponent><br/>
-        </div>
-        , document.getElementById('root_seasons'))
-
-ReactDOM.render(<div className="ui segment"><AppSeachBar /></div>, document.getElementById('root_searchBarAndList'))
-
-ReactDOM.render(<div className="ui segment"><AppVideoComponent /></div>, document.getElementById('root_AppVideoComponent'))
-
-// songs app using redux and react-redux
-ReactDOM.render(<div className="ui segment"><AppSongs /></div>, document.getElementById('root_AppSongs'))
-
-ReactDOM.render(<div className="ui segment"><AppBlogPosts /></div>, document.getElementById('root_AppBlogPosts'))
-
-ReactDOM.render(<div className="ui segment"><AppTwitchTV /></div>, document.getElementById('root_AppTwitchTV'))
-
-ReactDOM.render(<div className="ui segment"><AppContextTest /></div>, document.getElementById('root_context_app'))
-
-ReactDOM.render(<div className="ui segment"><HooksApp /></div>, document.getElementById('root_hooks'))
+    <span>Practing React App - class based and functional components along with hooks</span>
+    <HomeRouteMenu/>
+</div>, document.getElementById('root_menu'))
+//
+//
+// ReactDOM.render(<div className="ui segment">
+//     <span>APP COMPONENT</span><br/>
+//     <App/><br/>
+//     <span>FUNC COMPONENT</span><br/>
+//     <FuncApp/><br/>
+// </div>, document.getElementById('root'));
+//
+// ReactDOM.render(
+//         <div className="ui segment">
+//             <span>TEST COMPONENT</span><br/>
+//             <ComponentsTest></ComponentsTest>
+//         </div>
+//         , document.getElementById('root_comments'))
+//
+// ReactDOM.render(
+//         <div className="ui segment">
+//             <span>SEASONS COMPONENT</span><br/>
+//             <SeasonsComponent></SeasonsComponent><br/>
+//         </div>
+//         , document.getElementById('root_seasons'))
+//
+// ReactDOM.render(<div className="ui segment"><AppSeachBar /></div>, document.getElementById('root_searchBarAndList'))
+//
+// ReactDOM.render(<div className="ui segment"><AppVideoComponent /></div>, document.getElementById('root_AppVideoComponent'))
+//
+// // songs app using redux and react-redux
+// ReactDOM.render(<div className="ui segment"><AppSongs /></div>, document.getElementById('root_AppSongs'))
+//
+// ReactDOM.render(<div className="ui segment"><AppBlogPosts /></div>, document.getElementById('root_AppBlogPosts'))
+//
+// ReactDOM.render(<div className="ui segment"><AppTwitchTV /></div>, document.getElementById('root_AppTwitchTV'))
+//
+// ReactDOM.render(<div className="ui segment"><AppContextTest /></div>, document.getElementById('root_context_app'))
+//
+// ReactDOM.render(<div className="ui segment"><HooksApp /></div>, document.getElementById('root_hooks'))
 
 
 // If you want your app to work offline and load faster, you can change
@@ -74,7 +70,6 @@ serviceWorker.register();
 //hook system - class based component have setStates & life cycle method and functional components dont have these as they are pure simple jsx logic presentaion only that have very less ui logic
 //hook system makes functional componentn equivalent to class based compoent by providing setStates and lifecycle methods
 //hook makes sharing/reuse logic between components very easily
-
 
 
 //309
