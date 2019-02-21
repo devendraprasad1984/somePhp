@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import {SearchBar, SearchDisplayList} from './searchBarAndList'
 import * as serviceWorker from './components/serviceWorker';
 import HomeRouteMenu from "./components/HomeRouteMenu";
+import HomeRouteMenuApps from "./components/HomeRouteMenuApps";
+import {BrowserRouter, Link, Route} from "react-router-dom";
 
 // import './icon.css';
 
@@ -12,11 +13,32 @@ import HomeRouteMenu from "./components/HomeRouteMenu";
 //and if in case of default no function name written, fileName will be used as that module name
 
 
-ReactDOM.render(<div className="ui segment">
-    <span>Practing React App - class based and functional components along with hooks</span>
-    <HomeRouteMenu/>
+ReactDOM.render(<div>
+    <span>Click below Link</span>
+    <BrowserRouter>
+        <div>
+            <div className="ui primary pointing menu">
+                <Link to="/practice/baseApp"><span>Practices</span></Link>
+                <Link to="/apps/app0"><span>Apps</span></Link>
+            </div>
+
+            <Route exact path="/practice/baseApp" component={HomeRouteMenu}></Route>
+            <Route exact path="/apps/app0" component={HomeRouteMenuApps}></Route>
+        </div>
+    </BrowserRouter>
 </div>, document.getElementById('root_menu'))
+
+
+// ReactDOM.render(<div className="ui segment">
+//     <span>Practicing React/redux/hooks - class based and functional components along with hooks</span>
+//     <HomeRouteMenu/>
+// </div>, document.getElementById('root_menu'))
 //
+// ReactDOM.render(<div className="ui segment">
+//     <span>Practicing Some Basic React Apps</span>
+//     <HomeRouteMenuApps />
+// </div>, document.getElementById('root_menu_apps'))
+// //
 //
 // ReactDOM.render(<div className="ui segment">
 //     <span>APP COMPONENT</span><br/>
@@ -71,5 +93,3 @@ serviceWorker.register();
 //hook system makes functional componentn equivalent to class based compoent by providing setStates and lifecycle methods
 //hook makes sharing/reuse logic between components very easily
 
-
-//309

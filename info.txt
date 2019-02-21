@@ -23,6 +23,15 @@ git: devendraprasad1984@gmail.com rbs6200#
 react: https://www.youtube.com/watch?v=Ke90Tje7VS0
 https://www.youtube.com/watch?v=DLX62G4lc44
 
+https://dev.to/drminnaar/11-react-examples-2e6d
+react advance:https://medium.com/javascript-in-plain-english/another-react-tutorial-best-practices-for-react-redux-sagas-19d62851725
+https://dev.to/drminnaar/11-react-examples-2e6d
+https://itnext.io/using-advanced-design-patterns-to-create-flexible-and-reusable-react-components-part-1-dd495fa1823
+lodash: http://zetcode.com/javascript/lodash/
+https://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting
+go golang: https://gobyexample.com
+
+
 http://www.javadecompilers.com/
 https://reactjs.org/
 https://babeljs.org/

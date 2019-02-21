@@ -26,7 +26,7 @@ class AppTwitchTV extends React.Component {
         return (
             <Provider store={this.store}>
                 <div>
-                    <span>Video Library Dummy app</span>
+                    <span>Video Streaming Dummy app</span>
                     <p>child components will go here</p>
                     {/*dummy case: <ReactRouterDummyCase/>*/}
                     <br/><br/>
@@ -36,13 +36,13 @@ class AppTwitchTV extends React.Component {
                             <StreamsNav></StreamsNav>
                             <h1><StreamsHeader/></h1>
                             <Switch>
-                                <Route exact path="/" component={StreamList}></Route>
-                                <Route path="/streams/new" component={StreamCreate}></Route>
-                                <Route path="/streams/edit/:id" component={StreamEdit}></Route>
+                                <Route exact path="/practice/" component={StreamList}></Route>
+                                <Route path="/practice/streams/new" component={StreamCreate}></Route>
+                                <Route path="/practice/streams/edit/:id" component={StreamEdit}></Route>
                                 {/*<Route path="/streams/edit/:id/:prop1/:prop2/" component={StreamEdit}></Route> as many runtime params as we want in url and they will be captured in params*/}
-                                <Route path="/streams/delete/:id" component={StreamDelete}></Route>
-                                <Route path="/streams/show/:id" component={StreamShow}></Route>
-                                <Route path="/streams/currentUserOnly" component={StreamCurrentUserOnly}></Route>
+                                <Route path="/practice/streams/delete/:id" component={StreamDelete}></Route>
+                                <Route path="/practice/streams/show/:id" component={StreamShow}></Route>
+                                <Route path="/practice/streams/currentUserOnly" component={StreamCurrentUserOnly}></Route>
                             </Switch>
                         </div>
                     </Router>
