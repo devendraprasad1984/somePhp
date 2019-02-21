@@ -12,17 +12,51 @@ export default class CalcEngine {
         if(isNaN(d)){
             throw Error('only numeric is allowed')
         }
-        if(this.curValue.indexOf('.')>=0){
-            return
+        this.curValue+=d
+    }
+
+    inputDecimal() {
+        if (this.result !== '') {
+            this.result = '';
+            this.curValue = '';
         }
+
+        if (this.curValue.indexOf('.') >= 0) {
+            return;
+        }
+
         if (this.curValue === '') {
             this.curValue += '0.';
         } else {
             this.curValue += '.';
         }
-
-        this.curValue+=d
     }
+
+    clear() {
+        this.curValue= '';
+        this.register = [];
+        this.result = '';
+    }
+
+    clearAll() {
+        this.curValue= '';
+        this.register = [];
+        this.result = '';
+        this.history = [];
+    }
+
+    clearHistory() {
+        this.history = [];
+    }
+
+    delete() {
+        if (this.curValue === '') {
+            return;
+        }
+
+        this.curValue = this.curValue.substring(0, this.curValue.length - 1);
+    }
+
 
     getValue = () => {
         return this.curValue
@@ -43,40 +77,47 @@ export default class CalcEngine {
     }
 
     loadHistory(index) {
-        // this.curValue = this.history[index].result.toString();
+        this.curValue = this.history[index].result.toString();
     }
 
     add = () => {
         if (this.curValue === '')
             return
-        this.register.push(this.curValue).push('+')
+        this.register.push(this.curValue)
+        this.register.push('+')
         this.curValue = ''
     }
     subtract = () => {
         if (this.curValue === '')
             return
-        this.register.push(this.curValue).push('-')
+        this.register.push(this.curValue)
+        this.register.push('-')
         this.curValue = ''
     }
     multiply = () => {
         if (this.curValue === '')
             return
-        this.register.push(this.curValue).push('*')
+        this.register.push(this.curValue)
+        this.register.push('*')
         this.curValue = ''
     }
     divide = () => {
         if (this.curValue === '')
             return
-        this.register.push(this.curValue).push('/')
+        this.register.push(this.curValue)
+        this.register.push('/')
         this.curValue = ''
     }
     equals = () => {
         if (this.curValue === '')
             return
+        this.register.push(this.curValue)
         const expression = this.getExpression()
-        const res=this.result = math.eval(expression)
+        this.result = math.eval(expression)
         this.curValue = this.result.toString()
-        this.history.splice(0, 0, {expression, res})
+        const result=this.curValue
+        // console.log(this.history,expression,result)
+        this.history.splice(0, 0, {expression, result})
         this.register = []
     }
 }

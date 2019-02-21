@@ -1,18 +1,15 @@
 import React, {Component} from 'react';
 import './app3Page.css'
-import CalcPanel from "./CalcPanel";
+import CalcDisplay from "./CalcDisplay";
 
 
 export default class App3Page extends Component {
-    constructor() {
-        super();
-        this.state = {};
-    }
-
     render() {
         return (
-            <div className="card">
-                <CalcPanel/>
+            <div className="ui segment">
+                <div className="">
+                    <CalcDisplay/>
+                </div>
             </div>
         );
     }
