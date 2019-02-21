@@ -26,7 +26,7 @@ class StreamDelete extends React.Component {
             <React.Fragment>
                 <button className="ui button negative" onClick={this.onDeleteSubmit}>Delete</button>
                 <button onClick={() => {
-                    browserHistory.push('/')
+                    browserHistory.push('/practice/streams/')
                 }} className="ui button">Cancel
                 </button>
             </React.Fragment>
@@ -46,7 +46,7 @@ class StreamDelete extends React.Component {
                         description="Are you sure to delete this?"
                         action={this.renderAction()}
                         onDismiss={() => {
-                            browserHistory.push('/')
+                            browserHistory.push('/practice/streams/')
                         }}
                     />
                 </div>

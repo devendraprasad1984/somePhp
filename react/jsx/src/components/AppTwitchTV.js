@@ -36,7 +36,7 @@ class AppTwitchTV extends React.Component {
                             <StreamsNav></StreamsNav>
                             <h1><StreamsHeader/></h1>
                             <Switch>
-                                <Route exact path="/practice/" component={StreamList}></Route>
+                                <Route exact path="/practice/streams/" component={StreamList}></Route>
                                 <Route path="/practice/streams/new" component={StreamCreate}></Route>
                                 <Route path="/practice/streams/edit/:id" component={StreamEdit}></Route>
                                 {/*<Route path="/streams/edit/:id/:prop1/:prop2/" component={StreamEdit}></Route> as many runtime params as we want in url and they will be captured in params*/}

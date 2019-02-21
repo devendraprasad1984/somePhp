@@ -76,7 +76,7 @@ class StreamShow extends React.Component {
         return (
             <div className="ui segments">
                 <div className="ui button secondary" onClick={() => {
-                    browserHistory.push('/')
+                    browserHistory.push('/practice/streams/')
                 }}><span>Showing...{this.props.foundStreamById.title}</span>
                 </div>
                 <div className="ui green segment">

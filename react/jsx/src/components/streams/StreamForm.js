@@ -48,7 +48,7 @@ class StreamForm extends React.Component {
                     <Field name="description" component={this.renderInput_short} label="enter desc"></Field>
                     <Field name="url" component={this.renderInput_short} label="enter youtube url"></Field>
                     <button className="ui button primary">Submit</button>
-                    <Link to="/" className="ui button secondary">Cancel</Link>
+                    <Link to="/practice/streams/" className="ui button secondary">Cancel</Link>
                 </form>
             </div>
         )

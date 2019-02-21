@@ -15,8 +15,8 @@ class StreamList extends React.Component {
         } else {
             return (
                 <div className="right floated content">
-                    <Link to={"/streams/edit/" + stream.id} className="ui button primary">Edit</Link>
-                    <Link to={"/streams/delete/" + stream.id} className="ui button negative">Delete</Link>
+                    <Link to={"/practice/streams/edit/" + stream.id} className="ui button primary">Edit</Link>
+                    <Link to={"/practice/streams/delete/" + stream.id} className="ui button negative">Delete</Link>
                 </div>
             )
         }
@@ -25,8 +25,8 @@ class StreamList extends React.Component {
     renderAdminAlways = (stream) => {
         return (
             <div className="right floated content">
-                <Link to={"/streams/edit/" + stream.id} className="ui button primary">Edit</Link>
-                <Link to={"/streams/delete/" + stream.id} className="ui button negative disabled">Delete</Link>
+                <Link to={"/practice/streams/edit/" + stream.id} className="ui button primary">Edit</Link>
+                <Link to={"/practice/streams/delete/" + stream.id} className="ui button negative disabled">Delete</Link>
             </div>
         )
     }
@@ -37,7 +37,7 @@ class StreamList extends React.Component {
                 {this.renderAdminAlways(stream)}
                 <div className="content">
                     <i className="large middle aligned icon camera"></i>
-                    <Link to={"/streams/show/" + stream.id}><span>{stream.id} - {stream.title}</span></Link>
+                    <Link to={"/practice/streams/show/" + stream.id}><span>{stream.id} - {stream.title}</span></Link>
                     <p className="description">{stream.description}</p>
                 </div>
             </div>
@@ -66,7 +66,7 @@ class StreamList extends React.Component {
         if (this.props.isSignedIn) {
             return (
                 <div>
-                    <Link to="/streams/new" className="ui button green right floated">Create Stream</Link>
+                    <Link to="/practice/streams/new" className="ui button green right floated">Create Stream</Link>
                 </div>
             )
         } else {
@@ -77,7 +77,7 @@ class StreamList extends React.Component {
     renderCreateAlways = () => {
         return (
             <div>
-                <Link to="/streams/new" className="ui button green right floated">Create Stream</Link>
+                <Link to="/practice/streams/new" className="ui button green right floated">Create Stream</Link>
             </div>
         )
     }

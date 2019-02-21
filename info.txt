@@ -31,6 +31,7 @@ lodash: http://zetcode.com/javascript/lodash/
 https://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting
 go golang: https://gobyexample.com
 
+react tutor: ste.grider@gmail.com->tw: @sg_in_sf->github.com/stephengrider
 
 http://www.javadecompilers.com/
 https://reactjs.org/

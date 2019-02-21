@@ -31,7 +31,7 @@ export const createStream = (formValues) => {
         dispatch({type: x.CREATE_STREAM, payload: response.data})
         //    navigate user back to the home page once successful submission
         console.log("history of navigations", browserHistory)
-        browserHistory.push('/')
+        browserHistory.push('/practice/streams/')
     }
 }
 
@@ -59,7 +59,7 @@ export const editStreamById = (streamId, formValues) => {
         const response = await streams.patch('/streams/' + streamId, {...formValues, userId})
         // const response = await streams.patch'/streams/' + streamId, formValues)
         dispatch({type: x.EDIT_STREAM_BY_ID, payload: response.data})
-        browserHistory.push('/')
+        browserHistory.push('/practice/streams/')
     }
 }
 
@@ -68,6 +68,6 @@ export const deleteStreamById = (streamId) => {
     return async (dispatch) => {
         await streams.delete('/streams/' + streamId)
         dispatch({type: x.DELETE_STREAM_BY_ID, payload: streamId})
-        browserHistory.push('/')
+        browserHistory.push('/practice/streams/')
     }
 }
