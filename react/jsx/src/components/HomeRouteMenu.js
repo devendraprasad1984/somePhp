@@ -15,6 +15,8 @@ import HooksApp from "./App_Hooks";
 
 class HomeRouteMenu extends React.Component {
     state={name:'0'}
+    styleSet1='active border blue'
+
     activeMarker=(name)=>{
         this.setState({name:name})
         console.log("current menu value",name," compare: ",this.state.name)
@@ -23,16 +25,16 @@ class HomeRouteMenu extends React.Component {
     navigationBar = () => {
         return (
             <div className="ui primary pointing menu">
-                <Link to="/practice/baseApp"><p onClick={()=>this.activeMarker('0')} className={`item ${this.state.name==='0'?'active border blue':''}`}>Home</p></Link>
-                <Link to="/practice/ComponentsTest"><p onClick={()=>this.activeMarker('1')} className= {`item ${this.state.name==='1'?'active border blue':''}`}>Test</p></Link>
-                <Link to="/practice/SeasonsComponent"><p onClick={()=>this.activeMarker('2')} className= {`item ${this.state.name==='2'?'active border blue':''}`}>Seasons</p></Link>
-                <Link to="/practice/AppSeachBar"><p onClick={()=>this.activeMarker('3')} className= {`item ${this.state.name==='3'?'active border blue':''}`}>Search Bar</p></Link>
-                <Link to="/practice/AppVideoComponent"><p onClick={()=>this.activeMarker('4')} className= {`item ${this.state.name==='4'?'active border blue':''}`}>Video App</p></Link>
-                <Link to="/practice/AppSongs"><p onClick={()=>this.activeMarker('5')} className= {`item ${this.state.name==='5'?'active border blue':''}`}>Songs App</p></Link>
-                <Link to="/practice/AppBlogPosts"><p onClick={()=>this.activeMarker('6')} className= {`item ${this.state.name==='6'?'active border blue':''}`}>Blogs</p></Link>
-                <Link to="/practice/AppTwitchTV"><p onClick={()=>this.activeMarker('7')} className= {`item ${this.state.name==='7'?'active border blue':''}`}>Streaming</p></Link>
-                <Link to="/practice/AppContextTest"><p onClick={()=>this.activeMarker('8')} className= {`item ${this.state.name==='8'?'active border blue':''}`}>Contexts</p></Link>
-                <Link to="/practice/HooksApp"><p onClick={()=>this.activeMarker('9')} className= {`item ${this.state.name==='9'?'active border blue':''}`}>Hooks & Reusable functions</p></Link>
+                <Link to="/practice/baseApp"><p onClick={()=>this.activeMarker('0')} className={`item ${this.state.name==='0'?this.styleSet1:''}`}>Home</p></Link>
+                <Link to="/practice/ComponentsTest"><p onClick={()=>this.activeMarker('1')} className= {`item ${this.state.name==='1'?this.styleSet1:''}`}>Test</p></Link>
+                <Link to="/practice/SeasonsComponent"><p onClick={()=>this.activeMarker('2')} className= {`item ${this.state.name==='2'?this.styleSet1:''}`}>Seasons</p></Link>
+                <Link to="/practice/AppSeachBar"><p onClick={()=>this.activeMarker('3')} className= {`item ${this.state.name==='3'?this.styleSet1:''}`}>Search Bar</p></Link>
+                <Link to="/practice/AppVideoComponent"><p onClick={()=>this.activeMarker('4')} className= {`item ${this.state.name==='4'?this.styleSet1:''}`}>Video App</p></Link>
+                <Link to="/practice/AppSongs"><p onClick={()=>this.activeMarker('5')} className= {`item ${this.state.name==='5'?this.styleSet1:''}`}>Songs App</p></Link>
+                <Link to="/practice/AppBlogPosts"><p onClick={()=>this.activeMarker('6')} className= {`item ${this.state.name==='6'?this.styleSet1:''}`}>Blogs</p></Link>
+                <Link to="/practice/AppTwitchTV"><p onClick={()=>this.activeMarker('7')} className= {`item ${this.state.name==='7'?this.styleSet1:''}`}>Streaming</p></Link>
+                <Link to="/practice/AppContextTest"><p onClick={()=>this.activeMarker('8')} className= {`item ${this.state.name==='8'?this.styleSet1:''}`}>Contexts</p></Link>
+                <Link to="/practice/HooksApp"><p onClick={()=>this.activeMarker('9')} className= {`item ${this.state.name==='9'?this.styleSet1:''}`}>Hooks & Reusable functions</p></Link>
             </div>
         )
     }

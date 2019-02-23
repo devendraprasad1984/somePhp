@@ -12,7 +12,7 @@ export default class App2Page extends Component {
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.timer()
     }
 

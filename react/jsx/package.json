@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ag-grid-community": "^20.1.0",
+    "ag-grid-react": "^20.1.0",
     "axios": "^0.18.0",
     "faker": "^4.1.0",
     "flv.js": "^1.5.0",
@@ -12,6 +14,7 @@
     "node-media-server": "^1.4.12",
     "react": "next",
     "react-dom": "next",
+    "react-dom-factories": "^1.0.2",
     "react-player": "^1.9.3",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",

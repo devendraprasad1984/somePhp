@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import './app3Page.css'
-import CalcDisplay from "./CalcDisplay";
+import AgGridComponentLevelState from "./AgGridComponentLevelState";
+import AgGridComponentLevelStateFromAPI from "./AgGridComponentLevelStateFromAPI";
+import './custom.css'
 
-
-export default class App3Page extends Component {
+export default class App4ReactAgGrid extends Component {
     render() {
         return (
             <div className="ui segment">
-                <div className="">
-                    <CalcDisplay/>
-                </div>
+                <span>AgGrid Example using React</span>
+                <AgGridComponentLevelState/>
+                <AgGridComponentLevelStateFromAPI/>
             </div>
         );
     }
