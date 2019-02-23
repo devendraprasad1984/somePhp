@@ -1,4 +1,4 @@
- app = angular.module("myAjs", []);
+app = angular.module("myAjs", []);
 var isChartLoadOnce = false
 var isLoadedGoogleCharts = false
 var timerId;
@@ -19,10 +19,10 @@ var hide = "hide"
 var show = "show"
 var bgColor = "bg-dark"
 var textColor = bgColor+" text-white"
-var successColor = "btn-outline-dark"
-var backColor="lightgray";
+var successColor = "btn-lg btn-info text-white"
+var backColor="#286090";
  // var darkColor = successColor+" " + textColor
-
+var changeBtnDisplay=false
 
 $(function () {
     loadOnView4()
@@ -32,19 +32,27 @@ $(function () {
 
 function setBtnDisplay(){
     $(".btn").addClass(successColor)
-    var backColor="lightgray";
-    $("#topColors a").on('click', function () {
-        var curAnc = $(this)
-        backColor = curAnc.css("background-color")
-        // $("#idcolor").css({"background-color":backColor})
-        $("#idcolor").html(backColor)
-        xset()
-    })
+    $("#timelineBar .btn").removeClass(successColor)
+    if(!changeBtnDisplay){
+        $("#mobiMenu, #topColors").hide()
+    }
+   if(changeBtnDisplay){
+       $("#mobiMenu, #topColors").show()
+       var backColor="lightgray";
+       $("#topColors a").on('click', function () {
+           var curAnc = $(this)
+           backColor = curAnc.css("background-color")
+           // $("#idcolor").css({"background-color":backColor})
+           $("#idcolor").html(backColor)
+           xset()
+       })
+       xset()
+   }
     function xset(){
-        backColor=$("#idcolor").html()||"darkgray"
-        $(".btn").css({"font-size":"10pt"})
+        backColor=$("#idcolor").html()||"#286090"
+        // $(".btn").css({"font-size":"12pt"})
         $(".badge,#idExperienceController").css({"font-size":"12px"})
-        if(backColor==""||backColor=="darkgray"){
+        if(backColor===""||backColor==="#286090"){
             $(".btn").css({"background-color": backColor, "color": "black"})
         }else{
             $(".btn").css({"background-color": backColor, "color": "white"})
@@ -53,7 +61,6 @@ function setBtnDisplay(){
         $("#idExperienceController .badge").css({"background-color": backColor, "color": "white"})
         $("div.progress-bar").removeClass(bgColor).css({"background-color": backColor, "color": "white"})
     }
-    xset()
 }
 
 function loadOnView4() {
