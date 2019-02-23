@@ -5,6 +5,12 @@
         word-break: break-all;
     }
 
+    body, div, span, pre {
+        font-family: 'Balthazar';
+        font-size: 22px;
+    }
+
+
     #divHeader>span>p,#divHeader>span>a{
         display: none;
     }
@@ -43,23 +49,29 @@
 }
 
 
-
-
 html {
     /*font-size: 1.2vw;*/
     zoom: 90%;
-    font-family: monospace, sans-serif;
     /*color: grey;*/
     white-space: normal !important;
     word-wrap: break-word;
+    margin: 10px;
 }
 
-div, span, .badge, p, .btn {
+div #topMenu a, div #topMenu a.btn{
+    font-size: 15pt;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+body, div, span, .badge, .btn {
+    font-family: 'Balthazar';
     white-space: normal !important;
     word-wrap: break-word;
-    font-size: 9pt;
+    font-size: 12pt;
     /*font-size: 1.2vw;*/
 }
+
 
 div {
     color: black;
@@ -279,7 +291,6 @@ b {
 }
 
 div #mTag {
-    font-family: monospace, Century;
     font-weight: bolder;
     font-size: 28pt;
     color: white;
@@ -291,7 +302,6 @@ div #mTag {
 div #mContent {
     /*top:10%;*/
     color: lightgoldenrodyellow;
-    font-family: monospace, Century;
     font-weight: bold;
     font-size: 12pt;
     width: 98%;
@@ -692,7 +702,7 @@ div > .btn-outline-gray {
 
 .badge {
     cursor: pointer;
-    font-size: 15px;
+    /*font-size: 15px;*/
     text-align: left;
 }
 
@@ -703,7 +713,7 @@ div > .btn-outline-gray {
 }
 
 span.badge {
-    font-size: 10px;
+    /*font-size: 10px;*/
     font-weight: bolder;
 }
 

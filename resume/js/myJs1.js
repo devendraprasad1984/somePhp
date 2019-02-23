@@ -99,6 +99,12 @@ var openJavaGitHubPage = function () {
     window.open(gitUrl, '_blank');
 }
 
+ var openPythonGitHubPage = function () {
+     var gitUrl = "https://github.com/devendraprasad1984/PythonAndNodeSamples/tree/master/python";
+     window.open(gitUrl, '_blank');
+ }
+
+
 var createJavaMenu = function (curObj) {
     $("#" + curObj.id).contextMenu([
         {

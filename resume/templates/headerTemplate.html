@@ -46,7 +46,7 @@
     /*}*/
 
     #divHeader div p, #divHeader div  a {
-        font-size: 9pt;
+        {#font-size: 9pt;#}
         font-weight: bolder;
         text-align: right;
         /*float: right;*/
@@ -58,18 +58,15 @@
 <div>
     <div class="bg-dark text-white" id="divHeader">
         <div id="mobiMenu" class="btn" onclick="$('#topMenu,#topColors').toggle()">Menu</div>
-        <span style="font-size: 20pt; text-align: left; font-weight: bolder">Devendra Prasad
-            <p class="badge" style="text-align: center;">Senior Software Engineer / Tech Lead / Fullstack Developer</p>
-            <p id="idAngularBadge" class="badge badge-light">angular1.7</p>
-            <p id="idJqueryBadge" class="badge badge-light">jquery</p>
+        <span style="font-size: 20pt; text-align: left; font-weight: bolder">Devendra Prasad</span>
+        <div style="float: right; font-size: 12pt;">
+            <p class="badge badge-warning">Tech Lead & Developer</p>
+            <p id="idJavaBadge" class="badge badge-info" onclick="openPythonGitHubPage()">python/flask/django/tornado</p>
+            <a id="idReactBadge" href="https://github.com/devendraprasad1984/somePhp/tree/master/react/jsx" target="_blank" class="badge badge-info">React/Redux</a>
             <p id="idBootstrapBadge" class="badge badge-light">bootstrap</p>
-            <p id="idJsBadge" class="badge badge-light">js</p>
-            <p id="idJavaBadge" class="badge badge-info" onclick="openJavaGitHubPage()">java</p>
+            <p id="idJsBadge" class="badge badge-light">js/jquery</p>
             <p id="idGooglrBadge" class="badge badge-light">google charts</p>
-            <!--<p id="idReactBadge" class="badge badge-info" onclick="createReactMenu(this)">react</p>-->
-            <a id="idReactBadge" href="https://github.com/devendraprasad1984/PythonAndNodeSamples/tree/master/react" target="_blank" class="badge badge-info">react</a>
-            <p id="idAngular2Badge" class="badge badge-light">angular2</p>
-        </span>
+        </div>
     </div>
 
     <!--<div class="badge dropdown">-->
@@ -104,17 +101,17 @@
                 <a data-id="teal" class="preview color-12">&nbsp;</a>
             </div>
         </div>
-        <div id="topMenu" style="padding: 5px;">
-            <span id="id9" class="badge bg-info " ng-click="displayMyViews('id8','viewElegant','Elegant');">Elegant</span>
-            <span id="id8" class="badge " ng-click="displayMyViews('id8','view8','Simple');">Simple</span>
-            <span id="id1" class="badge " ng-click="displayMyViews('id1','view7','Click');">Click</span>
-            <span id="id2" class="badge  " ng-click="displayMyViews('id2','view1','Flat');">Flat</span>
-            <span id="id3" class="badge  " ng-click="displayMyViews('id3','view2','Tabbed');">Tabbed</span>
-            <span id="id4" class="badge  " ng-click="displayMyViews('id4','view3','Circular');">Circular</span>
-            <span id="id5" class="badge " ng-click="displayMyViews('id5','view4','Carousal');">Carousal</span>
-            <span id="id6" class="badge  " ng-click="displayMyViews('id6','view5','Collage');">Collage</span>
-            <span id="id7" class="badge  " ng-click="displayMyViews('id7','view6','Dashboard');">Dashboard</span>
-            <span><a class="badge bg-white text-danger " href="react.html" target="_blank">ReactJS</a></span>
+        <div id="topMenu">
+            <a id="id9" class=" text-white bg-info " ng-click="displayMyViews('id8','viewElegant','Elegant');">Elegant</a>
+            <a id="id8" class=" " ng-click="displayMyViews('id8','view8','Simple');">Simple</a>
+            <a id="id1" class=" " ng-click="displayMyViews('id1','view7','Click');">Click</a>
+            <a id="id2" class="  " ng-click="displayMyViews('id2','view1','Flat');">Flat</a>
+            <a id="id3" class="  " ng-click="displayMyViews('id3','view2','Tabbed');">Tabbed</a>
+            <a id="id4" class="  " ng-click="displayMyViews('id4','view3','Circular');">Circular</a>
+            <a id="id5" class=" " ng-click="displayMyViews('id5','view4','Carousal');">Carousal</a>
+            <a id="id6" class="  " ng-click="displayMyViews('id6','view5','Collage');">Collage</a>
+            <a id="id7" class="  " ng-click="displayMyViews('id7','view6','Dashboard');">Dashboard</a>
+            <span><a class=" bg-white text-danger " href="react.html" target="_blank">ReactJS</a></span>
         </div>
     </div>
 </div>
