@@ -30,6 +30,10 @@ lodash: http://zetcode.com/javascript/lodash/
 https://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting
 go golang: https://gobyexample.com
 
+https://medium.com/ag-grid/learn-to-customize-react-grid-in-less-than-10-minutes-2ce6845646bb
+https://adazzle.github.io/react-data-grid/docs/examples/simple-grid
+
+
 react tutor: ste.grider@gmail.com->tw: @sg_in_sf->github.com/stephengrider
 
 http://www.javadecompilers.com/

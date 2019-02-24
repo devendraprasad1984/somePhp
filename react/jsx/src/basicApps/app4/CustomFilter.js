@@ -21,7 +21,7 @@ export default class CustomFilter extends Component {
         const gt = Number(filter[0]);
         const lt = Number(filter[1]);
         const value = this.valueGetter(params.node);
-
+        console.log("value from valueGetter",value)
         return value >= gt && value <= lt;
     }
 
@@ -49,17 +49,8 @@ export default class CustomFilter extends Component {
     // to determine whether the component has any filtering condition to apply.
 
 
-    onSubmit=(event)=> {
+    onSubmit=(event)=>{
         event.preventDefault();
-
-        let filterValFromFromElem = event.target.elements.filter.value;
-
-        if (this.state.filter !== filterValFromFromElem) {
-            this.setState({filter: filterValFromFromElem});
-        }
-    }
-
-    onChange=(event)=>{
         let filterValFromFromElem = event.target.elements.filter.value;
         if(this.state.filter!==filterValFromFromElem){
             this.setState({filter:filterValFromFromElem},()=>{
