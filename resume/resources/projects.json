@@ -9,7 +9,7 @@
       "company": "Royal Bank Of Scotland, Gurugram(HR), India",
       "from":"Sep2018-current",
       "desc":
-      "FRC (Finance Reporting Cube) over OACS (Oracle Analytics Clound) platform is SaaS which has to be onboarded by GFS teams for management and budget reporting",
+      "FRC (Finance Reporting Cube) over OACS (Oracle Analytics Clound) platform is SaaS which has to be\nonboarded by GFS teams for management and budget reporting. My role is to build reports in smartviewand\ndo the reconcilation over management and budge data. This is pure migration project from older reporting\nsystems (INEA/KHALIX/WALKER) to OACS world",
       "images": []
     },
     {
@@ -20,7 +20,7 @@
       "tech": "java,spring,mvn,html5,angular1,js,jquery,typescript,gulp,excel,recs",
       "from":"Dec2016-Aug2018",
       "desc":
-      "This is RBS wide portal framework written in HTML5, Java, Angular, Typescript. We have used this for our project SDP Automation which is about simplifying bank for Disclosure Reporting and reducing the overall submission cycle from 2months to 12days. we have use oracle 11g and PL/SQL to transform the bank and called the APIs from Finance Portal Java Layer. Within the bank, many applications are moving onto this framework, as its lightweight and very less number of resources can support this portal framework",
+      "This project is written in Python & Tornado, React & Html5 & Oracle PL/Sql and we to automate\nDisclosure Reporting Processes and reducing the overall submission cycle from 2months to 12days. The\nchallenge was o design a reusable sysem of components and business services for each set of different\nbusiness processes and userbase across globe",
       "images": []
     },
     {
@@ -64,7 +64,7 @@
       "tech": "vb6,t-sql,wss",
       "from":"Jan2012-Nov2015",
       "desc":
-        "this is VB6+SQL+C++ Server based short terms money market front office system where Retails Bankers in UK within RBS used to book the money market corporate and private banking trades,bonds,deals etc. The trades were then made to flow to WSS(formaly) and then calypso(later) settlement systems for further settlement with RBS. The application maintains customer and trades history and also prints the deals on network printer or via GDS bulk print module. To achieve the printing and bulk mailing facility, potter had JAVA service configured running windows app server",
+        "This is VB6+SQL Server based short terms money market front office system where Retails Bankers in UK\nwithin RBS used to book the money market corporate and private banking trades,bonds,deals etc. The trades\nwere then made to flow to WSS(formaly) and then calypso(later) settlement systems for further settlement\nwith RBS. The application maintains customer and trades history and also prints the deals on network printer\nor via GDS bulk print module. To achieve the printing and bulk mailing facility, potter had Python2 service\nconfigured running on windows app server",
       "images": []
     },
     {
@@ -86,7 +86,7 @@
       "tech": "excel,vba,soap,wss",
       "from":"Jan2012-Nov2015",
       "desc":
-        "Excel(Soap, WSS JPO API, Attachmate API->mainframe terminal hit) based solution which gives trades the real time FX funding positions across globe. Any trade balances hit by anyone in RBS (trade desk) was captured into this solution via WSS JOT APIs. When NWB system came into RBS, a connection via JAVA CIL Services->Score systems where also made and balances were fetched to give more closer real time view to traders",
+        "Excel(Soap, WSS JPO API, Attachmate API->mainframe terminal hit) based solution which gives trades the\nreal time FX funding positions across globe. Any trade balances hit by anyone in RBS (trade desk) was\ncaptured into this solution via WSS JOT APIs. When NWB system came into RBS, a connection via Python\nCIL Services->Score systems where also made and balances were fetched to give more closer real time view\nto traders",
       "images": []
     },
     {

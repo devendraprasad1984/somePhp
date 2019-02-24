@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8e7b1a3-bbe0-4d27-b1a0-d9e2c8a6f7aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jsx/src/basicApps/app4/ColDefDataSet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsx/src/basicApps/app4/testAgComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app4/AgGridComponentLevelState.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/basicApps/app4/AgGridComponentLevelState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app4/AgGridComponentLevelStateFromAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/basicApps/app4/AgGridComponentLevelStateFromAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app4/CustomFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/basicApps/app4/CustomFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app4/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/basicApps/app4/custom.css" afterDir="false" />
-    </list>
+    <list default="true" id="c8e7b1a3-bbe0-4d27-b1a0-d9e2c8a6f7aa" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,32 +13,7 @@
     <favorites_list name="react" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app4/app4.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app4/AgGridComponentLevelStateFromAPI.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="233" column="114" selection-start-line="233" selection-start-column="114" selection-end-line="233" selection-end-column="114" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,7 +31,6 @@
       <find>active</find>
       <find>active={this.isActive('/')}</find>
       <find>&lt;br&gt;</find>
-      <find>/static</find>
       <find>static</find>
       <find>browserrou</find>
       <find>/compo</find>
@@ -87,9 +52,10 @@
       <find>curClickVal</find>
       <find>input</find>
       <find>/static/</find>
-      <find>static/</find>
       <find>?'active border blue'</find>
       <find>componentDidUpdate</find>
+      <find>static/</find>
+      <find>/static</find>
     </findStrings>
     <replaceStrings>
       <replace>id</replace>
@@ -102,7 +68,6 @@
       <replace>show</replace>
       <replace>HomeRouteMenu</replace>
       <replace>active</replace>
-      <replace>/react/static</replace>
       <replace>to: &quot;/react/</replace>
       <replace>path: &quot;/react/</replace>
       <replace>'active border blue'</replace>
@@ -113,6 +78,8 @@
       <replace>btn-outline-primary</replace>
       <replace>/react/static/</replace>
       <replace>?this.styleSet1</replace>
+      <replace>react/static/</replace>
+      <replace>/react/static</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/jsx/build</dir>
@@ -124,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jsx/package.json" />
         <option value="$PROJECT_DIR$/jsx/src/components/PostToDoResourceList.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/reuseResources.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/ReuseResourcesComponent.js" />
@@ -159,7 +125,6 @@
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app3/app3page.js" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app3/CalcDisplay.js" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app3/CalcKeypad.js" />
-        <option value="$PROJECT_DIR$/jsx/build/index.html" />
         <option value="$PROJECT_DIR$/jsx/build/static/js/main.3b71cbf5.chunk.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/HomeRouteMenuApps.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/HomeRouteMenu.js" />
@@ -175,6 +140,8 @@
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app4/testAgComponent.js" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app4/app4.js" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app4/AgGridComponentLevelStateFromAPI.js" />
+        <option value="$PROJECT_DIR$/jsx/build/index.html" />
+        <option value="$PROJECT_DIR$/jsx/build/static/js/main.4a3cb14c.chunk.js" />
       </list>
     </option>
   </component>
@@ -219,22 +186,22 @@
               <item name="react" type="b2602c69:ProjectViewProjectNode" />
               <item name="react" type="462c0819:PsiDirectoryNode" />
               <item name="jsx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react" type="b2602c69:ProjectViewProjectNode" />
               <item name="react" type="462c0819:PsiDirectoryNode" />
               <item name="jsx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="basicApps" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react" type="b2602c69:ProjectViewProjectNode" />
               <item name="react" type="462c0819:PsiDirectoryNode" />
               <item name="jsx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="basicApps" type="462c0819:PsiDirectoryNode" />
-              <item name="app4" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/jsx/package.json" />
       <command value="run" />
@@ -337,7 +304,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="20" width="1331" height="748" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15467905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -409,7 +375,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jsx/build/static/js/main.447517b3.chunk.js" />
     <entry file="file://$PROJECT_DIR$/jsx/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -669,16 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/build/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsx/build/static/js/main.3b71cbf5.chunk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -768,16 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app4/app4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app4/testAgComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
@@ -790,10 +735,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app4/AgGridComponentLevelStateFromAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="233" column="114" selection-start-line="233" selection-start-column="114" selection-end-line="233" selection-end-column="114" />
+        <state relative-caret-position="51">
+          <caret line="215" column="73" selection-start-line="215" selection-start-column="73" selection-end-line="215" selection-end-column="73" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app4/app4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/build/static/js/main.4a3cb14c.chunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="2084" column="32" lean-forward="true" selection-start-line="2084" selection-start-column="32" selection-end-line="2084" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/build/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

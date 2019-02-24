@@ -30,8 +30,10 @@ lodash: http://zetcode.com/javascript/lodash/
 https://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting
 go golang: https://gobyexample.com
 
-https://medium.com/ag-grid/learn-to-customize-react-grid-in-less-than-10-minutes-2ce6845646bb
-https://adazzle.github.io/react-data-grid/docs/examples/simple-grid
+aggrid: https://medium.com/ag-grid/learn-to-customize-react-grid-in-less-than-10-minutes-2ce6845646bb
+aggrid: https://adazzle.github.io/react-data-grid/docs/examples/simple-grid
+
+pypy3 portable: https://github.com/squeaky-pl/portable-pypy
 
 
 react tutor: ste.grider@gmail.com->tw: @sg_in_sf->github.com/stephengrider
@@ -87,7 +89,7 @@ sudo su - root
 chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo apt-get install pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
 sudo snap install --classic heroku
 sudo su - root and npm install -g create-react-app react-devtools
 sudo apt-get install openssh-server
@@ -98,6 +100,20 @@ heroku create morning-brushlands-98453
 git push heroku master
 git open
 
+/home/devendra/.bashrc - config
+alias pip=/home/devendra/deven/software/pypy3.6-v7.0.0-linux64/bin/pip3
+alias python=/home/devendra/deven/software/pypy3.6-v7.0.0-linux64/bin/pypy3
+alias cls=clear
+alias ll="pwd; ls -ltr"
+alias dp="cd /home/devendra/deven; ll"
+alias ij="/home/devendra/deven/software/ideaIU-2018.3.4-no-jdk/idea-IU-183.5429.30/bin/idea.sh"
+alias nb="/home/devendra/deven/software/incubating-netbeans-10.0-bin/netbeans/bin/netbeans"
+alias pwt="sudo powertop --auto-tune"
+
+postgreSQL elephant sql online free instance: https://customer.elephantsql.com/instance/
+tornado: https://opensource.com/article/18/6/tornado-framework
+https://github.com/tornadoweb/tornado/tree/master/demos/blog
+https://www.tornadoweb.org/en/stable/
 
 
 
