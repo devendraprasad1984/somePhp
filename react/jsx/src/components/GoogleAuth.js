@@ -12,7 +12,7 @@ class GoogleAuth extends React.Component {
             }).then(() => {
                 //    checking after init is completed, we chaining  here as init from google would return a promise
                 this.auth = window.gapi.auth2.getAuthInstance()
-                this.onAuthChange(this.auth.isSignedIn.get())
+                this.onAuthChange(this.auth.isSignedIn.get()) //get is in the __proto__ object
                 this.auth.isSignedIn.listen(this.onAuthChange)
             })
         })

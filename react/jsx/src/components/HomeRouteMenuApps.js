@@ -6,6 +6,7 @@ import App2Page from "../basicApps/app2/app2";
 import browserHistory from "../browserHistory";
 import App3Page from "../basicApps/app3/app3page";
 import App4ReactAgGrid from "../basicApps/app4/app4";
+import App5Page from "../basicApps/app5/app5";
 // import {} from 'semanti-ui-react'
 // https://stackoverflow.com/questions/51036731/menu-item-active-state-not-working-with-navlink-semantic-ui-react
 
@@ -36,6 +37,9 @@ class HomeRouteMenuApps extends React.Component {
                 <Link to="/apps/app4"><p onClick={() => this.activeMarker('4')}
                                          className={`item ${this.state.name === '4' ? this.styleSet1 : ''}`}>Grid</p>
                 </Link>
+                <Link to="/apps/app5"><p onClick={() => this.activeMarker('5')}
+                                         className={`item ${this.state.name === '5' ? this.styleSet1 : ''}`}>QRCode</p>
+                </Link>
             </div>
         )
     }
@@ -51,6 +55,7 @@ class HomeRouteMenuApps extends React.Component {
                         <Route exact path="/apps/app2" component={App2Page}></Route>
                         <Route exact path="/apps/app3" component={App3Page}></Route>
                         <Route exact path="/apps/app4" component={App4ReactAgGrid}></Route>
+                        <Route exact path="/apps/app5" component={App5Page}></Route>
                     </div>
                 </BrowserRouter>
             </div>

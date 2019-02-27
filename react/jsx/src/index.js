@@ -93,3 +93,6 @@ serviceWorker.register();
 //hook system makes functional componentn equivalent to class based compoent by providing setStates and lifecycle methods
 //hook makes sharing/reuse logic between components very easily
 
+
+// https://gist.github.com/primaryobjects/64734b8fe3f54aa637f444c95f061eed
+// integrating jquery and other lib in reactjs: https://reactjs.org/docs/integrating-with-other-libraries.html

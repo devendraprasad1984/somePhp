@@ -89,10 +89,28 @@ sudo su - root
 chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo apt-get install wine-stable xterm pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
 sudo snap install --classic heroku
 sudo su - root and npm install -g create-react-app react-devtools
 sudo apt-get install openssh-server
+playonlinux: 
+sudo wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
+sudo wget http://deb.playonlinux.com/playonlinux_precise.list -O /etc/apt/sources.list.d/playonlinux.list
+sudo apt-get update
+sudo apt-get install playonlinux
+run: sudo playonlinux
+
+for office using playonlinux
+sudo apt-get install winbind
+
+lightshot:
+sudo apt-get install wine
+wget http://app.prntscr.com/build/setup-lightshot.exe
+wine ./setup-lightshot.exe
+
+virtualbox:
+https://o7planning.org/en/11891/installing-virtualbox-on-ubuntu
+
 
 heroku create --buildpack https://github.com/devendraprasad1984/somePhp/tree/master/react/jsonserver
 heroku buildpacks:set https://github.com/devendraprasad1984/somePhp/tree/master/react/jsonserver
@@ -109,9 +127,12 @@ alias dp="cd /home/devendra/deven; ll"
 alias ij="/home/devendra/deven/software/ideaIU-2018.3.4-no-jdk/idea-IU-183.5429.30/bin/idea.sh"
 alias nb="/home/devendra/deven/software/incubating-netbeans-10.0-bin/netbeans/bin/netbeans"
 alias pwt="sudo powertop --auto-tune"
+alias ijrs="sh /home/devendra/deven/software/resetIntelliJTrial.sh"
 
-postgreSQL elephant sql online free instance: https://customer.elephantsql.com/instance/
-tornado: https://opensource.com/article/18/6/tornado-framework
+postgreSQL elephant sql online free instance: https://customer.elephantsql.com/instance/	
+tornado+flask+pyramic: https://opensource.com/article/18/6/tornado-framework
+https://opensource.com/article/18/4/flask
+https://opensource.com/article/18/5/pyramid
 https://github.com/tornadoweb/tornado/tree/master/demos/blog
 https://www.tornadoweb.org/en/stable/
 
