@@ -89,7 +89,31 @@ sudo su - root
 chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install wine-stable xterm pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo apt-get install yarn pypy nodejs default-jdk apache2 apache2-mpm-worker sublime-text-installer
+npm install -g gulp grunt nodemon webpack
+
+mongodb:
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+sudo apt-get update
+sudo apt-get install -y mongodb
+/var/lib/mongodb
+/etc/mongod.conf
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod restart
+[initandlisten] waiting for connections on port 27017
+mongo/mongod is the shell
+mongo mongodb://mongodb0.example.com:28015/testdb?ssl=true
+mongo mongodb://mongodb0.example.com.local:27017,mongodb1.example.com.local:27017,mongodb2.example.com.local:27017/?replicaSet=replA
+mongo --host mongodb0.example.com:28015 [additional options]
+mongo --host mongodb0.example.com --port 28015 [additional options]
+mongo mongodb1.example.net/test
+mongo mongodb1/admin
+mongo 10.8.8.10/test
+
+
 sudo snap install --classic heroku
 sudo su - root and npm install -g create-react-app react-devtools
 sudo apt-get install openssh-server
@@ -136,6 +160,8 @@ https://opensource.com/article/18/5/pyramid
 https://github.com/tornadoweb/tornado/tree/master/demos/blog
 https://www.tornadoweb.org/en/stable/
 
+
+url shortner: https://codeburst.io/creating-custom-url-shortener-with-nodejs-de10bbbb89c7
 
 
 pip3 install cx-oracle flask

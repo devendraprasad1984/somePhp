@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import QRCode from 'react-qr-code'
+import CalendarTest from "../app2/calendarTest";
 // import * as $ from 'jquery'
 
 export default class App5Page extends Component {
@@ -9,12 +10,9 @@ export default class App5Page extends Component {
             qrval: 'default'
             ,checked:false
         }
-        // this.datepicker=React.createRef()
     }
 
     componentDidMount() {
-        // $(this.datepicker.current).datepicker();
-        this.initDatePicker()
         document.getElementById('idQrText').value = this.state.qrval
         document.getElementById('idQrText').addEventListener('keypress', this.onKeyPress)
         document.getElementById('idQrText').addEventListener('input', this.changeStateOfQR)
@@ -37,12 +35,6 @@ export default class App5Page extends Component {
         }
         // e.preventDefault()
         // e.stopPropagation()
-    }
-
-    initDatePicker=()=>{
-        const dtpick=window.jQuery(this.refs.refdatepicker)
-        console.log("date pick values",dtpick)
-        dtpick.datepicker()
     }
 
     onQRButtonClick=()=>{
@@ -77,9 +69,7 @@ export default class App5Page extends Component {
     render() {
         return (
             <div className="card form">
-                <div>
-                    datepicker: <input type='text' ref='refdatepicker' />
-                </div>
+                <CalendarTest/>
                 <div>
                     Enter Value for QR Code: <input id="idQrText" ref='ref_idqrtext' type="text" className="form-control"/>
                     <span>Change QR on every text change</span>

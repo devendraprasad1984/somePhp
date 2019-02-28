@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './app2.css'
+import CalendarTest from "./calendarTest";
 
 
 export default class App2Page extends Component {
@@ -45,6 +46,7 @@ export default class App2Page extends Component {
         return (
             <div className="card">
                 <div className="container-fluid card-body">
+                    <CalendarTest/>
                     <div>
                         <i className="icon calendar"></i>
                         <span>Start/Stop</span>
