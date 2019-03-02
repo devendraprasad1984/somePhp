@@ -1,7 +1,7 @@
 import typescript from 'rollup-plugin-typescript';
 
 export default {
-  entry: './src/Main.jsx',
+  entry: './src/Main.tsx',
   dest: './bundle.js',
   format: 'iife',
   plugins: [

@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8e7b1a3-bbe0-4d27-b1a0-d9e2c8a6f7aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jsx/src/basicApps/app6/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsExample/interfaceExample.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsExample/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_fx_load/app6Page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_fx_load/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_fx_load/src/Main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_fx_load/src/Row.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_fx_load/src/interfaces.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsx/src/basicApps/app6/app6Page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/components/HomeRouteMenuApps.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/HomeRouteMenuApps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/src/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/basicApps/app6/src/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/src/basicApps/app6/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/app_fx_load/tsconfig_old.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,29 +31,7 @@
     <favorites_list name="react" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/src/Main.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/rollup.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,10 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jsx/src/basicApps/app3/app3Page.css" />
-        <option value="$PROJECT_DIR$/jsx/src/basicApps/app3/calcHeader.js" />
-        <option value="$PROJECT_DIR$/jsx/src/components/AppTwitchTV.js" />
-        <option value="$PROJECT_DIR$/jsx/src/components/streams/StreamList.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/streams/StreamDelete.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/streams/StreamForm.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/streams/StreamShow.js" />
@@ -173,6 +156,10 @@
         <option value="$PROJECT_DIR$/tsExample/interfaceExample.js" />
         <option value="$PROJECT_DIR$/tsExample/interfaceExample.ts" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app6/rollup.config.js" />
+        <option value="$PROJECT_DIR$/jsx/src/basicApps/app6/src/Main.jsx" />
+        <option value="$PROJECT_DIR$/jsx/src/basicApps/app6/app6Page.js" />
+        <option value="$PROJECT_DIR$/jsx/src/basicApps/app6/server.js" />
+        <option value="$PROJECT_DIR$/jsx/src/basicApps/app6/src/Main.tsx" />
       </list>
     </option>
   </component>
@@ -237,22 +224,7 @@
             <path>
               <item name="react" type="b2602c69:ProjectViewProjectNode" />
               <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="jsx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="basicApps" type="462c0819:PsiDirectoryNode" />
-              <item name="app6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
               <item name="tsExample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="tsExample" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaceExample.ts" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -262,15 +234,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.10.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dp-json-server/dp-json-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsx/src/basicApps/app6/package.json" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.28695655" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/jsx/src/basicApps/app6/node_modules/typescript/lib" />
   </component>
@@ -280,11 +253,11 @@
       <recent name="$PROJECT_DIR$/jsx/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tsExample" />
       <recent name="$PROJECT_DIR$/jsx/src/basicApps/app6" />
       <recent name="$PROJECT_DIR$/url_shortner" />
       <recent name="$PROJECT_DIR$/url_shortner/views" />
-      <recent name="$PROJECT_DIR$/jsx/src/basicApps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -299,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.react-start">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/url_shortner/routes/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -323,6 +296,14 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="react-start" type="js.build_tools.npm" singleton="false">
+      <package-json value="$PROJECT_DIR$/jsx/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="rtmp_single_core" type="js.build_tools.npm" singleton="false">
       <package-json value="$PROJECT_DIR$/jsx/package.json" />
       <command value="run" />
@@ -333,11 +314,10 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" singleton="false">
-      <package-json value="$PROJECT_DIR$/jsx/package.json" />
+    <configuration name="start-app-6" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/jsx/src/basicApps/app6/package.json" />
       <command value="start" />
       <node-interpreter value="project" />
-      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
@@ -351,11 +331,12 @@
     <list>
       <item itemvalue="Node.js.bin/www" />
       <item itemvalue="Node.js.index.js" />
+      <item itemvalue="npm.start-app-6" />
       <item itemvalue="npm.urlshortner_server" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.jsonserver" />
       <item itemvalue="npm.rtmp_single_core" />
-      <item itemvalue="npm.start" />
+      <item itemvalue="npm.react-start" />
     </list>
     <recent_temporary>
       <list>
@@ -377,16 +358,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="20" width="1331" height="748" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1786543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1786543" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" weight="0.3286385" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3286385" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27073553" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3286385" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37402192" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39906102" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +376,7 @@
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.3286385" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.37402192" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3568075" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -429,16 +409,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jsx/node_modules/react-art-svg-renderer/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/node_modules/react-qr-code/lib/components/QRCode/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1594" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsx/node_modules/react-qr-code/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -685,7 +655,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/tsconfig.json">
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/tsconfig_old.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="21" />
@@ -722,34 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/src/interfaces.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/src/Row.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsExample/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -771,13 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -785,20 +720,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/src/interfaces.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/src/Row.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/rollup.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_fx_load/src/Row.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/src/Main.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/rollup.config.js">
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="202">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/app6Page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/basicApps/app6/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -855,7 +839,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>url_shortner</last-edited>
+          <last-edited>react</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
