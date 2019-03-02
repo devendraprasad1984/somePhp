@@ -4,6 +4,7 @@ import App2Page from "./basicApps/app2/app2";
 import App3Page from "./basicApps/app3/app3page";
 import App4ReactAgGrid from "./basicApps/app4/app4";
 import App5Page from "./basicApps/app5/app5";
+import App6Page from "./basicApps/app6/app6Page";
 
 export const SIGN_IN='SIGN_IN'
 export const SIGN_OUT='SIGN_OUT'
@@ -21,4 +22,5 @@ export const AppPages=[
     ,{name:'3',text:'Calci',path:'/apps/app3', component:App3Page}
     ,{name:'4',text:'Grid',path:'/apps/app4', component:App4ReactAgGrid}
     ,{name:'5',text:'QRCode',path:'/apps/app5', component:App5Page}
+    ,{name:'6',text:'FX',path:'/apps/app6', component:App6Page}
 ]
