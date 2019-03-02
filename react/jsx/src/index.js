@@ -5,6 +5,7 @@ import * as serviceWorker from './components/serviceWorker';
 import HomeRouteMenu from "./components/HomeRouteMenu";
 import HomeRouteMenuApps from "./components/HomeRouteMenuApps";
 import {BrowserRouter, Link, Route} from "react-router-dom";
+import browserHistory from "./browserHistory";
 
 // import './icon.css';
 
@@ -12,21 +13,48 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 //and like that only with that function name if written  without {} will be used
 //and if in case of default no function name written, fileName will be used as that module name
 
+class DefaultApp extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state={
+            curUrl:window.location.href
+            , path: null
+            , component: null
+        }
+    }
 
-ReactDOM.render(<div>
-    <span>Click below Link</span>
-    <BrowserRouter>
-        <div>
-            <div className="ui primary pointing menu">
-                <Link to="/practice/baseApp"><span>Practices</span></Link>
-                <Link to="/apps/app0"><span>Apps</span></Link>
+    componentDidMount() {
+        console.log("location href",window.location)
+        console.log("browser history",browserHistory)
+    }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if(this.state.curUrl!==prevState.curUrl){
+            this.setState({curUrl:window.location.href})
+        }
+    }
+
+    render(){
+        return(
+            <div>
+                <span>Click below Link</span>
+                <BrowserRouter>
+                    <div>
+                        <div className="ui primary pointing menu">
+                            <Link to="/practice/baseApp"><span>Practices</span></Link>
+                            <Link to="/apps/app0"><span>Apps</span></Link>
+                        </div>
+
+                        <Route exact path="/" component={HomeRouteMenuApps}></Route>
+                        <Route exact path="/practice/baseApp" component={HomeRouteMenu}></Route>
+                        <Route exact path="/apps/app0" component={HomeRouteMenuApps}></Route>
+                    </div>
+                </BrowserRouter>
             </div>
+        )
+    }
+}
 
-            <Route exact path="/practice/baseApp" component={HomeRouteMenu}></Route>
-            <Route exact path="/apps/app0" component={HomeRouteMenuApps}></Route>
-        </div>
-    </BrowserRouter>
-</div>, document.getElementById('root_menu'))
+ReactDOM.render(<DefaultApp />, document.getElementById('root_menu'))
 
 
 // ReactDOM.render(<div className="ui segment">

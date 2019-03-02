@@ -38,6 +38,7 @@ pypy3 portable: https://github.com/squeaky-pl/portable-pypy
 
 react tutor: ste.grider@gmail.com->tw: @sg_in_sf->github.com/stephengrider
 
+realtime react examples: https://react.rocks/tag/Realtime
 http://www.javadecompilers.com/
 https://reactjs.org/
 https://babeljs.org/
