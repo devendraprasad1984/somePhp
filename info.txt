@@ -57,6 +57,9 @@ sudo apt-get install obs-studio
 
 npmjs.com/package/flv.js
 
+dpkg --get-selections | grep mysql
+apt-cache show mysql
+locate mysql
 
 streamy-react: client id: 217054210790-pr0kbfv8e68md93p8bddpspabssansa5.apps.googleusercontent.com
 streamy-react: secret key: qy6AH678c438SrQR4QTvEaju
@@ -85,6 +88,11 @@ mine looks like this: netbeans_default_options="-J-client -J-Xss2m -J-Xms2048m -
 
 https://pages.github.com/
 
+netstat -pan | grep mysql
+netstat -nlt | grep 3306
+netstat -pan | grep 3306
+netstat -anp | grep -i established
+
 https://askubuntu.com/questions/337874/change-apache-document-root-folder-to-secondary-hard-drive
 sudo su - root
 chmod -R 777 <foldername>
@@ -92,7 +100,27 @@ service --status-all
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
 sudo apt-get install yarn pypy nodejs default-jdk apache2 apache2-mpm-worker sublime-text-installer
+google web fonts: sudo apt-get install typecatcher
 npm install -g gulp grunt nodemon webpack
+sudo apt install mysql-client-core-5.7
+sudo apt install mariadb-client-core-10.1
+sudo apt install mysql-server
+/etc/init.d/mysql status
+sudo apt install net-tools
+mysql -u root -h localhost -p
+
+SELECT User, Host, authentication_string FROM mysql.user;
+CREATE USER 'dp123'@'localhost' IDENTIFIED BY 'admin123';
+create database testdb;
+GRANT ALL PRIVILEGES ON testdb.* TO 'dp123'@'localhost';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'admin123';
+FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+mysql -u dp123 -p
+
+service mysql restart/start/stop
+
+
 
 mongodb:
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
