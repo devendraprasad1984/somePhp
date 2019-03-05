@@ -374,7 +374,7 @@ app.controller("Summary", function ($scope, $timeout, $http) {
                     counter += 1
                     // tagName ="<p style='color:RGB(" +vRed +"," +vGreen +"," +vBlue +");'>" +data[i].name +"</p>";
                     tagName = data[i].name;
-                    content = "<p style='color: lightgoldenrodyellow'>" + data[i].desc + "</p>";
+                    content = "<p>" + data[i].desc + "</p>";
                     images = data[i].images;
                     imgs += "<div style='margin: 1px; padding: 2px'>";
                     for (j = 0; j < images.length; j++) {
@@ -384,7 +384,8 @@ app.controller("Summary", function ($scope, $timeout, $http) {
                     break;
                 }
             }
-            $("#mTag").html("<div class='" + bgTagColor + "'><span style='font-size:20pt;color: white'>" + tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
+            // $("#mTag").html("<div class='" + bgTagColor + "'><span style='font-size:20pt;color: white'>" + tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
+            $("#mTag").html("<div class='bg-light'><span style='font-size:20pt;color: black'>" + tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
             $("#mContent").html(imgs)
             $scope.$emit("objCounter", counter)
         });
@@ -968,16 +969,16 @@ app.controller("ITSummary", function ($scope, $http) {
         if (url.indexOf("http") != -1 || url.indexOf(".pdf") != -1 || url.indexOf(".png") != -1 || url.indexOf(".jpg") != -1) {
             contentData = this.getConcatenatedObjects(url, gotoUrl);
         } else if (url.indexOf(".html") != -1) {
-            contentData = "<iframe class='pdfView' style='background-color: white; height: " + xHeight + ";' src='" + url + "' frameborder=1></iframe>";
+            contentData = "<iframe class='pdfView' style='background-color: white; height: " + xHeight + ";' src='" + url + "#view=FitH' frameborder=1></iframe>";
         } else if (url.indexOf(".mp4") != -1 || url.indexOf("youtube") != -1) {
-            contentData = "<iframe class='pdfView' style='background-color: white; height: " + xHeight + ";' src='" + url + "' frameborder=1></iframe>";
+            contentData = "<iframe class='pdfView' style='background-color: white; height: " + xHeight + ";' src='" + url + "#view=FitH' frameborder=1></iframe>";
         } else {
-            contentData = "<iframe class='pdfView'style='background-color: white; height: " + xHeight + ";' src='" + url + "' style='background-color:white;' frameborder=1></iframe>";
+            contentData = "<iframe class='pdfView'style='background-color: white; height: " + xHeight + ";' src='" + url + "#view=FitH' style='background-color:white;' frameborder=1></iframe>";
         }
         // console.log("from sethref",$scope.bgTagColor)
         // if ($scope.bgTagColor=="" || $scope.bgTagColor=='undefined')
         // $("#mTag").html("<div class='" + $scope.bgTagColor + "'><span style='font-size:20pt'>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
-        $("#mTag").html("<div ><span style='font-size:20pt;color: white;'>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
+        $("#mTag").html("<div class='bg-light'><span style='font-size:20pt;color: black;'>" + $scope.tagName + "</span><p class='btn btn-danger' style='text-align: right; float: right; display: inline-block'>[X]</p></div>");
         $("#mContent").html(contentData);
         // document.getElementById("myNav").style.width = "100%";
         $("#myNav").css({'width': '100%', 'display': 'block'})
@@ -997,7 +998,7 @@ app.controller("ITSummary", function ($scope, $http) {
             //console.log(imgUrl);
             countOfObjects += 1
             if (objUrl.indexOf(".pdf") != -1) {
-                content += "<div id='slide" + countOfObjects + "' class='pdfView' style='background-color: white; height: " + xHeight + ";'><object data='" + objUrl + "' type='application/pdf' class='pdfView'></object></div>";
+                content += "<div id='slide" + countOfObjects + "' class='pdfView' style='background-color: white; height: " + xHeight + ";'><object data='" + objUrl + "#view=FitH' type='application/pdf' class='pdfView'></object></div>";
             } else if (objUrl.indexOf("http") != -1) {
                 content += "<div id='slide" + countOfObjects + "' class=''><a href='" + objUrl + "' target='_blank'><div class='badge badge-pill badge-danger'>" + objUrl + "</div></a></div>";
             } else if (objUrl.indexOf(".png") != -1 || objUrl.indexOf(".jpg") != -1) {
