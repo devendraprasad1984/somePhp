@@ -1141,3 +1141,50 @@ function addMailerScripts() {
     strScripts += "<script src='../js/myJs1.js'></script>"
     $("#mailerRunTimeScripts").append(strScripts)
 }
+
+
+function resizeIframe(obj) {
+    // obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    let objFrame=$(obj)
+    // console.log(objFrame.contents().outerHeight())
+    $(objFrame).innerHeight(4000)
+    // objFrame.height(objFrame.contents().outerHeight() );
+}
+
+
+
+loadPDF=(url,pages)=>{
+    // var pdfjsLib = window['pdf.worker'];
+    var pdfjsLib = window['pdfjsLib'];
+    var loadingTask = pdfjsLib.getDocument(url);
+    loadingTask.promise.then(function(pdf) {
+        console.log('PDF loaded');
+        // Fetch the first page
+        var pageNumber = 1;
+        for (let i=1; i<=pages; i++){
+            pdf.getPage(i).then(function(page) {
+                console.log('Page loaded-',i);
+                var scale = 2;
+                var viewport = page.getViewport(scale);
+                // Prepare canvas using PDF page dimensions
+                var canvas = document.getElementById('pdfcanvas-'+i);
+                var context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                // Render PDF page into canvas context
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                var renderTask = page.render(renderContext);
+                renderTask.then(function () {
+                    console.log('Page rendered');
+                });
+            });
+        }
+    }, function (reason) {
+        // PDF loading error
+        console.error(reason);
+    });
+}

@@ -1,4 +1,3 @@
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 680px) {
     html, body, .h1, .h2, .h3, .h4, .main {
         padding-top: 2px;
@@ -11,21 +10,23 @@
     }
 
 
-    #divHeader>span>p,#divHeader>span>a{
+    #divHeader > span > p, #divHeader > span > a {
         display: none;
     }
 
-    #mTag{
+    #mTag {
         font-size: 12pt;
     }
 
-    #mobiMenu{
+    #mobiMenu {
         display: block;
     }
-    #topMenu,#topColors{
+
+    #topMenu, #topColors {
         display: none;
     }
-    #topMenu a,#topMenu8 a{
+
+    #topMenu a, #topMenu8 a {
         background-color: black;
         color: white;
         font-size: 8pt;
@@ -48,6 +49,10 @@
     }
 }
 
+html, body, iframe {
+    height: 100%;
+    width: 100%;
+}
 
 html {
     /*font-size: 1.2vw;*/
@@ -58,7 +63,7 @@ html {
     margin: 10px;
 }
 
-div #topMenu a, div #topMenu a.btn{
+div #topMenu a, div #topMenu a.btn {
     font-size: 15pt;
     padding: 5px 5px;
     margin: 5px;
@@ -314,9 +319,9 @@ div #mContent {
 }
 
 .pdfView {
-    height: 800px;
+    height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    /*background-color: rgba(0, 0, 0, 0.9);*/
 }
 
 dl {
@@ -837,28 +842,32 @@ h3 {
 }
 
 /*a.active {*/
-    /*border-bottom: 5px solid red;*/
-    /*background-color: white;*/
-    /*color: black;*/
+/*border-bottom: 5px solid red;*/
+/*background-color: white;*/
+/*color: black;*/
 /*}*/
-#topMenu8,#topColors{
+#topMenu8, #topColors {
     position: relative;
     /*top: 0;*/
 }
-#topMenu8 a{
+
+#topMenu8 a {
     background-color: black;
     color: white;
     font-size: 12pt;
     padding: 1px 1px;
 }
-#bodySection{
+
+#bodySection {
     position: relative;
     margin-top: 2em;
 }
-.btn{
+
+.btn {
     border-radius: 2px;
     box-shadow: 0 2px #999;
 }
+
 /*.btn:hover {background-color: #3e8e41}*/
 .btn:active {
     box-shadow: 0 1px #666;
@@ -868,11 +877,12 @@ h3 {
 
 .animate {
     -webkit-animation-name: cssAnimation;
-    -webkit-animation-duration:3s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
 }
+
 @-webkit-keyframes cssAnimation {
     from {
         -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
@@ -1003,15 +1013,14 @@ h3 {
 }
 
 
-
 .photo {
     max-width: 280px;
     margin-bottom: -75px;
     border: 3px solid #fff;
     background-color: #fff;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -1028,4 +1037,31 @@ h3 {
     -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
     -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
     box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+    padding-top: 75%;
+}
+
+
+div .pad a {
+    padding: 5px;
+    margin: 2px;
 }
