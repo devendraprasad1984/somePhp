@@ -20,11 +20,11 @@
         <div class="row">
             <div id="itSummaryScope" class="col-lg-12" ng-controller="ITSummary">
                 <div ng-repeat="x in ratingData">
-                    <div class="progress" style="cursor: pointer; margin: 10px; font-weight: bold; height: 25px">
-                        <div ng-click="setHref(this,x.href,undefined,x.skillName)" class="progress-bar {{x.bg}}  progress-bar-striped progress-bar-animated"
+                    <div class="progress" style="cursor: pointer; margin: 10px; font-weight: bold; height: 20px">
+                        <div ng-click="setHref(this,x.href,undefined,x.skillName)" class="progress-bar {{x.bg}}  "
                              aria-valuenow="{{x.rating}}" aria-valuemin="0" aria-valuemax="100" role="progressbar"
-                             style="{{x.style}};width: {{x.rating}}%; text-align: left; padding:5px; font-size: 10pt;">
-                            {{x.skillName}} - {{x.rating}}%
+                             style="{{x.style}};width: {{x.rating}}%; text-align: left; padding:5px;">
+                            {{x.skillName}}
                         </div>
                         <!--<span class="badge badge-light">{{x.rating}}%</span>-->
                     </div>

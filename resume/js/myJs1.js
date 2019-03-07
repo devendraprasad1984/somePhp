@@ -3,8 +3,8 @@ var isChartLoadOnce = false
 var isLoadedGoogleCharts = false
 var timerId;
 var timerValue = 2000;
-var views = ["view1", "view2", "view3", "view4", "view6"]
-var defaultView = "viewElegant";
+var views = ["view1", "vew2", "view3", "view4", "view6"]
+var defaultView = "view1";
 // var defaultView = views [Math.round(Math.random() * views.length)] ||"view6"
 // alert("current selected view is " + defaultView)
 var viewsToHaveCharts = ["view1", "view6"];
@@ -19,8 +19,8 @@ var hide = "hide"
 var show = "show"
 var bgColor = "bg-dark"
 var textColor = bgColor+" text-white"
-var successColor = "btn-lg btn-info text-white"
-var backColor="#286090";
+var successColor = "btn btn-info text-white"
+var backColor="#17a2b8"; //css: color-12
  // var darkColor = successColor+" " + textColor
 var changeBtnDisplay=false
 
@@ -49,7 +49,7 @@ function setBtnDisplay(){
        xset()
    }
     function xset(){
-        backColor=$("#idcolor").html()||"#286090"
+        backColor=$("#idcolor").html()||backColor
         // $(".btn").css({"font-size":"12pt"})
         $(".badge,#idExperienceController").css({"font-size":"12px"})
         if(backColor===""||backColor==="#286090"){
