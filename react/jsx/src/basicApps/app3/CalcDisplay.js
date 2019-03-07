@@ -84,11 +84,9 @@ export default class CalcDisplay extends React.Component {
         return (
             <div>
                 <CalcHeader title="Calci"/>
-
-                <CalcDisplayTop curVal={this.state.curClickVal}/>
-
                 <div className="row">
                     <div className="col-lg-6">
+                        <CalcDisplayTop curVal={this.state.curClickVal}/>
                         <CalcKeypad
                             handleOnDigit={this.handleOnDigit}
                             add={this.add}

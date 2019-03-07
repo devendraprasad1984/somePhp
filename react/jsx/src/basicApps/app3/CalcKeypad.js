@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './keypad.css'
 export default class CalcKeypad extends React.Component {
     constructor(props){
         super(props)
@@ -7,11 +7,11 @@ export default class CalcKeypad extends React.Component {
 
     render() {
         return (
-            <div className="row">
+            <div className="keypad">
                 <div className="col-lg-6">
-                    <div className="container-fluid">
+                    <div className="">
                         <div className="card-body">
-                            <div className="row">
+                            <div className="keypad-row">
                                 <button className="btn btn-outline-danger" value="clear-all"
                                         onClick={this.props.handleOnClearAll}>CE
                                 </button>
@@ -23,7 +23,7 @@ export default class CalcKeypad extends React.Component {
                                 <button className="btn btn-outline-danger" value="/"
                                         onClick={this.props.divide}>&divide;</button>
                             </div>
-                            <div className="row">
+                            <div className="keypad-row">
                                 <button className="btn btn-outline-primary" value="7" onClick={this.props.handleOnDigit}>7
                                 </button>
                                 <button className="btn btn-outline-primary" value="8" onClick={this.props.handleOnDigit}>8
@@ -33,7 +33,7 @@ export default class CalcKeypad extends React.Component {
                                 <button className="btn btn-outline-danger" value="*"
                                         onClick={this.props.multiply}>&times;</button>
                             </div>
-                            <div className="row">
+                            <div className="keypad-row">
                                 <button className="btn btn-outline-primary" value="4" onClick={this.props.handleOnDigit}>4
                                 </button>
                                 <button className="btn btn-outline-primary" value="5" onClick={this.props.handleOnDigit}>5
@@ -43,7 +43,7 @@ export default class CalcKeypad extends React.Component {
                                 <button className="btn btn-outline-danger" value="-"
                                         onClick={this.props.subtract}>&minus;</button>
                             </div>
-                            <div className="row">
+                            <div className="keypad-row">
                                 <button className="btn btn-outline-primary" value="1" onClick={this.props.handleOnDigit}>1
                                 </button>
                                 <button className="btn btn-outline-primary" value="2" onClick={this.props.handleOnDigit}>2
@@ -53,7 +53,7 @@ export default class CalcKeypad extends React.Component {
                                 <button className="btn btn-outline-danger" value="+"
                                         onClick={this.props.add}>&#43;</button>
                             </div>
-                            <div className="row">
+                            <div className="keypad-row">
                                 <button className="btn btn-outline-danger" value="+-"
                                         onClick={this.props.onToggleSign}>&plusmn;</button>
                                 <button className="btn btn-outline-primary" value="0" onClick={this.props.handleOnDigit}>0

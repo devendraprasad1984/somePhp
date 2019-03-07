@@ -36,9 +36,9 @@ export default class App2Page extends Component {
         this.setState({checked: sCheckVal})
         console.log("state change for toggle",this.state.checked)
         if(sCheckVal)
-            this.componentWillMount()
+            this.timer()
         else
-            this.componentWillUnmount()
+            clearInterval(this.timerObj)
 
     }
 
