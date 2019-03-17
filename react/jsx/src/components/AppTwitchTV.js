@@ -17,6 +17,7 @@ import googleAuthReducers from '../redux_reducers/googleAuthReducers'
 import thunk from 'redux-thunk'
 
 import browserHistory from '../browserHistory'
+import * as x from "../types";
 
 class AppTwitchTV extends React.Component {
     composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
@@ -31,7 +32,7 @@ class AppTwitchTV extends React.Component {
                     {/*dummy case: <ReactRouterDummyCase/>*/}
                     <br/><br/>
                     <hr/>
-                    <Router history={browserHistory}>
+                    <Router  history={browserHistory}>
                         <div>
                             <StreamsNav></StreamsNav>
                             <h1><StreamsHeader/></h1>

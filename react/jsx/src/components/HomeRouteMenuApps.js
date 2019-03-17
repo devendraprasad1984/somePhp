@@ -43,6 +43,7 @@ class HomeRouteMenuApps extends React.Component {
 
     generateAppRoute=()=>{
         return x.AppPages.map((obj) => {
+            // console.log("apps route path",obj.path)
             return <Route key={`id${obj.name}`} exact path={obj.path} component={obj.component}></Route>
         })
     }
@@ -53,6 +54,7 @@ class HomeRouteMenuApps extends React.Component {
             // if(obj.path===browserHistory.location.pathname){
             //     this.activeMarker(obj.name)
             // }
+            // console.log("apps links path",obj.path)
             return (
                 <Link key={obj.name} to={obj.path}>
                     <p onClick={() => this.activeMarker(obj.name)} className={`item ${this.state.name === obj.name ? this.styleSet1 : ''}`}>{obj.text}</p>
@@ -105,6 +107,7 @@ class HomeRouteMenuApps extends React.Component {
     render() {
         return (
             <div>
+                {/*<Router basename={x.BASE_ROUTE_DIR} history={browserHistory}>*/}
                 <Router history={browserHistory}>
                     <div>
                         {this.navigationBarUsingConfig()}

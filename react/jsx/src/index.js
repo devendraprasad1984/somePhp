@@ -4,8 +4,9 @@ import './index.css';
 import * as serviceWorker from './components/serviceWorker';
 import HomeRouteMenu from "./components/HomeRouteMenu";
 import HomeRouteMenuApps from "./components/HomeRouteMenuApps";
-import {BrowserRouter, Link, Route} from "react-router-dom";
+import {BrowserRouter, Link, Route, Router} from "react-router-dom";
 import browserHistory from "./browserHistory";
+import * as x from "./types";
 
 // import './icon.css';
 
@@ -40,13 +41,13 @@ class DefaultApp extends React.Component{
                 <BrowserRouter>
                     <div>
                         <div className="ui primary pointing menu">
-                            <Link to="/practice/baseApp"><span>Practices</span></Link>
-                            <Link to="/apps/app0"><span>Apps</span></Link>
+                            <Link to={x.BASE_ROUTE_DIR+"/practice/baseApp"}><span>Practices</span></Link>
+                            <Link to={x.BASE_ROUTE_DIR+"/apps/app0"}><span>Apps</span></Link>
                         </div>
 
-                        <Route exact path="/" component={HomeRouteMenuApps}></Route>
-                        <Route exact path="/practice/baseApp" component={HomeRouteMenu}></Route>
-                        <Route exact path="/apps/app0" component={HomeRouteMenuApps}></Route>
+                        <Route exact path={x.BASE_ROUTE_DIR} component={HomeRouteMenuApps}></Route>
+                        <Route exact path={x.BASE_ROUTE_DIR+"/practice/baseApp"} component={HomeRouteMenu}></Route>
+                        <Route exact path={x.BASE_ROUTE_DIR+"/apps/app0"} component={HomeRouteMenuApps}></Route>
                     </div>
                 </BrowserRouter>
             </div>

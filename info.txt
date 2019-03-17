@@ -120,6 +120,12 @@ mysql -u dp123 -p
 
 service mysql restart/start/stop
 
+udemy coupons:
+UDEAFFBR219
+19VALENTINES12A
+30MSTUDENTS10
+GALEN19
+
 
 
 mongodb:
@@ -308,8 +314,12 @@ mailspring login: devendraprasad1984@gmail.com->rbs6200#
 
 10-Dec-2018 (10-Dec-2018)	TO TRANSFER 
 INB IMPS/P2A/834417971151/XXXXXXX364CORP	UA0120011954MOAAXRADE8	49,900.00	
-
 SHEI20
+
+machine learning
+https://github.com/josephmisiti/awesome-machine-learning/blob/master/books.md
+https://nbviewer.jupyter.org/github/rasbt/python-machine-learning-book/blob/master/code/ch02/ch02.ipynb
+
 
 express: https://www.youtube.com/watch?v=Dm5BmG82LEI
 spa:https://github.com/toufiqElahy/SPA-In-2-Minutes
@@ -333,14 +343,27 @@ cli->youtube-dl -u devendraprasad1984@gmail.com -p rbs1984# <course link>
 type your uername or registered e-mail and password
 you will appearing this in the cmd if the user name and password is correct written by you
 
+works
+sudo apt-get remove -y youtube-dl
+sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl
+sudo chmod a+x /usr/local/bin/youtube-dl
+hash -r
+sudo youtube-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular/learn/v4/content --playlist-start 70 --playlist-end 117
+
+
 sudo pip install udemy-dl
 udemy-dl course-url
 udemy-dl -u devendraprasad1984@gmail.com -p rbs1984# https://www.udemy.com/react-redux
 udemy-dl -u devendraprasad1984@gmail.com -p rbs1984# --lecture-start 1 --lecture-end 2 https://www.udemy.com/react-redux/learn/v4/t/lecture/12531044
+udemy-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular
+sudo udemy-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular/learn/v4/content  --lecture-start 70 --lecture-end 117 
+
 npm install -g udemy-dl
 udl https://www.udemy.com/COURSE_NAME
 udl -u devendraprasad1984@gmail.com -p rbs1984# https://www.udemy.com/react-redux
 udl -u devendraprasad1984@gmail.com -p rbs1984# https://www.udemy.com/the-complete-react-native-and-redux-course
+udl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular
+udl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular/learn/v4/t/lecture/12537130?start=16
 
 https://sites.google.com/view/dpresume
 
