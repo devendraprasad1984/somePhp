@@ -2,25 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8e7b1a3-bbe0-4d27-b1a0-d9e2c8a6f7aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/samples.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsx/postBuild.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsx/src/components/SongCurrentComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsx/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/components/AppSongs.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/AppSongs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/components/AppTwitchTV.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/AppTwitchTV.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/components/ComponentApprovalCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/ComponentApprovalCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/components/HomeRouteMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/HomeRouteMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/components/HomeRouteMenuApps.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/HomeRouteMenuApps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/components/SongList.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/components/SongList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/postBuild.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/postBuild.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/semantic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.otf" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/images/flags.png" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/images/flags.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsx/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/redux_actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/redux_actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/redux_reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/redux_reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsx/src/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resume/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../resume/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../resume/templates/headerTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/../resume/templates/headerTemplate.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored mask="*.zip" />
@@ -36,7 +42,29 @@
     <favorites_list name="react" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jsx/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jsx/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,11 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>body</find>
-      <find>:3000</find>
-      <find>practice</find>
-      <find>react-scripts</find>
-      <find>browser</find>
       <find>.push</find>
       <find>window</find>
       <find>types</find>
@@ -77,8 +100,13 @@
       <find>/apps/</find>
       <find>/apps/app0</find>
       <find>&lt;router</find>
-      <find>BASE_ROUTE_DIR</find>
       <find>/apps</find>
+      <find>%PUBLIC_URL%//</find>
+      <find>/react-build</find>
+      <find>react-build/</find>
+      <find>BASE_ROUTE_DIR</find>
+      <find>fonts</find>
+      <find>theme</find>
     </findStrings>
     <replaceStrings>
       <replace>id</replace>
@@ -103,6 +131,8 @@
       <replace>?this.styleSet1</replace>
       <replace>react/static/</replace>
       <replace>/react/static</replace>
+      <replace>%PUBLIC_URL%/react-build</replace>
+      <replace>%PUBLIC_URL%/react-build/</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/jsx/build</dir>
@@ -127,7 +157,6 @@
         <option value="$PROJECT_DIR$/jsx/build/static/js/main.4a3cb14c.chunk.js" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app5/app5.css" />
         <option value="$PROJECT_DIR$/jsx/src/components/GoogleAuth.js" />
-        <option value="$PROJECT_DIR$/jsx/public/index.html" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app2/calendarTest.js" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app2/app2.js" />
         <option value="$PROJECT_DIR$/jsx/src/basicApps/app5/app5.js" />
@@ -156,15 +185,16 @@
         <option value="$PROJECT_DIR$/postBuild.sh" />
         <option value="$PROJECT_DIR$/jsx/build/index.html" />
         <option value="$PROJECT_DIR$/jsx/build/static/js/main.154bdb9b.chunk.js" />
-        <option value="$PROJECT_DIR$/jsx/postBuild.sh" />
-        <option value="$PROJECT_DIR$/jsx/package.json" />
         <option value="$PROJECT_DIR$/../react-build/static/js/main.09798f97.chunk.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/AppTwitchTV.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/HomeRouteMenu.js" />
         <option value="$PROJECT_DIR$/jsx/src/components/HomeRouteMenuApps.js" />
-        <option value="$PROJECT_DIR$/jsx/src/types.js" />
-        <option value="$PROJECT_DIR$/jsx/src/index.js" />
         <option value="$PROJECT_DIR$/../resume/templates/headerTemplate.html" />
+        <option value="$PROJECT_DIR$/jsx/src/types.js" />
+        <option value="$PROJECT_DIR$/jsx/package.json" />
+        <option value="$PROJECT_DIR$/jsx/postBuild.sh" />
+        <option value="$PROJECT_DIR$/jsx/public/index.html" />
+        <option value="$PROJECT_DIR$/jsx/src/index.js" />
       </list>
     </option>
   </component>
@@ -196,19 +226,25 @@
           <expand>
             <path>
               <item name="react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="jsx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="jsx" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,22 +258,23 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="settings.editor.splitter.proportion" value="0.28695655" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/jsx/src/basicApps/app6/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jsx/public/global" />
+      <recent name="$PROJECT_DIR$/jsx" />
+      <recent name="$PROJECT_DIR$/../dp-json-server/dp-json-server" />
+      <recent name="$PROJECT_DIR$/jsx/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tsExample" />
       <recent name="$PROJECT_DIR$/jsx/src/basicApps/app6" />
       <recent name="$PROJECT_DIR$/url_shortner" />
       <recent name="$PROJECT_DIR$/url_shortner/views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/jsx" />
-      <recent name="$PROJECT_DIR$/../dp-json-server/dp-json-server" />
-      <recent name="$PROJECT_DIR$/jsx/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,26 +387,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="20" width="1327" height="748" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6593674" visible="true" weight="0.16757177" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6571429" visible="true" weight="0.16989915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="npm" order="4" sideWeight="0.34063262" side_tool="true" weight="0.16524437" />
+      <window_info id="npm" order="4" sideWeight="0.34285715" side_tool="true" weight="0.16989915" />
       <window_info anchor="bottom" id="TypeScript" order="0" weight="0.3286385" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3286385" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4996121" weight="0.30672926" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4996121" weight="0.27230048" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39906102" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3286385" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4996121" visible="true" weight="0.63693273" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.7571761" weight="0.37558687" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="RNConsole" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003879" side_tool="true" visible="true" weight="0.63693273" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2428239" side_tool="true" weight="0.37558687" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3286385" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.27543035" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.28794992" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -379,25 +417,25 @@
       <window_info anchor="right" id="SciView" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6593674" weight="0.16524437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.656168" visible="true" weight="0.16989915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="npm" order="4" sideWeight="0.34063262" side_tool="true" visible="true" weight="0.16453674" />
+      <window_info id="npm" order="4" sideWeight="0.34383202" side_tool="true" visible="true" weight="0.16989915" />
       <window_info anchor="bottom" id="TypeScript" order="0" weight="0.3286385" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3286385" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4996121" weight="0.30672926" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4996121" visible="true" weight="0.40375587" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39906102" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3286385" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.29264477" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.7571761" weight="0.37558687" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="RNConsole" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003879" side_tool="true" weight="0.3286385" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2428239" side_tool="true" weight="0.37558687" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3286385" />
-      <window_info anchor="bottom" id="Terminal" order="13" visible="true" weight="0.3568075" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.27543035" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -632,23 +670,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/postBuild.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../react-build/precache-manifest.9c02ed2d865b44018fb331e01da87927.js" />
     <entry file="file://$PROJECT_DIR$/../react-build/static/js/main.09798f97.chunk.js.map" />
     <entry file="file://$PROJECT_DIR$/../react-build/static/js/main.09798f97.chunk.js" />
-    <entry file="file://$PROJECT_DIR$/jsx/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -658,16 +682,6 @@
           <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/types.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../resume/templates/headerTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -697,10 +704,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsx/src/index.js">
+    <entry file="file://$PROJECT_DIR$/jsx/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/postBuild.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/types.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="43" column="54" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="54" />
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

@@ -58,6 +58,13 @@ class DefaultApp extends React.Component{
 ReactDOM.render(<DefaultApp />, document.getElementById('root_menu'))
 
 
+//react-start watch error fix:
+// echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+// npm cache clear
+//https://github.com/facebook/create-react-app/issues/2549
+
+
+
 // ReactDOM.render(<div className="ui segment">
 //     <span>Practicing React/redux/hooks - class based and functional components along with hooks</span>
 //     <HomeRouteMenu/>

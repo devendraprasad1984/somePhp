@@ -348,15 +348,17 @@ sudo apt-get remove -y youtube-dl
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl
 sudo chmod a+x /usr/local/bin/youtube-dl
 hash -r
-sudo youtube-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular/learn/v4/content --playlist-start 70 --playlist-end 117
-
+sudo youtube-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular/learn/v4/content --playlist-start 91 --playlist-end 117
+sudo youtube-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/python-for-finance-and-trading-algorithms/learn/v4/overview  --playlist-start 13 --playlist-end 112
 
 sudo pip install udemy-dl
 udemy-dl course-url
 udemy-dl -u devendraprasad1984@gmail.com -p rbs1984# https://www.udemy.com/react-redux
 udemy-dl -u devendraprasad1984@gmail.com -p rbs1984# --lecture-start 1 --lecture-end 2 https://www.udemy.com/react-redux/learn/v4/t/lecture/12531044
 udemy-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular
-sudo udemy-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular/learn/v4/content  --lecture-start 70 --lecture-end 117 
+sudo udemy-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/full-stack-application-development-with-spring-boot-and-angular/learn/v4/content  --lecture-start 91 --lecture-end 117 
+
+sudo udemy-dl -u sonicageindia@gmail.com -p rbs1984# https://www.udemy.com/python-for-finance-and-trading-algorithms/learn/v4/overview
 
 npm install -g udemy-dl
 udl https://www.udemy.com/COURSE_NAME

@@ -29,7 +29,7 @@
     "redux-form": "^8.1.0",
     "redux-thunk": "^2.3.0"
   },
-  "homepage": "https://localhost",
+  "homepage": "https://localhost/react-build",
   "scripts": {
     "rtmpserver": "node src/rtmp_single_core.js",
     "jsonserver": "json-server -p 3010 -w db.json",

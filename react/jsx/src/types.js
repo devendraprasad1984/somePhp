@@ -26,9 +26,13 @@ export const DELETE_STREAM_BY_ID = 'DELETE_STREAM_BY_ID'
 
 // export const BASE_ROUTE_HOME = `${process.env.PUBLIC_URL}`
 // export const BASE_ROUTE_HOME = 'http://localhost'
-export const BASE_ROUTE_HOME = ''
+export let BASE_ROUTE_HOME = ''
 export const BASE_ROUTE_DIR = '/react-build'
-
+// if(window.location.href.indexOf('//localhost')>0){
+//     BASE_ROUTE_HOME = 'http://localhost'
+// }else if(window.location.href.indexOf('dpresume.com')>0){
+//     BASE_ROUTE_HOME = 'http://dpresume.com'
+// }
 
 const appPageText =`${BASE_ROUTE_HOME}${BASE_ROUTE_DIR}/apps`
 const practicePageText = `${BASE_ROUTE_HOME}${BASE_ROUTE_DIR}/practice`
