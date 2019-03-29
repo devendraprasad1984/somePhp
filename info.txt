@@ -1,5 +1,15 @@
 ssh dlrgvkes@dpresume.com / 103.228.112.39->3vg3wWRm56
 
+python dp:
+https://python-patterns.guide/
+https://www.tutorialspoint.com/python_design_patterns/index.htm
+https://python-3-patterns-idioms-test.readthedocs.io/en/latest/PatternConcept.html
+https://medium.com/@sheikhsajid/design-patterns-in-python-part-1-the-strategy-pattern-54b24897233e
+https://stackoverflow.com/questions/606448/python-design-patterns
+https://subscription.packtpub.com/book/application_development/9781783989324/16/ch16lvl1sec84/a-real-life-example
+
+
+
 install win7 booteable drive: http://www.webupd8.org/2010/10/create-bootable-windows-7-usb-drive.html
 https://softlay.net/download/file
 https://softfamous.com/microsoft-windows-7-ultimate-official-iso-image/

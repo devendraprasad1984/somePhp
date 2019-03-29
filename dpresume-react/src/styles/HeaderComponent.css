@@ -1,0 +1,17 @@
+.h_left{
+    float: left;
+    font-size: 22pt;
+    font-weight: bolder;
+}
+
+.badge{
+    font-size: 12px;
+    padding: 2px;
+    margin:1px;
+}
+
+.h_right{
+    float: right;
+    font-size: 12pt;
+    font-weight: bold;
+}

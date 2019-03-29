@@ -1,0 +1,11 @@
+#main_id div{
+    /*padding: 5px 5px;*/
+}
+
+#main_id .bottom_div{
+    margin-top: 10px;
+    bottom: 0;
+    float: bottom;
+    position: relative;
+    width: 100%;
+}

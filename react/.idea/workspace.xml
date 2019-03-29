@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8e7b1a3-bbe0-4d27-b1a0-d9e2c8a6f7aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/postBuild.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/postBuild.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/semantic.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/brand-icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.otf" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/icons.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/fonts/outline-icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/public/themes/default/assets/images/flags.png" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/public/global/themes/default/assets/images/flags.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsx/src/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsx/src/types.js" afterDir="false" />
-    </list>
+    <list default="true" id="c8e7b1a3-bbe0-4d27-b1a0-d9e2c8a6f7aa" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored mask="*.zip" />
     <ignored path="../pdfjs/" />
@@ -55,7 +29,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsx/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="61">
               <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -407,7 +381,7 @@
       <window_info anchor="bottom" id="RNConsole" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2428239" side_tool="true" weight="0.37558687" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3286385" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.28794992" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.28794992" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -737,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsx/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="61">
           <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
