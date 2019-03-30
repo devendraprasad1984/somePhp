@@ -2,6 +2,7 @@
     float: left;
     font-size: 22pt;
     font-weight: bolder;
+    color: darkblue;
 }
 
 .badge{
@@ -14,4 +15,5 @@
     float: right;
     font-size: 12pt;
     font-weight: bold;
+    color: darkblue;
 }

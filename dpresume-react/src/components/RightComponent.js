@@ -37,7 +37,7 @@ export default class RightComponent extends Component {
         return (
             <div>
                 <div className="bg-primary text-white font-weight-bolder">Skills</div>
-                <div style={{overflow:'auto', height:'400px'}}>
+                <div>
                     {this.display()}
                 </div>
             </div>

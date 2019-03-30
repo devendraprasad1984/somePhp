@@ -4,6 +4,7 @@ import BottomComponent from "./BottomComponent";
 import RightComponent from "./RightComponent";
 import CenterComponent from "./CenterComponent";
 import '../styles/BaseResumeApp.css'
+import TopComponent from "./TopComponent";
 
 
 class BaseResumeApp extends React.Component {
@@ -13,7 +14,7 @@ class BaseResumeApp extends React.Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-12">
-                            <BottomComponent/>
+                            <TopComponent/>
                             <HeaderComponent/>
                         </div>
                     </div>
@@ -23,9 +24,9 @@ class BaseResumeApp extends React.Component {
                         <div className="col-lg-2"><RightComponent/></div>
                     </div>
 
-                    {/*<div className="row bottom_div ">*/}
-                        {/*<div className="col-lg-12"><BottomComponent/></div>*/}
-                    {/*</div>*/}
+                    <div className="row bottom_div ">
+                        <div className="col-lg-12"><BottomComponent/></div>
+                    </div>
                 </div>
             </div>
         )

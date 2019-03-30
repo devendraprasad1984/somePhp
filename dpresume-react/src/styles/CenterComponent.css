@@ -1,0 +1,14 @@
+#project_summary div{
+}
+
+#project_summary span,#prof_summary span{
+    font-weight: bolder;
+}
+
+
+#main_center_div{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
