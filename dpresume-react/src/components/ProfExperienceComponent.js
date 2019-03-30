@@ -21,23 +21,23 @@ export default class ProfExperienceComponent extends Component {
                             </ul>
                             <span>Role Summary:</span>
                             <ul>
-                                <li>I am working on application development using Python/Tornado/Flask, React, PL/Sql
+                                <li>I am working on application development using <b>Python/Tornado/Flask, React, PL/Sql</b>
                                 </li>
-                                <li>I have designed solution for Reporting Solution which involves DB design, backend
+                                <li>I have designed solution for <b>Reporting Solution</b> which involves DB design, backend
                                     design, data processing using python, UI design and helped in finalising
                                     architectural strategies around it
                                 </li>
                                 <li>Converted logical data model to physical for Oracle</li>
                                 <li>working on high ledger data volumes in Oracle environment</li>
-                                <li>Designed data loader strategy using Python3/k-Shell/Cron/Autosys and written complex
+                                <li>Designed data loader strategy using <b>Python3/k-Shell/Cron/Autosys</b> and written complex
                                     Sql Queries and PL/Sql business logic
                                 </li>
                                 <li>Installed, configured and customized Data Visualiser solution from Oracle</li>
                                 <li>I help defining project outcomes, recruit & grow team, handle end-user queries and
                                     technical documentation
                                 </li>
-                                <li>I also handle Some adhoc activities which involves Solution Design, reconciliations
-                                    and dashboarding
+                                <li>I also handle Some adhoc activities which involves <b>Solution Design, reconciliations
+                                    and dashboarding</b>
                                 </li>
                             </ul>
                         </div>

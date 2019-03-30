@@ -6,9 +6,9 @@ export default class CertsComponent extends Component {
             <div className="col-sm-6">
                 <div className="bg-primary text-white font-weight-bolder">Certification</div>
                 <ul>
-                    <li>Certified Associate, Python Institute</li>
-                    <li>1Z0-071 Oracle DB SQL (OC1849712), Oracle University</li>
-                    <li>React+Redux (UC-91YOYH2M), Udemy</li>
+                    <li><b>Certified Associate</b>, Python Institute</li>
+                    <li><b>1Z0-071 Oracle DB SQL</b> (OC1849712), Oracle University</li>
+                    <li><b>React+Redux</b> (UC-91YOYH2M), Udemy</li>
                 </ul>
             </div>
         )
