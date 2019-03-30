@@ -11,15 +11,15 @@ class BaseResumeApp extends React.Component {
     render() {
         return (
             <div id="main_id" className="container-fluid">
-                <div className="container-fluid">
-                    <div className="row fixed-top">
+                <div className="">
+                    <div id="div_fix_top" className="row fixed-top">
                         <div className="col-lg-12 bg-dark">
                             <TopComponent/>
                             <HeaderComponent/>
                         </div>
                     </div>
 
-                    <div style={{marginTop:'10em'}}>
+                    <div  id="div_container">
                         <div className="row">
                             <div className="col-lg-10"><CenterComponent/></div>
                             <div className="col-lg-2"><RightComponent/></div>
