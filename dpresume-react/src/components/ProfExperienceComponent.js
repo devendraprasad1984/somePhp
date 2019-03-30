@@ -7,7 +7,10 @@ export default class ProfExperienceComponent extends Component {
                 <div className="bg-primary text-white font-weight-bolder">Professional Experience</div>
                 <div id="prof_summary">
                     <div>
-                        <span>Tech Lead @ Royal Bank Of Scotland, Oct11-current</span>
+                        <div className="bg-light">
+                            <span>Tech Lead @ Royal Bank Of Scotland</span>
+                            <span style={{float: 'right'}}>Oct11-current</span>
+                        </div>
                         <div>
                             <span>Projects Undertaken:</span>
                             <ul>
@@ -41,7 +44,11 @@ export default class ProfExperienceComponent extends Component {
                     </div>
 
                     <div>
-                        <span>Senior VBA Programmer @ Syntel Apr11-Sep11</span>
+                        <div className="bg-light">
+                        <span>Senior VBA Programmer @ Syntel</span>
+                            <span style={{float: 'right'}}>Apr11-Sep11</span>
+                        </div>
+
                         <div>
                             <span>Projects Undertaken:</span>
                             <ul>
@@ -52,7 +59,10 @@ export default class ProfExperienceComponent extends Component {
                     </div>
 
                     <div>
-                        <span>Programmer @ 9 Dimensions, Nov09-Mar11</span>
+                        <div className="bg-light">
+                            <span>Programmer @ 9 Dimensions</span>
+                            <span style={{float: 'right'}}>Nov09-Mar11</span>
+                        </div>
                         <div>
                             <span>Projects Undertaken:</span>
                             <ul>
@@ -62,7 +72,10 @@ export default class ProfExperienceComponent extends Component {
                     </div>
 
                     <div>
-                        <span>Programmer @ DAVIM, Sep07-Sep08</span>
+                        <div className="bg-light">
+                            <span>Programmer @ DAVIM</span>
+                            <span style={{float: 'right'}}>Sep07-Sep08</span>
+                        </div>
                         <div>
                             <span>Projects Undertaken:</span>
                             <ul>

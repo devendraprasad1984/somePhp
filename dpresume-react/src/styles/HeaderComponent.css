@@ -1,8 +1,13 @@
+.h_left, .h_left div a, .h_right{
+    color: white;
+    padding: 2px 2px;
+    margin:2px;
+}
+
 .h_left{
     float: left;
     font-size: 22pt;
     font-weight: bolder;
-    color: darkblue;
 }
 
 .badge{
@@ -15,5 +20,4 @@
     float: right;
     font-size: 12pt;
     font-weight: bold;
-    color: darkblue;
 }

@@ -12,3 +12,12 @@
     width: 100%;
     margin-bottom: 5px;
 }
+
+
+#main_center_div div.bg-primary{
+    font-size: 14pt;
+}
+
+#main_center_div div div span{
+    font-size: 12pt;
+}

@@ -12,20 +12,23 @@ class BaseResumeApp extends React.Component {
         return (
             <div id="main_id" className="container-fluid">
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-12">
+                    <div className="row fixed-top">
+                        <div className="col-lg-12 bg-dark">
                             <TopComponent/>
                             <HeaderComponent/>
                         </div>
                     </div>
 
-                    <div className="row">
-                        <div className="col-lg-10"><CenterComponent/></div>
-                        <div className="col-lg-2"><RightComponent/></div>
-                    </div>
+                    <div style={{marginTop:'10em'}}>
+                        <div className="row">
+                            <div className="col-lg-10"><CenterComponent/></div>
+                            <div className="col-lg-2"><RightComponent/></div>
+                        </div>
 
-                    <div className="row bottom_div ">
-                        <div className="col-lg-12"><BottomComponent/></div>
+                        <div className="row bottom_div ">
+                            <div className="col-lg-12"><BottomComponent/></div>
+                        </div>
+
                     </div>
                 </div>
             </div>

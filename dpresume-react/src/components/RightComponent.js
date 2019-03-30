@@ -36,7 +36,7 @@ export default class RightComponent extends Component {
     render() {
         return (
             <div>
-                <div className="bg-primary text-white font-weight-bolder">Skills</div>
+                <div className="bg-primary text-white font-weight-bolder" style={{fontSize: '14pt'}}>Skills</div>
                 <div>
                     {this.display()}
                 </div>
