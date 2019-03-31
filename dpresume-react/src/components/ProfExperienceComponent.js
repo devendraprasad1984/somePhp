@@ -5,7 +5,7 @@ export default class ProfExperienceComponent extends Component {
         return (
             <div>
                 <div className="bg-primary text-white font-weight-bolder">Professional Experience</div>
-                <div id="prof_summary">
+                <ul id="prof_summary">
                     <div>
                         <div className="bg-light">
                             <span>Tech Lead @ Royal Bank Of Scotland</span>
@@ -86,7 +86,7 @@ export default class ProfExperienceComponent extends Component {
                     </div>
 
 
-                </div>
+                </ul>
             </div>
         )
     }
