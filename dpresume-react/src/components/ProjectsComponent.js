@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from "axios";
+import parser from 'html-react-parser'
 
 export default class ProjectsComponent extends Component {
     url = "./resources/projects.json"
@@ -25,8 +26,8 @@ export default class ProjectsComponent extends Component {
             // console.log(Object.keys(k)[0],Object.values(k)[0])
             return (
                 <div key={"id"+key}>
-                    <span>{key}</span>
-                    <div>{desc}</div>
+                    <span>{parser(key)}</span>
+                    <div>{parser(desc)}</div>
                 </div>
             )
         })
