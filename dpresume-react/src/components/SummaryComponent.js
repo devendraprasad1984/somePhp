@@ -1,22 +1,41 @@
-import React,{Component} from 'react'
+import React, {Component} from 'react'
+import axios from "axios";
+import parser from 'html-react-parser'
 
-export default class SummaryComponent extends Component{
+export default class SummaryComponent extends Component {
+
+    url = "./resources/summary.json"
+    state = {
+        data: []
+    }
+
+    getdata = async () => {
+        const res = await axios.get(this.url)
+        this.setState({data: res.data.data})
+    }
+
+    componentDidMount() {
+        this.getdata()
+    }
+
+    display = () => {
+        let vals = this.state.data
+        return vals.map((k, id) => {
+            return (
+                <li key={"idSummary" + id}>{ parser(k)}</li>
+            )
+        })
+    }
+
     render() {
-        return(
+        return (
             <div>
                 <div className="bg-primary text-white font-weight-bolder">Summary</div>
-                <ul>
-                    <li>I have <b>11+</b> years wide experience in developing software applications</li>
-                    <li>I am leading a small team of software engineers and graduates.</li>
-                    <li>I am working on applications built on technologies such as <b>Python / Tornado / Flask (REST, JSON)
-                        / React / PlSql / HTML5 and Solution Designing</b>.
-                    </li>
-                    <li>I handle change management, incident management and Release management.</li>
-                    <li>I am enthusiastic, <b>versatile</b>, ambitious and result oriented with excellant communication
-                        skills
-                    </li>
-                    <li>I work on <b>Agile Ceremonies (planning, estimation, scrum, retrospective, review)</b> using <b>KANBAN</b> and full SDLC life cycles.</li>
-                </ul>
+                <div id="summary">
+                    <ul>
+                        {this.display()}
+                    </ul>
+                </div>
             </div>
         )
     }

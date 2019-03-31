@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import '../styles/CenterComponent.css'
 import SummaryComponent from "./SummaryComponent";
-import EducationComponent from "./EducationComponent";
-import CertsComponent from "./CertsComponent";
+import CertsEduComponent from "./CertsEduComponent";
 import ProjectsComponent from "./ProjectsComponent";
 import ProfExperienceComponent from "./ProfExperienceComponent";
 
@@ -13,8 +12,8 @@ export default class CenterComponent extends Component {
                 <SummaryComponent/>
 
                 <div className="row">
-                    <EducationComponent/>
-                    <CertsComponent/>
+                    <CertsEduComponent tag="Education" url="./resources/education.json"/>
+                    <CertsEduComponent tag="Certification" url="./resources/certifications.json"/>
                 </div>
 
                 <ProfExperienceComponent/>
