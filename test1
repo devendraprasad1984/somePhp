@@ -1,0 +1,92 @@
+"use strict"
+//https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
+//https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
+function reverseAString(num) {
+    let reverseNum = ""
+    num = num.replace(' ', '')
+    for (let i = num.length - 1; i >= 0; i--) {
+        reverseNum += num[i]
+    }
+    // console.log("one line reverse",num.split('').reverse().join(''))
+    return reverseNum
+}
+
+let num = "32243"
+console.log("reverse of ", num, "is", reverseAString(num))
+
+let check_palindrom = (vals) => {
+    if (vals === reverseAString(vals)) {
+        console.log("vals", vals, "is A PALINDROME")
+    } else {
+        console.log("vals", vals, "is NOT A PALINDROME")
+    }
+}
+
+check_palindrom("madam")
+check_palindrom("naveen")
+check_palindrom("nurses run")
+
+
+let generateCombination = (word) => {
+    let char_arr = word.split('')
+    let combinations = []
+    combinations.push(word)
+    char_arr.map((v) => {
+        combinations.push(v)
+        char_arr.map((k) => {
+            if (v !== k) {
+                let new_combi = v + k
+                let rev = reverseAString(new_combi)
+                let idx = combinations.indexOf(rev)
+                // let idx=combinations.find(el=>el===rev)
+                // console.log(new_combi,rev, idx)
+                // if(typeof idx==='undefined')
+                if (idx === -1)
+                    combinations.push(new_combi)
+            }
+        })
+    })
+    console.log("all possible unique combinations of",word, combinations)
+}
+
+generateCombination("dog")
+
+let sort_alphabets=(stringVal)=>{
+    let new_word_arr=stringVal.split("")
+    let sort_word=new_word_arr.sort()
+    console.log("sorted array",sort_word)
+    return sort_word.join("")
+}
+
+let word="webmaster"
+let sort_word=sort_alphabets(word)
+console.log("sorted value for",word,"is",sort_word)
+
+//byval, byref case - objects are byref default
+let change_first_letter_upper_case=(string)=>{
+    let new_str=string+" - updated"
+    string=new_str
+}
+let change_first_letter_upper_case_ref=(obj)=>{
+    let vowel_counter=0
+    let vowels=['a','e','i','o','u']
+    let words_array=obj.string.split('')
+    let last_char=''
+    words_array.map((x,idx)=>{
+        if(last_char===' ' || last_char===''){
+            words_array[idx]=x.toUpperCase()
+        }
+        if(vowels.indexOf(x)>=0)
+            vowel_counter+=1
+        last_char=x
+    })
+    return {string:words_array.join(''), vowels:vowel_counter}
+}
+word="the quick brown fox"
+change_first_letter_upper_case(word)
+console.log("updated values is-BY Value",word)
+word={string:"the quick brown fox"}
+let new_obj=change_first_letter_upper_case_ref(word)
+console.log("updated values is - BY Ref",new_obj)
