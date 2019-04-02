@@ -48,45 +48,208 @@ let generateCombination = (word) => {
             }
         })
     })
-    console.log("all possible unique combinations of",word, combinations)
+    console.log("all possible unique combinations of", word, combinations)
 }
 
 generateCombination("dog")
 
-let sort_alphabets=(stringVal)=>{
-    let new_word_arr=stringVal.split("")
-    let sort_word=new_word_arr.sort()
-    console.log("sorted array",sort_word)
+let sort_alphabets = (stringVal) => {
+    let new_word_arr = stringVal.split("")
+    let sort_word = new_word_arr.sort()
+    console.log("sorted array", sort_word)
     return sort_word.join("")
 }
 
-let word="webmaster"
-let sort_word=sort_alphabets(word)
-console.log("sorted value for",word,"is",sort_word)
+let word = "webmaster"
+let sort_word = sort_alphabets(word)
+console.log("sorted value for", word, "is", sort_word)
 
 //byval, byref case - objects are byref default
-let change_first_letter_upper_case=(string)=>{
-    let new_str=string+" - updated"
-    string=new_str
+let change_first_letter_upper_case = (string) => {
+    let new_str = string + " - updated"
+    string = new_str
 }
-let change_first_letter_upper_case_ref=(obj)=>{
-    let vowel_counter=0
-    let vowels=['a','e','i','o','u']
-    let words_array=obj.string.split('')
-    let last_char=''
-    words_array.map((x,idx)=>{
-        if(last_char===' ' || last_char===''){
-            words_array[idx]=x.toUpperCase()
+let change_first_letter_upper_case_ref = (obj) => {
+    let vowel_counter = 0
+    let vowels = ['a', 'e', 'i', 'o', 'u']
+    let words_array = obj.string.split('')
+    let last_char = ''
+    words_array.map((x, idx) => {
+        if (last_char === ' ' || last_char === '') {
+            words_array[idx] = x.toUpperCase()
         }
-        if(vowels.indexOf(x)>=0)
-            vowel_counter+=1
-        last_char=x
+        if (vowels.indexOf(x) >= 0)
+            vowel_counter += 1
+        last_char = x
     })
-    return {string:words_array.join(''), vowels:vowel_counter}
+    return {string: words_array.join(''), vowels: vowel_counter}
 }
-word="the quick brown fox"
+word = "the quick brown fox"
 change_first_letter_upper_case(word)
-console.log("updated values is-BY Value",word)
-word={string:"the quick brown fox"}
-let new_obj=change_first_letter_upper_case_ref(word)
-console.log("updated values is - BY Ref",new_obj)
+console.log("updated values is-BY Value", word)
+word = {string: "the quick brown fox"}
+let new_obj = change_first_letter_upper_case_ref(word)
+console.log("updated values is - BY Ref", new_obj)
+
+let get_longest_word = (string) => {
+    console.log("typeof '", string, "' is", (typeof string))
+    let words = string.split(' ')
+    let max_len = words[0].length
+    let longest_word = words[0]
+    words.map((x, id) => {
+        if (x.length > max_len) {
+            max_len = x.length
+            longest_word = x
+        }
+    })
+    return longest_word
+}
+console.log("longest word in 'Web Development Tutorial'", get_longest_word("Web Development Tutorial"))
+
+let generate_identity_matrix = (n) => {
+    let matrix = []
+    for (let i = 0; i < n; i++) {
+        let row = []
+        for (let j = 0; j < n; j++) {
+            if (i === j)
+                row.push(1)
+            else
+                row.push(0)
+        }
+        matrix.push(row)
+    }
+    return matrix
+}
+console.log("identity matrix", generate_identity_matrix(5))
+console.log("identity matrix", generate_identity_matrix(10))
+
+Array.prototype.sort_asc = function () {
+    return this.sort((a, b) => a - b)
+}
+Array.prototype.sort_dsc = function () {
+    return this.sort((a, b) => b - a)
+}
+
+let find_second_lowest_greatest = (arr) => {
+    let new_arr = []
+    // arr=arr.sort((a,b)=>a-b) //integer sorting in ascending (a-b), descending(b-a) order otherwise it assumes strings
+    arr.sort_asc()
+    let size = arr.length
+    for (let i = 0, j = size - 1; i < size, j >= 0; i++, j--) {
+        // console.log(arr[i],arr[j])
+        new_arr.push(arr[i] + "=>" + arr[j])
+    }
+    return new_arr[1]
+}
+
+// let arr=[1,2,3,4,5]
+//array and objects are passed by references
+let arr = [41, 35, 89, 9, 151]
+console.log("second lowest and second greatest of", arr, "is", find_second_lowest_greatest(arr))
+arr = [12, 43, 234, 32, 465, 32, 68, 43, 25, 4, 45, 674]
+console.log("sorted using Array.prototype binding", arr, "is")
+console.log(arr.sort_asc())
+console.log(arr.sort_dsc())
+
+
+/*
+According to Wikipedia : In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself (also known as its aliquot sum). Equivalently, a perfect number is a number that is half the sum of all of its positive divisors (including itself).
+Example : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. Equivalently, the number 6 is equal to half the sum of all its positive divisors: ( 1 + 2 + 3 + 6 ) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14. This is followed by the perfect numbers 496 and 8128.
+* */
+Array.prototype.sum = function () {
+    let sum = 0
+    this.map(x => sum += parseInt(x))
+    return sum
+}
+
+let factors_of_positive_number = (num) => {
+    let factors = []
+    for (let i = 1; i < num; i++) {
+        if (num % i === 0)
+            factors.push(i)
+        // if (num / i !== i)
+        //     factors.push(num / i);
+    }
+    return factors.sort_asc()
+}
+
+let perfect_number = (num_array) => {
+    let final_obj = num_array.sort_asc().map((num) => {
+        let all_divisors = factors_of_positive_number(num)
+        let sum_all = all_divisors.sum()
+        let is_perfect = (sum_all === num ? true : false) && ((sum_all + num) / 2 === num ? true : false)
+        return {perfect: is_perfect, divisors: all_divisors, sum_of_all: sum_all}
+    })
+    return final_obj
+}
+let perfect_numbers_arr = [6, 28, 45, 496, 8128]
+console.log("perfect number", perfect_numbers_arr, perfect_number(perfect_numbers_arr))
+
+let convert_amount_coins_dp = (amount, valid_coins) => {
+    let cLen = valid_coins.length
+    let coins_converted = Array(cLen)
+    let mLen = coins_converted.length
+    console.log("valid coins", valid_coins, coins_converted)
+    for (let i = 0; i <= mLen; i++) {
+        coins_converted[i] = Array(amount + 1)
+        coins_converted[i][0] = 1
+    }
+    let prevPerms = 0
+    for (let a = 1; a <= cLen; a++) {
+        for (let b = 1; b <= amount; b++) {
+            coins_converted[0][b] = 0
+            prevPerms = coins_converted[a - 1][b]
+            prevPerms += valid_coins[a - 1] <= b ? coins_converted[a][b - valid_coins[a - 1]] : 0
+            coins_converted[a][b] = prevPerms
+        }
+    }
+    // console.log(coins_converted)
+    return coins_converted[cLen][amount]
+}
+
+let amount_to_coin = (amount, coins) => {
+    // let coins_copy=coins //by ref - shallow copy
+    let coins_copy=Object.assign([],coins) //by val - deep copy
+    let left_amt = 0
+    if (amount === 0) {
+        return []
+    } else {
+        if (amount >= coins_copy[0]) {
+            left_amt = (amount - coins_copy[0])
+            return [coins_copy[0]].concat(amount_to_coin(left_amt, coins_copy))
+        } else {
+            coins_copy.shift()
+            return amount_to_coin(amount, coins_copy)
+        }
+    }
+}
+
+let amount_to_coin2 = (amount, coins) => {
+    let left = amount
+    let used_coins=[]
+    if (amount === 0) {
+        return []
+    }else{
+        for(let i=0;i<coins.length;i++){
+            let cur_coin_val=coins[i]
+            if(left-cur_coin_val>=0){
+                left-=cur_coin_val
+                used_coins.push(cur_coin_val)
+                while(left>cur_coin_val){
+                    left-=cur_coin_val
+                    used_coins.push(cur_coin_val)
+                }
+            }
+
+        }
+    }
+    return used_coins
+}
+
+let coins = [25, 10, 5, 2, 1].sort_dsc()
+console.log("amount converted to coins", amount_to_coin(46, coins),"original copy of coins",coins)
+console.log("amount converted to coins", amount_to_coin2(46, coins))
+
+
+
+
