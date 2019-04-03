@@ -357,8 +357,6 @@ console.log("final sum - buying algo output",generateArrayCombination(arr))
 
 
 
-
-
 "use strict"
 /*
 Thinking Hat..!!! (100 Marks)
@@ -409,6 +407,7 @@ Input
 4
 Output
 3
+
 */
 
 Array.prototype.sort_dsc = function () {
@@ -420,125 +419,76 @@ Array.prototype.sum = function () {
     return sum
 }
 let calc_permutation_output = (orig_permu) => {
-    let total_valid_permutations=0
-    orig_permu.map(x_arr=>{
-        let new_arr=Object.assign([],x_arr) //dep copy
-        let max_val=new_arr.sort_dsc()[0]
-        console.log("max val",max_val)
-        let combi=[]
-        let sum_max_arr=[]
-        x_arr.map((x,idx)=>{
-            if(x!==max_val && max_val>x){
-                combi.push([max_val,x])
-            }
-            sum_max_arr.push(Math.max(0,(idx+1)-x))
+    let total_valid_permutations = 0
+    orig_permu.map(x_arr => {
+        let new_arr = Object.assign([], x_arr) //deep copy
+        let max_val = new_arr.sort_dsc()[0]
+        let combi = []
+        let sum_max_arr = []
+        // x_arr.map((x,idx)=>{
+        //     if(x!==max_val && max_val>x){
+        //         combi.push([max_val,x])
+        //     }
+        //     sum_max_arr.push(Math.max(0,(idx+1)-x))
+        // })
+        x_arr.map((x, i) => {
+            sum_max_arr.push(Math.max(0, (i + 1) - x))
+            x_arr.map((y, j) => {
+                if (i< j && x > y) {
+                    combi.push([x, y])
+                }
+            })
         })
-        let S1=combi.length
-        let S2=sum_max_arr.sum()
-        if(S1===S2){
-            total_valid_permutations+=1
+        let S1 = combi.length
+        let S2 = sum_max_arr.sum()
+        if (S1 === S2) {
+            total_valid_permutations += 1
         }
-        console.log(combi,S1,sum_max_arr,S2,"total:",total_valid_permutations)
+        console.log("combination",combi,"sum", sum_max_arr)
+        console.log("S1", S1, "S2", S2, "total_valid_permutations:", total_valid_permutations)
+        console.log("--------------")
     })
 
     return total_valid_permutations
 }
+
 function shuffle(array) {
     // array.sort(() => Math.random() - 0.5);
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
-        let temp=array[i]
+        let temp = array[i]
         array[i] = array[j]
-        array[j]=temp
+        array[j] = temp
     }
     return array
 }
 
-// var Util = function() {
-// };
-//
-// Util.getCombinations = function(array, size, start, initialStuff, output) {
-//     if (initialStuff.length >= size) {
-//         output.push(initialStuff);
-//     } else {
-//         var i;
-//
-//         for (i = start; i < array.length; ++i) {
-//             Util.getCombinations(array, size, i + 1, initialStuff.concat(array[i]), output);
-//         }
-//     }
-// }
-//
-// Util.getAllPossibleCombinations = function(array, size, output) {
-//     Util.getCombinations(array, size, 0, [], output);
-// }
-//
-// function getCombinations(chars) {
-//     var result = [];
-//     var f = function(prefix, chars) {
-//         for (var i = 0; i < chars.length; i++) {
-//             result.push(prefix + chars[i]);
-//             f(prefix + chars[i], chars.slice(i + 1));
-//         }
-//     }
-//     f('', chars);
-//     return result;
-// }
-//
-// function powerSet( list ){
-//     var set = [],
-//         listSize = list.length,
-//         combinationsCount = (1 << listSize);
-//
-//     for (var i = 1; i < combinationsCount ; i++ , set.push(combination) )
-//         for (var j=0, combination = [];j<listSize;j++)
-//             if ((i & (1 << j)))
-//                 combination.push(list[j]);
-//     return set;
-// }
-
-Array.prototype.distinct_es6=function(){
+Array.prototype.distinct_es6 = function () {
     return Array.from(new Set(this))
 }
 
-
-let arr=[4,1,2,3]
-arr=[1,4,2,21,24]
-let permutations=[
-    [1,4,2,3,5],
-    [1,4,3,2,5],
-    [1,4,3,5,2],
-    [1,4,5,3,2],
-    [1,4,5,2,3],
-    [1,4,2,5,3]
-]
-
-
-// console.log(permutations)
-permutations=new Set()
-let n=5
-let inits=[1,4]
-let orig_inits=Object.assign([],inits)
-let cut_range=[]
-for(let i=1;i<=n;i++){
-    if(inits.indexOf(i)==-1)
+let permutations = new Set()
+let input = [5, 2, 1, 4]
+let n = input[0]
+let inits = input.slice(2)
+let orig_inits = Object.assign([], inits)
+let cut_range = []
+for (let i = 1; i <= n; i++) {
+    if (inits.indexOf(i) == -1)
         cut_range.push(i)
 }
-// let mlen=cut_range.length
-let clen=cut_range.length
-let mlen= Math.pow(2,clen);
-permutations.add(inits.concat(cut_range))
-var matrix=[]
-// console.log("matrix",matrix)
+let clen = cut_range.length
+let mlen = Math.pow(2, clen);
+permutations.add(inits.concat(cut_range).join(''))
+var matrix = []
 for (let i = 0; i < mlen; i++) {
-    matrix=shuffle(Object.assign([],cut_range));
-    permutations.add(inits.concat(matrix))
+    matrix = shuffle(Object.assign([], cut_range));
+    permutations.add(inits.concat(matrix).join(''))
 }
-console.log(permutations)
-let distinct_perm=Array.from(permutations)
-console.log("total count of valid permutations where S1=S2 is:",calc_permutation_output(distinct_perm))
-
-
-
-
-
+let perms_str= Array.from(permutations)
+let distinct_perm=[]
+perms_str.map(x=>{
+    distinct_perm.push(x.split('').map(y=>parseInt(y)))
+})
+console.log(distinct_perm)
+console.log("total count of valid permutations where S1=S2 is:", calc_permutation_output(distinct_perm))
