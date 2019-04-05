@@ -23,6 +23,11 @@ sudo powertop --auto-tune
 remove all with its configuration
 sudo apt-get purge package-name
 
+create symbolic link
+ln -s source_file myfile
+ln -s /home/devendra/deven/software/node-v10.15.3-linux-x64/bin/node node
+ln -s /home/devendra/deven/software/ideaIU-2018.3.4-no-jdk/idea-IU-183.5429.30/bin/idea.sh intelliJ
+
 some ubuntu command
 alt+f2-run
 ctrl+alt+f* keys -
@@ -108,6 +113,7 @@ sudo su - root
 chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
+node,npm install latest in zip and save and point it in .bashrc file and point to node and npm
 sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
 sudo apt-get install yarn pypy nodejs default-jdk apache2 apache2-mpm-worker sublime-text-installer
 google web fonts: sudo apt-get install typecatcher
