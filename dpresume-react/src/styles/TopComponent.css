@@ -1,9 +1,9 @@
 .top_div div a{
-    padding: 5px 5px;
+    padding: 2px 2px;
     display: inline-block;
     font-weight: bolder;
     color: white;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 .top_div_a{
     text-align: left;

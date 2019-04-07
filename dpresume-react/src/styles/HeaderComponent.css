@@ -1,23 +1,36 @@
-.h_left, .h_left div a, .h_right{
+.h_left, .h_left div a, .h_right {
     color: white;
     padding: 2px 2px;
-    margin:2px;
+    margin: 2px;
 }
 
-.h_left{
+div a {
+    color: white;
+    padding: 2px 2px;
+    margin: 2px;
+}
+
+.links {
+    color: white;
+    font-weight: bolder;
+    padding: 2px 2px;
+    margin: 2px;
+}
+
+.h_left {
     float: left;
     font-size: 22pt;
     font-weight: bolder;
 }
 
-.badge{
+.badge {
     font-size: 12px;
     padding: 2px;
-    margin:1px;
+    margin: 1px;
 }
 
-.h_right{
+.h_right {
     float: right;
-    font-size: 12pt;
+    font-size: 10px;
     font-weight: bold;
 }
