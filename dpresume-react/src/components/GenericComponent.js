@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {polyfill} from 'es6-promise'
 import axios from "axios";
 import parser from 'html-react-parser'
 
@@ -19,6 +20,7 @@ export default class GenericComponent extends Component {
     }
 
     componentDidMount() {
+        polyfill()
         this.getdata()
     }
 

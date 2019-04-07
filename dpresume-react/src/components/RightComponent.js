@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {polyfill} from 'es6-promise'
 import axios from "axios";
 import '../styles/RightComponent.css'
 
@@ -17,6 +18,7 @@ export default class RightComponent extends Component {
     }
 
     componentDidMount() {
+        polyfill()
         this.getskill_data()
     }
 
