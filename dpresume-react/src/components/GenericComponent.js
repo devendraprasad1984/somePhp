@@ -55,7 +55,9 @@ export default class GenericComponent extends Component {
         // console.log("data",vals)
         return vals.map((k, id) => {
             let key = Object.keys(k)[0]
-            let desc = Object.values(k)[0]
+            //let desc = Object.values(k)[0]
+            let descObj = Object.keys(k).map(function(item){return k[item]}) //for ie support
+            let desc=descObj[0]
             // console.log(Object.keys(k)[0],Object.values(k)[0])
             return (
                 <div key={"id" + key}>
