@@ -9,7 +9,7 @@ class App extends Component {
     //     console.log("searched app value is", searchTerm)
     // }
 
-    render() {
+   render() {
         return (
             <div className="App">
                 <header className="App-header">

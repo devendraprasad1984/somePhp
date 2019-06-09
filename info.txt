@@ -1,4 +1,35 @@
+http://dpresume.com
+http://dpresume.com/older/
+http://dpresume.com/react-build/
+https://github.com/devendraprasad1984/PythonAndNodeSamples/tree/master/python
+
+
+rbs anywhere url: https://rbsconnect.rbspeople.com/vpn/index.html
+
+Amazon SDE: 23280666369383
+
+9430 6862 3504
+
+wheel nav: http://wheelnavjs.softwaretailoring.net/index.html
 ssh dlrgvkes@dpresume.com / 103.228.112.39->3vg3wWRm56
+
+manpower satish work:
+https://colorlib.com/wp/consulting-website-templates/
+https://www.manpowergroupsolutions.com/
+http://themewinter.com/demo/html/bizipress/blue/index-5.html
+http://themewinter.com/demo/html/bizipress/blue/index-8.html
+http://alnahiya.com/manpower/
+
+cast pc to tv
+https://www.omgubuntu.co.uk/2019/01/chromecast-tv-gnome-shell-extension
+
+google seo:
+submit sites to: trafficflowseo.com
+https://search.google.com/addurl
+https://search.google.com/search-console?resource_id=http://sites.google.com/site/devendraprasad1984/
+Copy the TXT record below into the DNS configuration for dpresume.com
+google-site-verification=NFJ0uiao1qj3i3Lwolfi2_AEX5RKhvE08341V4D5VpE
+
 
 python dp:
 https://python-patterns.guide/
@@ -8,9 +39,18 @@ https://medium.com/@sheikhsajid/design-patterns-in-python-part-1-the-strategy-pa
 https://stackoverflow.com/questions/606448/python-design-patterns
 https://subscription.packtpub.com/book/application_development/9781783989324/16/ch16lvl1sec84/a-real-life-example
 
-
+sublime html & js live edit: https://packagecontrol.io/installation#st3
+package: liveReload
 
 install win7 booteable drive: http://www.webupd8.org/2010/10/create-bootable-windows-7-usb-drive.html
+https://o7planning.org/en/11883/installing-windows-7-virtual-machine-on-virtualbox#a18908905
+https://www.osboxes.org/fedora/#fedora-29-vbox
+
+/home/devendra/VirtualBox VMs/win7/Snapshots
+virtual box module load error sbin/vboxconfig->fix->bios->secure boot-> change UEFI to other OS or legacy boot
+https://askubuntu.com/questions/413594/what-does-no-bootable-medium-found-mean-in-virtualbox
+
+
 https://softlay.net/download/file
 https://softfamous.com/microsoft-windows-7-ultimate-official-iso-image/
 sudo apt-get install gparted
@@ -35,6 +75,8 @@ ctrl+alt+t-terminal
 
 git: devendraprasad1984@gmail.com rbs6200#
 
+software design patterns: https://sourcemaking.com/design_patterns
+
 react: https://www.youtube.com/watch?v=Ke90Tje7VS0
 https://www.youtube.com/watch?v=DLX62G4lc44
 
@@ -50,6 +92,7 @@ aggrid: https://adazzle.github.io/react-data-grid/docs/examples/simple-grid
 
 pypy3 portable: https://github.com/squeaky-pl/portable-pypy
 
+https://www.xvideos2.com/video15631487/desi_wife_hindi_audio
 
 react tutor: ste.grider@gmail.com->tw: @sg_in_sf->github.com/stephengrider
 
@@ -69,6 +112,13 @@ sudo apt-get install ffmpeg
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt-get update
 sudo apt-get install obs-studio
+android-x86 & uninstall instruction:
+	https://osdn.net/dl/android-x86/android-x86-8.1-r1.x86_64.rpm
+	http://www.android-x86.org/releases/releasenote-8-1-r1
+	$ sudo apt install alien
+	$ sudo alien -ci android-x86-8.1-r1.x86_64.rpm
+	All files will be installed to the /android-8.1-r1/ subdirectory and boot entries will be added to grub2 menu. Reboot and choose android-x86 item from the menu to boot Android-x86. Alternatively, you can launch Android-x86 in a QEMU virtual machine by the installed qemu-android script: $ sudo qemu-android
+	sudo apt-get remove android-x86
 
 npmjs.com/package/flv.js
 
@@ -114,9 +164,44 @@ chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
 node,npm install latest in zip and save and point it in .bashrc file and point to node and npm
-sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
+sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 phpmyadmin
+sudo apt-get remove python-pip python3.7 python3-pip python-dev python
+sudo apt-get install alacarte
+you can put any applicationjere and that will start coming in the application search and can then add it to the favourite also
+root@dpz580:/usr/share# chmod 777 -R application
+extra codecs to play dat files: sudo apt-get install w64codecs libdvdcss2
+sudo apt-get install vlc
+video converter: https://launchpad.net/~stebbins/+archive/ubuntu/handbrake-releases
+sudo apt-get install handbrake-gtk
+sudo apt-get install handbrake-cli
+usage: HandBrakeCLI -i /path/to/source -o ../Desktop/my_output.mp4
+cd /home/devendra/deven/mov/sis
+HandBrakeCLI -i 1a.DAT -o 1a.mp4
+HandBrakeCLI -i 1b.DAT -o 1b.mp4
+HandBrakeCLI -i 2.DAT -o 2.mp4
+HandBrakeCLI -i 3a.DAT -o 3a.mp4
+HandBrakeCLI -i 3b.DAT -o 3b.mp4
+
+
+https://www.hostingadvice.com/how-to/install-phpmyadmin-on-ubuntu/
+sudo apt-get install -y phpmyadmin 
+(localhost->root->admin1234)
+/etc/apache2/conf-enabled/phpmyadmin.conf
+
+php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
 sudo apt-get install yarn pypy nodejs default-jdk apache2 apache2-mpm-worker sublime-text-installer
 google web fonts: sudo apt-get install typecatcher
+fix external drive mount:
+ls /dev/ | grep sd
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install exfat-fuse exfat-utils
+sudo apt-get install ntfs-3g
+sudo apt-get install ntfsprogs
+sudo ntfsfix /dev/sdb1
+/var/lib/dpkg/lock-frontend
+Once you have installed these packages, go to file manager and click on the USB disk again to mount it. There is no need to replug the USB. It should be mounted straightaway.
+
 npm install -g gulp grunt nodemon webpack
 sudo apt install mysql-client-core-5.7
 sudo apt install mariadb-client-core-10.1
@@ -358,6 +443,19 @@ write the python script in cmd as follows:
 cli->youtube-dl -u devendraprasad1984@gmail.com -p rbs1984# <course link>
 type your uername or registered e-mail and password
 you will appearing this in the cmd if the user name and password is correct written by you
+other video downloader from youtube also
+sudo add-apt-repository ppa:clipgrab-team/ppa
+sudo apt-get update
+sudo apt-get install clipgra
+sudo apt-get remove clipgrab
+sudo add-apt-repository --remove ppa:clipgrab-team/ppa
+sudo apt-get remove -y youtube-dl
+sudo apt install youtube-dl or sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl
+sudo chmod a+x /usr/local/bin/youtube-dl
+hash -r
+sudo youtube-dl -U
+
+
 
 works
 sudo apt-get remove -y youtube-dl
@@ -1316,3 +1414,5 @@ sed -i '/evlsprt/d' ~/.java/.userPrefs/prefs.xml
 
 #find ~/.WebStorm* -type d -exec touch -t $(date +"%Y%m%d%H%M") {} +;
 #find ~/.WebStorm* -type f -exec touch -t $(date +"%Y%m%d%H%M") {} +;
+
+

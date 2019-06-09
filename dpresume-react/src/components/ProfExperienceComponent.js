@@ -28,6 +28,7 @@ export default class ProfExperienceComponent extends Component {
                                     architectural strategies around it
                                 </li>
                                 <li>Converted logical data model to physical for Oracle</li>
+                                <li>we deliver cross platform message(soap & json)/file transfer within RBS using Argon APIs which is similar to Kafka / RabbitMQ sort of Pub-Sub(observer) implementation</li>
                                 <li>working on high ledger data volumes in Oracle environment</li>
                                 <li>Designed data loader strategy using <b>Python3/k-Shell/Cron/Autosys</b> and written complex
                                     Sql Queries and PL/Sql business logic
