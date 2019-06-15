@@ -18,7 +18,7 @@ export default class CenterComponent extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="col-sm-12"><ProfExperienceComponent/></div>
+                    <div className="col-sm-12"><ProfExperienceComponent url="./resources/prof_expr.json"/></div>
                 </div>
 
                 <div className="row">

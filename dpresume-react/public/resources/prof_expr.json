@@ -1,0 +1,55 @@
+{
+  "RBS": {
+    "role": "Tech Lead @ Royal Bank Of Scotland",
+    "time": "Oct11-current",
+    "projects": [
+      "Arria NLG – bugets and forecasts Narratives",
+      "Finance Portal",
+      "FRC (Finance Reporting Cube) over OACS (Oracle Analytics Clound)",
+      "CNMS (Cash Nostro Management System)"
+    ],
+    "summary": [
+      "I am working on application development using <b>Python/Tornado/Flask, React, PL/Sql</b>",
+      "I have designed solution for <b>Reporting Solution</b> which involves DB design, backend design, data processing using python, UI design and helped in finalising architectural strategies around it",
+      "Converted logical data model to physical for Oracle",
+      "we deliver cross platform message(soap & json)/file transfer within RBS using Argon APIs which is similar to Kafka / RabbitMQ sort of Pub-Sub(observer) implementation",
+      "working on high ledger data volumes in Oracle environment",
+      "Designed data loader strategy using <b>Python3/k-Shell/Cron/Autosys</b> and written complex Sql Queries and PL/Sql business logic",
+      "Installed, configured and customized Data Visualiser solution from Oracle",
+      "I help defining project outcomes, recruit & grow team, handle end-user queries and technical documentation",
+      "I also handle Some adhoc activities which involves <b>Solution Design, reconciliations and dashboarding"
+    ]
+  },
+  "syntel": {
+    "role": "Programmer @ Syntel",
+    "time": "Apr11-Sep11",
+    "projects": [
+      "Information Publisher macros",
+      "Markdown Optimisation template for requisition management system"
+    ],
+    "summary": [
+      "As an agile sprint developer i handled development of above projects and also dealt in other SDLC phases and to end to end support of the projects"
+    ]
+  },
+  "9dim": {
+    "role": "Programmer @ 9 Dimensions",
+    "time": "Nov09-Mar11",
+    "projects": [
+      "PRVit (Performance Risk Valuation Investment Technique)"
+    ],
+    "summary": [
+      "i handled all development and support related work in the project"
+    ]
+  },
+  "DAVIM": {
+    "role": "Programmer @ DAVIM",
+    "time": "Sep07-Sep08",
+    "projects": [
+      "Software development training to MCA students",
+      "Library Management"
+    ],
+    "summary": [
+      "i handled all development and support related work in the project and also trained MCA students on VB6 application development platform"
+    ]
+  }
+}
