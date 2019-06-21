@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import '../styles/CenterComponent.css'
 import GenericComponent from "./GenericComponent";
-import ProfExperienceComponent from "./ProfExperienceComponent";
 
 export default class CenterComponent extends Component {
     render() {
@@ -18,7 +17,9 @@ export default class CenterComponent extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="col-sm-12"><ProfExperienceComponent url="./resources/prof_expr.json"/></div>
+                    <div className="col-sm-12">
+                        <GenericComponent tag="Experience" grid_col_val="col-sm-12" url="./resources/prof_expr.json"/>
+                    </div>
                 </div>
 
                 <div className="row">
