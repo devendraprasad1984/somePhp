@@ -72,7 +72,10 @@ export default class GenericComponent extends Component {
     render() {
         return (
             <div className={this.props.grid_col_val}>
-                <div className="bg-primary text-white font-weight-bolder">{this.tag}</div>
+                <div className="bg-primary text-white font-weight-bolder">
+                    <span>{this.tag}</span>
+                    <span style={{float:'right'}}><a href={this.url} target="_blank" title={this.url}><i className="fas fa-chevron-circle-right"></i></a></span>
+                </div>
                 <div id="project_summary">
                     <ul>
                         {this.display()}

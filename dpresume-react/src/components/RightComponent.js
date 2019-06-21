@@ -7,12 +7,11 @@ import '../styles/RightComponent.css'
 export default class RightComponent extends Component {
     url = "./resources/skills.json"
     state = {
-        skills: {
-        }
+        skills: {}
     }
 
     getskill_data = async () => {
-        const res=await axios.get(this.url)
+        const res = await axios.get(this.url)
         this.setState({skills: res.data.skills})
         // console.log(this.state.skills)
     }
@@ -23,13 +22,16 @@ export default class RightComponent extends Component {
     }
 
     display = () => {
-        let vals=this.state.skills
+        let vals = this.state.skills
         // console.log("vals",vals)
-        return Object.keys(vals).map((k,id) => {
+        return Object.keys(vals).map((k, id) => {
             return (
-                <div className="right_skills" key={"id" + id} >
+                <div className="right_skills" key={"id" + id}>
                     <div className="bg-danger text-white font-weight-bolder">{k}</div>
-                    {vals[k].map((v,id)=>{return <div key={"id"+k+id} className="color-1">{v}</div>})}
+                    {vals[k].map((v, id) => {
+                        return <div key={"id" + k + id}><span className="color-1">{v.split(":")[0]}</span> <span
+                            className="color-2">{v.split(":")[1]}</span></div>
+                    })}
                 </div>
             )
         })
@@ -37,7 +39,7 @@ export default class RightComponent extends Component {
 
     render() {
         return (
-            <div>
+            <div id="rightPanel">
                 <div className="bg-primary text-white font-weight-bolder" style={{fontSize: '14pt'}}>Skills</div>
                 <div>
                     {this.display()}

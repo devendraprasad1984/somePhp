@@ -49,7 +49,10 @@ export default class ProfExperienceComponent extends Component {
     render() {
         return (
             <div>
-                <div className="bg-primary text-white font-weight-bolder">Professional Experience</div>
+                <div className="bg-primary text-white font-weight-bolder">
+                    <span>Professional Experience</span>
+                    <span style={{float:'right'}}><a href={this.url} target="_blank" title={this.url}><i className="fas fa-chevron-circle-right"></i></a></span>
+                </div>
                 <ul id="prof_summary">
                     {this.display()}
                 </ul>
