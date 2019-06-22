@@ -50,11 +50,50 @@ https://www.osboxes.org/fedora/#fedora-29-vbox
 virtual box module load error sbin/vboxconfig->fix->bios->secure boot-> change UEFI to other OS or legacy boot
 https://askubuntu.com/questions/413594/what-does-no-bootable-medium-found-mean-in-virtualbox
 
+improve ubuntu: https://itsfoss.com/speed-up-ubuntu-1310/
+sudo gedit /etc/default/grub &
+And change GRUB_TIMEOUT=10 to GRUB_TIMEOUT=2.
+sudo update-grub
+sudo apt-get install preload
+sudo apt-get install apt-fast
+sudo gedit /etc/apt/apt.conf.d/00aptitude and add at end Acquire::Languages "none";
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt-get update
+sudo apt-get install tlp tlp-rdw
+sudo tlp start
+sudo apt-get install indicator-cpufreq
+
 
 https://softlay.net/download/file
 https://softfamous.com/microsoft-windows-7-ultimate-official-iso-image/
 sudo apt-get install gparted
 sudo apt-get install ntfs-3g
+
+libreoffice
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt-get update
+sudo apt-get install libreoffice
+
+sudo apt-get install ppa-purge && sudo ppa-purge ppa:libreoffice/ppa
+
+install office on ubuntu
+https://gist.github.com/raelgc/4ccc023830bfd12c0227
+/usr/share/playonlinux
+
+
+openoffice
+sudo apt-get remove LibreOffice*
+https://www.openoffice.org/download/ and install deb packages
+wget sourceforge.net/projects/openofficeorg.mirror/files/4.1.1/binaries/en-GB/Apache_OpenOffice_4.1.1_Linux_x86-64_install-deb_en-GB.tar.gz
+/home/devendra/deven/software/Apache_OpenOffice_4.1.6_Linux_x86-64_install-deb_en-US/en-US/DEBS
+sudo dpkg -i *.deb
+cd desktop-integration
+sudo dpkg -i *.deb
+remove: sudo dpkg -r openoffice
+sudo apt-get remove --purge openoffice*
+sudo apt-get install --reinstall openoffice*
+
+
 
 sudo apt-get install powertop
 sudo powertop
@@ -94,7 +133,24 @@ pypy3 portable: https://github.com/squeaky-pl/portable-pypy
 
 https://www.xvideos2.com/video15631487/desi_wife_hindi_audio
 
+
+ES6: https://medium.com/@vigowebs/frequently-asked-es6-interview-questions-and-answers-e3fb7f2dba2
+ES8: https://hackernoon.com/es8-was-released-and-here-are-its-main-new-features-ee9c394adf66
+devOps: https://raygun.com/blog/best-devops-tools/
+react advance:https://medium.com/javascript-in-plain-english/another-react-tutorial-best-practices-for-react-redux-sagas-19d62851725
+https://dev.to/drminnaar/11-react-examples-2e6d
+https://itnext.io/using-advanced-design-patterns-to-create-flexible-and-reusable-react-components-part-1-dd495fa1823
+lodash:
+http://zetcode.com/javascript/lodash/
+https://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting
+go golang:
+https://gobyexample.com
 react tutor: ste.grider@gmail.com->tw: @sg_in_sf->github.com/stephengrider
+demo react: https://dev.to/drminnaar/11-react-examples-2e6d
+archi qs: https://www.wisdomjobs.com/e-university/togaf-interview-questions.html
+https://www.glassdoor.co.in/Interview/india-enterprise-architect-interview-questions-SRCH_IL.0,5_IN115_KO6,26.htm
+https://careers.simplicable.com/careers/new/101-enterprise-architecture-interview-questions
+python algo Qs: https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 realtime react examples: https://react.rocks/tag/Realtime
 http://www.javadecompilers.com/
@@ -121,6 +177,16 @@ android-x86 & uninstall instruction:
 	sudo apt-get remove android-x86
 
 npmjs.com/package/flv.js
+
+git config --global credential.helper 'cache --timeout 9200'
+git add .
+git commit -m "update"
+git push
+
+
+
+git config --global user.name "devendraprasad1984@gmail.com"
+git config --global user.password "rbs6200#"
 
 dpkg --get-selections | grep mysql
 apt-cache show mysql
@@ -163,6 +229,7 @@ sudo su - root
 chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
+screen recorder: sudo apt install kazam
 node,npm install latest in zip and save and point it in .bashrc file and point to node and npm
 sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 phpmyadmin
 sudo apt-get remove python-pip python3.7 python3-pip python-dev python
@@ -1415,4 +1482,11 @@ sed -i '/evlsprt/d' ~/.java/.userPrefs/prefs.xml
 #find ~/.WebStorm* -type d -exec touch -t $(date +"%Y%m%d%H%M") {} +;
 #find ~/.WebStorm* -type f -exec touch -t $(date +"%Y%m%d%H%M") {} +;
 
+
+
+
+ic enterprise
+https://1c-dn.com/library/1c_enterprise_script/
+https://1c-dn.com/search/?q=procedure+example
+dev: https://1c-dn.com/library/tutorials/practical_developer_guide_data_writing_procedure/?sphrase_id=112320
 
