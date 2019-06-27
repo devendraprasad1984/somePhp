@@ -9,9 +9,10 @@
       "CNMS (Cash Nostro Management System)"
     ],
     "summary": [
-      "I am working on application development using <b>Python/Tornado/Flask, React, PL/Sql</b>",
+      "I am working on application development using <b>Python & Tornado, React, PL/Sql</b>",
       "I have designed solution for <b>Reporting Solution</b> which involves DB design, backend design, data processing using python, UI design and helped in finalising architectural strategies around it",
       "Converted logical data model to physical for Oracle",
+      "I run pylint, jshint and coverage.py for code quality",
       "we deliver cross platform message(soap & json)/file transfer within RBS using Argon APIs which is similar to Kafka / RabbitMQ sort of Pub-Sub(observer) implementation",
       "working on high ledger data volumes in Oracle environment",
       "Designed data loader strategy using <b>Python3/k-Shell/Cron/Autosys</b> and written complex Sql Queries and PL/Sql business logic",

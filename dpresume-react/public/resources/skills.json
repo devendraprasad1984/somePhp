@@ -1,7 +1,7 @@
 {
   "skills": {
     "front-end": [
-      "HTML5+ES6",
+      "HTML5+ES6+JS",
       "react:16.8.0",
       "redux:4.0.1",
       "ag-grid:20.1.0",
@@ -22,18 +22,17 @@
     ],
     "Servers": [
       "apache: 2.4.0",
-      "tomcat: 8.0.21",
-      "heroku: 7.25.0"
+      "nginx: 1.14.0"
     ],
     "Tools/Code Quality & Awareness": [
       "IntelliJ",
+      "heroku",
+      "tomcat",
       "JIRA",
+      "flask",
       "Autosys",
       "Fisheye",
       "Confluence",
-      "Sonarqube",
-      "Teamcity",
-      "crucibel",
       "Nodejs",
       "Winmerge",
       "Arria NLG",
