@@ -362,12 +362,20 @@ SELECT User, Host, authentication_string FROM mysql.user;
 CREATE USER 'dp123'@'localhost' IDENTIFIED BY 'admin123';
 create database testdb;
 GRANT ALL PRIVILEGES ON testdb.* TO 'dp123'@'localhost';
+GRANT ALL PRIVILEGES ON employees.* TO 'dp123'@'localhost';
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'admin123';
 FLUSH PRIVILEGES;
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' IDENTIFIED BY 'password';
 mysql -u dp123 -p
+mysql -u root -p
+pwd:admin123
 
 service mysql restart/start/stop
+
+mysql run from a file
+mysql> use testdb;
+mysql> source employees.sql;
+source employees_partitioned.sql
 
 udemy coupons:
 UDEAFFBR219

@@ -3,7 +3,7 @@ import {polyfill} from 'es6-promise'
 import axios from "axios";
 import parser from 'html-react-parser'
 import JSONTree from 'react-json-tree'
-import * as x from "./JSONTheme"
+// import * as x from "./JSONTheme"
 
 export default class GenericComponent extends Component {
     constructor(props) {
@@ -104,9 +104,9 @@ export default class GenericComponent extends Component {
                             <i className="fas fa-chevron-circle-right"></i>
                         </a></span>
                 </div>
-                <div style={{display:this.state.json_tree_visible?"block":"none"}}>
-                    <JSONTree data={this.valsObj} theme={x.JSONTheme}  invertTheme={false} />
-                </div>
+                {/*<div style={{display:this.state.json_tree_visible?"block":"none"}}>*/}
+                {/*    <JSONTree data={this.valsObj} theme={x.JSONTheme}  invertTheme={false} />*/}
+                {/*</div>*/}
 
                 <div id="project_summary">
                     <ul>
