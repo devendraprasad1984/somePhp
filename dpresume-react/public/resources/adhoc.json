@@ -1,0 +1,73 @@
+{
+  "Summary": [
+    "./older/images/skills/ag.png",
+    "./older/images/skills/analytics.png",
+    "./older/images/skills/a.txt",
+    "./older/images/skills/aws.png",
+    "./older/images/skills/cloud.png",
+    "./older/images/skills/d3.png",
+    "./older/images/skills/flask.png",
+    "./older/images/skills/github.png",
+    "./older/images/skills/html5.png",
+    "./older/images/skills/jira.png",
+    "./older/images/skills/jq.png",
+    "./older/images/skills/mongo.png",
+    "./older/images/skills/ng.png",
+    "./older/images/skills/npp.png",
+    "./older/images/skills/putty.png",
+    "./older/images/skills/'react.png",
+    "./older/images/skills/sasva.png",
+    "./older/images/skills/sublime.png",
+    "./older/images/skills/svn.png",
+    "./older/images/skills/tableau.png",
+    "./older/images/skills/toad.png",
+    "./older/images/skills/vscode.png"
+  ],
+  "Education": [
+    "./older/images/study/pgditm.png",
+    "./older/images/study/degree.jpg",
+    "./older/images/study/12th.jpg",
+    "./older/images/study/10th.jpg"
+  ],
+  "Certification": [
+    "img",
+    "img",
+    "pdf"
+  ],
+  "Experience": [
+    "./older/images/py/2.png",
+    "./older/images/py/3.png",
+    "./older/images/py/4.png",
+    "./older/images/py/5.png",
+    "./older/images/py/6.png",
+    "./older/images/py/7.png",
+    "./older/images/py/8.png",
+    "./older/images/py/9.png",
+    "./older/images/py/10.png",
+    "./older/images/py/11.png",
+    "./older/images/py/12.png",
+    "./older/images/py/13.png",
+    "./older/images/py/14.png",
+    "https://github.com/devendraprasad1984/PythonAndNodeSamples/tree/master/react",
+    "https://github.com/devendraprasad1984/java/tree/master/src",
+    "./older/images/cicd/1.png",
+    "./older/images/cicd/2.png",
+    "./older/images/cicd/3.png",
+    "./older/images/cicd/4.png",
+    "./older/images/cicd/5.png",
+    "./older/images/cicd/6.png",
+    "./older/images/node/1.png",
+    "./older/images/node/2.png",
+    "./older/images/node/3.png",
+    "./older/images/node/4.png",
+    "./older/images/scrum/1.png",
+    "./older/images/scrum/5.png",
+    "./older/images/scrum/4.png",
+    "./older/images/scrum/9.png"
+  ],
+  "Projects": [
+    "img",
+    "img",
+    "pdf"
+  ]
+}

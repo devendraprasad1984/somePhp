@@ -11,13 +11,15 @@ export default class GenericComponent extends Component {
     constructor(props) {
         super(props)
         this.valsObj = ""
+        this.adhocUrl = "./resources/adhoc.json"
         this.url = this.props.url
         this.tag = this.props.tag
         this.state = {
             data: [],
             json_tree_visible: false,
-            isOpen:false,
-            content: "default"
+            isOpen: false,
+            content: "default",
+            adhocResources: {}
         }
     }
 
@@ -25,9 +27,16 @@ export default class GenericComponent extends Component {
         const res = await axios.get(this.url)
         this.valsObj = res.data
         if (this.tag.toLowerCase() === "experience") {
-            this.setState({data: this.valsObj, content:JSON.stringify(this.valsObj)})
+            this.setState({data: this.valsObj, content: JSON.stringify(this.valsObj)})
         } else {
-            this.setState({data: this.valsObj.data, content:JSON.stringify(this.valsObj)})
+            this.setState({data: this.valsObj.data, content: JSON.stringify(this.valsObj)})
+        }
+    }
+    getAdhocResources = async () => {
+        if (Object.keys(this.state.adhocResources).length === 0) {
+            const res = await axios.get(this.adhocUrl)
+            let xdata = res.data
+            this.setState({adhocResources: xdata})
         }
     }
 
@@ -96,9 +105,11 @@ export default class GenericComponent extends Component {
         // alert(this.url+'\n'+JSON.stringify(this.valsObj),"JSON I used")
         this.setState({json_tree_visible: !this.state.json_tree_visible})
     }
-    toggleModal=()=>{
+    toggleModal = () => {
+        this.getAdhocResources()
         this.setState({isOpen: !this.state.isOpen})
     }
+
     render() {
         return (
             <div className={this.props.grid_col_val}>
@@ -111,7 +122,8 @@ export default class GenericComponent extends Component {
                         </a></span>
                 </div>
 
-                <SimpleModal show={this.state.isOpen} onClose={this.toggleModal} header={this.tag+"->"+this.url} contents={this.state.content} />
+                <SimpleModal show={this.state.isOpen} onClose={this.toggleModal} header={this.tag + "->" + this.url}
+                             contents={this.state.adhocResources[this.tag]}/>
 
                 <div id="project_summary">
                     <ul>
