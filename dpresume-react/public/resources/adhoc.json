@@ -30,9 +30,9 @@
     "./older/images/study/10th.jpg"
   ],
   "Certification": [
-    "img",
-    "img",
-    "pdf"
+    "./older/images/cert/udemy_react.png",
+    "./older/images/cert/open_edg.png",
+    "./older/images/cert/oracle_sql.png"
   ],
   "Experience": [
     "./older/images/py/2.png",
@@ -60,10 +60,13 @@
     "./older/images/node/2.png",
     "./older/images/node/3.png",
     "./older/images/node/4.png",
-    "./older/images/scrum/1.png",
-    "./older/images/scrum/5.png",
-    "./older/images/scrum/4.png",
-    "./older/images/scrum/9.png"
+    "./older/images/scrum/scrum1.png",
+    "./older/images/scrum/scrum3.png",
+    "./older/images/scrum/scrum4.png",
+    "./older/images/scrum/scrum5.png",
+    "./older/images/scrum/scrum7.png",
+    "./older/images/scrum/scrum8.png",
+    "./older/images/scrum/scrum9.png"
   ],
   "Projects": [
     "img",
