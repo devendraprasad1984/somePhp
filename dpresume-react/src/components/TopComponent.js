@@ -12,10 +12,10 @@ export default class TopComponent extends Component{
 
                 <div className="bg-primary text-white font-weight-bolder"></div>
                 <div  className="top_div_a">
-                    <a href="http://dpresume.com/older" rel="noopener noreferrer" target="_blank">Older View</a>
+                    {/*<a href="http://dpresume.com/older" rel="noopener noreferrer" target="_blank">Older View</a>*/}
                     <a href="http://dpresume.com/react-build" rel="noopener noreferrer" target="_blank" className="text-danger">reactJs</a>
                     <a href="http://github.com/devendraprasad1984" rel="noopener noreferrer" target="_blank">github.com</a>
-                    <a href="http://linkedin.com/devendraprasad" rel="noopener noreferrer" target="_blank">linkedin</a>
+                    <a href="http://linkedin.com/in/devendraprasad" rel="noopener noreferrer" target="_blank">linkedin</a>
                 </div>
             </div>
         )

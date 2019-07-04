@@ -116,10 +116,8 @@ export default class GenericComponent extends Component {
                 <div className="bg-primary text-white font-weight-bolder">
                     <span>{this.tag}</span>
                     <span style={{float: 'right'}}>
-                        <i className="fas fa-code" onClick={this.toggleModal}></i>
-                        <a href={this.url} target="_blank" rel="noopener noreferrer" title={this.url}>
-                            <i className="fas fa-chevron-circle-right"></i>
-                        </a></span>
+                        <i className="fas fa-code" style={{cursor: 'pointer'}} onClick={this.toggleModal}></i>
+                    </span>
                 </div>
 
                 <SimpleModal show={this.state.isOpen} onClose={this.toggleModal} header={this.tag + "->" + this.url}
