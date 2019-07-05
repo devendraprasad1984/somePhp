@@ -39,7 +39,7 @@ export default class SimpleModal extends React.Component {
             // let txtData = this.read_txt_axios(x)
             // console.log(txtData)
             return <div>
-                <iframe title="myframebody" style={{height: '1000px', width: '100%'}} src={"" + x + ""}></iframe>
+                <iframe title="myframebody" style={{height: '500px', width: '100%'}} src={"" + x + ""}></iframe>
             </div>
         } else {
             return x
