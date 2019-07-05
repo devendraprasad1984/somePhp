@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from "axios";
 
 export default class SimpleModal extends React.Component {
     constructor(props) {
@@ -11,7 +12,7 @@ export default class SimpleModal extends React.Component {
             marginBottom: '5px'
         }
         this.hval = this.props.header.split("->")
-        this.cururl=window.location.href
+        this.cururl = window.location.href
     }
 
     setHeader() {
@@ -31,8 +32,14 @@ export default class SimpleModal extends React.Component {
         } else if (x.includes(".pdf")) {
             return <div>
                 {/*{this.cururl+x}*/}
-                <object alt-text={x} data={"" + this.cururl+x + "#view=FitH"} type='application/pdf'
-                        style={{height: '50vh', width: '100%'}}></object>
+                <object data={"" + this.cururl + x + "#view=FitH"} type='application/pdf'
+                        style={{height: '50vh', width: '100%'}}>{x}</object>
+            </div>
+        } else if (x.includes(".txt") || x.includes(".htm")) {
+            // let txtData = this.read_txt_axios(x)
+            // console.log(txtData)
+            return <div>
+                <iframe title="myframebody" style={{height: '1000px', width: '100%'}} src={"" + x + ""}></iframe>
             </div>
         } else {
             return x
@@ -49,6 +56,30 @@ export default class SimpleModal extends React.Component {
             </div>
         )
     }
+
+    readTextFile = file => {
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = () => {
+            if (rawFile.readyState === 4) {
+                if (rawFile.status === 200 || rawFile.status === 0) {
+                    return rawFile.responseText;
+                }
+            }
+        };
+        rawFile.send(null);
+    };
+
+    read_txt_axios=async file=>{
+        let config = {
+            headers: {'Access-Control-Allow-Origin': '*'}
+        };
+       let data=await axios.get(file,config).then(function (response) {
+           console.log(response.data);
+       }).catch(error=>{console.log(error)})
+        console.log(data)
+    }
+
 
     render() {
         if (!this.props.show) {

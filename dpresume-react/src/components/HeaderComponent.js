@@ -8,7 +8,7 @@ export default class HeaderComponent extends Component {
         super(props)
         this.tag = "notes"
         this.url_notes = {
-            "notes": ["https://github.com/devendraprasad1984/PythonAndNodeSamples/blob/master/python/my_notes.txt"]
+            "notes": ["http://dpresume.com/docs/my_notes.txt"]
         }
         this.state = {
             isOpen: false
