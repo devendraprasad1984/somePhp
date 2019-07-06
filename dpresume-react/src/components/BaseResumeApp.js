@@ -14,8 +14,10 @@ class BaseResumeApp extends React.Component {
                 <div className="">
                     <div id="div_fix_top" className="row fixed-top">
                         <div className="col-lg-12 bg-dark">
-                            <TopComponent/>
                             <HeaderComponent/>
+                        </div>
+                        <div className="col-lg-12 bg-dark">
+                            <TopComponent/>
                         </div>
                     </div>
 
