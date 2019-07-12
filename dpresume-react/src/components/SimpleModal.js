@@ -13,15 +13,14 @@ export default class SimpleModal extends React.Component {
         }
         this.hval = this.props.header.split("->")
         this.cururl = window.location.href
+        // this.cururl = "http://dpresume.com"
     }
 
     setHeader() {
         return (
             <div>
-                <span style={{float: 'left', fontSize: '18pt'}}
+                <span style={{textAlign:'center', fontSize: '24pt'}}
                       className="font-weight-bold text-danger">{this.hval[0]}</span>
-                {/*<span style={{float: 'right'}}><a className="font-weight-bold text-danger" href={this.hval[1]}*/}
-                {/*                                  target='_blank' rel='noopener noreferrer'>JSON</a></span>*/}
             </div>
         )
     }
