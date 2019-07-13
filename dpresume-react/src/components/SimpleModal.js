@@ -1,5 +1,7 @@
 import React from 'react'
+import {polyfill} from 'es6-promise'
 import axios from "axios";
+// import _ from 'lodash'
 
 export default class SimpleModal extends React.Component {
     constructor(props) {
@@ -19,22 +21,26 @@ export default class SimpleModal extends React.Component {
     setHeader() {
         return (
             <div>
-                <span style={{textAlign:'center', fontSize: '24pt'}}
+                <span style={{textAlign: 'center', fontSize: '24pt'}}
                       className="font-weight-bold text-danger">{this.hval[0]}</span>
             </div>
         )
     }
 
+    componentDidMount() {
+        polyfill()
+    }
+
     formatResources = (x) => {
-        if (x.includes(".png") || x.includes(".jpg")) {
+        if (x.indexOf(".png") >= 0 || x.indexOf(".jpg") >= 0) {
             return <img src={x} alt={x} style={this.imgStyle}/>
-        } else if (x.includes(".pdf")) {
+        } else if (x.indexOf(".pdf") >= 0) {
             return <div>
                 {/*{this.cururl+x}*/}
                 <object data={"" + this.cururl + x + "#view=FitH"} type='application/pdf'
                         style={{height: '50vh', width: '100%'}}>{x}</object>
             </div>
-        } else if (x.includes(".txt") || x.includes(".htm")) {
+        } else if (x.indexOf(".txt") >= 0 || x.indexOf(".htm") >= 0) {
             // let txtData = this.read_txt_axios(x)
             // console.log(txtData)
             return <div>
@@ -69,13 +75,15 @@ export default class SimpleModal extends React.Component {
         rawFile.send(null);
     };
 
-    read_txt_axios=async file=>{
+    read_txt_axios = async file => {
         let config = {
             headers: {'Access-Control-Allow-Origin': '*'}
         };
-       let data=await axios.get(file,config).then(function (response) {
-           console.log(response.data);
-       }).catch(error=>{console.log(error)})
+        let data = await axios.get(file, config).then(function (response) {
+            console.log(response.data);
+        }).catch(error => {
+            console.log(error)
+        })
         console.log(data)
     }
 

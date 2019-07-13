@@ -2,10 +2,13 @@
   "skills": {
     "front-end": [
       "HTML5+ES6+JS",
-      "react:16.8.0",
+      "react+hooks:16.8.0",
       "redux:4.0.1",
       "ag-grid:20.1.0",
+      "html-react-parser:0.6.4",
       "axios:0.18.0",
+      "es6-promise:4.2.6",
+      "react-app-polyfill:1.0.1",
       "lodash:4.17.11",
       "react-native:0.59.8",
       "Tableau:2019.1.3"

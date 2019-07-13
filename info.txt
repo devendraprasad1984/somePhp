@@ -31,6 +31,9 @@ Copy the TXT record below into the DNS configuration for dpresume.com
 google-site-verification=NFJ0uiao1qj3i3Lwolfi2_AEX5RKhvE08341V4D5VpE
 
 
+ubuntu search place icons in: /usr/local/share/applications and add it in favourites
+
+
 python dp:
 https://python-patterns.guide/
 https://www.tutorialspoint.com/python_design_patterns/index.htm
@@ -168,13 +171,25 @@ sudo apt-get install ffmpeg
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt-get update
 sudo apt-get install obs-studio
-android-x86 & uninstall instruction:
+android-x86 & install instruction:
 	https://osdn.net/dl/android-x86/android-x86-8.1-r1.x86_64.rpm
 	http://www.android-x86.org/releases/releasenote-8-1-r1
 	$ sudo apt install alien
 	$ sudo alien -ci android-x86-8.1-r1.x86_64.rpm
 	All files will be installed to the /android-8.1-r1/ subdirectory and boot entries will be added to grub2 menu. Reboot and choose android-x86 item from the menu to boot Android-x86. Alternatively, you can launch Android-x86 in a QEMU virtual machine by the installed qemu-android script: $ sudo qemu-android
 	sudo apt-get remove android-x86
+
+How to Uninstall Android Studio 2.2 on Ubuntu 16.04
+Delete the android-studio folder;
+Delete the sdk folder if it is in not inside the android-studio directory;
+Delete ~/.AndroidStudio2.2/, which contains config and system;
+Delete ~/.android;
+Delete ~/.local/share/applications/jetbrains-studio.desktop, if you created a shortcut using Configure->Create Desktop Entry.
+/usr/share/applications
+/usr/local/share/applications
+
+
+
 
 npmjs.com/package/flv.js
 
@@ -234,7 +249,7 @@ node,npm install latest in zip and save and point it in .bashrc file and point t
 sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 phpmyadmin nginx
 sudo apt-get remove python-pip python3.7 python3-pip python-dev python
 sudo apt-get install alacarte
-you can put any applicationjere and that will start coming in the application search and can then add it to the favourite also
+you can put any application here and that will start coming in the application search and can then add it to the favourite also
 root@dpz580:/usr/share# chmod 777 -R application
 extra codecs to play dat files: sudo apt-get install w64codecs libdvdcss2
 sudo apt-get install vlc
@@ -426,6 +441,8 @@ wine ./setup-lightshot.exe
 
 virtualbox:
 https://o7planning.org/en/11891/installing-virtualbox-on-ubuntu
+sudo apt-get remove virtualbox* --purge
+
 
 
 heroku create --buildpack https://github.com/devendraprasad1984/somePhp/tree/master/react/jsonserver

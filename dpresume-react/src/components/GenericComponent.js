@@ -113,11 +113,8 @@ export default class GenericComponent extends Component {
     render() {
         return (
             <div className={this.props.grid_col_val}>
-                <div className="bg-primary text-white font-weight-bolder">
-                    <span>{this.tag}</span>
-                    <span style={{float: 'right'}}>
-                        <i className="fas fa-code" style={{cursor: 'pointer'}} onClick={this.toggleModal}></i>
-                    </span>
+                <div className="bg-primary text-white font-weight-bolder" onClick={this.toggleModal} style={{cursor: 'pointer'}}>
+                    <span style={{textDecoration:'underline'}}>{this.tag}</span><span> >> </span>
                 </div>
 
                 <SimpleModal show={this.state.isOpen} onClose={this.toggleModal} header={this.tag + "->" + this.url}
