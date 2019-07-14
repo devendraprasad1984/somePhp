@@ -255,6 +255,15 @@ sudo apt-get install -y network-manager-openvpn network-manager-openvpn-gnome
 sudo service network-manager restart
 sudo wget https://www.goldenfrog.website/downloads/openvpn/ca.vyprvpn.com.crt -O /etc/openvpn/ca.vyprvpn.com.crt
 
+chromium browser:
+sudo add-apt-repository ppa:canonical-chromium-builds/stage
+sudo apt update
+sudo apt install chromium-browser
+sudo apt install chromium-browser-l10n
+sudo apt install chromium-codecs-ffmpeg
+sudo apt install chromium-codecs-ffmpeg-extra
+
+
 you can put any application here and that will start coming in the application search and can then add it to the favourite also
 root@dpz580:/usr/share# chmod 777 -R application
 extra codecs to play dat files: sudo apt-get install w64codecs libdvdcss2
@@ -460,13 +469,31 @@ git open
 /home/devendra/.bashrc - config
 alias pip=/home/devendra/deven/software/pypy3.6-v7.0.0-linux64/bin/pip3
 alias python=/home/devendra/deven/software/pypy3.6-v7.0.0-linux64/bin/pypy3
+alias node=/home/devendra/deven/software/node-v10.15.3-linux-x64/bin/node
+alias npm=/home/devendra/deven/software/node-v10.15.3-linux-x64/bin/npm
 alias cls=clear
 alias ll="pwd; ls -ltr"
 alias dp="cd /home/devendra/deven; ll"
-alias ij="/home/devendra/deven/software/ideaIU-2018.3.4-no-jdk/idea-IU-183.5429.30/bin/idea.sh"
+alias ij="sh /home/devendra/deven/software/ideaIU-2018.3.4-no-jdk/idea-IU-183.5429.30/bin/idea.sh"
 alias nb="/home/devendra/deven/software/incubating-netbeans-10.0-bin/netbeans/bin/netbeans"
 alias pwt="sudo powertop --auto-tune"
 alias ijrs="sh /home/devendra/deven/software/resetIntelliJTrial.sh"
+alias studio="sh /home/devendra/deven/software/react-native/android-studio-ide-182.5314842-linux/android-studio/bin/studio.sh"
+alias gnode="cd /home/devendra/deven/software/node-v10.15.3-linux-x64/bin"
+alias src="source /home/devendra/.profile"
+alias run1="cd /home/devendra/deven/dpgit/somePhp/dpresume-react/; npm start"
+alias bld1="cd /home/devendra/deven/dpgit/somePhp/dpresume-react/; npm run build"
+alias aps="sudo service apache2 start"
+alias apst="sudo service apache2 stop"
+alias apr="sudo service apache2 restart"
+alias ngs="sudo systemctl start nginx"
+alias ngst="sudo systemctl stop nginx"
+alias ngr="sudo systemctl restart nginx"
+alias astat="service apache2 status"
+alias nstat="service nginx status"
+
+
+
 
 postgreSQL elephant sql online free instance: https://customer.elephantsql.com/instance/	
 tornado+flask+pyramic: https://opensource.com/article/18/6/tornado-framework
