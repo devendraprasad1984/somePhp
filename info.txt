@@ -249,6 +249,12 @@ node,npm install latest in zip and save and point it in .bashrc file and point t
 sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 phpmyadmin nginx
 sudo apt-get remove python-pip python3.7 python3-pip python-dev python
 sudo apt-get install alacarte
+vypr vpn:
+https://support.goldenfrog.com/hc/en-us/articles/360004948872-VyprVPN-OpenVPN-Setup-for-Linux-Ubuntu-
+sudo apt-get install -y network-manager-openvpn network-manager-openvpn-gnome
+sudo service network-manager restart
+sudo wget https://www.goldenfrog.website/downloads/openvpn/ca.vyprvpn.com.crt -O /etc/openvpn/ca.vyprvpn.com.crt
+
 you can put any application here and that will start coming in the application search and can then add it to the favourite also
 root@dpz580:/usr/share# chmod 777 -R application
 extra codecs to play dat files: sudo apt-get install w64codecs libdvdcss2

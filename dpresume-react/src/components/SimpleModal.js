@@ -1,5 +1,4 @@
 import React from 'react'
-import {polyfill} from 'es6-promise'
 import axios from "axios";
 // import _ from 'lodash'
 
@@ -11,11 +10,11 @@ export default class SimpleModal extends React.Component {
             width: '98%',
             padding: '10px 10px',
             border: '2px solid black',
-            marginBottom: '5px'
+            marginBottom: '10px'
         }
         this.hval = this.props.header.split("->")
         this.cururl = window.location.href
-        // this.cururl = "http://dpresume.com"
+        this.state = {filetxt: ""}
     }
 
     setHeader() {
@@ -27,25 +26,18 @@ export default class SimpleModal extends React.Component {
         )
     }
 
-    componentDidMount() {
-        polyfill()
-    }
-
     formatResources = (x) => {
         if (x.indexOf(".png") >= 0 || x.indexOf(".jpg") >= 0) {
             return <img src={x} alt={x} style={this.imgStyle}/>
         } else if (x.indexOf(".pdf") >= 0) {
             return <div>
-                {/*{this.cururl+x}*/}
                 <object data={"" + this.cururl + x + "#view=FitH"} type='application/pdf'
                         style={{height: '50vh', width: '100%'}}>{x}</object>
             </div>
         } else if (x.indexOf(".txt") >= 0 || x.indexOf(".htm") >= 0) {
-            // let txtData = this.read_txt_axios(x)
-            // console.log(txtData)
-            return <div>
-                <iframe title="myframebody" style={{height: '500px', width: '100%'}} src={"" + x + ""}></iframe>
-            </div>
+            return <div>{
+                this.readTextFile(x)
+            }</div>
         } else {
             return x
         }
@@ -54,39 +46,59 @@ export default class SimpleModal extends React.Component {
     displayContents = () => {
         if (!this.props.contents)
             return null
-        return this.props.contents.map((x, id) =>
-            <div key={"k1_" + id}>
-                <a href={x} className="text-primary font-weight-bold" target="_blank"
-                   rel="noopener noreferrer">{this.formatResources(x)}</a>
-            </div>
+        return this.props.contents.map((x, id) => {
+                let finalFormattedValues = this.formatResources(x)
+                let elm1 = <a href={x} className="text-primary font-weight-bold" target="_blank"
+                              rel="noopener noreferrer">{finalFormattedValues}</a>
+                let elm2 = <pre className="text-primary">{finalFormattedValues}</pre>
+                let elm = (x.indexOf(".png") >= 0 || x.indexOf(".jpg") >= 0) ? elm1 : elm2
+                return <div key={"k1_" + id}>{elm}</div>
+            }
         )
     }
 
     readTextFile = file => {
-        var rawFile = new XMLHttpRequest();
-        rawFile.open("GET", file, false);
-        rawFile.onreadystatechange = () => {
-            if (rawFile.readyState === 4) {
-                if (rawFile.status === 200 || rawFile.status === 0) {
-                    return rawFile.responseText;
-                }
-            }
-        };
-        rawFile.send(null);
+        // axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
+        // axios.defaults.headers.get['Content-Type'] ='text/plain';
+        // axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
+        // let headerConfig = {
+        //     headers:{
+        //         "Access-Control-Allow-Origin": "*",
+        //         "Access-Control-Allow-Methods": "GET",
+        //         "crossOrigin": true,
+        //         "crossDomain": true,
+        //         "Access-Control-Allow-Credentials": true,
+        //         'Content-Type': 'text/plain',
+        //         "Access-Control-Allow-Headers":"Access-Control-*, Origin, X-Requested-With, Content-Type, Accept, Authorization",
+        //         "Access-Control-Expose-Headers":"Access-Control-*, Origin, X-Requested-With, Content-Type, Accept, Authorization"
+        //     }
+        // }
+        let callFn = async file => {
+            let res = await axios.get(file)
+            let data = await res.data
+            this.setState({filetxt: data})
+        }
+        callFn(file)
+        // console.log(callFn(file).then(res=>console.log(res)))
+        return <pre>{this.state.filetxt}</pre>
+        // let data=await axios.get(file).then((res) => {
+        //     return res.data
+        // }).catch((err) => {
+        //     console.log(err)
+        // })
+        // this.setState({filetxt: data})
+        // var request = new XMLHttpRequest();
+        // request.onreadystatechange = await function () {
+        //     if (request.status === 200 && request.readyState === 4) {
+        //         let txt = request.responseText
+        //         return txt
+        //     }
+        // };
+        // request.open('GET', file, true);
+        // request.setRequestHeader("Access-Control-Allow-Origin", "*");
+        // request.setRequestHeader("Access-Control-Allow-Credentials", true);
+        // request.send();
     };
-
-    read_txt_axios = async file => {
-        let config = {
-            headers: {'Access-Control-Allow-Origin': '*'}
-        };
-        let data = await axios.get(file, config).then(function (response) {
-            console.log(response.data);
-        }).catch(error => {
-            console.log(error)
-        })
-        console.log(data)
-    }
-
 
     render() {
         if (!this.props.show) {
