@@ -18,9 +18,9 @@ export default class WordCloud extends React.Component {
             rotationAngles: [0, 90],
             scale: 'sqrt',
             spiral: 'archimedean',
-            transitionDuration: 500,
+            transitionDuration: 1,
         };
-        this.state={changeCounter:0}
+        this.state={height:300}
     }
 
     // componentDidMount() {
@@ -32,21 +32,19 @@ export default class WordCloud extends React.Component {
 
     renderWords = () => {
         let swords = this.words
-        return <div style={{width:'100%',height:'300px'}}>
-            <ReactWordcloud options={this.options} words={swords}/>
-        </div>
+        return <ReactWordcloud options={this.options} words={swords}/>
     }
 
-    // rerun=()=>{
-    //     this.setState({changeCounter:this.state.changeCounter===10 ? 0 : this.state.changeCounter+1})
-    //     // console.log(this.state.changeCounter)
-    //     this.forceUpdate()
-    // }
+    rerun=()=>{
+        this.setState({height:this.state.height===300 ? 301 : 300})
+        // console.log(this.state.changeCounter)
+        this.forceUpdate()
+    }
 
     render() {
         return (
             <div>
-                <div>{this.renderWords()}</div>
+                <div style={{width:'100%',height:this.state.height+"px"}} onClick={this.rerun}>{this.renderWords()}</div>
             </div>
         )
     }
