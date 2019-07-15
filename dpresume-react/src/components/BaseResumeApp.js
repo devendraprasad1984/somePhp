@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderComponent from "./HeaderComponent";
 import BottomComponent from "./BottomComponent";
-import RightComponent from "./RightComponent";
+// import RightComponent from "./RightComponent";
 import CenterComponent from "./CenterComponent";
 import '../styles/BaseResumeApp.css'
 import TopComponent from "./TopComponent";
@@ -23,8 +23,8 @@ class BaseResumeApp extends React.Component {
 
                     <div  id="div_container">
                         <div className="row">
-                            <div className="col-lg-10"><CenterComponent/></div>
-                            <div className="col-lg-2"><RightComponent/></div>
+                            <div className="col-lg-12"><CenterComponent/></div>
+                            {/*<div className="col-lg-2"><RightComponent/></div>*/}
                         </div>
 
                         <div className="row bottom_div ">
