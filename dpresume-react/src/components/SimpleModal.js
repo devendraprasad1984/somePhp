@@ -80,7 +80,7 @@ export default class SimpleModal extends React.Component {
         }
         callFn(file)
         // console.log(callFn(file).then(res=>console.log(res)))
-        return <pre>{this.state.filetxt}</pre>
+        return <pre style={{wordWrap: 'break-word', whiteSpace:'pre-wrap'}}>{this.state.filetxt}</pre>
         // let data=await axios.get(file).then((res) => {
         //     return res.data
         // }).catch((err) => {

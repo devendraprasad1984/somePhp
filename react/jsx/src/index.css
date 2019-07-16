@@ -36,7 +36,7 @@ label {
     /*min-height: 40px;*/
 /*}*/
 
-div, p{
+div, p, pre{
     white-space: normal !important;
     word-wrap: break-word;
     font-size: 9pt;

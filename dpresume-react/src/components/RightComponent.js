@@ -13,6 +13,7 @@ export default class RightComponent extends Component {
     getskill_data = async () => {
         const res = await axios.get(this.url)
         this.setState({skills: res.data.skills})
+        this.props.callback_skills(res.data.skills)
         // console.log(this.state.skills)
     }
 
