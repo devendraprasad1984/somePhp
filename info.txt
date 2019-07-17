@@ -492,7 +492,12 @@ alias ngr="sudo systemctl restart nginx"
 alias astat="service apache2 status"
 alias nstat="service nginx status"
 
-
+some js lib
+https://gojs.net/latest/samples/
+https://www.npmjs.com/package/react-wordcloud
+https://github.com/jasondavies/d3-cloud
+https://github.com/timdream/wordcloud2.js/
+https://www.npmjs.com/package/wordcloud
 
 
 postgreSQL elephant sql online free instance: https://customer.elephantsql.com/instance/	

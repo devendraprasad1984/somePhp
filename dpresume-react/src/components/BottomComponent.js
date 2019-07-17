@@ -5,11 +5,11 @@ import '../styles/BottomComponent.css'
 export default class BottomComponent extends Component {
     render() {
         return (
-            <div className="bottom_div bg-primary">
+            <div className="bottom_div bg-dark">
                 <div className="bg-primary text-white font-weight-bolder"></div>
                 <div>
-                    <span className="badge badge-dark">(C) Devendra Prasad</span>
-                    <span className="badge badge-dark">+91 958 279 7772</span>
+                    <span className="badge badge-primary">(C) Devendra Prasad</span>
+                    <span className="badge badge-success">+91 958 279 7772</span>
 
                     <div className="badge badge-light">
                         <span className="badge badge-info">Python3</span>

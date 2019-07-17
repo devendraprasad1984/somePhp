@@ -27,13 +27,13 @@ export default class RightComponent extends Component {
         // console.log("vals",vals)
         return Object.keys(vals).map((k, id) => {
             return (
-                <div className="right_skills" key={"id" + id}>
-                    <div className="bg-danger text-white font-weight-bolder">{k}</div>
+                <ul className="right_skills" key={"id" + id}>
+                    <div className="text-success  bg-light font-weight-bolder">{k}</div>
                     {vals[k].map((v, id) => {
-                        return <div key={"id" + k + id}><span className="color-1">{v.split(":")[0]}</span> <span
-                            className="color-2">{v.split(":")[1]}</span></div>
+                        return <li key={"id" + k + id}><span className="color-1">{v.split(":")[0]}</span> <span
+                            className="color-2">{v.split(":")[1]}</span></li>
                     })}
-                </div>
+                </ul>
             )
         })
     }
@@ -41,7 +41,7 @@ export default class RightComponent extends Component {
     render() {
         return (
             <div id="rightPanel">
-                <div className="bg-primary text-white font-weight-bolder" style={{fontSize: '14pt'}}>Skills</div>
+                <div className="bg-dark text-white font-weight-bolder" style={{fontSize: '12pt'}}>Skills</div>
                 <div>
                     {this.display()}
                 </div>

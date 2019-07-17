@@ -23,14 +23,14 @@ export default class SetLinks extends React.Component {
         if(!this.state.data)
             return null
         for (let x in this.state.data) {
-            elm.push(<a key={"id"+x} href={this.state.data[x]} style={{fontSize:'10pt'}} className="text-warning" target="_blank" rel="noopener noreferrer">{x}</a>)
+            elm.push(<a key={"id"+x} href={this.state.data[x]} style={{fontSize:'10pt'}} className="text-primary" target="_blank" rel="noopener noreferrer">{x}</a>)
         }
         return elm.map(x=>x)
     }
 
     render() {
         return (
-            <div>
+            <div className="bg-light">
                 {this.displayLinks()}
             </div>
         )

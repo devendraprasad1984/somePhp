@@ -8,7 +8,7 @@ import TopComponent from "./TopComponent";
 class BaseResumeApp extends React.Component {
     render() {
         return (
-            <div id="main_id" className="container-fluid">
+            <div id="main_id" className="container">
                 <div className="">
                     <div id="div_fix_top" className="row fixed-top">
                         <div className="col-lg-12 bg-dark">

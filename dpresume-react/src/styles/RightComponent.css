@@ -1,5 +1,8 @@
-.right_skills div{
+.right_skills li{
+    list-style-type: none;
+    font-size: 10px;
 }
+
 
 .color-1{
     color: #660E7A;

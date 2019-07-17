@@ -105,14 +105,16 @@ export default class SimpleModal extends React.Component {
             return null
         }
         return (
-            <div className="modal-backdrop" style={{float: 'left'}}>
-                <div className="">
-                    <div className="modal-content" style={{height: "600px", width: "100%", float: 'left'}}>
-                        <div className="modal-header text-primary font-weight-bold">
-                            {this.setHeader()}
-                            <button onClick={this.props.onClose} className="btn btn-dark">Close</button>
+            <div>
+                <div className="modal-backdrop h-100 w-100">
+                    <div className="container">
+                        <div className="modal-content h-100">
+                            <div className="modal-header font-weight-bold">
+                                {this.setHeader()}
+                                <button onClick={this.props.onClose} className="btn btn-dark">Close</button>
+                            </div>
+                            <div className="container w-75 p-3 overflow-auto" style={{height:'500px'}}>{this.displayContents()}</div>
                         </div>
-                        <div style={{overflow: 'auto', height: '100%', width: '98%'}}>{this.displayContents()}</div>
                     </div>
                 </div>
             </div>

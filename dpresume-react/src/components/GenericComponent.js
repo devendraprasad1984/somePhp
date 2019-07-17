@@ -67,7 +67,7 @@ export default class GenericComponent extends Component {
             let {role, time, projects, summary} = obj //ES6 desctruct syntax
             return (
                 <div key={"idDiv" + role}>
-                    <div className="bg-success text-white">
+                    <div className="text-success  bg-light">
                         <span>{parser(role)}</span>
                         <span style={{float: 'right'}}>{parser(time)}</span>
                     </div>
@@ -95,8 +95,8 @@ export default class GenericComponent extends Component {
             // console.log(Object.keys(k)[0],Object.values(k)[0])
             return (
                 <div key={"id" + key}>
-                    <span>{parser(key)}</span>
-                    <div>{parser(desc)}</div>
+                    <div style={{fontWeight:'bold'}} className="text-success bg-light">{parser(key)}</div>
+                    <div style={{paddingLeft:'10px'}}>{parser(desc)}</div>
                 </div>
             )
         })
@@ -113,7 +113,7 @@ export default class GenericComponent extends Component {
     render() {
         return (
             <div className={this.props.grid_col_val}>
-                <div className="bg-primary text-white font-weight-bolder" onClick={this.toggleModal} style={{cursor: 'pointer'}}>
+                <div className="text-white bg-dark font-weight-bolder" onClick={this.toggleModal} style={{cursor: 'pointer'}}>
                     <span style={{textDecoration:'underline'}}>{this.tag}</span><span> >> </span>
                 </div>
 
@@ -121,9 +121,9 @@ export default class GenericComponent extends Component {
                              contents={this.state.adhocResources[this.tag]}/>
 
                 <div id="project_summary">
-                    <ul>
+                    <div>
                         {this.display()}
-                    </ul>
+                    </div>
                 </div>
             </div>
         )
