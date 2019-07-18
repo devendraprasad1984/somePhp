@@ -30,7 +30,7 @@ export default class CenterComponent extends Component {
     render() {
         return (
             <div id="main_center_div">
-                <div className="row">
+                <div className="row align-content-center">
                     <div className="col-sm-5"><WordCloud words={this.skills}/></div>
                     <div className="col-sm-7"><GenericComponent tag="Summary" grid_col_val="col-sm-12" url="./resources/summary.json"/></div>
                 </div>
