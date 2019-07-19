@@ -21,6 +21,7 @@ export default class GenericComponent extends Component {
             content: "default",
             adhocResources: {}
         }
+        this.divXRef = React.createRef()
     }
 
     getdata = async () => {
@@ -66,16 +67,16 @@ export default class GenericComponent extends Component {
         return Object.keys(data).map(i => data[i]).map((obj, k) => {
             let {role, time, projects, summary} = obj //ES6 desctruct syntax
             return (
-                <div key={"idDiv" + role}>
+                <div key={"idDiv" + role} style={{marginTop:'10px'}}>
                     <div className="text-success  bg-light">
                         <span>{parser(role)}</span>
                         <span style={{float: 'right'}}>{parser(time)}</span>
                     </div>
                     <div>
                         <span>Projects Undertaken:</span>
-                        <ul>{projects.map((x, id) => <li key={"Proj" + id}>{parser(x)}</li>)}</ul>
+                        <div>{projects.map((x, id) => <li key={"Proj" + id}>{parser(x)}</li>)}</div>
                         <span>Role Summary:</span>
-                        <ul>{summary.map((x, id) => <li key={"Role" + id}>{parser(x)}</li>)}</ul>
+                        <div>{summary.map((x, id) => <li key={"Role" + id}>{parser(x)}</li>)}</div>
                     </div>
                 </div>
             )
@@ -95,8 +96,8 @@ export default class GenericComponent extends Component {
             // console.log(Object.keys(k)[0],Object.values(k)[0])
             return (
                 <div key={"id" + key}>
-                    <div style={{fontWeight:'bold'}} className="text-success bg-light">{parser(key)}</div>
-                    <div style={{paddingLeft:'10px'}}>{parser(desc)}</div>
+                    <div style={{fontWeight: 'bold',marginTop:'10px'}} className="text-success bg-light">{parser(key)}</div>
+                    <div style={{paddingLeft: '10px'}}>{parser(desc)}</div>
                 </div>
             )
         })
@@ -112,15 +113,18 @@ export default class GenericComponent extends Component {
 
     render() {
         return (
-            <div className={this.props.grid_col_val}>
-                <div className="text-white bg-dark font-weight-bolder" onClick={this.toggleModal} style={{cursor: 'pointer'}}>
-                    <span style={{textDecoration:'underline'}}>{this.tag}</span><span> >> </span>
+            <div className={this.props.grid_col_val} style={{marginBottom:'2em'}}>
+                {/*<button data-toggle="collapse" data-target={"#"+this.divXRef.id}>click</button>*/}
+                <div className="text-white bg-dark font-weight-bolder" onClick={this.toggleModal}
+                     style={{cursor: 'pointer'}}>
+                    <span style={{textDecoration: 'underline'}}>{this.tag}</span><span> >> </span>
                 </div>
 
                 <SimpleModal show={this.state.isOpen} onClose={this.toggleModal} header={this.tag + "->" + this.url}
                              contents={this.state.adhocResources[this.tag]}/>
 
                 <div id="project_summary">
+                    {/*<div id="x1" className="collapse" ref={this.divXRef}>*/}
                     <div>
                         {this.display()}
                     </div>

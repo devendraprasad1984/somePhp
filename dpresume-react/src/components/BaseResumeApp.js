@@ -10,7 +10,7 @@ class BaseResumeApp extends React.Component {
         return (
             <div id="main_id" className="container">
                 <div className="">
-                    <div id="div_fix_top" className="row fixed-top">
+                    <div id="div_fix_top" className="row">
                         <div className="col-lg-12 bg-dark">
                             <HeaderComponent/>
                         </div>

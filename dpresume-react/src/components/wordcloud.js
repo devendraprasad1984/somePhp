@@ -14,13 +14,14 @@ export default class WordCloud extends React.Component {
             fontWeight: 'bold',
             padding: 2,
             rotations: 3,
-            fontSizes: [13, 16, 20, 26, 35, 49],
-            rotationAngles: [-90, 25 + Math.round(0 + Math.random() * 100)],
+            fontSizes: [22, 30, 20, 35, 50, 55],
+            rotationAngles: [-90, 15 + Math.round(0 + Math.random() * 100)],
             scale: 'sqrt',
             spiral: 'archimedean',
             transitionDuration: 1,
         };
-        this.state = {height: 300}
+        this.height=300
+        this.state = {height: this.height}
         this.divRef = React.createRef() //this is controlled component as its DOM will be controlled by react
     }
 
@@ -33,7 +34,7 @@ export default class WordCloud extends React.Component {
         if (nextdiv.height === undefined || nextdiv.height === "")
             nextdiv.height = this.state.height
         console.log(nextdiv, nextdiv.height)
-        nextdiv.height = (nextdiv.height >= 300 ? 301 : 300)
+        nextdiv.height = (nextdiv.height >= this.height ? this.height+1 : this.height)
     }
 
     renderWords = () => {

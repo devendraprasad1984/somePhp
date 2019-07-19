@@ -14,7 +14,12 @@ export default class SimpleModal extends React.Component {
         }
         this.hval = this.props.header.split("->")
         this.cururl = window.location.href
-        this.state = {filetxt: ""}
+        this.state = {filetxt: "",ht:'500px'}
+        // console.log(window.screen.height)
+    }
+
+    componentDidMount() {
+        this.setState({ht:window.screen.height-210+'px'})
     }
 
     setHeader() {
@@ -113,7 +118,7 @@ export default class SimpleModal extends React.Component {
                                 {this.setHeader()}
                                 <button onClick={this.props.onClose} className="btn btn-dark">Close</button>
                             </div>
-                            <div className="container w-75 p-3 overflow-auto" style={{height:'500px'}}>{this.displayContents()}</div>
+                            <div className="container w-75 p-3 overflow-auto" style={{height: this.state.ht}}>{this.displayContents()}</div>
                         </div>
                     </div>
                 </div>

@@ -37,13 +37,27 @@ https://dzone.com/articles/getting-started-with-ace-editor
 
 
     <style>
-        html, body, div,pre,p,span {
+        html, body, div,pre,p,span,li {
             font-family: '"Google Sans", Roboto, Amiri';
-            font-size: 12pt;
+            font-size: 14px;
+        }
+
+        li:before {
+            content: '';
+            display: inline-block;
+            /*height: 10px;*/
+            /*width: 10px;*/
+            /*background-size: 10px;*/
+            /*!*background-image: url("http://www.freepngimg.com/thumb/star/1-red-star-png-image-thumb.png");*!*/
+            /*background-repeat: no-repeat;*/
+            /*margin-right: 5px;*/
         }
 
         li{
             padding-left:10px;
+            list-style: none;
+            /*list-style-type: disc;*/
+            /*list-style-image: url('./global/tick.jpg');*/
         }
         div {
             white-space: normal !important;
@@ -53,7 +67,7 @@ https://dzone.com/articles/getting-started-with-ace-editor
         }
 
         #div_container {
-            margin-top: 8em;
+            margin-top: 1em;
         }
 
         i {

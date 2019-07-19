@@ -31,8 +31,9 @@ export default class CenterComponent extends Component {
         return (
             <div id="main_center_div">
                 <div className="row align-content-center">
-                    <div className="col-sm-5"><WordCloud words={this.skills}/></div>
-                    <div className="col-sm-7"><GenericComponent tag="Summary" grid_col_val="col-sm-12" url="./resources/summary.json"/></div>
+                    {/*<div className="col-lg-6"><WordCloud words={this.skills}/></div>*/}
+                    <div className="col-lg-3"><img style={{height:'210px',width:'250px',borderRadius: '50%'}} src="./global/dp.png" /></div>
+                    <div className="col-lg-9"><GenericComponent tag="Summary" grid_col_val="col-sm-12" url="./resources/summary.json"/></div>
                 </div>
 
                 <div className="row">
@@ -41,12 +42,12 @@ export default class CenterComponent extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-9">
+                    <div className="col-lg-10">
                         <GenericComponent tag="Experience" grid_col_val="col-sm-12" url="./resources/prof_expr.json"/>
                         <GenericComponent tag="Projects" grid_col_val="col-sm-12" url="./resources/projects.json"/>
                         <div className="col-lg-12"><BottomComponent/></div>
                     </div>
-                    <div className="col-lg-3"><RightComponent callback_skills={this.callback_skills}/></div>
+                    <div className="col-lg-2"><RightComponent callback_skills={this.callback_skills}/></div>
                 </div>
             </div>
         )

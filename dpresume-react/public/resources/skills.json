@@ -27,7 +27,7 @@
       "apache: 2.4.0",
       "nginx: 1.14.0"
     ],
-    "Tools/Code Quality & Awareness": [
+    "what else": [
       "IntelliJ",
       "heroku",
       "tomcat",

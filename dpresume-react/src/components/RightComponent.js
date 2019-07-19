@@ -27,13 +27,13 @@ export default class RightComponent extends Component {
         // console.log("vals",vals)
         return Object.keys(vals).map((k, id) => {
             return (
-                <ul className="right_skills" key={"id" + id}>
+                <div className="right_skills" key={"id" + id}>
                     <div className="text-success  bg-light font-weight-bolder">{k}</div>
                     {vals[k].map((v, id) => {
-                        return <li key={"id" + k + id}><span className="color-1">{v.split(":")[0]}</span> <span
-                            className="color-2">{v.split(":")[1]}</span></li>
+                        return <div key={"id" + k + id}><span className="color-1">{v.split(":")[0]}</span> <span
+                            className="color-2">{v.split(":")[1]}</span></div>
                     })}
-                </ul>
+                </div>
             )
         })
     }
