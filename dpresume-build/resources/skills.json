@@ -1,48 +1,40 @@
 {
   "skills": {
-    "front-end": [
+    "Front End": [
       "HTML5+ES6+JS",
-      "react+hooks:16.8.0",
+      "react:16.8.0",
       "redux:4.0.1",
       "ag-grid:20.1.0",
-      "html-react-parser:0.6.4",
-      "axios:0.18.0",
-      "es6-promise:4.2.6",
-      "react-app-polyfill:1.0.1",
       "lodash:4.17.11",
-      "react-native:0.59.8",
       "Tableau:2019.1.3"
     ],
-    "back-end": [
-      "python:3.6.7",
-      "Tornado:5.1.1",
-      "Django:2.1.7",
-      "Flask:1.0.2"
+    "Back End, MVC, API:": [
+      "python: 3.6.7",
+      "Tornado: 5.1.1"
     ],
-    "databases": [
+    "Databases": [
       "Oracle 11g",
-      "nosql"
+      "sql / plsql"
     ],
     "Servers": [
       "apache: 2.4.0",
       "nginx: 1.14.0"
     ],
-    "Tools/Code Quality & Awareness": [
-      "IntelliJ",
-      "heroku",
-      "tomcat",
-      "JIRA",
-      "flask",
-      "Autosys",
+    "what else": [
+      "nginx: 1.14.0",
+      "heroku: 7.25.0",
+      "tdd unittest: 1.1.0",
+      "dJango: 2.1.7",
+      "Flask: 1.0.2",
+      "ORM",
+      "jenkin /autosys",
+      "mongoDB",
+      "Argon",
       "Fisheye",
-      "Confluence",
       "Nodejs",
-      "Winmerge",
-      "Arria NLG",
-      "Filezilla",
-      "SDLC",
-      "TOGAF & MBDL",
-      "Putty",
+      "Arria.com NLG",
+      "Agile/Scrum/SDLC",
+      "TOGAF",
       "Git"
     ]
   }

@@ -21,7 +21,7 @@ export default class Tabs extends React.Component {
     }
 
     componentDidMount() {
-        this.handleTabClick('tab1')
+        this.handleTabClick('tab2')
     }
 
     handleTabClick=(id)=>{
@@ -35,9 +35,9 @@ export default class Tabs extends React.Component {
     render() {
         return (
             <div>
-                <div className="container bg-light" style={{padding:'5px',width:'100%'}}>
-                    <span className="btn btn-primary" onClick={()=>this.handleTabClick('tab1')}>Tabbed</span>
-                    <span className="btn btn-primary" onClick={()=>this.handleTabClick('tab2')}>Simple</span>
+                <div id="bottomPane" className="bg-dark fixed-bottom" style={{padding:'2px',width:'100%'}}>
+                    <span className="btn btn-primary font-weight-bold text-white" onClick={()=>this.handleTabClick('tab2')}>Default</span>
+                    <span className="btn btn-primary font-weight-bold text-white" onClick={()=>this.handleTabClick('tab1')}>Tabbed</span>
                 </div>
 
                 <div className="container">

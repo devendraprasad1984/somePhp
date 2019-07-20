@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
 import '../styles/CenterComponent.css'
 import GenericComponent from "./GenericComponent";
-import WordCloud  from './wordcloud'
+// import WordCloud  from './wordcloud'
 import RightComponent from "./RightComponent";
 import BottomComponent from "./BottomComponent";
+import Overview from "./Overview";
+
 
 export default class CenterComponent extends Component {
     constructor(props){
@@ -14,11 +16,6 @@ export default class CenterComponent extends Component {
     }
 
     callback_skills=skills=>{
-        // console.log("in right component",skills)
-        // Object.keys(skills).map(x=>{
-        //     let xar=skills[x]
-        //     xar.map(x=>this.skills.push({text:x,value:''}))
-        // })
         for(let x in skills){
             let xar=skills[x]
             for(let j in xar){
@@ -33,7 +30,12 @@ export default class CenterComponent extends Component {
                 <div className="row align-content-center">
                     {/*<div className="col-lg-6"><WordCloud words={this.skills}/></div>*/}
                     <div className="col-lg-3"><img style={{height:'210px',width:'250px',borderRadius: '50%'}} src="./global/dp.png" /></div>
-                    <div className="col-lg-9"><GenericComponent tag="Summary" grid_col_val="col-sm-12" url="./resources/summary.json"/></div>
+                    <div className="col-lg-9">
+                        <div className="row">
+                            <div className="col-lg-12" style={{marginLeft:'20px'}}><Overview/></div>
+                            <div className="col-lg-12"><GenericComponent tag="Summary" grid_col_val="col-sm-12" url="./resources/summary.json"/></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="row">

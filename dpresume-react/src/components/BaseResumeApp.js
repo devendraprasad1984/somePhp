@@ -8,9 +8,9 @@ import TopComponent from "./TopComponent";
 class BaseResumeApp extends React.Component {
     render() {
         return (
-            <div id="main_id" className="container">
+            <div id="main_id" className="container" style={{marginBottom:'5em'}}>
                 <div className="">
-                    <div id="div_fix_top" className="row">
+                    <div id="div_fix_top" className="row fixed-top">
                         <div className="col-lg-12 bg-dark">
                             <HeaderComponent/>
                         </div>
