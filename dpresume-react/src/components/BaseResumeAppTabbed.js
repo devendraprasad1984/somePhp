@@ -38,7 +38,7 @@ class BaseResumeAppTabbed extends React.Component {
         }
     }
     componentDidMount() {
-        console.log(this.state)
+        // console.log(this.state)
         this.display()
     }
 
@@ -56,7 +56,7 @@ class BaseResumeAppTabbed extends React.Component {
         let elm=(<div>
                 <GenericComponent tag={tag} grid_col_val={grid_col_val} url={url}/>
             </div>)
-        console.log(this.state,elm)
+        // console.log(this.state,elm)
         return elm
     }
 
@@ -100,10 +100,7 @@ class BaseResumeAppTabbed extends React.Component {
                     </div>
                     <div className="col-lg-10">
                         <div className="row" style={{marginBottom: '4em'}}>
-                            <div className="col-lg-2"><img
-                                style={{height: '100px', width: '100px', borderRadius: '50%'}} src="./global/dp.png"/>
-                            </div>
-                            <div className="col-lg-10">
+                            <div className="col-lg-2" id="profile_img" ><img src="./global/dp.png" alt="" /></div>                            <div className="col-lg-10">
                                 <Overview/>
                             </div>
                         </div>

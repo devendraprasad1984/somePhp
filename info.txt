@@ -1,10 +1,17 @@
 http://phydeve.epizy.com/imozar/index-1.html
+http://anaenders.com/
+http://ianenders.com/
+
 
 tech lead - python js react sql/plsq aws
 http://dpresume.com
 http://dpresume.com/older/
 http://dpresume.com/react-build/
 https://github.com/devendraprasad1984/PythonAndNodeSamples/tree/master/python
+
+google: https://www.impactinterview.com/2009/10/140-google-interview-questions/
+https://www.w3resource.com/python-exercises/
+https://www.practicepython.org/
 
 
 rbs anywhere url: https://rbsconnect.rbspeople.com/vpn/index.html
