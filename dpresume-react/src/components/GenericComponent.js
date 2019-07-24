@@ -21,7 +21,7 @@ export default class GenericComponent extends Component {
             content: "default",
             adhocResources: {}
         }
-        this.divXRef = React.createRef()
+        // this.divXRef = React.createRef()
     }
 
     getdata = async () => {
@@ -56,7 +56,7 @@ export default class GenericComponent extends Component {
             let vals = this.state.data
             return vals.map((k, id) => {
                 return (
-                    <li key={"idDiv" + id}>{parser(k)}</li>
+                    <p key={"idDiv" + id}>{parser(k)}</p>
                 )
             })
         }
@@ -76,7 +76,7 @@ export default class GenericComponent extends Component {
                         <span>Projects Undertaken:</span>
                         <div>{projects.map((x, id) => <li key={"Proj" + id}>{parser(x)}</li>)}</div>
                         <span>Role Summary:</span>
-                        <div>{summary.map((x, id) => <li key={"Role" + id}>{parser(x)}</li>)}</div>
+                        <div>{summary.map((x, id) => <p key={"Role" + id}>{parser(x)}</p>)}</div>
                     </div>
                 </div>
             )
@@ -103,7 +103,6 @@ export default class GenericComponent extends Component {
         })
     }
     onClick = () => {
-        // alert(this.url+'\n'+JSON.stringify(this.valsObj),"JSON I used")
         this.setState({json_tree_visible: !this.state.json_tree_visible})
     }
     toggleModal = () => {
@@ -114,16 +113,15 @@ export default class GenericComponent extends Component {
     render() {
         return (
             <div className={this.props.grid_col_val} style={{marginBottom:'2em'}}>
-                {/*<button data-toggle="collapse" data-target={"#"+this.divXRef.id}>click</button>*/}
                 <div className="text-white bg-dark font-weight-bolder" onClick={this.toggleModal}
                      style={{cursor: 'pointer'}}>
-                    <span style={{textDecoration: 'underline'}}>{this.tag}</span><span> >> </span>
+                    <span style={{textDecoration: 'underline'}}>{this.tag}</span><span></span>
                 </div>
 
                 <SimpleModal show={this.state.isOpen} onClose={this.toggleModal} header={this.tag + "->" + this.url}
                              contents={this.state.adhocResources[this.tag]}/>
 
-                <div id="project_summary">
+                <div id="project_summary" className="content">
                     {/*<div id="x1" className="collapse" ref={this.divXRef}>*/}
                     <div>
                         {this.display()}

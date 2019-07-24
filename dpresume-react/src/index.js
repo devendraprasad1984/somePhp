@@ -10,9 +10,9 @@ import BaseResumeAppNaive from './components/BaseResumeAppNaive'
 export default class Tabs extends React.Component {
     constructor(props){
         super(props)
-        this.tabs=React.createRef()
-        this.tab1=React.createRef()
-        this.tab2=React.createRef()
+        // this.tabs=React.createRef()
+        // this.tab1=React.createRef()
+        // this.tab2=React.createRef()
         // this.styleTopBar={
         //     top:0,
         //     position:'relative',
@@ -43,10 +43,10 @@ export default class Tabs extends React.Component {
                 </div>
 
                 <div className="container">
-                    <div id="tabs" ref={this.tabs} className="">
-                        <div id="tab1" ref={this.tab1} style={{display:'none'}}><BaseResumeAppTabbed/></div>
-                        <div id="tab2" ref={this.tab2} style={{display:'none'}}><BaseResumeApp/></div>
-                        <div id="tab3" ref={this.tab2} style={{display:'none'}}><BaseResumeAppNaive/></div>
+                    <div id="tabs"  className="">
+                        <div id="tab1"  style={{display:'none'}}><BaseResumeAppTabbed/></div>
+                        <div id="tab2" style={{display:'none'}}><BaseResumeApp/></div>
+                        <div id="tab3" style={{display:'none'}}><BaseResumeAppNaive/></div>
                     </div>
                 </div>
             </div>
