@@ -15,7 +15,7 @@ export default class Tabs extends React.Component {
         this.tabClass="btn btn-primary font-weight-bold text-white"
         this.tabClassActive="btn btn-dark font-weight-bold text-dark bg-white"
         this.state={
-            curTab:this.tabs[0]
+            curTab:this.tabs[2]
         }
     }
 

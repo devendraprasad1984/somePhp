@@ -28,14 +28,12 @@ class BaseResumeAppNaive extends React.Component {
             },
         }
         this.state = {
-            leftPageData: [],
             isOpen: false,
             content: "default",
             adhocResources: {},
             tag: "Certification",
             url: "./resources/certifications.json"
         }
-        // this.divXRef = React.createRef()
     }
 
     getAdhocResources = async () => {
@@ -46,41 +44,42 @@ class BaseResumeAppNaive extends React.Component {
         }
     }
 
-    loadLeftSideSummaryData=()=>{
-        let url=this.data["Experience"].url
-        if(this.state.leftPageData.length===0){
-            //async inline expression function called in line
-            (async ()=>{
-                const res=await axios.get(url)
-                // console.log(res.data["RBS"]["summary"]);
-                this.setState({leftPageData: res.data["RBS"]["summary"]})
-            })()
-        }
-    }
-
-    componentDidMount() {
-        this.loadLeftSideSummaryData(()=>{
-            console.log(this.state.leftPageData)
-        })
-    }
-
     toggleModal = (sval) => {
         this.getAdhocResources()
-        if(sval===""){
+        if (sval === "") {
             this.setState({isOpen: !this.state.isOpen})
-        }else{
+        } else {
             this.setState({isOpen: !this.state.isOpen, tag: sval, url: this.data[sval].url})
         }
     }
 
+    getSummary = () => {
+        let url = this.data["Summary"].url
+        let retObj = (async () => {
+            const res = await axios.get(url)
+            return res.data.data
+        })() //its result is a promise
+        let elm = []
+        Promise.resolve(retObj).then(arr => {
+                elm.push(
+                    <div>
+                        <h1>Who I Am.......</h1>
+                        <h2>Tech Lead Developer - python | react | js | html5 | plsql | AWS</h2>
+                        {arr.map((x, id) => <p key={"pleft_" + id}>{x}</p>)}
+                    </div>
+                )
+            }
+        )
+    }
+
     render() {
-        if(!this.props.isActive)
+        if (!this.props.isActive)
             return null
 
         return (
             <div id="main_id" className="container" style={{marginBottom: '5em'}}>
 
-                <SimpleModal show={this.state.isOpen} onClose={()=>this.toggleModal("")}
+                <SimpleModal show={this.state.isOpen} onClose={() => this.toggleModal("")}
                              header={this.state.tag + "->"}
                              contents={this.state.adhocResources[this.state.tag]}/>
 
@@ -94,31 +93,11 @@ class BaseResumeAppNaive extends React.Component {
                         </div>
                     </div>
 
-                    <div id="div_container" style={{marginTop:'1em',paddingLeft:'10px'}}>
+                    <div id="div_container" style={{marginTop: '1em', paddingLeft: '10px'}}>
                         <div className="row">
                             <div id="div_container_naive_left" className="col-lg-6">
                                 <div className='content'>
-                                    <h1>Who Am I.......</h1>
-                                    <h2>Tech Lead Developer - python|react|js|html5|plsql|AWS</h2>
-                                    <p>I work on application development using Python/Tornado(Asynchronous IO based
-                                        networking framework, RESTFul), React, PL/Sql and high edger data volume in
-                                        Oracle 11g</p>
-                                    <p>I run pylint, jshint and coverage.py for code quality and follow TDD
-                                        approaches</p>
-                                    <p>I do code review using tools built in git / fisheye</p>
-                                    <p>I have worked on all aspects of Reporting Automation Solution (DRA project) such
-                                        as DB design, REST API Design, data loader & data consumption stragegy using
-                                        Python3 / k-Shell / Autosys / sqlloader / sql / plsql</p>
-                                    <p>we use JIRA for agile, bug tracking and backlog grooming</p>
-                                    <p>I can work smoothly on UI development & build in React.js</p>
-                                    <p>I worked with Architects finalising strategies around our solution</p>
-                                    <p>In RBS, we deliver cross platform message(soap & json) / file transfer using
-                                        Argon APIs which is similar to Kafka / RabbitMQ sort of Pub-Sub ( observer /
-                                        source-sink / push-pull) implementation</p>
-                                    <p>I help defining project outcomes, recruit & grow team, handle end-user
-                                        queries and support technical documentation</p>
-                                    <p>I have also trained some of new joiners and graduates within team</p>
-                                    <p>We follow MBDL(More Better Different Less) practices for retrospectives</p>
+                                    {this.getSummary()}
                                 </div>
                             </div>
 
@@ -211,7 +190,7 @@ class BaseResumeAppNaive extends React.Component {
                                             projects and Support L3 projects also.</span>
                                     </div>
 
-                                    <h3  onClick={() => this.toggleModal("Education")}>Education</h3>
+                                    <h3 onClick={() => this.toggleModal("Education")}>Education</h3>
                                     <div className='education'>
                                         <span className='title'>SCDL, Symbiosis, Pune, India</span>
                                         <span className='supplemental'>PGDITM, 2015-2017</span>

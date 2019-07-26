@@ -27,7 +27,11 @@ class BaseResumeAppTabbed extends React.Component {
                 "url": "./resources/projects.json"
             }
         }
-        this.state = {curtag: "Summary"}
+        this.state = {
+            curtag: "Summary",
+            curClass:"badge badge-dark text-white",
+            activeClass:"badge bg-white text-primary border border-secondary"
+        }
     }
 
     updateData = tagVal => {
@@ -68,23 +72,23 @@ class BaseResumeAppTabbed extends React.Component {
                     </div>
                 </div>
                 <div className="" style={{position: 'fixed', left: 0}}>
-                    <div className="badge badge-primary" style={{cursor: 'pointer'}}
+                    <div className={this.state.curtag==="Summary"?this.state.activeClass:this.state.curClass} style={{cursor: 'pointer'}}
                          onClick={() => this.updateData("Summary")}>Summary
                     </div>
                     <br/>
-                    <div className="badge badge-primary" style={{cursor: 'pointer'}}
+                    <div className={this.state.curtag==="Education"?this.state.activeClass:this.state.curClass} style={{cursor: 'pointer'}}
                          onClick={() => this.updateData("Education")}>Education
                     </div>
                     <br/>
-                    <div className="badge badge-success" style={{cursor: 'pointer'}}
+                    <div className={this.state.curtag==="Certification"?this.state.activeClass:this.state.curClass} style={{cursor: 'pointer'}}
                          onClick={() => this.updateData("Certification")}>Certification
                     </div>
                     <br/>
-                    <div className="badge badge-primary" style={{cursor: 'pointer'}}
+                    <div className={this.state.curtag==="Experience"?this.state.activeClass:this.state.curClass} style={{cursor: 'pointer'}}
                          onClick={() => this.updateData("Experience")}>Experience
                     </div>
                     <br/>
-                    <div className="badge badge-success" style={{cursor: 'pointer'}}
+                    <div className={this.state.curtag==="Projects"?this.state.activeClass:this.state.curClass} style={{cursor: 'pointer'}}
                          onClick={() => this.updateData("Projects")}>Projects
                     </div>
                     <br/>
