@@ -33,20 +33,20 @@ export default class CenterComponent extends Component {
                     <div className="col-lg-9">
                         <div className="row">
                             {/*<div className="col-lg-12" style={{marginLeft:'20px'}}><Overview/></div>*/}
-                            <div className="col-lg-12"><GenericComponent tag="Summary" grid_col_val="col-sm-12" url="./resources/summary.json"/></div>
+                            <div className="col-lg-12"><GenericComponent xblock="block" tag="Summary" grid_col_val="col-sm-12" url="./resources/summary.json"/></div>
                         </div>
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-6"><GenericComponent tag="Education" grid_col_val="col-sm-12" url="./resources/education.json"/></div>
-                    <div className="col-lg-6"><GenericComponent tag="Certification" grid_col_val="col-sm-12" url="./resources/certifications.json"/></div>
+                    <div className="col-lg-6"><GenericComponent xblock="block" tag="Education" grid_col_val="col-sm-12" url="./resources/education.json"/></div>
+                    <div className="col-lg-6"><GenericComponent xblock="block" tag="Certification" grid_col_val="col-sm-12" url="./resources/certifications.json"/></div>
                 </div>
 
                 <div className="row">
                     <div className="col-lg-10">
-                        <GenericComponent tag="Experience" grid_col_val="col-sm-12" url="./resources/prof_expr.json"/>
-                        <GenericComponent tag="Projects" grid_col_val="col-sm-12" url="./resources/projects.json"/>
+                        <GenericComponent xblock="block" tag="Experience" grid_col_val="col-sm-12" url="./resources/prof_expr.json"/>
+                        <GenericComponent xblock="block" tag="Projects" grid_col_val="col-sm-12" url="./resources/projects.json"/>
                         <div className="col-lg-12"><BottomComponent/></div>
                     </div>
                     <div className="col-lg-2"><RightComponent callback_skills={this.callback_skills}/></div>

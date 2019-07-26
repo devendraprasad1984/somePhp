@@ -21,7 +21,15 @@ export default class GenericComponent extends Component {
             content: "default",
             adhocResources: {}
         }
+        // console.log("props",this.props)
         // this.divXRef = React.createRef()
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        //console.log(this.props, prevProps)
+        if(this.props.tag!==prevProps.tag){
+            return this.display()
+        }
     }
 
     getdata = async () => {
@@ -111,6 +119,8 @@ export default class GenericComponent extends Component {
     }
 
     render() {
+        if(this.props.xblock==="none")
+            return null
         return (
             <div className={this.props.grid_col_val} style={{marginBottom:'2em'}}>
                 <div className="text-white bg-dark font-weight-bolder" onClick={this.toggleModal}

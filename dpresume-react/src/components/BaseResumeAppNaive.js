@@ -74,6 +74,9 @@ class BaseResumeAppNaive extends React.Component {
     }
 
     render() {
+        if(!this.props.isActive)
+            return null
+
         return (
             <div id="main_id" className="container" style={{marginBottom: '5em'}}>
 

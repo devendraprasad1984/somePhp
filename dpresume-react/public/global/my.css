@@ -5,7 +5,7 @@ html, body, div, pre, p, span, li {
     /*line-height: normal;*/
 }
 
-.cover-left{
+.cover-left {
     background-image: url('dp.png');
     background-repeat: no-repeat;
     /*background-attachment: scroll;*/
@@ -47,8 +47,8 @@ i {
 
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto
 }
@@ -64,10 +64,22 @@ i {
     border-radius: 50%;
 }
 
+.tabbedPane .badge {
+    max-width: 200px;
+    width: 100px;
+    font-size: 14px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 680px) {
     html, body, div, pre, p, span, li {
         /*font-family: '"Google Sans", Roboto, Amiri';*/
         font-family: '"Google Sans"';
+        font-size: 10px;
+    }
+
+    .tabbedPane .badge {
+        max-width: 100px;
+        width: 60px;
         font-size: 10px;
     }
 
@@ -79,9 +91,9 @@ i {
     }
 
     .container {
-        width: 100%;
-        padding-right: 0px;
-        padding-left: 0px;
+        width: 98%;
+        padding-right: 5px;
+        padding-left: 2px;
         margin-right: auto;
         margin-left: auto
     }
@@ -253,7 +265,7 @@ i {
 }
 
 p {
-    margin:0px;
+    margin: 0px;
     padding-left: 10px;
 }
 
