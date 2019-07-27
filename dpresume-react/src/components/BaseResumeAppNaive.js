@@ -4,7 +4,7 @@ import '../styles/BaseResumeApp.css'
 import TopComponent from "./TopComponent";
 import SimpleModal from "./SimpleModal";
 import axios from "axios";
-
+import parser from 'html-react-parser'
 
 class BaseResumeAppNaive extends React.Component {
     constructor(props) {
@@ -32,7 +32,10 @@ class BaseResumeAppNaive extends React.Component {
             content: "default",
             adhocResources: {},
             tag: "Certification",
-            url: "./resources/certifications.json"
+            url: "./resources/certifications.json",
+            summary: [],
+            projects: [],
+            profexpr: {}
         }
     }
 
@@ -54,22 +57,89 @@ class BaseResumeAppNaive extends React.Component {
     }
 
     getSummary = () => {
+        if (this.state.summary.length !== 0)
+            return null
         let url = this.data["Summary"].url
-        let retObj = (async () => {
+        //its result is a promise
+        let retObj = (async (xdata) => {
             const res = await axios.get(url)
-            return res.data.data
-        })() //its result is a promise
-        let elm = []
-        Promise.resolve(retObj).then(arr => {
-                elm.push(
-                    <div>
-                        <h1>Who I Am.......</h1>
-                        <h2>Tech Lead Developer - python | react | js | html5 | plsql | AWS</h2>
-                        {arr.map((x, id) => <p key={"pleft_" + id}>{x}</p>)}
-                    </div>
-                )
-            }
+            this.setState({summary: res.data.data})
+        })()
+        Promise.resolve(retObj).then(xdata => null) //dummy fill to resolve so no react warning
+        // return Promise.resolve(retObj).then(arr => {
+        //         return (
+        //             <div>
+        //                 <h1>Who I Am.......</h1>
+        //                 <h2>Tech Lead Developer - python | react | js | html5 | plsql | AWS</h2>
+        //                 {arr.map((x, id) => <p key={"pleft_" + id}>{x}</p>)}
+        //             </div>
+        //         )
+        //     }
+        // )
+    }
+
+    getProjects = () => {
+        if (this.state.projects.length !== 0)
+            return null
+        let url = this.data["Projects"].url
+        //its result is a promise
+        let retObj = (async (xdata) => {
+            const res = await axios.get(url)
+            this.setState({projects: res.data.data})
+        })()
+        Promise.resolve(retObj).then(xdata => null)
+    }
+    getProf_Expr = () => {
+        if (Object.keys(this.state.profexpr).length !== 0)
+            return null
+        let url = this.data["Experience"].url
+        //its result is a promise
+        let retObj = (async (xdata) => {
+            const res = await axios.get(url)
+            this.setState({profexpr: res.data})
+        })()
+        Promise.resolve(retObj).then(xdata => null)
+    }
+
+    displaySummary = () => {
+        this.getSummary()
+        return (
+            <div>
+                <h1>Who I Am.......</h1>
+                <h2>Tech Lead Developer - python | react | js | html5 | plsql | AWS</h2>
+                {this.state.summary.map((x, id) => <p key={"pleft_" + id}>{parser(x)}</p>)}
+            </div>
         )
+    }
+
+    displayProjects = () => {
+        this.getProjects()
+        return this.state.projects.map((x, id) => {
+            let title = Object.keys(x)[0]
+            let txt = Object.values(x)[0]
+            return (
+                <div key={"proj_" + id} className='projects'>
+                    <span className='title'>{title}</span>
+                    <span className='time-period'></span>
+                    <span>{txt}</span>
+                </div>
+            )
+        })
+    }
+
+    displayProfExpr = () => {
+        this.getProf_Expr()
+        let profexpr = {...this.state.profexpr}
+        let elm = []
+        for (let x in profexpr) {
+            // console.log(profexpr[x]["role"], profexpr[x]["time"])
+            elm.push(<div key={"prof_expr_" + x} className='position'>
+                    <span className='title'>{profexpr[x]["role"]}</span>
+                    <span className='time-period'>{profexpr[x]["time"]}</span>
+                </div>
+            )
+        }
+        return elm.map(x=>x)
     }
 
     render() {
@@ -97,7 +167,7 @@ class BaseResumeAppNaive extends React.Component {
                         <div className="row">
                             <div id="div_container_naive_left" className="col-lg-6">
                                 <div className='content'>
-                                    {this.getSummary()}
+                                    {this.displaySummary()}
                                 </div>
                             </div>
 
@@ -105,90 +175,16 @@ class BaseResumeAppNaive extends React.Component {
                                 <div className='content'>
                                     <h3 onClick={() => this.toggleModal("Summary")}>Synopsis</h3>
                                     <div className='synopsis'>
-                                    <span className='title'>
-                                      Technology Enthuziast, Tech Lead Developer, I love solving challenges in software programming
-                                    </span>
+                                        <span className='title'>
+                                        Technology Enthuziast, Tech Lead Developer, I love solving challenges in software programming
+                                        </span>
                                     </div>
 
                                     <h3 onClick={() => this.toggleModal("Experience")}>Career History</h3>
-                                    <div className='position'>
-                                        <span className='title'>Tech Lead @ RBS</span>
-                                        <span className='time-period'>October 2011 to Present</span>
-                                    </div>
-
-                                    <div className='position'>
-                                        <span
-                                            className='title'>Software Developer @ Syntel</span>
-                                        <span className='time-period'>April 2011 to September 2011</span>
-                                    </div>
-
-                                    <div className='position'>
-                                        <span
-                                            className='title'>Software Developer @ 9Dimensions</span>
-                                        <span className='time-period'>November 2009 to MArch 2011</span>
-                                    </div>
-
-
-                                    <div className='position'>
-                                        <span className='title'>Programmer @ DAVIM</span>
-                                        <span
-                                            className='time-period'>September 2007 to September 2008</span>
-                                    </div>
-
+                                    {this.displayProfExpr()}
 
                                     <h3 onClick={() => this.toggleModal("Projects")}>Projects</h3>
-                                    <div className='projects'>
-                                        <span className='title'>Arria NLG – bugets and forecasts Narratives</span>
-                                        <span className='time-period'></span>
-                                        <span>This project is generated as PoC under Future Finance vertical within RBS and
-                                            intended for automatic commentary / notes / narratives generation from
-                                            bank’s statement reports using Arria.com NLG platform and using Tableau’s UI
-                                            / story telling capabilities, intends to similify internal reporting to RBS
-                                            group and to board members. This would also help reduction in manual man
-                                            hours spending on generating these texts</span>
-                                    </div>
-
-                                    <div className='projects'>
-                                        <span
-                                            className='title'>Finance Portal (DRA: Disclosure Reporting Application)</span>
-                                        <span className='time-period'></span>
-                                        <span>Across the Bank, is required to produce multiple disclosures (Statutory
-                                            Compliance) which are submitted as part of quarterly result to regulators.
-                                            The project uses standard and consistent / configurable reports approache to
-                                            building disclosures using tech stack such as Python & Tornado, React &
-                                            Html5 and Oracle PL/Sql. The server and UI is capable of handling all the
-                                            traffic using asynchronous handles which are non blocking in nature. The
-                                            data which we aggregate and represnt comes from various sources using Argon
-                                            and are loaded by sqlloader files via python scripts and are automated in
-                                            batches using autosys schedular</span>
-                                    </div>
-
-                                    <div className='projects'>
-                                        <span className='title'>FRC (Finance Reporting Cube) over OACS (Oracle Analytics Clound)</span>
-                                        <span className='time-period'></span>
-                                        <span>platform is SaaS which has to be onboarded by GFS teams for management and
-                                            budget reporting. My role is to build reports in smartviewand do the
-                                            reconciliation over management and budge data. This is pure migration
-                                            project from older reporting systems (INEA/KHALIX/WALKER) to OACS world</span>
-                                    </div>
-
-                                    <div className='projects'>
-                                        <span className='title'>CNMS (Cash Nostro Management System)</span>
-                                        <span className='time-period'></span>
-                                        <span>I have written a proxy server for the project, the aim was to have a single
-                                            instance accessing RBS cash balances server and can give relevant data to
-                                            authorised client. Clients identified by the IP address defined in a config
-                                            file access to proxy server (socket implementation in python) can deliver
-                                            the data back the connected client via soap object. Its ondemand pull
-                                            application directly from any client that access and soap client handler
-                                            installed can get the balances</span>
-                                    </div>
-                                    <div className='projects'>
-                                        <span className='title'>Miscellaneous</span>
-                                        <span className='time-period'></span>
-                                        <span>I was also involved in non technology projects, reporting projects, migration
-                                            projects and Support L3 projects also.</span>
-                                    </div>
+                                    {this.displayProjects()}
 
                                     <h3 onClick={() => this.toggleModal("Education")}>Education</h3>
                                     <div className='education'>

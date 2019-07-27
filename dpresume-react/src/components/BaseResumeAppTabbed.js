@@ -30,7 +30,7 @@ class BaseResumeAppTabbed extends React.Component {
         this.state = {
             curtag: "Summary",
             curClass:"badge badge-dark text-white",
-            activeClass:"badge bg-white text-primary border border-secondary"
+            activeClass:"badge bg-white text-primary border border-secondary "
         }
     }
 
@@ -71,7 +71,7 @@ class BaseResumeAppTabbed extends React.Component {
                         <TopComponent/>
                     </div>
                 </div>
-                <div className="" style={{position: 'fixed', left: 0}}>
+                <div className="" style={{position: 'fixed',left: 0, height:'100%'}}>
                     <div className={this.state.curtag==="Summary"?this.state.activeClass:this.state.curClass} style={{cursor: 'pointer'}}
                          onClick={() => this.updateData("Summary")}>Summary
                     </div>
@@ -93,7 +93,7 @@ class BaseResumeAppTabbed extends React.Component {
                     </div>
                     <br/>
                 </div>
-                <div className="" style={{marginLeft: '5rem'}}>
+                <div className="" style={{marginLeft: '7rem'}}>
                     <div className="row" style={{marginBottom: '5rem'}}>
                         <div className="col-lg-12">
                             {this.display(this.state.curtag)}

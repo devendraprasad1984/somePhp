@@ -2,6 +2,7 @@ http://phydeve.epizy.com/imozar/index-1.html
 http://anaenders.com/
 http://ianenders.com/
 
+https://javascript.info/dom-attributes-and-properties
 
 tech lead - python js react sql/plsq aws
 http://dpresume.com
