@@ -1,3 +1,5 @@
+PV aws case id: 03248586
+
 http://phydeve.epizy.com/imozar/index-1.html
 http://anaenders.com/
 http://ianenders.com/
@@ -255,9 +257,11 @@ sudo su - root
 chmod -R 777 <foldername>
 service --status-all
 sudo apt-get update && sudo apt-get upgrade
+sudo apt autoremove
+sudo apt remove apache2 --purge
 screen recorder: sudo apt install kazam
 node,npm install latest in zip and save and point it in .bashrc file and point to node and npm
-sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 apache2-mpm-worker php7.2 phpmyadmin nginx
+sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk a2enconf gitweb apache2 php7.2 phpmyadmin nginx
 sudo apt-get remove python-pip python3.7 python3-pip python-dev python
 sudo apt-get install alacarte
 vypr vpn:
@@ -377,8 +381,39 @@ sudo apt-get install -y phpmyadmin
 (localhost->root->admin1234)
 /etc/apache2/conf-enabled/phpmyadmin.conf
 
+sudo systemctl unmask apache2
+sudo service apache2 restart
+
 php7.2-cgi php-xdebug php-soap php-curl kate bluefish sublime-text-installer
-sudo apt-get install yarn pypy nodejs default-jdk apache2 apache2-mpm-worker sublime-text-installer
+sudo apt-get install yarn pypy nodejs default-jdk apache2 apache2-doc apache2-utils sublime-text-installer
+complete clean removal: apt remove --purge apache2 apache2-data apache2-bin
+
+dpkg -l | grep apache2
+sudo dpkg --configure -a
+sudo apt-get install -f
+apt-cache policy apache2
+sudo apt remove 
+sudo apt-get update
+sudo apt-get upgrade
+sudo nano /etc/apt/sources.list
+
+The main problem is missed /etc/apt/sources.list. You can recreate it with:
+sudo nano /etc/apt/sources.list
+deb http://archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse  
+deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu trusty-security main restricted universe multiverse  
+deb http://archive.canonical.com/ubuntu trusty partner    
+deb http://extras.ubuntu.com/ubuntu trusty main   
+
+
+
+
+sudo ls –l /var/lib/dpkg/info | grep –i apache2
+sudo mv /var/lib/dpkg/info/package_name.* /tmp
+sudo apt-get update
+
+
 google web fonts: sudo apt-get install typecatcher
 fix external drive mount:
 ls /dev/ | grep sd
@@ -468,7 +503,6 @@ wine ./setup-lightshot.exe
 virtualbox:
 https://o7planning.org/en/11891/installing-virtualbox-on-ubuntu
 sudo apt-get remove virtualbox* --purge
-
 
 
 heroku create --buildpack https://github.com/devendraprasad1984/somePhp/tree/master/react/jsonserver

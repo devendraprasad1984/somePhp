@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/dpresume-react.iml" filepath="$PROJECT_DIR$/.idea/dpresume-react.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dpresume-react.iml" filepath="$PROJECT_DIR$/dpresume-react.iml" />
     </modules>
   </component>
 </project>

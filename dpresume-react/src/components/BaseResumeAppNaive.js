@@ -105,7 +105,7 @@ class BaseResumeAppNaive extends React.Component {
         this.getSummary()
         return (
             <div>
-                <h1>Who I Am.......</h1>
+                <h1 style={{textAlign: 'initial',fontSize: '30pt'}}>Who I Am....</h1>
                 <h2>Tech Lead Developer - python | react | js | html5 | plsql | AWS</h2>
                 {this.state.summary.map((x, id) => <p key={"pleft_" + id}>{parser(x)}</p>)}
             </div>

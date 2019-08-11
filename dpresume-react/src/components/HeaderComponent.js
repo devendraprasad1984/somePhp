@@ -25,11 +25,11 @@ export default class HeaderComponent extends Component {
     render() {
         return (
             <div>
-                <div className="h_left">
-                    Devendra Prasad - Tech Lead Developer
-                    <LinksComponent/>
+                <div>
+                    <div className="h_left" style={{textAlign: 'initial',fontSize: '20pt'}}>Devendra Prasad-Tech Lead Developer</div>
+                    <div style={{wordWrap: 'initial'}}><LinksComponent/></div>
                 </div>
-                <div className="h_right">
+                <div className="h_right"  style={{textAlign: 'initial',fontSize: '12px'}}>
                     Email: devendraprasad1984@gmail.com<br/>
                     Mob: +91 9582797772
                     <span style={{float: 'right', color:'white'}}>
