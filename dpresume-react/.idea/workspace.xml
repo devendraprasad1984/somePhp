@@ -2,174 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7472e1cd-45bd-44b8-8103-ffea35cf97b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/composerJson.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/devendra.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dpresume-react.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/update.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/update/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cert/open_edg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cert/open_edg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cert/oracle_sql.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cert/oracle_sql.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cert/udemy_react.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cert/udemy_react.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/change/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/change/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/change/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/change/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/cicd/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/cicd/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/my_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/my_notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/node/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/node/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/node/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/node/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/node/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/node/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/pdf/Devendra_Prasad_sidebar.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/pdf/Devendra_Prasad_sidebar.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/pdf/VB6TrainingKIT.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/pdf/VB6TrainingKIT.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/pdf/VBAEyeOpner.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/pdf/VBAEyeOpner.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/pdf/angularJs.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/pdf/angularJs.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/pdf/aws-dev-associate-notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/pdf/aws-dev-associate-notes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/pdf/aws-symbi-project.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/pdf/aws-symbi-project.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/pdf/dp_cover_letter.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/pdf/dp_cover_letter.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/pdf/pythonTrainingKIT.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/pdf/pythonTrainingKIT.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/18.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/19.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/19.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/20.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/21.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/21.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/22.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/22.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/23.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/23.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/24.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/24.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/25.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/25.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/26.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/26.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/27.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/27.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/28.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/28.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/29.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/29.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/30.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/30.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/31.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/31.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/32.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/33.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/33.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/42.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/42.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/43.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/43.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/py/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/py/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/scrum/scrum1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/scrum/scrum1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/scrum/scrum3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/scrum/scrum3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/scrum/scrum4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/scrum/scrum4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/scrum/scrum5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/scrum/scrum5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/scrum/scrum7.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/scrum/scrum7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/scrum/scrum8.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/scrum/scrum8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/ag.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/ag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/aws.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/aws.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/cloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/d3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/d3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/dp_lead_nlg.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/dp_lead_nlg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/dpfv_rbs.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/dpfv_rbs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/flask.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/flask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/github.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/github.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/html5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/html5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/jira.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/jira.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/jq.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/jq.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/react.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/react.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/skills/tableau.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/skills/tableau.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/study/10th.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/study/10th.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/study/12th.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/study/12th.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/study/degree.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/study/degree.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/study/pgditm.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/study/pgditm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/all.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/googleFontCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/googleFontCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/my.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/my.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/semantic.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/semantic.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/semantic.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/semantic.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.otf" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/icons.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/themes/default/assets/images/flags.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/themes/default/assets/images/flags.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/global/tick.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/global/tick.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/adhoc.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/adhoc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/certifications.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/certifications.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/education.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/education.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/links.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/links.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/prof_expr.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/prof_expr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/projects.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/skills.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/skills.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/amiri.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/amiri.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/c540-italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/c540-italic.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/c540-italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/c540-italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/c540-italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/c540-italic.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/c540.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/c540.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/c540.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/c540.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/c540.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/c540.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/googleSans.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/googleSans.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webfonts/roboto.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/webfonts/roboto.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BaseResumeAppNaive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseResumeAppNaive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../info.txt" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,9 +17,6 @@
     <execution>
       <executable />
     </execution>
-  </component>
-  <component name="FileEditorManager">
-    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -198,20 +32,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/components/BaseResumeAppTabbed.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/public/admin/logging.html" />
-        <option value="$PROJECT_DIR$/public/services/ServiceDetails.php" />
-        <option value="$PROJECT_DIR$/public/resources/prof_expr.json" />
-        <option value="$PROJECT_DIR$/public/resources/projects.json" />
-        <option value="$PROJECT_DIR$/public/resources/summary.json" />
-        <option value="$PROJECT_DIR$/public/resources/skills.json" />
-      </list>
-    </option>
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -232,43 +52,8 @@
     <option name="width" value="666" />
     <option name="height" value="748" />
   </component>
+  <component name="ProjectId" id="1PmkC7WVMbzRuEQyOgkj6LiqiKh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="dpresume-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dpresume-react" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dpresume-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dpresume-react" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dpresume-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dpresume-react" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dpresume-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dpresume-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -301,142 +86,21 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="20" width="1331" height="748" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1975213" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Pylint" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="RNConsole" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="SciView" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/BaseResumeAppNaive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/services/services_dp.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BaseResumeAppTabbed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/logging.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../resume/services/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/services/ServiceDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/adhoc.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/certifications.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/education.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/links.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/summary.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="104" selection-start-line="3" selection-start-column="104" selection-end-line="3" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/projects.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/prof_expr.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/skills.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>

@@ -35,6 +35,20 @@ http://alnahiya.com/manpower/
 
 cast pc to tv
 https://www.omgubuntu.co.uk/2019/01/chromecast-tv-gnome-shell-extension
+---------------
+rufus bootable disk is for windows only but on ubuntu/linux, we can do following to make bootable drives
+Rufus app is available for Windows platform only.
+Plug in the USB flash drive and determine the device it's mounted on with the command:
+sudo fdisk -l 
+This time around it was /dev/sdc1 for me, so I'll use that as my example.
+Unmount the device
+umount /dev/sdc1 
+The next step is to copy the iso. Copy to the device not partition (i.e copy to sdc not sdc1) as shown below:
+sudo dd if=filename.iso of=/dev/sdc bs=4M
+Perform final steps :
+sync   
+sudo eject /dev/sdc
+----------------------------
 
 google seo:
 submit sites to: trafficflowseo.com
@@ -167,6 +181,7 @@ archi qs: https://www.wisdomjobs.com/e-university/togaf-interview-questions.html
 https://www.glassdoor.co.in/Interview/india-enterprise-architect-interview-questions-SRCH_IL.0,5_IN115_KO6,26.htm
 https://careers.simplicable.com/careers/new/101-enterprise-architecture-interview-questions
 python algo Qs: https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+python test: https://www.tutorialspoint.com/python/python_questions_answers
 
 realtime react examples: https://react.rocks/tag/Realtime
 http://www.javadecompilers.com/
@@ -211,6 +226,10 @@ git add .
 git commit -m "update"
 git push
 
+msfont
+https://www.ostechnix.com/install-microsoft-windows-fonts-ubuntu-16-04/
+
+linux dist: https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg
 
 
 git config --global user.name "devendraprasad1984@gmail.com"
@@ -260,8 +279,19 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt autoremove
 sudo apt remove apache2 --purge
 screen recorder: sudo apt install kazam
+
+sudo apt-get purge `dpkg -l | grep apache2| awk '{print $2}' |tr "\n" " "`
+sudo add-apt-repository ppa:ondrej/apache2
+sudo apt-get install software-properties-common
+sudo apt-get update
+
+sudo apt-get purge `dpkg -l | grep php| awk '{print $2}' |tr "\n" " "`
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get install software-properties-common
+sudo apt-get install php7.2 php5.6
+
 node,npm install latest in zip and save and point it in .bashrc file and point to node and npm
-sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk a2enconf gitweb apache2 php7.2 phpmyadmin nginx
+sudo apt-get install wine-stable xterm yarn pypy python3.7 python3-pip nodejs npm default-jdk apache2 php7.2 phpmyadmin nginx
 sudo apt-get remove python-pip python3.7 python3-pip python-dev python
 sudo apt-get install alacarte
 vypr vpn:
@@ -1805,4 +1835,9 @@ ic enterprise
 https://1c-dn.com/library/1c_enterprise_script/
 https://1c-dn.com/search/?q=procedure+example
 dev: https://1c-dn.com/library/tutorials/practical_developer_guide_data_writing_procedure/?sphrase_id=112320
+
+
+
+
+
 
