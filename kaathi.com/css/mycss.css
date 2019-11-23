@@ -6,4 +6,34 @@ div .link_logo > a > img{
 .productImages > div img{
     height: 250px;
     width: 250px;
+    text-align: center;
+    vertical-align: middle;
+    left: 30%;
+    top: 50%;
+}
+
+.priceline{
+    font-weight: bold;
+    color: navy;
+}
+
+
+.cenAlign{
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 5em;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+    .productImages > div img{
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        vertical-align: middle;
+        left: 10%;
+        top: 50%;
+    }
 }
