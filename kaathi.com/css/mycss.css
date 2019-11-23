@@ -1,0 +1,9 @@
+div .link_logo > a > img{
+    height: 30px;
+    width: 50px;
+}
+
+.productImages > div img{
+    height: 250px;
+    width: 250px;
+}
