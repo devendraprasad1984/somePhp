@@ -1,25 +1,34 @@
 
-javascript:S2703@"WAdd the "let", "const" or "var" keyword to this declaration of "x" to make it explicit.(ÑÃêñøÿÿÿÿ8‡¨§Âé-
-‚javascript:S2703R"ZAdd the "let", "const" or "var" keyword to this declaration of "elm5" to make it explicit.(˜Œ°ÿÿÿÿÿ8™µ—Ãé-
-javascript:S2703o"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(Û±½ùÿÿÿÿ8€øûÃé-
-}javascript:S2703C"ZAdd the "let", "const" or "var" keyword to this declaration of "desc" to make it explicit.(ıÂ„ˆ8ö¬éÂé-
-yjavascript:S1117["Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(¯„¿×ùÿÿÿÿ8¸ëˆÃê-
-~javascript:S2703U"[Add the "let", "const" or "var" keyword to this declaration of "shtml" to make it explicit.(Ö¶Á8¯÷ˆÃé-
-‰javascript:S2703_"aAdd the "let", "const" or "var" keyword to this declaration of "savedAmount" to make it explicit.(’É½ûÿÿÿÿ8ÍíóÂê-
-‚javascript:S2703A"_Add the "let", "const" or "var" keyword to this declaration of "v_product" to make it explicit.(ĞöØ±8¹«ÇÂé-
-€javascript:S2703F"]Add the "let", "const" or "var" keyword to this declaration of "amzLink" to make it explicit.(Â’ˆÂ8 ™Ãé-
-„javascript:S2703P"\Add the "let", "const" or "var" keyword to this declaration of "elm3_1" to make it explicit.(ÿÜ¥ßÿÿÿÿÿ8ÌÈ½Âê-
-‚javascript:S2703H"ZAdd the "let", "const" or "var" keyword to this declaration of "elm1" to make it explicit.(å¢Ï«úÿÿÿÿ8¾ÛÈÂé-
-zjavascript:S1117"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(­ôÔ´ùÿÿÿÿ8é½´Âê-
-~javascript:S2703D"\Add the "let", "const" or "var" keyword to this declaration of "images" to make it explicit.(Õø´Z8„·ëÂé-
-ƒjavascript:S2703B"[Add the "let", "const" or "var" keyword to this declaration of "pname" to make it explicit.(±ÍÿŸıÿÿÿÿ8ëáìÂé-
-}javascript:S1117"T"pname" hides or potentially hides a variable declared in an outer scope at line 66.(­ôÔ´ùÿÿÿÿ8ŒÓÁÉé-
-}javascript:S2703N"ZAdd the "let", "const" or "var" keyword to this declaration of "elm2" to make it explicit.(—×æ8ØÜËÂé-
-†javascript:S2703\"^Add the "let", "const" or "var" keyword to this declaration of "discount" to make it explicit.(¾ú¡Ÿÿÿÿÿÿ8©ğÂê-
-„javascript:S2703^"aAdd the "let", "const" or "var" keyword to this declaration of "finalAmount" to make it explicit.(Õß¦Ã8ÍíóÂê-
-|javascript:S2703Q"ZAdd the "let", "const" or "var" keyword to this declaration of "elm4" to make it explicit.(¸ô“8¦íÏÂé-
-|javascript:S1117f"T"shtml" hides or potentially hides a variable declared in an outer scope at line 85.(µ Êşÿÿÿÿ8Ú„íÂê-
-xjavascript:S1117e"P"x" hides or potentially hides a variable declared in an outer scope at line 64.(Ò¶®¤ùÿÿÿÿ8©ˆÃê-
-}javascript:S2703O"ZAdd the "let", "const" or "var" keyword to this declaration of "elm3" to make it explicit.(˜¢–8«ïÒÂé-
-yjavascript:S1117d"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(ÌëšÍıÿÿÿÿ8ñ±òÂê-
-}javascript:S2703E"[Add the "let", "const" or "var" keyword to this declaration of "price" to make it explicit.(ìÂÎ8–õëÂé-
+xjavascript:S1117²"T"elm3" hides or potentially hides a variable declared in an outer scope at line 100.(„©¿Ò8«ãÍ®ì-
+€javascript:S2703‡"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(Û±½ùÿÿÿÿ8€øûÃé-
+}javascript:S2703Y"[Add the "let", "const" or "var" keyword to this declaration of "price" to make it explicit.(ìÂÎ8–õëÂé-
+ƒjavascript:S2703V"[Add the "let", "const" or "var" keyword to this declaration of "pname" to make it explicit.(±ÍÿŸıÿÿÿÿ8ëáìÂé-
+†javascript:S2703t"^Add the "let", "const" or "var" keyword to this declaration of "discount" to make it explicit.(¾ú¡Ÿÿÿÿÿÿ8©ğÂê-
+ƒjavascript:S2703j"[Add the "let", "const" or "var" keyword to this declaration of "shtml" to make it explicit.(Â³œøşÿÿÿÿ8¯÷ˆÃé-
+‚javascript:S2703g"ZAdd the "let", "const" or "var" keyword to this declaration of "elm5" to make it explicit.(˜Œ°ÿÿÿÿÿ8™µ—Ãé-
+}javascript:S1117³"T"elm4" hides or potentially hides a variable declared in an outer scope at line 102.(½ì‡Ïıÿÿÿÿ8«ãÍ®ì-
+yjavascript:S1117s"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(¯„¿×ùÿÿÿÿ8¸ëˆÃê-
+zjavascript:S1117á"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(­ôÔ´ùÿÿÿÿ8¸Ç˜°ì-
+javascript:S2703T"WAdd the "let", "const" or "var" keyword to this declaration of "x" to make it explicit.(ÑÃêñøÿÿÿÿ8‡¨§Âé-
+‰javascript:S2703w"aAdd the "let", "const" or "var" keyword to this declaration of "savedAmount" to make it explicit.(’É½ûÿÿÿÿ8ÍíóÂê-
+}javascript:S2703d"ZAdd the "let", "const" or "var" keyword to this declaration of "elm3" to make it explicit.(˜¢–8«ïÒÂé-
+|javascript:S1117±"S"elm2" hides or potentially hides a variable declared in an outer scope at line 99.(º×Îšÿÿÿÿÿ8«ãÍ®ì-
+}javascript:S1117~"U"shtml" hides or potentially hides a variable declared in an outer scope at line 106.(µ Êşÿÿÿÿ8Ú„íÂê-
+„javascript:S2703v"aAdd the "let", "const" or "var" keyword to this declaration of "finalAmount" to make it explicit.(Õß¦Ã8ÍíóÂê-
+yjavascript:S1117|"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(ÌëšÍıÿÿÿÿ8ñ±òÂê-
+`javascript:S1854´"7Remove this useless assignment to local variable "elm5"(öÂ¡İûÿÿÿÿ8¸Ç˜°ì-
+}javascript:S1117´"T"elm5" hides or potentially hides a variable declared in an outer scope at line 103.(öÂ¡İûÿÿÿÿ8³üĞ®ì-
+~javascript:S2703X"\Add the "let", "const" or "var" keyword to this declaration of "images" to make it explicit.(Õø´Z8„·ëÂé-
+javascript:S2703"[Add the "let", "const" or "var" keyword to this declaration of "prods" to make it explicit.(òé¯¼8Å°Ò‹ì-
+‚javascript:S2703]"ZAdd the "let", "const" or "var" keyword to this declaration of "elm1" to make it explicit.(å¢Ï«úÿÿÿÿ8¾ÛÈÂé-
+|javascript:S2703f"ZAdd the "let", "const" or "var" keyword to this declaration of "elm4" to make it explicit.(¸ô“8¦íÏÂé-
+‚javascript:S2703U"_Add the "let", "const" or "var" keyword to this declaration of "v_product" to make it explicit.(ĞöØ±8¹«ÇÂé-
+}javascript:S2703W"ZAdd the "let", "const" or "var" keyword to this declaration of "desc" to make it explicit.(ıÂ„ˆ8ö¬éÂé-
+}javascript:S1117á"T"pname" hides or potentially hides a variable declared in an outer scope at line 86.(­ôÔ´ùÿÿÿÿ8¸Ç˜°ì-
+|javascript:S1117°"S"elm1" hides or potentially hides a variable declared in an outer scope at line 93.(‘âÒşşÿÿÿÿ8¸Ç˜°ì-
+gjavascript:UnusedVariable´"5Remove the declaration of the unused 'elm5' variable.(öÂ¡İûÿÿÿÿ8¸Ç˜°ì-
+}javascript:S2703c"ZAdd the "let", "const" or "var" keyword to this declaration of "elm2" to make it explicit.(—×æ8ØÜËÂé-
+xjavascript:S1117}"P"x" hides or potentially hides a variable declared in an outer scope at line 84.(Ò¶®¤ùÿÿÿÿ8©ˆÃê-
+zjavascript:S2703®"WAdd the "let", "const" or "var" keyword to this declaration of "o" to make it explicit.(úŠ«8Ğï³±ì-
+€javascript:S2703Z"]Add the "let", "const" or "var" keyword to this declaration of "amzLink" to make it explicit.(Â’ˆÂ8 ™Ãé-
+_javascript:S930"7This function expects no arguments, but 1 was provided.(ÄÂ¸ûÿÿÿÿ8¥üÑ±ì-

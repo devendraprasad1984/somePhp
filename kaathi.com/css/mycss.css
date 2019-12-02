@@ -1,6 +1,8 @@
-body {
+html, body {
     color: #636363;
     font-size: 10pt;
+    margin-top: 6em;
+    max-width: 1200px;
 }
 
 .color1 {
@@ -10,7 +12,12 @@ body {
 a {
     color: #008ECC;
 }
-.click{
+
+a span {
+    color: white;
+}
+
+.click {
     cursor: pointer;
 }
 
@@ -25,23 +32,60 @@ a {
     transition: all .3s ease 0s
 }
 
-.main_box {
-    font-size: 10pt;
+.cart_bg .card{
+    color: #ff6347;
+    font-weight: bolder;
+    font-size: 14pt;
+}
+.cart_bg {
+    color: white;
+    background-color: #ff6347;
+    right: 0;
+    overflow: auto;
+    position: relative;
 }
 
+.header_format {
+    background-color: #3fcaff;
+    color: #6a12c9;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header_format div {
+    display: inline-block;
+    padding: 5px;
+}
+
+.right_content {
+    text-align: right;
+}
 
 div .link_logo > a > img {
     height: 30px;
     width: 50px;
 }
 
+.top-control > button {
+    display: inline-block;
+}
+
 .productImages > div img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     text-align: center;
     vertical-align: middle;
     left: 30%;
     top: 50%;
+}
+
+.fixed-right {
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    height: 400px;
+    z-index: 1030
 }
 
 .priceline {
@@ -55,9 +99,22 @@ div .link_logo > a > img {
     margin-bottom: 5em;
 }
 
+#id_div_cart {
+    display: block;
+}
+
+
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightgreen;
+
+    html, body {
+        color: #636363;
+        font-size: 10pt;
+        margin-top: 6em;
+        max-width: 800px;
+    }
+
+    #id_div_cart {
+        display: none;
     }
 
     .productImages > div img {
@@ -68,4 +125,20 @@ div .link_logo > a > img {
         left: 10%;
         top: 50%;
     }
+
+    .header_format div {
+        display: inline;
+        padding: 5px;
+    }
+
+    .cart_bg {
+        top:20px;
+        left:0;
+        right: 0;
+        width: 90%;
+        height: 100%;
+        position: fixed;
+        z-index: 1100;
+    }
+
 }
