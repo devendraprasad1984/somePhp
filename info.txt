@@ -19,9 +19,21 @@ https://www.practicepython.org/
 
 rbs anywhere url: https://rbsconnect.rbspeople.com/vpn/index.html
 
+RBS citrix: https://www.citrix.com/en-in/downloads/citrix-workspace/
+RBS: https://www.citrix.com/en-in/products/receiver.html
+https://rbsconnect.rbspeople.com/vpn/index.html
+
+
 Amazon SDE: 23280666369383
 
 jyoti adhar: 9430 6862 3504
+
+
+php apache portal windows
+https://www.uwamp.com/en/?page=download
+https://laragon.org/download/
+https://tutorials.ubuntu.com/tutorial/install-and-configure-apache#2
+
 
 wheel nav: http://wheelnavjs.softwaretailoring.net/index.html
 ssh dlrgvkes@dpresume.com / 103.228.112.39->3vg3wWRm56
