@@ -1,13 +1,18 @@
 
-gjavascript:UnusedVariableY"6Remove the declaration of the unused 'price' variable.(†Ø“Ùúÿÿÿÿ8É·è¶í-
-_javascript:S930"7This function expects no arguments, but 1 was provided.(ÄÂ¸ûÿÿÿÿ8ùî¶í-
-`javascript:S1854Y"8Remove this useless assignment to local variable "price"(†Ø“Ùúÿÿÿÿ8É·è¶í-
-sjavascript:S1117s"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(§öŸ;8¸ëˆÃê-
-xjavascript:S1117}"P"x" hides or potentially hides a variable declared in an outer scope at line 84.(Ò¶®¤ùÿÿÿÿ8©ˆÃê-
-javascript:S2703T"WAdd the "let", "const" or "var" keyword to this declaration of "x" to make it explicit.(ÑÃêñøÿÿÿÿ8‡¨§Âé-
-sjavascript:S1117|"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(›Àß8ñ±òÂê-
-zjavascript:S2703®"WAdd the "let", "const" or "var" keyword to this declaration of "o" to make it explicit.(úŠ«8Ğï³±ì-
-€javascript:S2703‡"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(Û±½ùÿÿÿÿ8€øûÃé-
-gjavascript:UnusedVariable³"5Remove the declaration of the unused 'elm5' variable.(¤ŒÙ¬üÿÿÿÿ8¸Ç˜°ì-
-zjavascript:S1117à"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(†íÛŸÿÿÿÿÿ8¸Ç˜°ì-
-`javascript:S1854³"7Remove this useless assignment to local variable "elm5"(¤ŒÙ¬üÿÿÿÿ8¸Ç˜°ì-
+gjavascript:UnusedVariable{"6Remove the declaration of the unused 'price' variable.(†Ø“Ùúÿÿÿÿ8ÓßŸİí-
+zjavascript:S1117Ÿ"Q"x" hides or potentially hides a variable declared in an outer scope at line 118.(Ò¶®¤ùÿÿÿÿ8ÓßŸİí-
+zjavascript:S1117¿"Q"i" hides or potentially hides a variable declared in an outer scope at line 169.(½îîÀşÿÿÿÿ8ÓßŸİí-
+Ejavascript:S1116˜"Remove this empty statement.(ôŸìúÿÿÿÿ8Ô©¹İí-
+gjavascript:UnusedVariableò"5Remove the declaration of the unused 'elm5' variable.(¤ŒÙ¬üÿÿÿÿ8ÓßŸİí-
+javascript:S2703v"WAdd the "let", "const" or "var" keyword to this declaration of "x" to make it explicit.(ÑÃêñøÿÿÿÿ8ÓßŸİí-
+`javascript:S1854ò"7Remove this useless assignment to local variable "elm5"(¤ŒÙ¬üÿÿÿÿ8ÓßŸİí-
+zjavascript:S1117¦"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(†íÛŸÿÿÿÿÿ8ÓßŸİí-
+_javascript:S930Ü"7This function expects no arguments, but 1 was provided.(ÄÂ¸ûÿÿÿÿ8†½ÊÛí-
+€javascript:S2703©"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(Û±½ùÿÿÿÿ8ÓßŸİí-
+tjavascript:S3403µ"KRemove this "===" check; it will always be false. Did you mean to use "=="?( «Ÿáøÿÿÿÿ8ÓßŸİí-
+–javascript:S2583µ"mChange this condition so that it does not always evaluate to "false"; some subsequent code is never executed.( «Ÿáøÿÿÿÿ8ÓßŸİí-
+zjavascript:S2703í"WAdd the "let", "const" or "var" keyword to this declaration of "o" to make it explicit.(úŠ«8ÓßŸİí-
+tjavascript:S1117•"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(§öŸ;8ÓßŸİí-
+`javascript:S1854{"8Remove this useless assignment to local variable "price"(†Ø“Ùúÿÿÿÿ8ÓßŸİí-
+tjavascript:S1117"Q"qty" hides or potentially hides a variable declared in an outer scope at line 3.(›Àß8ñ±òÂê-
+zjavascript:S1117³"Q"i" hides or potentially hides a variable declared in an outer scope at line 169.(èø´úÿÿÿÿ8ÓßŸİí-

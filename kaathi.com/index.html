@@ -26,15 +26,14 @@
     <div class="top-control">
         <input style="border: 0" class="form-control" type="text" placeholder="Search">
         <button class="btn btn-light" onclick="displayCart()">Cart</button>
-        <button class="btn btn-light">Products</button>
-        <button class="btn btn-light">Contact</button>
+        <button class="btn btn-light" onclick="makeProductPage();">Products</button>
+        <button class="btn btn-light" onclick="makeContactPage();">Contact</button>
     </div>
 </header>
 
 <section class="row">
-    <div id="id_div_container" class="col-lg-8"></div>
-    <div id="id_div_right_container" class="col-lg-4 card cart_bg pull-right">
-    </div>
+    <div id="id_div_container" class="col-lg-8 col-xs-6"></div>
+    <div id="id_div_right_container" class="col-lg-4 col-xs-6 card cart_bg pull-right"></div>
 </section>
 
 <footer class="container">
@@ -44,6 +43,7 @@
         <a href="#"><i class="fa fa-lg fa-twitter"></i></a>
         <a href="#"><i class="fa fa-lg fa-whatsapp"></i></a>
     </div>
+    <div class="move2top btn btn-info" onclick="move2top();" title="move to top"><i class="fa fa-arrow-up"></i></div>
 </footer>
 
 
@@ -61,7 +61,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-23581568-13');
 </script> -->
 <script src="js/rocketloader.js" data-cf-settings="deb9e86e30198f498985e7a7-|49" defer=""></script>

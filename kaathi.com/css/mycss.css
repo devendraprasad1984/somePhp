@@ -18,12 +18,25 @@ a span {
     color: white;
 }
 
+.move2top{
+    cursor: pointer;
+    float:right;
+    bottom: 5px;
+    right: 5px;
+    position: fixed;
+}
+
 .click {
     cursor: pointer;
 }
 
+#id_div_right_container{
+    margin-bottom:4em;
+    display: block;
+}
+
 .cart_bg .xcard {
-    color: #ff6347;
+    color: inherit;
     font-weight: bolder;
     padding: 5px;
 }
@@ -94,11 +107,18 @@ a span {
 }
 
 .cart_bg {
-    color: white;
-    background-color: #ff6347;
+    color: gray;
+    /*background-color: #ff6347;*/
     right: 0;
     overflow: auto;
     position: relative;
+}
+
+#id_product_page span.btn{
+    padding: 2px;
+    margin: 1px;
+    width:100%;
+    text-align: left;
 }
 
 .header_format {
@@ -113,6 +133,15 @@ a span {
 .header_format div {
     display: inline-block;
     padding: 5px;
+}
+
+h2 span.btn{
+    padding: 10px;
+    margin:2px;
+}
+
+.btn{
+    font-weight: bolder;
 }
 
 .right_content {
@@ -161,14 +190,14 @@ div .link_logo > a > img {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     html, body {
         color: #636363;
         font-size: 10pt;
         margin-top: 6rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
-        max-width: 1000px;
+        max-width: 700px;
         overflow-x: hidden;
     }
 
@@ -199,5 +228,13 @@ div .link_logo > a > img {
         position: fixed;
         z-index: 1100;
     }
+    #id_div_right_container{
+        display: none;
+    }
+    h2 span.btn{
+        padding: 6px;
+        margin:2px;
+    }
+
 
 }
