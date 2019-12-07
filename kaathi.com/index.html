@@ -15,19 +15,16 @@
     <link rel="stylesheet" href="js/toastr.min.css">
 </head>
 
-<body class="">
+<body>
 <header class="header_format fixed-top">
-    <div style="color:white;">Payment via kaathi.com will have all taxes and delivery inclusive</div>
-    <br>
-    <div style="color: white;">
-        <div><span style="font-size: 18pt;">kaathi.com</span></div>
-        <div>GST: 07ATIPP0720B1Z6</div>
-    </div>
+    <h3 class="text-dark" title="GST: 07ATIPP0720B1Z6">kaathi.com</h3>
     <div class="top-control">
-        <input style="border: 0" class="form-control" type="text" placeholder="Search">
-        <button class="btn btn-light" onclick="displayCart()">Cart</button>
-        <button class="btn btn-light" onclick="makeProductPage();">Products</button>
-        <button class="btn btn-light" onclick="makeContactPage();">Contact</button>
+        <div class="">
+            <input style="border: 0" class="form-control" type="text" placeholder="Search">
+            <button class="btn btn-light" onclick="displayCart()">Cart</button>
+            <button class="btn btn-light" onclick="makeProductPage();">Products</button>
+            <button class="btn btn-light" onclick="makeContactPage();">Contact</button>
+        </div>
     </div>
 </header>
 
@@ -43,7 +40,9 @@
         <a href="#"><i class="fa fa-lg fa-twitter"></i></a>
         <a href="#"><i class="fa fa-lg fa-whatsapp"></i></a>
     </div>
-    <div class="move2top btn btn-info" onclick="move2top();" title="move to top"><i class="fa fa-arrow-up"></i></div>
+    <div class="move2top btn btn-light" onclick="move2top();" title="move to top"><i class="fa fa-arrow-up"></i></div>
+    <div id="id_bottom_cart_icon" class="bottom_cart btn btn-light" onclick="clickCartBadge();" title="cart"><i
+            class="fa fa-opencart"></i><span class="badge badge-danger" style="top:-10px; ">0</span></div>
 </footer>
 
 
@@ -64,6 +63,7 @@
   gtag('config', 'UA-23581568-13');
 </script> -->
 <script src="js/rocketloader.js" data-cf-settings="deb9e86e30198f498985e7a7-|49" defer=""></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=addressOnMap"></script>-->
 <script src="js/index.js"></script>
 
 </body>

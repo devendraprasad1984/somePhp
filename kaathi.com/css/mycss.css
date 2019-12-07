@@ -26,6 +26,14 @@ a span {
     position: fixed;
 }
 
+.bottom_cart{
+    cursor: pointer;
+    float:right;
+    bottom: 5px;
+    right: 45px;
+    position: fixed;
+}
+
 .click {
     cursor: pointer;
 }
@@ -153,6 +161,10 @@ div .link_logo > a > img {
     width: 50px;
 }
 
+.top-control{
+    width: 100%;
+    /*float: right;*/
+}
 .top-control > button {
     display: inline-block;
 }
@@ -182,7 +194,7 @@ div .link_logo > a > img {
 .cenAlign {
     text-align: center;
     vertical-align: middle;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 #id_div_cart {
@@ -220,7 +232,7 @@ div .link_logo > a > img {
     }
 
     .cart_bg {
-        top: 20px;
+        top: 0;
         left: 0;
         right: 0;
         width: 100%;
