@@ -202,9 +202,9 @@ div .link_logo > a > img {
     html, body {
         color: #636363;
         font-size: 10pt;
-        margin-top: 1.5rem;
-        margin-left: 0.2rem;
-        margin-right: 0.2rem;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         max-width: 580px;
         overflow-x: hidden;
     }

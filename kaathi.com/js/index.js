@@ -2,9 +2,9 @@ let rs = '₹';
 let product_img_base = 'imgs/products/';
 let priceTag = '#priceTag';
 let v_bottom_cart_icon = '#id_bottom_cart_icon';
-let isDesktop = false;
 let cart_final_amt = 'cart_final_amt';
 let cart_final_qty = 'cart_final_qty';
+let leftContainer = '#id_div_left_container';
 let v_products = {
     1: {
         category: 'category1',
@@ -61,6 +61,12 @@ let v_products = {
         amzlink: 'https://www.amazon.in/Mammon-Womens-Leather-Handbag-3L-bib-Cream/dp/B07XKNS6FF/ref=lp_19079038031_1_1?s=shoes&ie=UTF8&qid=1574514565&sr=1-1'
     }
 }
+let globalVars = {}
+let v_left_page = [
+    ['<span class="btn btn-light" onClick="makeCart()">Cart</span>']
+    , ['<span class = "btn btn-light" onClick = "makeProductPage();"> Products </span>']
+    , ['<span class="btn btn-light" onClick="makeContactPage();">Contact Us</span>']
+]
 let v_contact_page = {
     line1: ['D155 sector8']
     ,
@@ -100,6 +106,7 @@ let cartObj = {}
 let checkOutPayment = 0;
 
 $(document).ready(function () {
+    prepareViewMobileReady();
     toastr.options = {
         "closeButton": true,
         "debug": false,
@@ -116,24 +123,33 @@ $(document).ready(function () {
         "showMethod": "show",
         "hideMethod": "hide"
     };
-    displayProducts();
-    prepareViewMobileReady();
+    initApp();
+    displayProducts('category1');
 });
 
 let prepareViewMobileReady = () => {
-    isDesktop = !isMobileDevice();
-    if (!isDesktop) {
-        $("header").removeClass("fixed-top");
-        $("body").css({'margin-top': '-90px'});
-    } else {
-    }
+    let isMobile = isMobileDevice();
+    globalVars['isMobile'] = isMobile;
+    // console.log("is mobile: ",isMobile)
+    // if (!isMobile) {
+    //     $("header").removeClass("fixed-top");
+    //     $("body").css({'margin-top': '-90px'});
+    // } else {
+    // }
 }
 
-let displayProducts = () => {
+let displayProducts = (category) => {
     checkOutPayment = 0;
+    console.log(category)
     $(mainContainer).empty();
+    let categ=getCategoryDetails(category);
+    let topText='<h1><div title="'+categ.details+'">'+categ.name+' ('+categ.type+')'+'</div></h1>';
+    $(mainContainer).prepend(topText);
+    let found=0;
     for (x in v_products) {
         let v_product = v_products[x];
+        if(v_product.category!==category) continue;
+        found+=1;
         let pname = v_product.code;
         let desc = v_product.desc;
         let images = v_product.images;
@@ -157,8 +173,23 @@ let displayProducts = () => {
             '</div>';
         let shtml = '<div class="col-lg-12 cenAlign product_box">' + elm1 + elm4 + elm2 + elm3 + elm5 + '</div><br/>';
         $(mainContainer).append(shtml);
-        initCart();
+        // initApp();
         // closeRightPanel();
+    }
+    if(found==0){
+        $(mainContainer).append(getErrorDetails());
+    }
+}
+
+let getErrorDetails=()=>{
+    return '<span class="badge text-danger">sorry, we couldnt find any related match</span>';
+}
+
+let getCategoryDetails=(category)=>{
+    for(x in v_product_categories){
+        if(x==category){
+            return v_product_categories[x];
+        }
     }
 }
 
@@ -208,7 +239,7 @@ let makeProductPage = () => {
     let shtml = elm1;
     for (let i in v_product_categories) {
         let line = v_product_categories[i];
-        shtml += '<div id="id_product_page_' + i + '"><span class="btn btn-outline-dark" title="' + line.type + ' - ' + line.details + '" onclick="clickOnProductCategory(\'' + i + '\')">' + line.name + '</span></div>'
+        shtml += '<div id="id_product_page_' + i + '"><span class="btn btn-outline-dark" title="' + line.type + ' - ' + line.details + '" onclick="clickOnProductCategory(\'' + line.name + '\')">' + line.name + '</span></div>'
     }
     shtml += '</div>';
     $(rightContainer).html(shtml);
@@ -216,9 +247,25 @@ let makeProductPage = () => {
     move2top();
 }
 
+let prepareLeftPage = () => {
+    let elm1 = '<div id="id_left_page"><h2>Choose...</h2>';
+    let shtml = elm1;
+    for (let i in v_left_page) {
+        let line = v_left_page[i];
+        shtml += '<div id="id_left_action_' + i + '">'+line+'</div>'
+    }
+    shtml += '</div>';
+    $(leftContainer).html(shtml);
+    showLeftPanel();
+    move2top();
+}
+
 let clickOnProductCategory = (category) => {
-    console.log(category + " is clicked");
-    closeRightPanel();
+    toastr.info(category + " is clicked");
+    displayProducts(category);
+    if(globalVars['isMobile']){
+        closeRightPanel();
+    }
 }
 
 
@@ -242,12 +289,14 @@ let add2cart = (xid) => {
     }
 }
 
-let initCart = () => {
-    $(rightContainer).empty();
-    let elm0 = "<h4>Cart has 0 item of <span class='badge badge-light text-danger'>" + rs + 0 + "</span></h4>";
-    $(rightContainer).append(elm0);
-    if (!isDesktop)
-        showRightPanel();
+let initApp = () => {
+    // $(rightContainer).empty();
+    // let elm0 = "<h4>Cart has 0 item of <span class='badge badge-light text-danger'>" + rs + 0 + "</span></h4>";
+    // $(rightContainer).append(elm0);
+    if(!globalVars['isMobile']){
+        prepareLeftPage();
+        displayCart();
+    }
 }
 
 var displayCart = () => {
@@ -280,16 +329,29 @@ let makeCart = () => {
     move2top();
 }
 
-let getCloseText = () => {
-    let elm = '<span class="btn btn-danger pull-right" onclick="closeRightPanel();">Close</span>';
-    return elm;
+let getCloseButtonOnRightPanel = () => {
+    return '<span class="btn btn-danger pull-right" onclick="closeRightPanel();">Close</span>';
+}
+let getCloseButtonOnLeftPanel = () => {
+    return '<span class="btn btn-danger pull-right" onclick="closeLeftPanel();">Close</span>';
 }
 
 let showRightPanel = () => {
-    $(rightContainer).prepend(getCloseText());
+    $(rightContainer).prepend(getCloseButtonOnRightPanel());
+    // let isMobile=globalVars['isMobile']===undefined?false:globalVars['isMobile'];
+    // console.log("display condition:",!$(rightContainer).is(":visible") ,'is mobile: ',isMobile)
     if (!$(rightContainer).is(":visible")) {
         $(rightContainer).css({display: 'block'});
     }
+}
+let showLeftPanel = () => {
+    $(leftContainer).prepend(getCloseButtonOnLeftPanel());
+    if (!$(leftContainer).is(":visible")) {
+        $(leftContainer).css({display: 'block'});
+    }
+}
+let closeLeftPanel = () => {
+    $(leftContainer).css({display: 'none'});
 }
 let closeRightPanel = () => {
     $(rightContainer).css({display: 'none'});
@@ -330,12 +392,14 @@ let clearAll = () => {
     checkOutPayment = 0;
     cartObj = {};
     $(rightContainer).empty();
-    displayProducts();
-    if (!isDesktop) closeRightPanel();
+    displayProducts(v_product_categories);
+    if (isMobile) closeRightPanel();
+    manage_bottom_cart_icon_count();
 }
 
 function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    // console.log('ismobile window orintation:',window.orientation,'navigator user agent',navigator.userAgent.indexOf('Mobile'));
+    return (navigator.userAgent.indexOf('Mobile') !== -1) ? true : false;
 };
 
 
