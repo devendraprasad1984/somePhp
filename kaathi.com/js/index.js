@@ -62,11 +62,14 @@ let v_products = {
     }
 }
 let globalVars = {}
+let onSuccess=()=>{}
+let onFailure=()=>{}
 let v_left_page = [
     ['<span class="btn btn-light" onClick="makeCart()">Cart</span>']
     , ['<span class = "btn btn-light" onClick = "makeProductPage();"> Products </span>']
     , ['<span class="btn btn-light" onClick="makeContactPage();">Contact Us</span>']
 ]
+let emailer='services/email.php';
 let v_contact_page = {
     line1: ['D155 sector8']
     ,
@@ -76,9 +79,10 @@ let v_contact_page = {
     ,
     line4: ['near dwarka sector 8 metro station']
     ,
-    line6: '<div><textarea placeholder="Message" class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>' +
+    line6: '<div id="idContactForm"><textarea placeholder="Message" class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>' +
         '<input type="text" placeholder="Name" class="form-control" id="name" name="name" required>' +
-        '<input type="email" placeholder="Email" class="form-control" id="email" name="email" required>' +
+        '<input type="email" placeholder="Email" class="form-control" id="email" name="email">' +
+        '<input type="text" placeholder="contact number" class="form-control" id="contact" name="contact" required>' +
         '<button type="submit" class="btn btn-primary pull-right" onClick="sendMessage()" >Send</button>' +
         '</div>'
     ,
@@ -128,19 +132,12 @@ $(document).ready(function () {
 });
 
 let prepareViewMobileReady = () => {
-    let isMobile = isMobileDevice();
-    globalVars['isMobile'] = isMobile;
-    // console.log("is mobile: ",isMobile)
-    // if (!isMobile) {
-    //     $("header").removeClass("fixed-top");
-    //     $("body").css({'margin-top': '-90px'});
-    // } else {
-    // }
+    globalVars['isMobile'] = isMobileDevice();
 }
 
 let displayProducts = (category) => {
     checkOutPayment = 0;
-    console.log(category)
+    // console.log(category)
     $(mainContainer).empty();
     let categ=getCategoryDetails(category);
     let topText='<h1><div title="'+categ.details+'">'+categ.name+' ('+categ.type+')'+'</div></h1>';
@@ -248,7 +245,8 @@ let makeProductPage = () => {
 }
 
 let prepareLeftPage = () => {
-    let elm1 = '<div id="id_left_page"><h2>Choose...</h2>';
+    getPageWidth();
+    let elm1 = '<div id="id_left_page">';
     let shtml = elm1;
     for (let i in v_left_page) {
         let line = v_left_page[i];
@@ -258,6 +256,11 @@ let prepareLeftPage = () => {
     $(leftContainer).html(shtml);
     showLeftPanel();
     move2top();
+    if(globalVars.isMobile){
+        //set right+left container display mode like a mobile
+    }else{
+        //set right+left container display mode like a mobile  -REVERT
+    }
 }
 
 let clickOnProductCategory = (category) => {
@@ -388,12 +391,21 @@ let manage_bottom_cart_icon_count = () => {
     $(iconid).html(Object.keys(cartObj).length);
 }
 
+let getPageWidth=()=>{
+    let wid=$('body').width();
+    if(wid<=800){
+        globalVars.isMobile=true;
+    }else{
+        globalVars.isMobile=false;
+    }
+}
+
 let clearAll = () => {
     checkOutPayment = 0;
     cartObj = {};
     $(rightContainer).empty();
-    displayProducts(v_product_categories);
-    if (isMobile) closeRightPanel();
+    displayProducts(Object.keys(v_product_categories)[0]);
+    if (globalVars.isMobile) closeRightPanel();
     manage_bottom_cart_icon_count();
 }
 
@@ -442,5 +454,105 @@ let addressOnMap = (lat, lang) => {
 }
 
 let sendMessage = () => {
-    toastr.success("message has been sent");
+    // let contactFormData=$('#idContactForm').html();
+    let id='#idContactForm';
+    let contactFormData={message:$(id+' #message').val()
+        ,name:$(id+' #name').val()
+        ,email:$(id+' #email').val()
+        ,contact: $(id+' #contact').val()
+    };
+    onSuccess=emailSuccess;
+    onFailure=failHandle;
+    getFromServer(emailer,contactFormData);
 }
+let failHandle=(res)=>{
+    toastr.error(res);
+}
+
+let emailSuccess=(res)=> {
+    let msg=JSON.parse(res).msg||{};
+    // console.log(msg.name,msg.email,msg.message);
+    // console.log(msg);
+    toastr.success(msg);
+}
+//plain js type ajax
+let getRequest=(url, success, error)=> {
+    let req = false;
+    try{
+        req = new XMLHttpRequest();
+    } catch (e){
+        try{
+            req = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch(e) {
+            try{
+                req = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch(e) {
+                return false;
+            }
+        }
+    }
+    if (!req) return false;
+    req.onreadystatechange = function(){
+        if(req.readyState == 4) {
+            return req.status === 200 ?
+                success(req.responseText) : error(req.status);
+        }
+    }
+    req.open("GET", url, true);
+    req.send(null);
+    return req;
+}
+
+
+let getFromServer=(url,xval)=> {
+    // beforeSend:textreplace(description),
+    $.ajax({
+        url:url,
+        type: 'post',
+        data: {value: xval||''},
+        complete: (response)=>{onSuccess(response.responseText);},
+        error:()=> {onFailure('error in sending email, check with admin');}
+    });
+    return false;
+}
+
+
+
+
+
+
+function validateContact() {
+    var valid = true;
+    $(".demoInputBox").css('background-color','');
+    $(".info").html('');
+    if(!$("#userName").val()) {
+        $("#userName-info").html("(required)");
+        $("#userName").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#userEmail").val()) {
+        $("#userEmail-info").html("(required)");
+        $("#userEmail").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        $("#userEmail-info").html("(invalid)");
+        $("#userEmail").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#subject").val()) {
+        $("#subject-info").html("(required)");
+        $("#subject").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#content").val()) {
+        $("#content-info").html("(required)");
+        $("#content").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    return valid;
+}
+
+
+
+

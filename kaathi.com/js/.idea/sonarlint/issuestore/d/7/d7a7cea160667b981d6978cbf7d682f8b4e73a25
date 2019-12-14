@@ -1,16 +1,0 @@
-
-Rjavascript:EmptyBlock€")Either remove or fill this block of code.(å¥‡8 ›·‰î-
-gjavascript:UnusedVariable†"5Remove the declaration of the unused 'elm5' variable.(¤ŒÙ¬üÿÿÿÿ8 ›·‰î-
-hjavascript:UnusedVariableŒ"6Remove the declaration of the unused 'price' variable.(†Ø“Ùúÿÿÿÿ8 ›·‰î-
-zjavascript:S1117Ã"Q"i" hides or potentially hides a variable declared in an outer scope at line 185.(èø´úÿÿÿÿ8 ›·‰î-
-`javascript:S1854†"7Remove this useless assignment to local variable "elm5"(¤ŒÙ¬üÿÿÿÿ8 ›·‰î-
-€javascript:S2703¹"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(Û±½ùÿÿÿÿ8 ›·‰î-
-_javascript:S930ñ"7This function expects no arguments, but 1 was provided.(ÄÂ¸ûÿÿÿÿ8 ›·‰î-
-zjavascript:S1117Ñ"Q"i" hides or potentially hides a variable declared in an outer scope at line 185.(½îîÀşÿÿÿÿ8 ›·‰î-
-zjavascript:S1117¯"Q"x" hides or potentially hides a variable declared in an outer scope at line 135.(Ò¶®¤ùÿÿÿÿ8Ÿ›·‰î-
-tjavascript:S3403Å"KRemove this "===" check; it will always be false. Did you mean to use "=="?( «Ÿáøÿÿÿÿ8Ÿ›·‰î-
-–javascript:S2583Å"mChange this condition so that it does not always evaluate to "false"; some subsequent code is never executed.( «Ÿáøÿÿÿÿ8Ÿ›·‰î-
-€javascript:S2703‡"WAdd the "let", "const" or "var" keyword to this declaration of "x" to make it explicit.(ÑÃêñøÿÿÿÿ8 ›·‰î-
-Ejavascript:S1116Ô"Remove this empty statement.(ôŸìúÿÿÿÿ8Ï‡ÑŠî-
-ajavascript:S1854Œ"8Remove this useless assignment to local variable "price"(†Ø“Ùúÿÿÿÿ8 ›·‰î-
-zjavascript:S2703"WAdd the "let", "const" or "var" keyword to this declaration of "o" to make it explicit.(úŠ«8 ›·‰î-
