@@ -83,11 +83,11 @@ let v_contact_page = {
         '<input type="text" placeholder="Name" class="form-control" id="name" name="name" required>' +
         '<input type="email" placeholder="Email" class="form-control" id="email" name="email">' +
         '<input type="text" placeholder="contact number" class="form-control" id="contact" name="contact" required>' +
-        '<button type="submit" class="btn btn-primary pull-right" onClick="sendMessage()" >Send</button>' +
+        '<button type="submit" class="btn pull-right" onClick="sendMessage()" >Send</button>' +
         '</div>'
     ,
     line5: '<div>' +
-        '<span class="btn btn-warning" onclick="addressOnMap(51.508742,-0.120850)">View on Map</span>' +
+        '<span class="btn" onclick="addressOnMap(51.508742,-0.120850)">View on Map</span>' +
         '<div id="addressMap"></div>' +
         '</div>'
 }
@@ -236,7 +236,7 @@ let makeProductPage = () => {
     let shtml = elm1;
     for (let i in v_product_categories) {
         let line = v_product_categories[i];
-        shtml += '<div id="id_product_page_' + i + '"><span class="btn btn-outline-dark" title="' + line.type + ' - ' + line.details + '" onclick="clickOnProductCategory(\'' + line.name + '\')">' + line.name + '</span></div>'
+        shtml += '<div id="id_product_page_' + i + '"><span class="btn" title="' + line.type + ' - ' + line.details + '" onclick="clickOnProductCategory(\'' + line.name + '\')">' + line.name + '</span></div>'
     }
     shtml += '</div>';
     $(rightContainer).html(shtml);
@@ -246,11 +246,11 @@ let makeProductPage = () => {
 
 let prepareLeftPage = () => {
     getPageWidth();
-    let elm1 = '<div id="id_left_page">';
+    let elm1 = '<div id="id_left_page" class="dropMenu">';
     let shtml = elm1;
     for (let i in v_left_page) {
         let line = v_left_page[i];
-        shtml += '<div id="id_left_action_' + i + '">'+line+'</div>'
+        shtml += line;
     }
     shtml += '</div>';
     $(leftContainer).html(shtml);
@@ -264,7 +264,7 @@ let prepareLeftPage = () => {
 }
 
 let clickOnProductCategory = (category) => {
-    toastr.info(category + " is clicked");
+    // toastr.info(category + " is clicked");
     displayProducts(category);
     if(globalVars['isMobile']){
         closeRightPanel();
@@ -309,7 +309,7 @@ var displayCart = () => {
     for (o in cartObj) {
         let prod = cartObj[o];
         let elm1 = '<div class="xcard" id="id_cart_' + prod.code + '">';
-        let elm3 = '<h3>' + prod.code + ' <a href="#" class="btn btn-primary pull-right" onclick="removeFromCart(\'' + prod.code + '\')">Remove</a></h3>';
+        let elm3 = '<h3>' + prod.code + ' <a href="#" class="btn pull-right" onclick="removeFromCart(\'' + prod.code + '\')">Remove</a></h3>';
         let elm4 = '<span>' + prod.desc + prod.calci + '</span>';
         let elm5 = '</div>';
         $(rightContainer).append(elm1 + elm3 + elm4);
@@ -317,8 +317,8 @@ var displayCart = () => {
         Amount += prod.finalAmount;
     }
     let elm0 = "<h4>Cart has <span id='" + cart_final_qty + "'>" + count + "</span> item of " + rs + "<span id='" + cart_final_amt + "' class='badge badge-light text-danger'>" + Amount + "</span></h4>";
-    let elm0_1 = "<a target='_blank' href='#' class='btn btn-light font-weight-bold'>Pay</a>";
-    let elm0_2 = " <span class='btn btn-light font-weight-bold' onclick='clearAll()'>Clear</span>";
+    let elm0_1 = "<div><a target='_blank' href='#' class='btn'>Pay</a>";
+    let elm0_2 = " <a href='#' class='btn' onclick='clearAll()'>Clear</a></div>";
     let elm0_4 = "<h4>Thanks for using kaathi.com</h4>";
     $(rightContainer).prepend(elm0 + elm0_1 + elm0_2 + elm0_4);
     manage_bottom_cart_icon_count();
@@ -333,10 +333,10 @@ let makeCart = () => {
 }
 
 let getCloseButtonOnRightPanel = () => {
-    return '<span class="btn btn-danger pull-right" onclick="closeRightPanel();">Close</span>';
+    return '<span class="btn btn-danger" onclick="closeRightPanel();">Close</span>';
 }
 let getCloseButtonOnLeftPanel = () => {
-    return '<span class="btn btn-danger pull-right" onclick="closeLeftPanel();">Close</span>';
+    return '<span class="btn btn-danger" onclick="closeLeftPanel();">Close</span>';
 }
 
 let showRightPanel = () => {

@@ -1,19 +1,19 @@
 
-€javascript:S2703’"WAdd the "let", "const" or "var" keyword to this declaration of "x" to make it explicit.(ÑÃêñøÿÿÿÿ8¸¥³–ğ-
-zjavascript:S1117é"Q"e" hides or potentially hides a variable declared in an outer scope at line 486.(ùºŸ­şÿÿÿÿ8‚¨Ù˜ğ-
-–javascript:S2583á"mChange this condition so that it does not always evaluate to "false"; some subsequent code is never executed.( «Ÿáøÿÿÿÿ8¸¥³–ğ-
-zjavascript:S1117û"Q"i" hides or potentially hides a variable declared in an outer scope at line 213.(²Ú½ÿùÿÿÿÿ8¸¥³–ğ-
-hjavascript:UnusedVariable™"6Remove the declaration of the unused 'price' variable.(†Ø“Ùúÿÿÿÿ8¸¥³–ğ-
+€javascript:S2703Õ"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(Û±½ùÿÿÿÿ8Ğ¢ÿ¨ğ-
+zjavascript:S1117ß"Q"i" hides or potentially hides a variable declared in an outer scope at line 213.(èø´úÿÿÿÿ8Ğ¢ÿ¨ğ-
 `javascript:S1854º"7Remove this useless assignment to local variable "elm5"(¤ŒÙ¬üÿÿÿÿ8¸¥³–ğ-
-€javascript:S2703Õ"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(Û±½ùÿÿÿÿ8¸¥³–ğ-
-zjavascript:S1117æ"Q"e" hides or potentially hides a variable declared in an outer scope at line 483.(ùºŸ­şÿÿÿÿ8‚¨Ù˜ğ-
-_javascript:S930£"7This function expects no arguments, but 1 was provided.(ÄÂ¸ûÿÿÿÿ8›ï€˜ğ-
-zjavascript:S1117í"Q"i" hides or potentially hides a variable declared in an outer scope at line 213.(½îîÀşÿÿÿÿ8¸¥³–ğ-
-zjavascript:S1117ß"Q"i" hides or potentially hides a variable declared in an outer scope at line 213.(èø´úÿÿÿÿ8¸¥³–ğ-
-javascript:S3923ƒ"[Remove this conditional structure or edit its code blocks so that they're not all the same.(î§²×8›ï€˜ğ-
-ajavascript:S1854™"8Remove this useless assignment to local variable "price"(†Ø“Ùúÿÿÿÿ8¸¥³–ğ-
-zjavascript:S1117Ë"Q"x" hides or potentially hides a variable declared in an outer scope at line 146.(Ò¶®¤ùÿÿÿÿ8¸¥³–ğ-
-Ejavascript:S1116Ÿ"Remove this empty statement.(ôŸìúÿÿÿÿ8¸¥³–ğ-
+–javascript:S2583á"mChange this condition so that it does not always evaluate to "false"; some subsequent code is never executed.( «Ÿáøÿÿÿÿ8Ğ¢ÿ¨ğ-
+zjavascript:S1117Ë"Q"x" hides or potentially hides a variable declared in an outer scope at line 146.(Ò¶®¤ùÿÿÿÿ8Ğ¢ÿ¨ğ-
+zjavascript:S1117é"Q"e" hides or potentially hides a variable declared in an outer scope at line 486.(ùºŸ­şÿÿÿÿ8‚¨Ù˜ğ-
 gjavascript:UnusedVariableº"5Remove the declaration of the unused 'elm5' variable.(¤ŒÙ¬üÿÿÿÿ8¸¥³–ğ-
-tjavascript:S3403á"KRemove this "===" check; it will always be false. Did you mean to use "=="?( «Ÿáøÿÿÿÿ8¸¥³–ğ-
-zjavascript:S2703µ"WAdd the "let", "const" or "var" keyword to this declaration of "o" to make it explicit.(úŠ«8¸¥³–ğ-
+javascript:S3923ƒ"[Remove this conditional structure or edit its code blocks so that they're not all the same.(î§²×8Ğ¢ÿ¨ğ-
+zjavascript:S1117í"Q"i" hides or potentially hides a variable declared in an outer scope at line 213.(½îîÀşÿÿÿÿ8Ğ¢ÿ¨ğ-
+hjavascript:UnusedVariable™"6Remove the declaration of the unused 'price' variable.(†Ø“Ùúÿÿÿÿ8Ğ¢ÿ¨ğ-
+ajavascript:S1854™"8Remove this useless assignment to local variable "price"(†Ø“Ùúÿÿÿÿ8Ğ¢ÿ¨ğ-
+€javascript:S2703’"WAdd the "let", "const" or "var" keyword to this declaration of "x" to make it explicit.(ÑÃêñøÿÿÿÿ8Ğ¢ÿ¨ğ-
+zjavascript:S2703µ"WAdd the "let", "const" or "var" keyword to this declaration of "o" to make it explicit.(úŠ«8Ğ¢ÿ¨ğ-
+tjavascript:S3403á"KRemove this "===" check; it will always be false. Did you mean to use "=="?( «Ÿáøÿÿÿÿ8Ğ¢ÿ¨ğ-
+zjavascript:S1117æ"Q"e" hides or potentially hides a variable declared in an outer scope at line 483.(ùºŸ­şÿÿÿÿ8‚¨Ù˜ğ-
+_javascript:S930£"7This function expects no arguments, but 1 was provided.(ÄÂ¸ûÿÿÿÿ8Ğ¢ÿ¨ğ-
+Ejavascript:S1116Ÿ"Remove this empty statement.(ôŸìúÿÿÿÿ8¸¥³–ğ-
+zjavascript:S1117û"Q"i" hides or potentially hides a variable declared in an outer scope at line 213.(²Ú½ÿùÿÿÿÿ8Ğ¢ÿ¨ğ-
