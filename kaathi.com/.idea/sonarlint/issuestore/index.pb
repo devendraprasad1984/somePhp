@@ -19,3 +19,7 @@ E
 css/w3.css,c/7/c7b4c89f782f53995f885504888ce1671e92e3e3
 B
 services/email.php,e/4/e4a7e41e16ad1ca31f7c223ab09da7f8d15ecdc4
+A
+js/toastr.min.css,f/b/fb51d6cefffe0f55edb41b544e95af809238b84c
+@
+js/toastr.min.js,1/b/1b2e6c40a44f5be7950764f60b66196c244b489b

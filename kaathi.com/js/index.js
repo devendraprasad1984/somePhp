@@ -118,8 +118,8 @@ $(document).ready(function () {
         "progressBar": true,
         "preventDuplicates": true,
         "onclick": null,
-        "showDuration": "50",
-        "hideDuration": "50",
+        "showDuration": "100",
+        "hideDuration": "100",
         "timeOut": "1000",
         "extendedTimeOut": "1000",
         "showEasing": "swing",
@@ -170,8 +170,7 @@ let displayProducts = (category) => {
             '</div>';
         let shtml = '<div class="col-lg-12 cenAlign product_box">' + elm1 + elm4 + elm2 + elm3 + elm5 + '</div><br/>';
         $(mainContainer).append(shtml);
-        // initApp();
-        // closeRightPanel();
+        closePanelIfMobile();
     }
     if(found==0){
         $(mainContainer).append(getErrorDetails());
@@ -204,7 +203,7 @@ let getPriceLine = (prod, qty) => {
     let shtml = '<div><span>' + rs + prod.price + '*' + qty + '</span> ' +
         '<span> - ' + rs + x.savedAmount + '(' + x.discount + '%)</span> ' +
         '<span> = ' + rs + x.finalAmount + '</span> ' +
-        '<span class="btn btn-light pull-right" title="' + x.qty + ' qty selected" onclick="add2cart(\'' + prod.code + '\');"><i class="fa fa-shopping-cart" ></i> <i class="fa fa-check-square" ></i> </span></div>';
+        '<span class="btn btn-light pull-right" title="' + x.qty + ' qty selected" onclick="add2cart(\'' + prod.code + '\');"><i class="fa fa-lg fa-check-square" ></i> </span></div>';
     return shtml;
 }
 
@@ -293,12 +292,15 @@ let add2cart = (xid) => {
 }
 
 let initApp = () => {
-    // $(rightContainer).empty();
-    // let elm0 = "<h4>Cart has 0 item of <span class='badge badge-light text-danger'>" + rs + 0 + "</span></h4>";
-    // $(rightContainer).append(elm0);
     if(!globalVars['isMobile']){
         prepareLeftPage();
         displayCart();
+    }
+}
+let closePanelIfMobile=()=>{
+    if(globalVars['isMobile']){
+        closeLeftPanel();
+        closeRightPanel();
     }
 }
 
@@ -341,8 +343,6 @@ let getCloseButtonOnLeftPanel = () => {
 
 let showRightPanel = () => {
     $(rightContainer).prepend(getCloseButtonOnRightPanel());
-    // let isMobile=globalVars['isMobile']===undefined?false:globalVars['isMobile'];
-    // console.log("display condition:",!$(rightContainer).is(":visible") ,'is mobile: ',isMobile)
     if (!$(rightContainer).is(":visible")) {
         $(rightContainer).css({display: 'block'});
     }
