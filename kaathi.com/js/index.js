@@ -62,14 +62,16 @@ let v_products = {
     }
 }
 let globalVars = {}
-let onSuccess=()=>{}
-let onFailure=()=>{}
+let onSuccess = () => {
+}
+let onFailure = () => {
+}
 let v_left_page = [
     ['<span class="btn btn-light" onClick="makeCart()">Cart</span>']
     , ['<span class = "btn btn-light" onClick = "makeProductPage();"> Products </span>']
     , ['<span class="btn btn-light" onClick="makeContactPage();">Contact Us</span>']
 ]
-let emailer='services/email.php';
+let emailer = 'services/email.php';
 let v_contact_page = {
     line1: ['D155 sector8']
     ,
@@ -139,14 +141,14 @@ let displayProducts = (category) => {
     checkOutPayment = 0;
     // console.log(category)
     $(mainContainer).empty();
-    let categ=getCategoryDetails(category);
-    let topText='<h1><div title="'+categ.details+'">'+categ.name+' ('+categ.type+')'+'</div></h1>';
+    let categ = getCategoryDetails(category);
+    let topText = '<h1><div title="' + categ.details + '">' + categ.name + ' (' + categ.type + ')' + '</div></h1>';
     $(mainContainer).prepend(topText);
-    let found=0;
+    let found = 0;
     for (x in v_products) {
         let v_product = v_products[x];
-        if(v_product.category!==category) continue;
-        found+=1;
+        if (v_product.category !== category) continue;
+        found += 1;
         let pname = v_product.code;
         let desc = v_product.desc;
         let images = v_product.images;
@@ -155,35 +157,33 @@ let displayProducts = (category) => {
         // if(v_product["qty"]===undefined)
         v_product["qty"] = 0;
 
-        let elm1 = '<div style="padding: 2px;">' +
-            '<h2>' + pname + ' ' +
-            '<span class="btn btn-light pull-right" onclick="handleProductClick(\'' + pname + '\',-1)"><i class="fa fa-lg fa-minus"></i></span>' +
-            '<span class="btn btn-light pull-right" onclick="handleProductClick(\'' + pname + '\',1)"><i class="fa fa-lg fa-plus"></i></span>' +
-            '</h2>' +
+        let elm1 = '<div style="padding: 2px;" class="row">' +
+            '<span class="btn btn-green" onclick="handleProductClick(\'' + pname + '\',1)"><i class="fa fa-lg fa-plus"></i></span>' +
+            '<h2>' + pname + '</h2> ' +
+            '<span class="btn bgdanger" onclick="handleProductClick(\'' + pname + '\',-1)"><i class="fa fa-lg fa-minus"></i></span>' +
             '</div>';
-        let elm2 = '<div><b id="id_prod_desc_' + pname + '">' + desc + '</b></div>';
+        let elm2 = '<div><span id="id_prod_desc_' + pname + '">' + desc + '</span></div>';
         let elm3 = '<div><span id="id_img_desc_' + pname + '" class="productImages">' + display_product_images(x, images) + '</span></div>';
-        // elm3_1 = '<div><span id="id_basePrice_"' + x + ' >Base Price: ' +rs+price + '</span></div>';
-        let elm4 = '<div id="priceTag_' + pname + '" class="priceline color1">' + getPriceLine(v_product, v_product["qty"]) + '</div>';
+        let elm4 = '<div id="priceTag_' + pname + '" class="priceline">' + getPriceLine(v_product, v_product["qty"]) + '</div>';
         let elm5 = '<div class="link_logo">' +
             ' <a target="_blank" id="id_amazon_"' + pname + ' href="' + amzLink + '">amazon</a>' +
             '</div>';
-        let shtml = '<div class="col-lg-12 cenAlign product_box">' + elm1 + elm4 + elm2 + elm3 + elm5 + '</div><br/>';
+        let shtml = '<div class="col-lg-12 cenAlign product_box">' + elm1 + elm2 + elm3 + elm5 + elm4 + '</div><br/>';
         $(mainContainer).append(shtml);
         closePanelIfMobile();
     }
-    if(found==0){
+    if (found == 0) {
         $(mainContainer).append(getErrorDetails());
     }
 }
 
-let getErrorDetails=()=>{
+let getErrorDetails = () => {
     return '<span class="badge text-danger">sorry, we couldnt find any related match</span>';
 }
 
-let getCategoryDetails=(category)=>{
-    for(x in v_product_categories){
-        if(x==category){
+let getCategoryDetails = (category) => {
+    for (x in v_product_categories) {
+        if (x == category) {
             return v_product_categories[x];
         }
     }
@@ -202,8 +202,8 @@ let getPriceLine = (prod, qty) => {
     let x = getCalci(prod, qty);
     let shtml = '<div><span>' + rs + prod.price + '*' + qty + '</span> ' +
         '<span> - ' + rs + x.savedAmount + '(' + x.discount + '%)</span> ' +
-        '<span> = ' + rs + x.finalAmount + '</span> ' +
-        '<span class="btn btn-light pull-right" title="' + x.qty + ' qty selected" onclick="add2cart(\'' + prod.code + '\');"><i class="fa fa-lg fa-check-square" ></i> </span></div>';
+        '<span class="priceline-total"> = ' + rs + x.finalAmount + '</span> ' +
+        '<span class="btn btn-green pull-right" title="' + x.qty + ' qty selected" onclick="add2cart(\'' + prod.code + '\');"><i class="fa fa-lg fa-check-square" ></i> </span></div>';
     return shtml;
 }
 
@@ -255,9 +255,9 @@ let prepareLeftPage = () => {
     $(leftContainer).html(shtml);
     showLeftPanel();
     move2top();
-    if(globalVars.isMobile){
+    if (globalVars.isMobile) {
         //set right+left container display mode like a mobile
-    }else{
+    } else {
         //set right+left container display mode like a mobile  -REVERT
     }
 }
@@ -265,7 +265,7 @@ let prepareLeftPage = () => {
 let clickOnProductCategory = (category) => {
     // toastr.info(category + " is clicked");
     displayProducts(category);
-    if(globalVars['isMobile']){
+    if (globalVars['isMobile']) {
         closeRightPanel();
     }
 }
@@ -292,13 +292,13 @@ let add2cart = (xid) => {
 }
 
 let initApp = () => {
-    if(!globalVars['isMobile']){
+    if (!globalVars['isMobile']) {
         prepareLeftPage();
         displayCart();
     }
 }
-let closePanelIfMobile=()=>{
-    if(globalVars['isMobile']){
+let closePanelIfMobile = () => {
+    if (globalVars['isMobile']) {
         closeLeftPanel();
         closeRightPanel();
     }
@@ -314,7 +314,7 @@ var displayCart = () => {
         let elm3 = '<h3>' + prod.code + ' <a href="#" class="btn pull-right" onclick="removeFromCart(\'' + prod.code + '\')">Remove</a></h3>';
         let elm4 = '<span>' + prod.desc + prod.calci + '</span>';
         let elm5 = '</div>';
-        $(rightContainer).append(elm1 + elm3 + elm4);
+        $(rightContainer).append(elm1 + elm4 + elm3);
         count += 1;
         Amount += prod.finalAmount;
     }
@@ -335,10 +335,10 @@ let makeCart = () => {
 }
 
 let getCloseButtonOnRightPanel = () => {
-    return '<span class="btn btn-danger" onclick="closeRightPanel();">Close</span>';
+    return '<div class="right_content"><span class="btn" onclick="closeRightPanel();">X</span></div>';
 }
 let getCloseButtonOnLeftPanel = () => {
-    return '<span class="btn btn-danger" onclick="closeLeftPanel();">Close</span>';
+    return '<div class="right_content"><span class="btn right" onclick="closeLeftPanel();">X</span></div>';
 }
 
 let showRightPanel = () => {
@@ -391,12 +391,12 @@ let manage_bottom_cart_icon_count = () => {
     $(iconid).html(Object.keys(cartObj).length);
 }
 
-let getPageWidth=()=>{
-    let wid=$('body').width();
-    if(wid<=800){
-        globalVars.isMobile=true;
-    }else{
-        globalVars.isMobile=false;
+let getPageWidth = () => {
+    let wid = $('body').width();
+    if (wid <= 800) {
+        globalVars.isMobile = true;
+    } else {
+        globalVars.isMobile = false;
     }
 }
 
@@ -455,45 +455,46 @@ let addressOnMap = (lat, lang) => {
 
 let sendMessage = () => {
     // let contactFormData=$('#idContactForm').html();
-    let id='#idContactForm';
-    let contactFormData={message:$(id+' #message').val()
-        ,name:$(id+' #name').val()
-        ,email:$(id+' #email').val()
-        ,contact: $(id+' #contact').val()
+    let id = '#idContactForm';
+    let contactFormData = {
+        message: $(id + ' #message').val()
+        , name: $(id + ' #name').val()
+        , email: $(id + ' #email').val()
+        , contact: $(id + ' #contact').val()
     };
-    onSuccess=emailSuccess;
-    onFailure=failHandle;
-    getFromServer(emailer,contactFormData);
+    onSuccess = emailSuccess;
+    onFailure = failHandle;
+    getFromServer(emailer, contactFormData);
 }
-let failHandle=(res)=>{
+let failHandle = (res) => {
     toastr.error(res);
 }
 
-let emailSuccess=(res)=> {
-    let msg=JSON.parse(res).msg||{};
+let emailSuccess = (res) => {
+    let msg = JSON.parse(res).msg || {};
     // console.log(msg.name,msg.email,msg.message);
     // console.log(msg);
     toastr.success(msg);
 }
 //plain js type ajax
-let getRequest=(url, success, error)=> {
+let getRequest = (url, success, error) => {
     let req = false;
-    try{
+    try {
         req = new XMLHttpRequest();
-    } catch (e){
-        try{
+    } catch (e) {
+        try {
             req = new ActiveXObject("Msxml2.XMLHTTP");
-        } catch(e) {
-            try{
+        } catch (e) {
+            try {
                 req = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch(e) {
+            } catch (e) {
                 return false;
             }
         }
     }
     if (!req) return false;
-    req.onreadystatechange = function(){
-        if(req.readyState == 4) {
+    req.onreadystatechange = function () {
+        if (req.readyState == 4) {
             return req.status === 200 ?
                 success(req.responseText) : error(req.status);
         }
@@ -504,50 +505,50 @@ let getRequest=(url, success, error)=> {
 }
 
 
-let getFromServer=(url,xval)=> {
+let getFromServer = (url, xval) => {
     // beforeSend:textreplace(description),
     $.ajax({
-        url:url,
+        url: url,
         type: 'post',
-        data: {value: xval||''},
-        complete: (response)=>{onSuccess(response.responseText);},
-        error:()=> {onFailure('error in sending email, check with admin');}
+        data: {value: xval || ''},
+        complete: (response) => {
+            onSuccess(response.responseText);
+        },
+        error: () => {
+            onFailure('error in sending email, check with admin');
+        }
     });
     return false;
 }
 
 
-
-
-
-
 function validateContact() {
     var valid = true;
-    $(".demoInputBox").css('background-color','');
+    $(".demoInputBox").css('background-color', '');
     $(".info").html('');
-    if(!$("#userName").val()) {
+    if (!$("#userName").val()) {
         $("#userName-info").html("(required)");
-        $("#userName").css('background-color','#FFFFDF');
+        $("#userName").css('background-color', '#FFFFDF');
         valid = false;
     }
-    if(!$("#userEmail").val()) {
+    if (!$("#userEmail").val()) {
         $("#userEmail-info").html("(required)");
-        $("#userEmail").css('background-color','#FFFFDF');
+        $("#userEmail").css('background-color', '#FFFFDF');
         valid = false;
     }
-    if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+    if (!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
         $("#userEmail-info").html("(invalid)");
-        $("#userEmail").css('background-color','#FFFFDF');
+        $("#userEmail").css('background-color', '#FFFFDF');
         valid = false;
     }
-    if(!$("#subject").val()) {
+    if (!$("#subject").val()) {
         $("#subject-info").html("(required)");
-        $("#subject").css('background-color','#FFFFDF');
+        $("#subject").css('background-color', '#FFFFDF');
         valid = false;
     }
-    if(!$("#content").val()) {
+    if (!$("#content").val()) {
         $("#content-info").html("(required)");
-        $("#content").css('background-color','#FFFFDF');
+        $("#content").css('background-color', '#FFFFDF');
         valid = false;
     }
     return valid;
