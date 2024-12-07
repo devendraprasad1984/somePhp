@@ -1,5 +1,0 @@
-<h1>Contact</h1>
-<div>
-    <div class="h1">dPyLabs IT Services</div>
-    <div style='font-size:10pt;'>+91 9582797772, dpylabs@gmail.com</div>
-</div>

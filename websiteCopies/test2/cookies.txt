@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-freetemplates.pro	TRUE	/	FALSE	1999999999	PHPSESSID	0q8d2k9fh7iidfgfh6dj571pr1
-
